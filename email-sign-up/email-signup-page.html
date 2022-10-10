@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping for Men, Women Clothing & Accesories at bewakoof.com</title>
+    <link rel="icon" href="https://i.pinimg.com/75x75_RS/56/cb/8b/56cb8b708d342a384536462ce8d4fba8.jpg">
+    <link rel="stylesheet" href="./email-signup-page.css">
+</head>
+<body>
+    <div id="container">
+        <h2>Sign up your account</h2>
+        <form  id="form">
+            <div>
+                <input
+                  type="text"
+                  id="fname"
+                  placeholder="First name"
+                  required=""
+                />
+            </div>
+            <div>
+                <input
+                  type="text"
+                  id="lname"
+                  placeholder="Last name"
+                  required=""
+                />
+              </div>
+            <div>
+            <input type="email" id="email" placeholder="Email" required=""><br>
+            </div>
+            <div>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  id="id_password"
+                  required=""
+                />
+                <span style="margin-left: -40px"
+                  ><i class="far fa-eye" id="togglePassword" style="color: #969595"></i
+                ></span>
+            </div>
+            <div>
+                <input type="Submit" value="SIGN UP" id="submiticon" />
+            </div>
+            <div id="alreadyacc">
+                <p>Already have an account? <a href="../email-login-page/email-login-page.html">Sign In</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<script src="./email-signup-page.js"></script>
+<script > 
+    const togglePassword = document.querySelector("#togglePassword");
+  const password = document.querySelector("#id_password");
+  togglePassword.addEventListener("click", function (e) {
+    const type =
+      password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+    this.classList.toggle("fa-eye-slash");
+  });
+  
+  function DataCreateforStudent(a,b, e, f) {
+    this.name = a;
+    this.lname=b;
+    this.email = e;
+    this.password = f;
+    this.flag = "false";
+  }
+  
+  document.querySelector("form").addEventListener("submit", collectdata);
+  
+  function collectdata() {
+    console.log("afsgasg");
+    event.preventDefault();
+    let name = document.getElementById("fname").value || "";
+    let lname = document.getElementById("lname").value || "";
+    let email = document.getElementById("email").value || "";
+    let password = document.getElementById("id_password").value || "";
+      let newInstructor = new DataCreateforStudent(name, lname ,email, password);
+      let AllInstructor =
+        JSON.parse(localStorage.getItem("peopleRecord")) || [];
+      AllInstructor.push(newInstructor);
+      localStorage.setItem(
+        "peopleRecord",
+        JSON.stringify(AllInstructor)
+      );
+      let AllStudent =
+        JSON.parse(localStorage.getItem("peopleRecord")) || [];
+      localStorage.setItem("peopleRecord", JSON.stringify(AllStudent));
+      alert("Signup successful!");
+    window.open("../email-login-page/email-login-page.html", "_self");
+  }
+  </script>
