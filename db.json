@@ -1,0 +1,288 @@
+{
+  "mens":[{
+    "id": 1,
+    "image": "https://images.bewakoof.com/t640/the-saviour-oversized-fit-t-shirt-547339-1665064576-1.jpg",
+    "name": "Men's White The Saviour Graphic Printed Oversized T-shirt",
+    "category": "Tshirt",
+    "size": "XL",
+    "color": "white",
+    "types": "Bewakoof",
+    "rating": 5,
+    "price": "4999",
+    "strikeOffPrice": "5563"
+  }, {
+    "id": 2,
+    "image": "https://images.bewakoof.com/t640/the-saviour-full-sleeve-t-shirt-547335-1665064762-1.jpg",
+    "name": "Men's Black The Saviour Graphic Printed T-shirt",
+    "category": "Tshirt",
+    "size": "X",
+    "color": "black",
+    "types": "Campus sutra",
+    "rating": 4,
+    "price": "8756",
+    "strikeOffPrice": "10613"
+  }, {
+    "id": 3,
+    "image": "https://images.bewakoof.com/t640/customizable-men-s-black-full-sleeves-t-shirt-500171-1655815078-1.jpg",
+    "name": "Men's Black Shinobi Life Graphic Printed Oversized T-shirt",
+    "category": "Hoodies",
+    "size": "XXL",
+    "color": "white",
+    "types": "Bewakoof",
+    "rating": 3.8,
+    "price": "2550",
+    "strikeOffPrice": "3184"
+  }, {
+    "id": 4,
+    "image": "https://images.bewakoof.com/t640/men-s-bold-red-nasa-astronaut-printed-t-shirt-502021-1662563949-1.jpg",
+    "name": "Men's Red NASA Astronaut Graphic Printed Oversized T-shirt",
+    "category": "Kurta",
+    "size": "X",
+    "color": "Red",
+    "types": "Bewakoof",
+    "rating": 2.8,
+    "price": "1449",
+    "strikeOffPrice": "1669"
+  }, {
+    "id": 5,
+    "image": "https://images.bewakoof.com/t1080/men-jet-black-apple-cut-t-shirt-493175-1660218618-1.jpg",
+    "name": "Men's Black Keep Listening Typography Apple Cut T-shirt",
+    "category": "Hoodies",
+    "size": "X",
+    "color": "red",
+    "types": "Campus sutra",
+    "rating": 3.2,
+    "price": "2049",
+    "strikeOffPrice": "2298"
+  }, {
+    "id": 6,
+    "image": "https://images.bewakoof.com/t1080/men-solid-stylish-new-trends-casual-spread-shirt-346057-1656173206-1.jpg",
+    "name": "Men Solid Stylish New Trends Casual Spread Shirt",
+    "category": "Shirt",
+    "size": "XL",
+    "color": "black",
+    "types": "Bewakoof",
+    "rating": 5,
+    "price": "1799",
+    "strikeOffPrice": "1903"
+  }, {
+    "id": 7,
+    "image": "https://images.bewakoof.com/t1080/men-s-yellow-new-york-graphic-printed-oversized-t-shirt-539856-1662114679-1.jpg",
+    "name": "Men's Yellow New York Graphic Printed Oversized T-shirt",
+    "category": "Tshirt",
+    "size": "XXL",
+    "color": "white",
+    "types": "Campus sutra",
+    "rating": 4.3,
+    "price": "2299",
+    "strikeOffPrice": "2742"
+  }, {
+    "id": 8,
+    "image": "https://images.bewakoof.com/t1080/men-checks-casual-spread-shirt-345750-1655835131-1.jpg",
+    "name": "Men Checks Casual Spread Shirt",
+    "category": "Vest",
+    "size": "X",
+    "color": "red",
+    "types": "Bewakoof",
+    "rating": 5,
+    "price": "3549",
+    "strikeOffPrice": "4237"
+  }, {
+    "id": 9,
+    "image": "https://images.bewakoof.com/t1080/men-s-blue-self-design-polo-t-shirt-544887-1664191551-1.jpg",
+    "name": "Men's Blue Polo T-shirt",
+    "category": "Jacket",
+    "size": "XL",
+    "color": "black",
+    "types": "Campus sutra",
+    "rating": 5,
+    "price": "1032",
+    "strikeOffPrice": "3519"
+  }, {
+    "id": 10,
+    "image": "https://images.bewakoof.com/t1080/men-s-black-striped-bomber-jacket-544860-1664261252-1.jpg",
+    "name": "Men's Black Striped Bomber Jacket",
+    "category": "Kurta",
+    "size": "XXL",
+    "color": "white",
+    "types": "Bewakoof",
+    "rating": 2.2,
+    "price": "8052",
+    "strikeOffPrice": "9778"
+  }, {
+    "id": 11,
+    "image": "https://images.bewakoof.com/t1080/men-s-blue-washed-denim-jacket-544843-1664190683-1.jpg",
+    "name": "Men's Blue Washed Denim Jacket",
+    "category": "Hoodies",
+    "size": "X",
+    "color": "grey",
+    "types": "Campus sutra",
+    "rating": 3.6,
+    "price": "1499",
+    "strikeOffPrice": "2985"
+  }, {
+    "id": 12,
+    "image": "https://images.bewakoof.com/t1080/men-s-yellow-1998-typography-oversized-t-shirt-534270-1659601912-1.jpg",
+    "name": "Men's Yellow 1998 Typography Oversized T-shirt",
+    "category": "Shirt",
+    "size": "XL",
+    "color": "red",
+    "types": "Bewakoof",
+    "rating": 3,
+    "price": "4099",
+    "strikeOffPrice": "4467"
+  }, {
+    "id": 13,
+    "image": "https://images.bewakoof.com/t1080/men-s-blue-solid-t-shirt-424495-1656182905-5.jpg",
+    "name": "Men's Blue Solid T-shirt",
+    "category": "Tshirt",
+    "size": "XL",
+    "color": "black",
+    "types": "Campus sutra",
+    "rating": 3,
+    "price": "1987",
+    "strikeOffPrice": "2707"
+  }, {
+    "id": 14,
+    "image": "https://images.bewakoof.com/t540/men-s-black-typography-oversized-t-shirt-490117-1650367263-1.jpg",
+    "name": "Men's Black Typography Oversized T-shirt",
+    "category": "Vest",
+    "size": "XXL",
+    "color": "white",
+    "types": "Bewakoof",
+    "rating": 3,
+    "price": "2840",
+    "strikeOffPrice": "3598"
+  }, {
+    "id": 15,
+    "image": "https://images.bewakoof.com/t1080/men-s-white-cotton-shirt-538469-1661765773-1.jpg",
+    "name": "Men's White Cotton Shirt",
+    "category": "Jacket",
+    "size": "X",
+    "color": "grey",
+    "types": "Campus sutra",
+    "rating": 5,
+    "price": "2974",
+    "strikeOffPrice": "3754"
+  }, {
+    "id": 16,
+    "image": "https://images.bewakoof.com/t1080/navy-plain-full-sleeves-t-shirt-368613-1656184896-1.jpg",
+    "name": "Navy Plain Full Sleeves T-Shirt",
+    "category": "Kurta",
+    "size": "XL",
+    "color": "red",
+    "types": "Bewakoof",
+    "rating": 2,
+    "price": "3699",
+    "strikeOffPrice": "4301"
+  }, {
+    "id": 17,
+    "image": "https://images.bewakoof.com/t1080/men-s-grey-solid-t-shirt-424494-1656182507-1.jpg",
+    "name": "Men's Grey Solid T-shirt",
+    "category": "Hoodies",
+    "size": "XL",
+    "color": "black",
+    "types": "Campus sutra",
+    "rating": 2,
+    "price": "2605",
+    "strikeOffPrice": "2911"
+  }, {
+    "id": 18,
+    "image": "https://images.bewakoof.com/t640/men-s-blue-slim-fit-jeans-525541-1659359552-1.jpg",
+    "name": "Men's Blue Slim Fit Jeans",
+    "category": "Shirt",
+    "size": "XXL",
+    "color": "white",
+    "types": "Bewakoof",
+    "rating": 4,
+    "price": "1529",
+    "strikeOffPrice": "3718"
+  }, {
+    "id": 19,
+    "image": "https://images.bewakoof.com/t1080/men-s-black-slim-fit-jeans-525507-1659360009-1.jpg",
+    "name": "Men's Black Slim Fit Jeans",
+    "category": "Tshirt",
+    "size": "X",
+    "color": "grey",
+    "types": "Campus sutra",
+    "rating": 2.4,
+    "price": "2569",
+    "strikeOffPrice": "2771"
+  }, {
+    "id": 20,
+    "image": "https://images.bewakoof.com/t1080/men-s-grey-slim-fit-chinos-510009-1655926073-1.jpg",
+    "name": "Men's Grey Slim Fit Chinos",
+    "category": "Vest",
+    "size": "XL",
+    "color": "red",
+    "types": "Bewakoof",
+    "rating": 3,
+    "price": "799",
+    "strikeOffPrice": "1057"
+  }, {
+    "id": 21,
+    "image": "https://images.bewakoof.com/t1080/men-s-purple-arizona-typography-oversized-t-shirt-539897-1662119183-1.jpg",
+    "name": "Men's Purple Arizona Typography Oversized T-shirt",
+    "category": "Jacket",
+    "size": "XXL",
+    "color": "black",
+    "types": "Campus sutra",
+    "rating": 4.9,
+    "price": "1469",
+    "strikeOffPrice": "2357"
+  }, {
+    "id": 22,
+    "image": "https://images.bewakoof.com/t1080/men-s-green-casual-shirt-516828-1663744759-1.jpg",
+    "name": "Men's Green Casual Shirt",
+    "category": "Kurta",
+    "size": "X",
+    "color": "white",
+    "types": "Bewakoof",
+    "rating": 3,
+    "price": "1749",
+    "strikeOffPrice": "2482"
+  }, {
+    "id": 23,
+    "image": "https://images.bewakoof.com/t1080/men-s-red-striped-t-shirt-534415-1659940699-1.jpg",
+    "name": "Men's Red Striped T-shirt",
+    "category": "Hoodies",
+    "size": "XL",
+    "color": "grey",
+    "types": "Campus sutra",
+    "rating": 4,
+    "price": "2389",
+    "strikeOffPrice": "2917"
+  }, {
+    "id": 24,
+    "image": "https://images.bewakoof.com/t1080/men-s-black-slim-fit-chinos-509960-1655925924-1.jpg",
+    "name": "Men's Black Slim Fit Chinos",
+    "category": "Shirt",
+    "size": "XXL",
+    "color": "red",
+    "types": "Bewakoof",
+    "rating": 2.9,
+    "price": "2049",
+    "strikeOffPrice": "2252"
+  }, {
+    "id": 25,
+    "image": "https://images.bewakoof.com/t1080/men-s-white-slim-fit-chinos-509988-1655926012-1.jpg",
+    "name": "Men's White Slim Fit Chinos",
+    "category": "Tshirt",
+    "size": "XL",
+    "color": "black",
+    "types": "Campus sutra",
+    "rating": 2.6,
+    "price": "2499",
+    "strikeOffPrice": "3126"
+  }],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
