@@ -21,8 +21,12 @@ function mobileCheck(){
         document.querySelector('#input_whole_box').style.borderColor="#db3236";
 
         document.querySelector('#showerror').append(error);
+
+
     }
     else{
+        let mobilenumber = document.querySelector('.txtbox').value;
+        localStorage.setItem("mobile-number", JSON.stringify(mobilenumber));
         location.href = "../login-otp/login-otp.html"
     }
 }

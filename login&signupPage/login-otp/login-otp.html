@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Shopping for Men, Women Clothing & Accesories at bewakoof.com</title>
-    <link rel="icon" href="https://i.pinimg.com/75x75_RS/56/cb/8b/56cb8b708d342a384536462ce8d4fba8.jpg">
+    <link rel="icon" href="https://images.bewakoof.com/web/favicon-1635856217.png">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -19,17 +19,18 @@
         <!-- <form  id="form"> -->
             <div id="sentInput">
                 <p id="phead">Sent To</p>
-                <input type="text" id="email" value="" onload="shownum()" ><br>
+                <input type="text" id="email" value="" ><br>
             </div>
             <div>
                 <div class="py-6 px-6 w-80 border mx-auto text-center my-6"style="border: none; width: 40%;">
                     <div id="otpinput">
                         <p>Enter OTP</p>
                     </div>
-                    <form action="#" x-data="otpForm()" method="POST">
+                    <form action="#" x-data="otpForm()">
                         <div class="flex justify-between">
                             <template x-for="(input, index) in length" :key="index">
                                 <input
+                                    id="otpinputnum"
                                     type="tel"
                                     maxlength="1"
                                     class="border border-gray-500 w-10 h-10 text-center"
