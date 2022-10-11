@@ -6,34 +6,24 @@ body{
     font-family: sans-serif;
 }
 
-#footer-part {
-    line-height: 20px;
-    padding: 5% 0;
-    width: 100%;
-    height: auto;
-    background-color: black;
-    color: white;
-    font-family: "montserrat", sans-serif;
-}
-
-#customer-section {
+#container {
     width: 75%;
     margin: auto;
 
 
 }
 
-.customer-section-grid a{
+.container-grid a{
     color: white;
     text-decoration: none;
 }
-#customer-section>h1{
+#container>h1{
    color: #fdd835;
     
 
 }
 
-.customer-section-grid {
+.container-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
@@ -44,21 +34,21 @@ body{
     background-color: white;
 }
 
-.customer-section-grid h4 {
+.container-grid h4 {
     color: #fdd835;
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
 }
 
-.customer-section-grid h4+input {
+.container-grid h4+input {
     border: none;
     border-bottom: 1px solid yellow;
     background-color: black;
     height: 30px;
 }
 
-.customer-section-grid .subscribe-button {
+.container-grid .subscribe-button {
 
     background-color: yellow;
     border: none;
@@ -67,7 +57,7 @@ body{
     width: 100px;
 }
 
-#customer-section-grid p ,.customer-section-grid p  {
+#container-grid p ,.container-grid p  {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -75,17 +65,17 @@ body{
     font-family:  sans-serif;
 }
 
-.last-color-section h4 {
+.headings h4 {
     color:
         #b2e7ed
 }
 
-#download-the-app-images {
+#store-images {
     display: flex;
     width: 80%;
 }
 
-#download-the-app-images>div {
+#store-images>div {
 
     flex: 1;
     height: 30px;
@@ -93,12 +83,12 @@ body{
 
 }
 
-#download-the-app-images>div img {
+#store-images>div img {
     width: 100%;
     height: 100%;
 }
 
-#footer-last-section-para p,#footer-last-section-para h3{
+#footer-lastpara p,#footer-lastpara h3{
 
     font-family: "montserrat", sans-serif;;
 
@@ -108,7 +98,7 @@ line-height: 20px;
 color: rgba(255, 255, 255, 0.9);
 
 }
-#footer-last-section-para h3{
+#footer-lastpara h3{
 
     font-family: "montserrat", sans-serif;;
 
@@ -123,7 +113,7 @@ color: rgba(255, 255, 255, 0.9);
 
 @media screen and (min-width:0px) and (max-width:375px) {
 
-    .customer-section-grid {
+    .container-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
@@ -131,13 +121,13 @@ color: rgba(255, 255, 255, 0.9);
 
     }
 
-    .last-color-section {
+    .headings {
         display: flex;
 
 
     }
 
-    .last-color-section h4 {
+    .headings h4 {
 
         margin: 5px;
 
@@ -149,7 +139,7 @@ color: rgba(255, 255, 255, 0.9);
 
 @media screen and (min-width:375px) and (max-width:765px) {
 
-    .customer-section-grid {
+    .container-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
@@ -171,23 +161,23 @@ p{
 h4{
     line-height: 20px;
 }
-#customer-section hr{
+#container hr{
     /* border: 1px solid red;
     background-color: blue; */
     margin: 4% 0;
 }
-.last-color-section>h4{
+.headings>h4{
     line-height:20Px ;
     /* border:2px solid rgb(74,172,143); */
     padding:5px 0;
     
 }
-.last-color-section>h4>a{
+.headings>h4>a{
     color:rgb(74,172,143);
     font-weight: bold;
 
 }
-#footer-last-section-para p{
+#footer-lastpara p{
     /* border:2px solid white; */
     line-height: 25px;
     font-size: 18px;
