@@ -6,10 +6,12 @@
     display: flex;
     margin-top: 80px;
     gap: 140px;
-    font-family:'Montserrat', sans-serif
+    font-family:'Montserrat', sans-serif;
+    /* border: 1px solid red; */
 }
 #leftside{
     margin-top: 10px;
+    /* border: 1px solid red; */
 }
 #image-top{
     font-family:'Montserrat', sans-serif , bold;
@@ -31,6 +33,7 @@
 #rightside{
     width: 40%;
     text-align: center;
+    /* border: 1px solid red; */
 }
 #top-text :nth-child(1){
     font-size: 24px;
@@ -69,8 +72,10 @@
     font-weight: bold;
     color: #000;
     border: .5px solid #979797;
+    /* margin-bottom: -20px; */
 }
 #btn{
+    margin-top: 20px;
     padding: 20px 158px;
     border-radius: 5px;
     outline: none;
