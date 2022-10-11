@@ -1,0 +1,267 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#navbar {
+    position: fixed;
+
+    width: 100%;
+    background-color: white;
+}
+
+#navbar_top {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    justify-content: space-between;
+    /* border: 1px solid red; */
+
+}
+
+#navbar_top_headings{
+    width: 50%;
+    margin-left: 150px;
+}
+#navbar_top_headings1{
+    width: 40%;
+    margin-left: 45%;
+}
+#navbar_top_headings>li, #navbar_top_headings1>li {
+    display: flex;
+    list-style-type: none;
+    margin: 4px 20px;
+    margin-right: 5px;
+    align-items: center;
+
+}
+
+#navbar_top_headings>div, #navbar_top_headings1>div{
+    margin-left: 50px;
+}
+
+#navbar_top_headings>li>a, #navbar_top_headings1>li>a {
+    text-decoration: none;
+    color: #333;
+}
+
+#navbar_top_headings,#navbar_top_headings1 {
+    display: flex;
+}
+
+#navbar_search {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+#logohome {
+    width: 55%;
+    margin-left: 8%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+#logohome>div {
+    margin-right: 50px;
+}
+
+#logohome>li {
+    list-style-type: none;
+    margin: 15px 20px;
+
+
+}
+
+#logohome>li>a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+#logohome>li>a>img {
+    width: 150px;
+
+}
+
+#nav_search_bar {
+    width: 50%;
+    display: flex;
+    margin-left: 2%;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#nav_search_bar>li {
+    list-style-type: none;
+    color: #333;
+    margin: 10px;
+    align-items: center;
+
+}
+
+#nav_search_bar>li>a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+
+}
+
+#nav_search_bar>li>input {
+    width: 320px;
+
+    background-color: rgb(238, 238, 238);
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 10px;
+
+    border: none;
+}
+
+#nav_search_bar>li>input:hover {
+    background-color: transparent;
+    border: .5px solid #333;
+}
+
+#navbar_menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#navbar_menu>li {
+    list-style: none;
+    font-size: 18px;
+    margin: 10px 30px;
+}
+
+#nav_search_bar>li>li {
+    font-size: 18px;
+}
+#nav_search_bar>li>a>img{
+    width: 23%;
+    border-radius: 50%;
+}
+#navbar_menu>li>a {
+    text-decoration: none;
+    color: #333;
+    padding: 2px;
+}
+
+#navbar_menu>li>a:hover {
+    font-weight: 600;
+    color: black;
+}
+
+hr {
+    border: .2px solid rgb(231, 208, 208);
+    ;
+}
+
+#navbar_menu>li:hover {
+    border-bottom: 4px solid rgb(253, 216, 53);
+
+}
+
+#logohome>li>a:hover {
+    border-bottom: 4px solid rgb(253, 216, 53);
+
+    padding-bottom: 18px;
+    visibility: visible;
+}
+
+#sub_menu_item {
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    background-color: #ffffff;
+    text-transform: capitalize;
+    /* box-shadow: -1px -1px 70px -20px rgb(0, 0, 0.3); */
+    border: 1px solid wheat;
+    margin-top: 20px;
+    width: 60%;
+    margin-right: 30%;
+    visibility: hidden;
+    color: grey;
+}
+
+#sub_menu_item>ul {
+    list-style-type: none;
+    padding: 10px;
+    margin-left: 10px;
+
+}
+
+#sub_menu_item>ul>li>a {
+    text-decoration: none;
+    line-height: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+#logohome>li:hover #sub_menu_item {
+    visibility: visible;
+}
+
+#logo_sub_menu1 {
+    margin-right: 30%;
+}
+#logo_sub_menu2 {
+    margin-right: 30%;
+}
+#search_product_by_name{
+    height: 40px;
+    border-radius: 10px;
+}
+#nav_search_bar_fetchData {
+    width: 340px;
+    position: fixed;
+    background-color: white;
+}
+.vl {
+    border-left: 1px solid grey;
+    height: 23px;
+    position: absolute;
+    left: 78.5%;
+    margin-left: -10px;
+    top: 30px;
+  }
+.special_collection>li>a>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.special_collection>li>a {
+    display: flex;
+    padding: 5px;
+
+}
+
+.special_collection>li>a>span {
+    margin-left: 20px;
+}
+
+#items {
+    background-color: gold;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 100;
+
+}
+
+#cart-icon {
+    height: 35px;
+    width: 35px;
+}
