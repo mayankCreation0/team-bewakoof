@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./payment.css">
+
+
+</head>
+
+
+<body>
+    <div>
+        <div id="mainheadrow">
+            <div>
+                <a href="home.html"><img src="https://images.bewakoof.com/logos/bewakoof-logo-og.png" alt=""></a>
+            </div>
+            <span id="tag">Login</span>
+            <div>
+
+
+            </div>
+        </div>
+
+        <hr>
+
+
+        <div id="middle_box">
+            <span> <strong> Payment </strong> </span>
+            <strong><span id="pay"> pay </span></strong>
+        </div>
+
+
+        <div id="lower_box">
+            <div id="lower_box_left">
+                <div id="active">&nbsp; DEBIT / CREDIT CARD </div>
+                <hr>
+                <div class="inactive"> WALLET </div>
+                <hr>
+                <div class="inactive"> UPI </div>
+                <hr>
+                <div class="inactive"> NET BANKING </div>
+                <hr>
+                <div class="inactive"> CASH ON DELIVERY </div>
+                <p>Use online payment for safety and to avail </br> attractive cashback offers.</p>
+                <hr>
+            </div>
+
+
+            <div>
+                <div id="lower_right_box">
+                    <div id="cards">
+                        <img src="https://images.bewakoof.com/web/ic-visa-gray-payment-v1.jpg" alt="">
+                        <img src="https://images.bewakoof.com/web/ic-master-card-payment-v1.jpg" alt="">
+                        <img src="https://images.bewakoof.com/web/ic-rupay-payment-v1.jpg" alt="">
+                        <img src="https://images.bewakoof.com/web/ic-american-express-payment-v1.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <div id="card_num">
+                            <p>Card No</p>
+                            <input id="num_card" type="number " autocomplete="new-password" name="card_no"
+                                placeholder="XXXX XXXX XXXX XXXX" minlength="16" maxlength="16">
+                        </div>
+
+                        <div id="card_expiry_cvv">
+                            <input type="year" name="card_expiry" placeholder="Expiry(MM/YY)" maxlength="5">
+                            <input style="margin-left: 10px;" type="password" name="card_CVV" placeholder="CVV">
+                        </div>
+
+                        <div id="card_name">
+                            <input type="text" name="card_name" placeholder="Name On Card">
+                        </div>
+
+                        <div id="card_check_box">
+                            <input id="check_box" type="checkbox" name="card_check">
+                            <label for="card_check"> <strong> Save card details for later </strong>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div
+                        style="font-size: 15px; text-align: justify; opacity: 0.5; margin-top: 8px; margin-bottom: 25px; letter-spacing: 0.7px ">
+                        This transaction you make is totally secure. We don't save your CVV number.
+                    </div>
+
+                    <div>
+                        <!-- <a href="ordercomplete.html"> <button id="payment" onclick=" ">PAY NOW</button></a> -->
+                        <a href="./otp.html"> <button id="payment" onclick="pay_now()">pay now</button></a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
+
+
+<script>
+
+
+
+    function pay_now() {
+
+
+
+        var cardNum = document.getElementById("num_card").value;
+        var checkBox = document.getElementById("check_box").checked;
+        var cvv = document.getElementById("card_expiry_cvv").value;
+
+
+        if (checkBox == false) {
+            alert("Please select the checkbox");
+            return false;
+        }
+
+        if (cardNum.length != 16) {
+            alert("Wrong card num, please add correct card number!");
+            return false;
+        }
+
+        if (cvv.length != 3) {
+            alert("Wrong CVV, please add correct CVV ");
+            return false;
+        }
+
+        else {
+            alert("Thank you so much for placing the order with us!!!");
+            return true;
+        }
+        window.location.href = "./otp.html"
+
+
+    }
+
+    let payment = JSON.parse(localStorage.getItem("total"))
+    console.log(payment[0])
+    let message = document.getElementById("pay")
+
+    message.textContent = "Pay ₹" + payment[payment.length - 1]
+
+    let tag = document.getElementById("tag")
+    console.log(tag)
+    let users = JSON.parse(localStorage.getItem("users"))
+    let name = (users[users.length - 1].Name)
+    tag.innerHTML = name
+    console.log(name)
+
+
+
+
+</script>
