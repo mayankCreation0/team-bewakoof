@@ -6,6 +6,13 @@ if(wishArr.length>0){
 else{
     document.getElementById("showwishimage").innerHTML=`<i class="fa-regular fa-heart"></i>`;
 }
+let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
+ if(cartArr.length>0){
+    document.getElementById("showcartnumber").innerText=cartArr.length;
+}
+else{
+    document.getElementById("showcartnumber").style.display="none";
+}
 let tempc="true";
 document.getElementById("categorymenu").addEventListener("click", ()=>{
    if(tempc==="true"){
@@ -109,11 +116,10 @@ async function get(url){
 
 get(url);
 
-let tempWish="true";
 
 function display(data){
     document.getElementById("container").innerHTML="";
-    data.map((el,index)=>{
+    data.map((el)=>{
         const card=document.createElement("div");
         const imgDiv=document.createElement("div");
         const img=document.createElement("img");
@@ -137,35 +143,37 @@ function display(data){
         tribeDiv.innerText=`₹${tribePrice} For Tribe Members`
         const cart=document.createElement("div");
         cart.innerHTML=`<button><i class="fa-solid fa-bag-shopping"> Add to bag</i><button>`
+        let check=false;
+        for(let j=0;j<cartArr.length;j++){
+            if(cartArr[j].id==el.id){
+                check=true;
+                console.log(cartArr[j].id,el.id);
+                break;
+            }
+        }
+        if(check){
+            cart.innerHTML=`<button><i class="fa-solid fa-bag-shopping"> Added to bag</i><button>` 
+        }
+        else{
+            cart.innerHTML=`<button><i class="fa-solid fa-bag-shopping"> Add to bag</i><button>` 
+        }
         cart.addEventListener("click",()=>{
-            sendCartdata(el,index);
+            sendCartdata(el,cart);
         })
         contentdiv.append(type,name,priceDiv);
         const wish=document.createElement("div"); 
         wish.innerHTML=`<i class="fa-regular fa-heart"></i>`
+       
         wish.addEventListener("click",()=>{          
-            wishArr=JSON.parse(localStorage.getItem("wishes"))||[];         
-let length=wishArr.length;
-if(length>0){
-   document.getElementById("showwishimage").innerHTML=`<i class="fa-solid fa-heart"></i>`;
-}
-else{
-   document.getElementById("showwishimage").innerHTML=`<i class="fa-regular fa-heart"></i>`;
-}
-if(tempWish==="false"){
-wish.innerHTML=`<i class="fa-regular fa-heart"></i>`;
-wishArr.splice(index,1);
-localStorage.setItem("wishes",JSON.stringify(wishArr));
-tempWish="true";
-}
-else{
-
-wish.innerHTML=`<i class="fa-solid fa-heart"></i>`;
-wishArr.push(el);
-localStorage.setItem("wishes",JSON.stringify(wishArr));
-tempWish="false";
-}
+          showWishes(el,wish);
+          if(wishArr.length>0){
+            document.getElementById("showwishimage").innerHTML=`<i class="fa-solid fa-heart"></i>`;
+        }
+        else{
+            document.getElementById("showwishimage").innerHTML=`<i class="fa-regular fa-heart"></i>`;
+        }
         })
+        
         contentMainDiv.append(contentdiv,wish)
         card.append(imgDiv,contentMainDiv,tribeDiv,cart);
         document.getElementById("container").append(card);
@@ -217,7 +225,35 @@ document.getElementById("sixe_xxl").addEventListener("click",()=>{
     get(url);  
 })  
 
+document.getElementById("highrating").addEventListener("click",async ()=>{
+    const res= await fetch("http://localhost:3000/mens");
+    const data=await res.json();
+   let filterArr=data.filter((el)=>{
+    return +(el.rating)>4.5;
+   })
+   display(filterArr);
+})  
 
+document.getElementById("midrating").addEventListener("click",async ()=>{
+    const res= await fetch("http://localhost:3000/mens");
+    const data=await res.json();
+   let filterArr=data.filter((el)=>{
+    if(+(el.rating)>3 && +(el.rating)<4.5) {
+        return el.rating;
+    }
+   })
+   display(filterArr);
+})  
+document.getElementById("lowrating").addEventListener("click",async ()=>{
+    const res= await fetch("http://localhost:3000/mens");
+    const data=await res.json();
+   let filterArr=data.filter((el)=>{
+    if(+(el.rating)>2 && +(el.rating)<3) {
+        return el.rating;
+    }
+   })
+   display(filterArr);
+})  
 ////sort
 document.getElementById("sort_price").addEventListener("change",()=>{
     console.log(event.target.value);
@@ -251,43 +287,91 @@ function boxShow(data){
         document.getElementById("suggestions").append(div);
     })
 }
-
+let timerId;
 function debounce(fn,delay){
-    let timerId;
-    return () => {
-       if(timerId) clearTimeout(timerId);
+  
+  
+       if(timerId) {
+        clearTimeout(timerId)
+       }
        timerId = setTimeout(() => {
+        console.log('suggest')
                 fn();
               },delay);
-}
+
 }
  async function show(){
     const search=document.getElementById("searchBox").value;
-    console.log(search);
-   if(search!=""){
+    // console.log(search);""
+    if(search==""){
+        console.log(search);
+        document.getElementById("suggestions").innerHTML="";
+       }
+  else{
     const url=`http://localhost:3000/mens?q=${search}&_limit=5`;
     const res=await fetch(url);
     const data= await res.json();
     boxShow(data);
    }
-   else if(search==""){
-    console.log(1);
-    document.getElementById("suggestions").innerHtml="";
-   }
+   
 }
-// console.log(window.debouncing);
-const debouncing=debounce(show,300);
+document.getElementById("searchBox").addEventListener("input",()=>{
+    debounce(show,300);
+})
 
- let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
- if(cartArr.length>0){
-    document.getElementById("showcartnumber").innerText=cartArr.length;
-}
-function  sendCartdata(el,index){
-     cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
-    cartArr.push(el);
+ 
+
+function  sendCartdata(el,cart){
+    cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
+    let check=false;
+    for(let i=0;i<cartArr.length;i++){
+        if(el.id===cartArr[i].id){
+            check=true;
+            break;
+        }
+    }
+    
+    if(!check){
+        cart.innerHTML=`<button><i class="fa-solid fa-bag-shopping">Added To Bag</i><button>`
+        cartArr.push(el);
     localStorage.setItem("cart_products",JSON.stringify(cartArr));
+    }
+    else{
+        cart.innerHTML=`<button><i class="fa-solid fa-bag-shopping">Added To Bag</i><button>`
+    }
     if(cartArr.length>0){
         document.getElementById("showcartnumber").innerText=cartArr.length;
+    }
+}
+let tempWish="true";
+function showWishes(el,wish){
+    wishArr=JSON.parse(localStorage.getItem("wishes"))||[];         
+    let length=wishArr.length;
+    if(length>0){
+       document.getElementById("showwishimage").innerHTML=`<i class="fa-solid fa-heart"></i>`;
+    }
+    else{
+       document.getElementById("showwishimage").innerHTML=`<i class="fa-regular fa-heart"></i>`;
+    }
+    let check=false;
+    for(let i=0;i<length;i++){
+        if(el.id===wishArr[i].id){
+            check=true;
+            break;
+        }
+    }
+    if(check){
+    wish.innerHTML=`<i class="fa-regular fa-heart"></i>`;
+    wishArr = wishArr.filter((Element)=>{
+        return el.id!==Element.id;
+    })
+    localStorage.setItem("wishes",JSON.stringify(wishArr));
+    }
+    else{
+    
+    wish.innerHTML=`<i class="fa-solid fa-heart"></i>`;
+    wishArr.push(el);
+    localStorage.setItem("wishes",JSON.stringify(wishArr));
     }
 }
 

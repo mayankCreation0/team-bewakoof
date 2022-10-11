@@ -5,12 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.cs">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      #detailsContainer{
+        border: 1px solid teal;
+        width: 100%;
+
+      }
+      .row>div:first-child>div .mainfirst{
+        padding: 0 25px 25px 25px;
+        margin-bottom: 5px;
+      }
+      .small-img-group {
+        display: flex;
+        justify-content: space-between;
+      }
+      .small-img-col {
+        flex-basis: 22%;
+        cursor: pointer;
+        /* padding: 10px; */
+      }
+      .small-img-col:hover{
+        border:5px solid cyan
+      }
+      .sproduct input {
+        width: 50px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+      .sproduct input:focus {
+        outline: none;
+      }
+      h1 {
+    margin-bottom: 2px;
+    font-size: 14px;
+    font-family: montserrat,sans-serif;
+    line-height: 20px;
+    color: rgba(0,0,0,.7);
+    font-weight: 500;
+}
+    </style>
   </head>
   <body>
+    <section class="container sproduct my-5 pt-5">
+        <div class="row mt-5">
+         <div class="col-lg-5 col-md-12 col-12" >
+           <div>
+            <img
+            class="img-fluid w-100 pb-1 mainfirst"
+            src="https://images.bewakoof.com/t640/the-saviour-oversized-fit-t-shirt-547339-1665064576-1.jpg"
+            alt=""
+            id="mainImage"
+             />
+           </div>
+           <div class="small-img-group">
+              <div class="small-img-col">
+              <img
+                src="https://images.bewakoof.com/t640/the-saviour-full-sleeve-t-shirt-547335-1665064762-1.jpg"
+                width="100%"
+                class="small-img"
+                alt=""
+              />
+               </div>
+               <div class="small-img-col">
+              <img
+                src="https://images.bewakoof.com/t640/the-saviour-oversized-fit-t-shirt-547339-1665064576-1.jpg"
+                width="100%"
+                class="small-img"
+                alt=""
+              />
+               </div>
+               <div class="small-img-col">
+              <img
+                src="https://images.bewakoof.com/t640/the-saviour-full-sleeve-t-shirt-547335-1665064762-1.jpg"
+                width="100%"
+                class="small-img"
+                alt=""
+              />
+               </div>
+              <div class="small-img-col">
+                 <img
+                  src="https://images.bewakoof.com/t640/the-saviour-oversized-fit-t-shirt-547339-1665064576-1.jpg"
+                  width="100%"
+                  class="small-img"
+                  alt=""
+                />
+             </div>
+            </div>
+          </div>
+         <div id="detailsContainer">
 
+           </div>
+      </div>
+    </section>
   </body>
 </html>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./script/description.js"></script>
+<script>
+  let image = document.getElementById("mainImage");
+  let small = document.getElementsByClassName("small-img");
+
+  small[0].onclick = () => {
+    image.src = small[0].src;
+  };
+
+  small[1].onclick = () => {
+    image.src = small[1].src;
+  };
+
+  small[2].onclick = () => {
+    image.src = small[2].src;
+  };
+
+  small[3].onclick = () => {
+    image.src = small[3].src;
+  };
+</script>
