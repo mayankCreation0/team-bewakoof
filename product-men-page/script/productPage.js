@@ -6,13 +6,21 @@ if(wishArr.length>0){
 else{
     document.getElementById("showwishimage").innerHTML=`<i class="fa-regular fa-heart"></i>`;
 }
-let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
+const displycar = ()=>{
+    let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];  
+    console.log(cartArr.length)
  if(cartArr.length>0){
+    document.getElementById("showcartnumber").style.display="block";
+    console.log(cartArr.length)
     document.getElementById("showcartnumber").innerText=cartArr.length;
 }
 else{
+    console.log(cartArr.length)
     document.getElementById("showcartnumber").style.display="none";
 }
+}
+let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
+displycar()
 let tempc="true";
 document.getElementById("categorymenu").addEventListener("click", ()=>{
    if(tempc==="true"){
@@ -93,14 +101,7 @@ document.getElementById("ratingmenu").addEventListener("click", ()=>{
    }
     
 })
-// document.getElementById("searchBox").addEventListener("keypress",()=>{
-// const key=document.getElementById("searchBox").value;
-// console.log(key);
-// // if(key==="Enter"){
-// //     document.getElementById("searchBox").innerText="";
-// //     document.getElementById("searchBox").innerHTML="";   
-// // }
-// })
+
 
 
 // http://localhost:3000/mens
@@ -176,9 +177,44 @@ function display(data){
         
         contentMainDiv.append(contentdiv,wish)
         card.append(imgDiv,contentMainDiv,tribeDiv,cart);
+        card.addEventListener('click',()=>{
+            localStorage.setItem("details",JSON.stringify(el));
+        })
         document.getElementById("container").append(card);
     })
 }
+document.getElementById("tshirt").addEventListener("click",()=>{
+    const url="http://localhost:3000/mens?category=Tshirt"
+    get(url);   
+    })
+
+    document.getElementById("shirt").addEventListener("click",()=>{
+        const url="http://localhost:3000/mens?category=Shirt"
+        get(url);   
+        }) 
+ document.getElementById("hoodies").addEventListener("click",()=>{
+            const url="http://localhost:3000/mens?category=Hoodies"
+            get(url);   
+            })
+   document.getElementById("jacket").addEventListener("click",()=>{
+                const url="http://localhost:3000/mens?category=Jacket"
+                get(url);   
+                })
+
+document.getElementById("kurta").addEventListener("click",()=>{
+const url="http://localhost:3000/mens?category=Kurta"
+get(url);   
+})
+
+document.getElementById("vest").addEventListener("click",()=>{
+    const url="http://localhost:3000/mens?category=Vest"
+    get(url);   
+    })
+
+ document.getElementById("pants").addEventListener("click",()=>{
+        const url="http://localhost:3000/mens?category=Pants"
+        get(url);   
+        })    
 
 document.getElementById("bewakoof").addEventListener("click",()=>{
 const url="http://localhost:3000/mens?types=Bewakoof"
@@ -320,9 +356,10 @@ document.getElementById("searchBox").addEventListener("input",()=>{
 })
 
  
-
+let reloadCounter=1;
 function  sendCartdata(el,cart){
     cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
+    
     let check=false;
     for(let i=0;i<cartArr.length;i++){
         if(el.id===cartArr[i].id){
@@ -331,17 +368,18 @@ function  sendCartdata(el,cart){
         }
     }
     
+   
     if(!check){
         cart.innerHTML=`<button><i class="fa-solid fa-bag-shopping">Added To Bag</i><button>`
         cartArr.push(el);
-    localStorage.setItem("cart_products",JSON.stringify(cartArr));
+       localStorage.setItem("cart_products",JSON.stringify(cartArr));
     }
     else{
         cart.innerHTML=`<button><i class="fa-solid fa-bag-shopping">Added To Bag</i><button>`
     }
-    if(cartArr.length>0){
-        document.getElementById("showcartnumber").innerText=cartArr.length;
-    }
+    // console.log('cart')
+    displycar() 
+    
 }
 let tempWish="true";
 function showWishes(el,wish){

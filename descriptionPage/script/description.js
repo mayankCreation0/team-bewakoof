@@ -1,44 +1,80 @@
-function display(){
-    const h3=document.createElement("h3");
-    h3.innerText="Bewakoof";
-    const h4=document.createElement("h4");
-    h4.innerText="Men's Blue Naruto Uzumaki Dattebayo Graphic Printed Oversized T-shirt"
-    const priceDiv=document.createElement("div");
-    const price=document.createElement("div");
-    price.innerText=`₹449`
-    const strikeoff=document.createElement("div");
-    strikeoff.innerText=`₹1299`
-    const discount=document.createElement("div");
-    discount.innerText=`65%`
-    const p=document.createElement("p");
-    p.innerText="inclusive of all taxes";
-  priceDiv.append(price,strikeoff,discount,p);
-//   const tribeDiv=document.createElement("div");
-//   tribeDiv.innerText="TriBe members get an extra discount of ₹30 and FREE shipping.Learn more"
-  const cartdiv=document.createElement("div");
-  const label=document.createElement("label");
-  label.innerText="Size";
- const sizeDiv=document.createElement("div");
- const div1=document.createElement("div");
- div1.innerText="X";
- const div2=document.createElement("div");
- div2.innerText="XL";
- const div3=document.createElement("div");
- div3.innerText="2XL";
- sizeDiv.append(div1,div2,div3);
- const buttonDiv=document.createElement("div");
- const button1=document.createElement("div");
-  button1.innerHTML=`<button><i class="fa-solid fa-bag-shopping"> Add to bag</i><button>`
- const button2=document.createElement("div");
- button2.innerHTML=`<i class="fa-regular fa-heart">WISHIST</i>`
- buttonDiv.append(button1,button2);
- cartdiv.append(label,sizeDiv,buttonDiv);
- const detailsDiv=document.createElement("div");
- const h5=document.createElement("h5");
- h5.innerText='PRODUCT DESCRIPTION';
- const pDetails=document.createElement("p");
- pDetails.innerText="Prove your worth as the hero of the Hidden Leaf with this Naruto Uzumaki Men's Dattebayo T-Shirt. Style this blue t-shirt with pyjamas and sliders for a laid-back look."
- detailsDiv.append(h5,pDetails);
-document.getElementById("detailsContainer").append(h3,h4,priceDiv,cartdiv,detailsDiv);
+
+
+let image = document.getElementById("large-img");
+let small = document.getElementsByClassName("small-img");
+
+small[0].onclick = () => {
+  image.src = small[0].src;
+};
+
+small[1].onclick = () => {
+  image.src = small[1].src;
+};
+
+small[2].onclick = () => {
+  image.src = small[2].src;
+};
+
+small[3].onclick = () => {
+  image.src = small[3].src;
+};
+
+
+let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
+if(wishArr.length>0){
+    document.getElementById("showwishimage").innerHTML=`<i class="fa-solid fa-heart"></i>`;
 }
-display();
+else{
+    document.getElementById("showwishimage").innerHTML=`<i class="fa-regular fa-heart"></i>`;
+}
+const displycar = ()=>{
+    let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];  
+    console.log(cartArr.length)
+ if(cartArr.length>0){
+    document.getElementById("showcartnumber").style.display="block";
+    console.log(cartArr.length)
+    document.getElementById("showcartnumber").innerText=cartArr.length;
+}
+else{
+    console.log(cartArr.length)
+    document.getElementById("showcartnumber").style.display="none";
+}
+}
+let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
+displycar()
+
+function getDiscount(no,old){
+  const diff=Math.abs(old-no);
+  const division =diff/old;
+  const ans=division*100;
+  return Math.floor(ans);
+}
+const obj=JSON.parse(localStorage.getItem("details"))||{};
+
+
+
+function display(el){
+  console.log(el);
+  image.src=obj.image;
+  document.getElementById("brand").innerText=el.types;
+  document.getElementById("title").innerText=el.name;
+  document.getElementById("price1").innerHTML=`₹<span>${el.price}</span>`;
+  document.getElementById("price2").innerText=`₹${el.strikeOffPrice}`
+  const discount=getDiscount(+(el.price),+(el.strikeOffPrice));
+ document.getElementById("price3").innerText=`${discount}%`;
+
+
+ const cart=document.createElement("div");
+ cart.innerHTML=`<button class="button1"><i class= "fa-solid fa-bag-shopping">Add to bag</i><button>`
+
+ const wish=document.createElement("div"); 
+        wish.innerHTML=`<button class="button2"><i class="fa-regular fa-heart"> Wishlist</i><button>`
+        document.getElementById("btns").append(cart,wish);
+}
+display(obj);
+
+
+
+
+
+

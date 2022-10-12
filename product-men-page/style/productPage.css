@@ -139,6 +139,9 @@ body{
   .filtername{
     padding: 15px 0px;
   }
+  .cate{
+    cursor: pointer;
+  }
   #categoryclass,#sizeclass,#colordiv,#ratingclass,#typeclass{
     overflow: hidden;
     height: 0px;
@@ -293,4 +296,26 @@ color:rgb(168,168,171) ;
   border-radius:50% ;
   background-color:black ;
   padding: 1px 3px;
+}
+
+
+@media screen and (max-width:980px) {
+  
+  #container{
+    grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:650px) {
+  #filters{
+    display: none;
+  }
+  #container{
+   width:100%;
+    }
+}
+@media screen and (max-width:480px){
+  #container{
+    grid-template-columns: repeat(1,1fr);
+    width:100%;
+    }
 }
