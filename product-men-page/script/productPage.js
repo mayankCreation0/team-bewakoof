@@ -1,11 +1,15 @@
 
-let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
-if(wishArr.length>0){
-    document.getElementById("showwishimage").innerHTML=`<i class="fa-solid fa-heart"></i>`;
-}
-else{
-    document.getElementById("showwishimage").innerHTML=`<i class="fa-regular fa-heart"></i>`;
-}
+const displaywish=()=>{
+    let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
+    if(wishArr.length>0){
+      document.getElementById("showwishimage").innerHTML=`<i class="fa-solid fa-heart"></i>`;
+  }
+  else{
+      document.getElementById("showwishimage").innerHTML=`<i class="fa-regular fa-heart"></i>`;
+  }
+  }
+  let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
+  displaywish();
 const displycar = ()=>{
     let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];  
     console.log(cartArr.length)
@@ -165,6 +169,20 @@ function display(data){
         const wish=document.createElement("div"); 
         wish.innerHTML=`<i class="fa-regular fa-heart"></i>`
        
+        let checkw=false;
+    for(let j=0;j<wishArr.length;j++){
+     if(wishArr[j].id==el.id){
+         checkw=true;
+         console.log(wishArr[j].id,el.id);
+         break;
+     }
+ }
+ if(checkw){
+    wish.innerHTML=`<i class="fa-solid fa-heart"></i>`
+ }
+ else{
+    wish.innerHTML=`<i class="fa-regular fa-heart"></i>`
+ }
         wish.addEventListener("click",()=>{          
           showWishes(el,wish);
           if(wishArr.length>0){
@@ -355,8 +373,7 @@ document.getElementById("searchBox").addEventListener("input",()=>{
     debounce(show,300);
 })
 
- 
-let reloadCounter=1;
+
 function  sendCartdata(el,cart){
     cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
     
@@ -411,6 +428,7 @@ function showWishes(el,wish){
     wishArr.push(el);
     localStorage.setItem("wishes",JSON.stringify(wishArr));
     }
+    displaywish();
 }
 
 show();

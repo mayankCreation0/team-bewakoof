@@ -275,14 +275,14 @@
     "price": "2499",
     "strikeOffPrice": "3126"
   }],
-  "comments": [
+  "womens": [
     {
       "id": 1,
       "body": "some comment",
       "postId": 1
     }
   ],
-  "profile": {
+  "mobile": {
     "name": "typicode"
   }
 }
