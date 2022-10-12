@@ -8,3 +8,15 @@
 //     document.getElementById("sliderImg1").src = img1[index];
 //     index++;
 // },2000);
+
+function hoverfun(){
+    event.preventDefault();
+    console.log("hej");
+    var img =document.querySelector(".tabNav:nth-child(2)");
+    // img.style.border-bottom = '4px solid rgb(253, 216, 53)';
+
+    // img.setAttribute("style","border-bottom:  4px solid rgb(253, 216, 53)","font-weight: 700");
+    img.setAttribute("style","font-weight: 700 ; border-bottom:  4px solid rgb(253, 216, 53) ");
+    // border-bottom:  4px solid rgb(253, 216, 53);
+    // font-weight: 700;
+}
