@@ -35,6 +35,25 @@ const togglePassword = document.querySelector("#togglePassword");
       let AllStudent =
         JSON.parse(localStorage.getItem("peopleRecord")) || [];
       localStorage.setItem("peopleRecord", JSON.stringify(AllStudent));
-      alert("Signup successful!");
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'Signed Up successfully'
+      });
+      setTimeout(redirect, 2500);
+    }
+    function redirect(){
     window.open("../email-login-page/email-login-page.html", "_self");
+
   }

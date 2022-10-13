@@ -10,6 +10,7 @@ function email(){
     location.href="../email-login-page/email-login-page.html";
 }
 
+
 function mobileCheck(){
     let num = document.querySelector('.txtbox');
     

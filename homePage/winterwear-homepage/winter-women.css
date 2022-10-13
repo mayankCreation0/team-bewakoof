@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
 }
-#box2 :nth-child(1){
+#box2 :nth-child(2){
     color: black;
     background-color: white;
 }
