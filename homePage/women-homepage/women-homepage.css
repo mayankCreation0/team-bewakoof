@@ -12,6 +12,10 @@ body{
     justify-content: center;
     height: 60px;
     margin-bottom: 2px;
+    position: sticky;
+    top: 0%;
+    background-color: #ffffff;
+    z-index: 1;
 }
 ul{
     display: flex;
@@ -35,7 +39,9 @@ ul{
     border-bottom:  4px solid rgb(253, 216, 53);
     font-weight: 700;
 }
-
+.tabNav:nth-child(3){
+    font-weight: 700 ; border-bottom:  4px solid rgb(253, 216, 53)
+}
 
 
 .news {

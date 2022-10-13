@@ -37,9 +37,29 @@ function checkdata() {
 
   if (loginflag) {
     localStorage.setItem("useremail", useremail);
-    alert("Login Succesfully");
-    window.open("./index.html");
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
+    
+    Toast.fire({
+      icon: 'success',
+      title: 'Signed in successfully'
+    });
+    setTimeout(redirect, 2500);
+    // location.href="../../homePage/diwali-homepage/diwali-homepage.html";
   } else if (!loginflag) {
-    alert("Wrong Credentials ");
+    swal("Oops!", "Wrong credintials!", "error");
   }
+}
+function redirect(){
+  window.open("../../homePage/diwali-homepage/diwali-homepage.html","_self");
+  // console.log("hey");
 }

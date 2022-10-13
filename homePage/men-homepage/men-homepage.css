@@ -12,6 +12,10 @@ body{
     justify-content: center;
     height: 60px;
     margin-bottom: 2px;
+    position: sticky;
+    top: 0%;
+    background-color: #ffffff;
+    z-index: 1;
 }
 ul{
     display: flex;
@@ -35,7 +39,9 @@ ul{
     border-bottom:  4px solid rgb(253, 216, 53);
     font-weight: 700;
 }
-
+.tabNav:nth-child(2){
+    font-weight: 700 ; border-bottom:  4px solid rgb(253, 216, 53);
+}
 
 
 .news {
@@ -93,7 +99,7 @@ marquee{
     display: grid;
     grid-template-columns: repeat(9,1fr);
     /* gap: 20px; */
-    width: 80%;
+    width: 90%;
     /* border: 1px solid red; */
     margin: auto;
     text-align: center; 
@@ -104,11 +110,14 @@ marquee{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 100%;
+    margin-top: 40px;
+    /* width: 100%; */
     /* border: 1px solid red; */
 }
 .box3-box >img{
-    width: 110px;
+    width: 100%;
+    margin: auto;
+    height: 151px;
     cursor: pointer;
 }
 .box3-box > a{
@@ -318,7 +327,7 @@ marquee{
     /* gap: 10px; */
     text-align: center;
 }
-.box10-box{
+.box10-box > img{
     width: 100%;
 }
 #box11{
