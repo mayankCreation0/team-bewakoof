@@ -553,7 +553,235 @@
       "strikeOffPrice": "3126"
     }
   ],
-  "mobile": {
-    "name": "typicode"
-  }
+  "mobile":[
+    {
+      "id": 76,
+      "image": "https://images.bewakoof.com/t320/spider-stick-designer-hard-cover-for-xiaomi-redmi-note-9-pro-484843-1649397074-1.jpeg",
+      "name": "Spider Stick Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "white",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "4999",
+      "strikeOffPrice": "5563"
+    }, {
+      "id": 77,
+      "image": "https://images.bewakoof.com/t640/sukuna-designer-hard-cover-for-xiaomi-redmi-note-9-pro-537504-1661439218-1.jpg",
+      "name": "Sukuna Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+     
+      "color": "black",
+      "types": "Campus sutra",
+      "rating": 4,
+      "price": "8756",
+      "strikeOffPrice": "10613"
+    }, {
+      "id": 78,
+      "image": "https://images.bewakoof.com/t320/skrlx-xiaomi-redmi-note-9-pro-mobile-cover-xiaomi-redmi-note-9-pro-mobile-covers-278257-1620671129.jpg",
+      "name": "Skrlx Xiaomi Redmi Note 9 Pro Mobile Cover",
+      "color": "white",
+      "types": "Bewakoof",
+      "rating": 3.8,
+      "price": "2550",
+      "strikeOffPrice": "3184"
+    }, {
+      "id": 79,
+      "image": "https://images.bewakoof.com/t640/yuji-designer-hard-cover-for-xiaomi-redmi-note-9-pro-535256-1660205991-1.jpg",
+      "name": "Yuji Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "Red",
+      "types": "Bewakoof",
+      "rating": 2.8,
+      "price": "1449",
+      "strikeOffPrice": "1669"
+    }, {
+      "id": 80,
+      "image": "https://images.bewakoof.com/t640/luffy-gear-5-designer-hard-cover-for-xiaomi-redmi-note-9-pro-521920-1658389557-1.jpg",
+      "name": "Luffy Gear 5 Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "red",
+      "types": "Campus sutra",
+      "rating": 3.2,
+      "price": "2049",
+      "strikeOffPrice": "2298"
+    }, {
+      "id": 81,
+      "image": "https://images.bewakoof.com/t640/cuteness-spell-designer-hard-cover-for-xiaomi-redmi-note-9-pro-521518-1658391861-1.jpg",
+      "name": "Cuteness Spell Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "1799",
+      "strikeOffPrice": "1903"
+    }, {
+      "id": 82,
+      "image": "https://images.bewakoof.com/t640/green-granite-designer-hard-cover-for-xiaomi-redmi-note-9-pro-513448-1656334981-1.jpg",
+      "name": "Green Granite Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "white",
+      "types": "Campus sutra",
+      "rating": 4.3,
+      "price": "2299",
+      "strikeOffPrice": "2742"
+    }, {
+      "id": 83,
+      "image": "https://images.bewakoof.com/t640/fly-to-moon-designer-hard-cover-for-xiaomi-redmi-note-9-pro-513817-1656336444-1.jpg",
+      "name": "Fly to Moon Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "red",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "3549",
+      "strikeOffPrice": "4237"
+    }, {
+      "id": 84,
+      "image": "https://images.bewakoof.com/t640/panda-needs-vacation-designer-hard-cover-for-xiaomi-redmi-note-9-pro-547028-1665044191-1.jpg",
+      "name": "Panda Needs Vacation Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "black",
+      "types": "Campus sutra",
+      "rating": 5,
+      "price": "1032",
+      "strikeOffPrice": "3519"
+    }, {
+      "id": 85,
+      "image": "https://images.bewakoof.com/t640/itachi-manga-designer-hard-cover-for-xiaomi-redmi-note-9-pro-546904-1665046007-1.jpg",
+      "name": "Itachi Manga Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "white",
+      "types": "Bewakoof",
+      "rating": 2.2,
+      "price": "8052",
+      "strikeOffPrice": "9778"
+    }, {
+      "id": 86,
+      "image": "https://images.bewakoof.com/t640/bad-man-designer-hard-cover-for-xiaomi-redmi-note-9-pro-527824-1659623126-1.jpg",
+      "name": "Bad Man Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "grey",
+      "types": "Campus sutra",
+      "rating": 3.6,
+      "price": "1499",
+      "strikeOffPrice": "2985"
+    }, {
+      "id": 87,
+      "image": "https://images.bewakoof.com/t640/ceo-of-procrastination-designer-hard-cover-for-xiaomi-redmi-note-9-pro-545149-1664458338-1.jpg",
+      "name": "CEO Of Procrastination Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "red",
+      "types": "Bewakoof",
+      "rating": 3,
+      "price": "4099",
+      "strikeOffPrice": "4467"
+    }, {
+      "id": 88,
+      "image": "https://images.bewakoof.com/t640/mars-trip-designer-hard-cover-for-xiaomi-redmi-note-9-pro-527946-1659623711-1.jpg",
+      "name": "Mars Trip Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "black",
+      "types": "Campus sutra",
+      "rating": 3,
+      "price": "1987",
+      "strikeOffPrice": "2707"
+    }, {
+      "id": 89,
+      "image": "https://images.bewakoof.com/t640/gyaan-na-de-designer-hard-cover-for-xiaomi-redmi-note-9-pro-545533-1664459411-1.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "white",
+      "types": "Bewakoof",
+      "rating": 3,
+      "price": "2840",
+      "strikeOffPrice": "3598"
+    }, {
+      "id": 90,
+      "image": "https://images.bewakoof.com/t640/work-for-travel-designer-hard-cover-for-xiaomi-redmi-note-9-pro-545274-1664460524-1.jpg",
+      "name": "Work For Travel Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "grey",
+      "types": "Campus sutra",
+      "rating": 5,
+      "price": "2974",
+      "strikeOffPrice": "3754"
+    }, {
+      "id": 91,
+      "image": "https://images.bewakoof.com/t640/the-akatsuki-designer-hard-cover-for-xiaomi-redmi-note-9-pro-515855-1657110890-1.jpg",
+      "name": "The Akatsuki Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "red",
+      "types": "Bewakoof",
+      "rating": 2,
+      "price": "3699",
+      "strikeOffPrice": "4301"
+    }, {
+      "id": 92,
+      "image": "https://images.bewakoof.com/t320/house-of-hogwarts-designer-hard-cover-for-xiaomi-redmi-note-9-pro-510371-1655360779-1.jpg",
+      "name": "House of Hogwarts Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "black",
+      "types": "Campus sutra",
+      "rating": 2,
+      "price": "2605",
+      "strikeOffPrice": "2911"
+    }, {
+      "id": 93,
+      "image": "https://images.bewakoof.com/t320/spiderman-3d-designer-cover-for-xiaomi-redmi-note-9-pro-488111-1649849960-1.jpeg",
+      "name": "Spiderman 3D Designer Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "white",
+      "types": "Bewakoof",
+      "rating": 4,
+      "price": "1529",
+      "strikeOffPrice": "3718"
+    }, {
+      "id": 94,
+      "image": "https://images.bewakoof.com/t320/gemini-zodiac-designer-hard-cover-for-xiaomi-redmi-note-9-pro-504637-1654088712-1.jpg",
+      "name": "Gemini Zodiac Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "grey",
+      "types": "Campus sutra",
+      "rating": 2.4,
+      "price": "2569",
+      "strikeOffPrice": "2771"
+    }, {
+      "id": 95,
+      "image": "https://images.bewakoof.com/t320/batman-logo-3d-designer-cover-for-xiaomi-redmi-note-9-pro-487504-1649847556-1.jpeg",
+      "name": "Batman Logo 3D Designer Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "red",
+      "types": "Bewakoof",
+      "rating": 3,
+      "price": "799",
+      "strikeOffPrice": "1057"
+    }, {
+      "id": 96,
+      "image": "https://images.bewakoof.com/t320/aquarius-zodiac-designer-hard-cover-for-xiaomi-redmi-note-9-pro-504516-1654076534-1.jpg",
+      "name": "Aquarius Zodiac Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "black",
+      "types": "Campus sutra",
+      "rating": 4.9,
+      "price": "1469",
+      "strikeOffPrice": "2357"
+    }, {
+      "id": 97,
+      "image": "https://images.bewakoof.com/t320/the-cat-designer-hard-cover-for-xiaomi-redmi-note-9-pro-499864-1652970517-1.jpeg",
+      "name": "The Cat Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "white",
+      "types": "Bewakoof",
+      "rating": 3,
+      "price": "1749",
+      "strikeOffPrice": "2482"
+    }, {
+      "id": 98,
+      "image": "https://images.bewakoof.com/t320/virgo-zodiac-designer-hard-cover-for-xiaomi-redmi-note-9-pro-504873-1654088774-1.jpg",
+      "name": "Virgo Zodiac Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "grey",
+      "types": "Campus sutra",
+      "rating": 4,
+      "price": "2389",
+      "strikeOffPrice": "2917"
+    }, {
+      "id": 99,
+      "image": "https://images.bewakoof.com/t320/being-sarcastic-designer-hard-cover-for-xiaomi-redmi-note-9-pro-500605-1653911603-1.jpg",
+      "name": "Being Sarcastic Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "color": "red",
+      "types": "Bewakoof",
+      "rating": 2.9,
+      "price": "2049",
+      "strikeOffPrice": "2252"
+    }, {
+      "id": 100,
+      "image": "https://images.bewakoof.com/t320/i-m-perfect-xiaomi-redmi-note-9-pro-mobile-cover-xiaomi-redmi-note-9-pro-mobile-covers-283354-1620671108.jpg",
+      "name": "I'm Perfect Xiaomi Redmi Note 9 Pro Mobile Cover",
+      "color": "black",
+      "types": "Campus sutra",
+      "rating": 2.6,
+      "price": "2499",
+      "strikeOffPrice": "3126"
+    }
+  ] 
+    
+  
 }
