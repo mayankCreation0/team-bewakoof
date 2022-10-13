@@ -1,0 +1,84 @@
+body{
+    font-family: montserrat,sans-serif;
+}
+#container{
+    width:95%;
+    margin:0px 50px 0px 50px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    background-color: rgb(230, 227, 227);
+}
+#mobileCovers{
+    position: absolute;
+    top: 18%;
+    left: 23%;
+}
+#heading{
+    width:70%;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+#container1{
+    width:60%;
+    height:500px;
+    margin:100px 0px 50px 0px;
+    display: block;
+    display: flex;
+    background-color: white;
+    flex-direction:column;
+    justify-content:center;
+}
+#container2{
+    margin:100px 0px 50px 0px;
+}
+#brands1{
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 15px;
+}
+#popular1{
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 15px;
+}
+#input{
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 40px;
+}
+#input{
+    margin-top: -80px;
+}
+#brands{
+ margin-top: 10px;
+}
+#popular{
+    margin-top: 30px;
+   }
+#popular>p, #brands>p{
+    margin-left: 20px;
+}
+#selectB, #selectM{
+    width:95%;
+    height:35px;
+}
+button{
+    width:80%;
+    height:35px;
+    border: none;
+    background-color: grey;
+}
+#paras{
+    padding-left: 43px;
+    
+}
+p{
+    color: rgb(130, 127, 127);
+}

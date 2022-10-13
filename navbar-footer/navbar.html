@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div style="font-size: 12px;" id="navbar_top">
+    <div style="font-size: 9px;" id="navbar_top">
         <div id="navbar_top_headings">
             <li><a href="#">Offers</a></li>
             <li><a href="#">Fanbook</a></li>
@@ -207,10 +207,10 @@
                             <li><a href="#"></a></li>
                             <li><a href="#">Sumsung Galaxy Note 10 lite</a></li>
                             <li><a href="#">Sumsumg Galaxy Note 10 Plus</a></li>
-                            <li><a href="#">Sumsumg Galaxy Note 10</a></li> <br>
+                            <li><a href="#">Sumsumg Galaxy Note 10</a></li> 
 
                         </ul>
-                        <ul> <br> <br> <br> <br>
+                        <ul> <br> <br> <br> 
                             <li><a href="#">
                                     <h4>Oneplus</h4>
                                 </a></li>
@@ -225,7 +225,7 @@
                             <li><a href="#">Realme 9 Pro 5G</a></li>
 
                         </ul>
-                        <ul> <br> <br> <br> <br>
+                        <ul> <br> <br> <br> 
                             <li><a href="#">
                                     <h4>Apple</h4>
                                 </a></li>
@@ -258,16 +258,60 @@
             </li>
 
         </div>
+        <div id="sideNavbar">
+            <div id="insideNavbar">
+                <button id="closeSideNavbar"><i class="fa-solid fa-xmark fa-xl"></i></button>
+                <h3 id="welocome">Welcome Guest</h3>
+                <p id="login" style="font-size: 18px;">Login/Sign Up</p>
+                <hr>
+                <div id="nation">
+                    <img src="https://cdn.countryflags.com/thumbs/india/flag-400.png" alt="flaglogo" id="indiaFlag" style="width: 35px; border-radius: 50%;">
+                    <p id="countryName">India</p>
+                </div>
+                <p id="shop">SHOP IN</p>
+                <div id="categories">
+                    <ul>
+                       <li><a href="">Men</a></li>
+                       <li><a href="">Women</a></li>
+                       <li><a href="">Design of the Day</a></li>
+                       <li><a href="">Mobile Covers</a></li>
+                    </ul>
+                </div>
+                <div id="contactUs">
+                    <p id="contact">CONTACT US</p>
+                    <ul>
+                        <li><a href="">Help & Support</a></li>
+                        <li><a href="">Feedback & Suggestions</a></li>
+                        <li><a href="">Become a Seller</a></li>
+                    </ul>
+                </div>
+                <div id="aboutUs">
+                    <p id="about">ABOUT US</p>
+                    <ul>
+                        <li><a href="">Our Story</a></li>
+                        <li><a href="">Fanbook</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p id="loginInSideNavbar"><a href="">Login</a></p>
+        </div>
+       <div id="bothSpectsBars">
+        <button id="toggleBtn"><i class="fa-solid fa-bars fa-xl"></i></button>
+        <img id="spectsPic" src="https://images.bewakoof.com/web/ic-web-head-bwk-primary-logo-eyes.svg" alt="bewakoof_logo">
+       </div>
         <div id="nav_search_bar">
             <li><input type="text" id="search_product" placeholder="search by product,category or collection">
                 <div id="nav_search_bar_fetchData"></div>
             </li>
-            <li class="vl"></li> 
-            <li><a style="font-size: 15px;" href="">Login</a></li>
-            <li><a href=""><span><i class="far fa-heart"></i></span></a></li>
-            <li><a href=""><span><i class="fa-sharp fa-solid fa-bag-shopping"></i><sup id="items"></sup></span></a></li>
+            <!-- <li class="vl"></li>  -->
+            <li id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li id="loginBtn"><a style="font-size: 15px;" href="">Login</a></li>
+            <li id="wishList"><a href=""><span><i class="far fa-heart"></i></span></a></li>
+            <li id="cartBtn"><a href=""><span><i class="fa-sharp fa-solid fa-bag-shopping"></i><sup id="items"></sup></span></a></li>
             <li class="flag"><a  href=""><img src="https://cdn.countryflags.com/thumbs/india/flag-400.png" alt="flaglogo"></a></li>
         </div>
+       
 
     </div>
     <hr>
@@ -291,3 +335,24 @@
 </body>
 
 </html>
+<script>
+    document.getElementById("toggleBtn").addEventListener("click", showNavbar);
+    let flag = true;
+    function showNavbar(){
+        if(flag){
+            document.getElementById("sideNavbar").style.display = "none";
+            flag = false;
+        }else{
+            document.getElementById("sideNavbar").style.display = "block";
+            document.getElementById("spectsPic").style.display = "none";
+            document.getElementById("toggleBtn").style.display = "none";
+            flag = true;
+        }
+    }
+    document.getElementById("closeSideNavbar").addEventListener("click", closeSideNavbar);
+    function closeSideNavbar(){
+        document.getElementById("sideNavbar").style.display = "none";   
+        document.getElementById("spectsPic").style.display = "block";
+        document.getElementById("toggleBtn").style.display = "block";
+    }
+</script>
