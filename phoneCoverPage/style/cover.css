@@ -240,6 +240,13 @@ body{
     color: rgb(250,208,59);
     margin-left: 3px;
   }
+  #loadingdiv{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: none; */
+  }
   @media screen and (max-width:1220px) {
     
     #container{

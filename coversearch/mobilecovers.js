@@ -34,17 +34,45 @@ document.getElementById("selectB").addEventListener("change", ()=>{
         <option value="Samsung Galaxy A07">Vivo V5s</option>
         <option value="Samsung Galaxy A70">Vivo V5</option>
         <option value="Samsung Galaxy A51">Vivo V17</option>
-        <option value="Iphone 11">Vivo V5s</option>
-        <option value="Iphone 11 Pro">Vivo V5s</option>
-        <option value="Iphone 12">Vivo V5s</option>
+        <option value="Iphone 11">Vivo v19</option>
+        <option value="Iphone 11 Pro">Vivo V20</option>
+        <option value="Iphone 12">Vivo V21</option>
         <option value="Iphone 12 Pro">Vivo V5s</option>
-        <option value="Iphone 13 Pro">Vivo V5s</option>
-        <option value="Iphone 14 Pro">Vivo V5s</option>
+        <option value="Iphone 13 Pro">Vivo X60</option>
+        <option value="Iphone 14 Pro">Vivo Y20</option>
         <option value="Iphone 14 Pro max">Vivo V5s</option>`
+    }
+    else if(searchModel==="Xiaomi"){
+        let model=document.getElementById("selectM");
+        model.innerHTML=`<option value="Model">Select Model</option>
+        <option value="Samsung Galaxy A07">Xiaomi Redmi 6 pro</option>
+        <option value="Samsung Galaxy A70">Xiaomi Redmi note 6 pro</option>
+        <option value="Samsung Galaxy A51">Xiaomi note 7 pro</option>
+        <option value="Iphone 11">Xiaomi 8 pro</option>
+        <option value="Iphone 11 Pro">Xiaomi Redmi note 8 pro</option>
+        <option value="Iphone 12">Xiaomi Redmi 7 </option>
+        <option value="Iphone 12 Pro">Xiaomi Redmi note 9 </option>
+        <option value="Iphone 13 Pro">Xiaomi Redmi 9 prime</option>
+        <option value="Iphone 14 Pro">Xiaomi Redmi 9A</option>
+        <option value="Iphone 14 Pro max">Xiaomi Mi A3</option>`
+    }
+    else if(searchModel==="Oppo"){
+        let model=document.getElementById("selectM");
+        model.innerHTML=`<option value="Model">Select Model</option>
+        <option value="Samsung Galaxy A07">Oppo A7</option>
+        <option value="Samsung Galaxy A70">Oppo A5s</option>
+        <option value="Samsung Galaxy A51">Oppo Reno 2</option>
+        <option value="Iphone 11">Oppo A31</option>
+        <option value="Iphone 11 Pro">Oppo A53</option>
+        <option value="Iphone 12">Oppo F17</option>
+        <option value="Iphone 12 Pro">Oppo F17 pro</option>
+        <option value="Iphone 13 Pro">Oppo Reno 5 pro</option>
+        <option value="Iphone 14 Pro">Oppo A74</option>
+        <option value="Iphone 14 Pro max">Oppo Reno 3 pro</option>`
     }
 })
 document.getElementById("search").addEventListener("click",()=>{
     let searchModel =document.getElementById("selectB").value;
 localStorage.setItem("search_cover",searchModel);
-location.href="../phoneCoverPage./cover.html";
+location.href="../phoneCoverPage/cover.html";
 })

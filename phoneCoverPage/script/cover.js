@@ -30,11 +30,12 @@ displycar()
 
 const url="http://localhost:3000/mobile";
 async function get(url){
-    
+    document.getElementById("loadingdiv").style.display="block";
    const res= await fetch(url);
    const data=await res.json();
    console.log(data);
    display(data);
+   document.getElementById("loadingdiv").style.display="none";
 }
 
 get(url);
