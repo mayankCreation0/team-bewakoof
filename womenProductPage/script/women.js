@@ -110,7 +110,7 @@ document.getElementById("ratingmenu").addEventListener("click", ()=>{
 
 // http://localhost:3000/mens
 
-const url="http://localhost:3000/mens";
+const url="http://localhost:3000/womens";
 async function get(url){
     
    const res= await fetch(url);
@@ -205,85 +205,85 @@ function display(data){
     })
 }
 document.getElementById("tshirt").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?category=Tshirt"
+    const url="http://localhost:3000/womens?category=Tshirt"
     get(url);   
     })
 
     document.getElementById("shirt").addEventListener("click",()=>{
-        const url="http://localhost:3000/mens?category=Shirt"
+        const url="http://localhost:3000/womens?category=Shirt"
         get(url);   
         }) 
  document.getElementById("hoodies").addEventListener("click",()=>{
-            const url="http://localhost:3000/mens?category=Hoodies"
+            const url="http://localhost:3000/womens?category=Hoodies"
             get(url);   
             })
    document.getElementById("jacket").addEventListener("click",()=>{
-                const url="http://localhost:3000/mens?category=Jacket"
+                const url="http://localhost:3000/womens?category=Jacket"
                 get(url);   
                 })
 
 document.getElementById("kurta").addEventListener("click",()=>{
-const url="http://localhost:3000/mens?category=Kurta"
+const url="http://localhost:3000/womens?category=Kurta"
 get(url);   
 })
 
 document.getElementById("vest").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?category=Vest"
+    const url="http://localhost:3000/womens?category=Vest"
     get(url);   
     })
 
  document.getElementById("pants").addEventListener("click",()=>{
-        const url="http://localhost:3000/mens?category=Pants"
+        const url="http://localhost:3000/womens?category=Pants"
         get(url);   
         })    
 
 document.getElementById("bewakoof").addEventListener("click",()=>{
-const url="http://localhost:3000/mens?types=Bewakoof"
+const url="http://localhost:3000/womens?types=Bewakoof"
 get(url);   
 })
 
 document.getElementById("campus").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?types=Campus sutra"
+    const url="http://localhost:3000/womens?types=Campus sutra"
     get(url);  
     })
 
     document.getElementById("colorRed").addEventListener("click",()=>{
-        const url="http://localhost:3000/mens?color=red"
+        const url="http://localhost:3000/womens?color=red"
         get(url);  
         })
 
  document.getElementById("colorBlack").addEventListener("click",()=>{
-        const url="http://localhost:3000/mens?color=black"
+        const url="http://localhost:3000/womens?color=black"
         get(url);  
         })
    document.getElementById("colorWhite").addEventListener("click",()=>{
-            const url="http://localhost:3000/mens?color=white"
+            const url="http://localhost:3000/womens?color=white"
             get(url);  
    }) 
    document.getElementById("colorgrey").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?color=grey"
+    const url="http://localhost:3000/womens?color=grey"
     get(url);  
 })      
 
 document.getElementById("sixe_x").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?size=X"
+    const url="http://localhost:3000/womens?size=X"
     get(url);  
 })   
 document.getElementById("sixe_xl").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?size=XL"
+    const url="http://localhost:3000/womens?size=XL"
     get(url);  
 })   
 document.getElementById("sixe_xxl").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?size=XXL"
+    const url="http://localhost:3000/womens?size=XXL"
     get(url);  
 })   
 document.getElementById("sixe_xxl").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?size=XXL"
+    const url="http://localhost:3000/womens?size=XXL"
     get(url);  
 })  
 
 document.getElementById("highrating").addEventListener("click",async ()=>{
-    const res= await fetch("http://localhost:3000/mens");
+    const res= await fetch("http://localhost:3000/womens");
     const data=await res.json();
    let filterArr=data.filter((el)=>{
     return +(el.rating)>4.5;
@@ -292,7 +292,7 @@ document.getElementById("highrating").addEventListener("click",async ()=>{
 })  
 
 document.getElementById("midrating").addEventListener("click",async ()=>{
-    const res= await fetch("http://localhost:3000/mens");
+    const res= await fetch("http://localhost:3000/womens");
     const data=await res.json();
    let filterArr=data.filter((el)=>{
     if(+(el.rating)>3 && +(el.rating)<4.5) {
@@ -302,7 +302,7 @@ document.getElementById("midrating").addEventListener("click",async ()=>{
    display(filterArr);
 })  
 document.getElementById("lowrating").addEventListener("click",async ()=>{
-    const res= await fetch("http://localhost:3000/mens");
+    const res= await fetch("http://localhost:3000/womens");
     const data=await res.json();
    let filterArr=data.filter((el)=>{
     if(+(el.rating)>2 && +(el.rating)<3) {
@@ -318,13 +318,13 @@ document.getElementById("sort_price").addEventListener("change",()=>{
    
    let url;
    if(curr==="highToLow"){
-    url="http://localhost:3000/mens?_sort=price&_order=desc";
+    url="http://localhost:3000/womens?_sort=price&_order=desc";
    }
    else if(curr==="lowToHigh"){
-    url="http://localhost:3000/mens?_sort=price&_order=asc";
+    url="http://localhost:3000/womens?_sort=price&_order=asc";
    }
    else{
-    url="http://localhost:3000/mens";
+    url="http://localhost:3000/womens";
    }
    get(url);
 })
@@ -337,7 +337,7 @@ function boxShow(data){
         div.append(p);
         div.addEventListener("click",()=>{
             const flag=el.category;
-            const urlfl=`http://localhost:3000/mens?q=${flag}`
+            const urlfl=`http://localhost:3000/womens?q=${flag}`
             document.getElementById("suggestions").innerHTML="";
             get(urlfl);
         })
@@ -365,7 +365,7 @@ function debounce(fn,delay){
         document.getElementById("suggestions").innerHTML="";
        }
   else{
-    const url=`http://localhost:3000/mens?q=${search}&_limit=5`;
+    const url=`http://localhost:3000/womens?q=${search}&_limit=5`;
     const res=await fetch(url);
     const data= await res.json();
     boxShow(data);

@@ -191,6 +191,7 @@ height: 30px;
     display: grid;
     /* border: 1px solid teal; */
     height: 100%;
+    position: relative;
   }
   #container>div>div:first-child{
     /* border: 1px solid green; */
@@ -297,8 +298,19 @@ color:rgb(168,168,171) ;
   background-color:black ;
   padding: 1px 3px;
 }
-
-
+#ratediv{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  background-color: white;
+ padding: 0px 7px;
+ color: rgb(147,140,122);
+}
+#ratediv i{
+  color: rgb(250,208,59);
+  margin-left: 3px;
+}
 @media screen and (max-width:980px) {
   
   #container{
