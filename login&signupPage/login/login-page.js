@@ -28,6 +28,11 @@ function mobileCheck(){
     else{
         let mobilenumber = document.querySelector('.txtbox').value;
         localStorage.setItem("mobile-number", JSON.stringify(mobilenumber));
-        location.href = "../login-otp/login-otp.html"
+        swal("otp sent!");
+        setInterval(redirect, 2000);
+        // location.href = "../login-otp/login-otp.html"
     }
+}
+function redirect(){
+    window.open("../login-otp/login-otp.html","_self")
 }
