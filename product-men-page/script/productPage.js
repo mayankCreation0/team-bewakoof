@@ -201,6 +201,7 @@ function display(data){
         card.addEventListener('click',()=>{
             localStorage.setItem("details",JSON.stringify(el));
             localStorage.setItem("hidden","false");
+            localStorage.setItem("page","men");
             location.href="../descriptionPage/description.html";
         })
         document.getElementById("container").append(card);
