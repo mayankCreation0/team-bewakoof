@@ -200,6 +200,8 @@ function display(data){
         card.append(imgDiv,contentMainDiv,tribeDiv,cart,rating);
         card.addEventListener('click',()=>{
             localStorage.setItem("details",JSON.stringify(el));
+            localStorage.setItem("hidden","false");
+            location.href="../descriptionPage/description.html";
         })
         document.getElementById("container").append(card);
     })

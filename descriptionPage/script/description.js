@@ -18,7 +18,19 @@ small[2].onclick = () => {
 small[3].onclick = () => {
   image.src = small[3].src;
 };
-
+if(localStorage.getItem("hidden")==="true"){
+  document.getElementById("smallimg").style.visibility="hidden";
+  document.getElementById("span_size").style.visibility="hidden";
+  document.getElementById("selectsize").style.display="none";
+ 
+}
+else{
+  document.getElementById("smallimg").style.visibility="visible";
+  document.getElementById("span_size").style.visibility="visible";
+  document.getElementById("selectsize").style.display="block";
+}
+let small1=document.getElementById("small_img1").src;
+console.log(small1);
 const displaywish=()=>{
   let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
   if(wishArr.length>0){

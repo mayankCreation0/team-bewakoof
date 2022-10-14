@@ -3,13 +3,17 @@
     "id": 1,
     "image": "https://images.bewakoof.com/t640/the-saviour-oversized-fit-t-shirt-547339-1665064576-1.jpg",
     "name": "Men's White The Saviour Graphic Printed Oversized T-shirt",
+    "image1":"gfhgh",
+    "image2":"dfghj",
+    "image3":"hjgkhjlk",
     "category": "Pants",
     "size": "XL",
     "color": "white",
-    "types": "Bewakoof",
+    "brand": "Bewakoof",
     "rating": 5,
     "price": "4999",
-    "strikeOffPrice": "5563"
+    "strikeOffPrice": "5563",
+    "Qty": 1
   }, {
     "id": 2,
     "image": "https://images.bewakoof.com/t640/the-saviour-full-sleeve-t-shirt-547335-1665064762-1.jpg",
