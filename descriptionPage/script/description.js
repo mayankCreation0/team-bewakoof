@@ -28,9 +28,144 @@ else{
   document.getElementById("smallimg").style.visibility="visible";
   document.getElementById("span_size").style.visibility="visible";
   document.getElementById("selectsize").style.display="block";
+  document.getElementById("selectsize").style.display="flex";
 }
-let small1=document.getElementById("small_img1").src;
-console.log(small1);
+
+///page
+if(localStorage.getItem("page")==="mobile"){
+document.getElementById("relatedDivs").innerHTML=`
+<div class="relmaindiv">
+          <div class="relimagediv">
+            <img src="https://images.bewakoof.com/t640/king-life-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524654-1658837185-1.jpg" alt="">
+          </div>
+          <div class="reldetaildiv">
+            <h3>Qrioh</h3>
+            
+            <div calss="relpricediv">₹<span>529</span></div>
+          </div>
+        </div>
+        <div >
+          <div class="relimagediv">
+            <img src="https://images.bewakoof.com/t640/disturb-typography-premium-glass-cover-for-samsung-galaxy-m30s-impact-resistant-matte-finish-531727-1659531786-1.jpg" alt="">
+          </div>
+          <div class="reldetaildiv">
+            <h3>Qrioh</h3>
+           
+            <div calss="relpricediv">₹<span>529</span></div>
+          </div>
+        </div>
+        <div >
+          <div class="relimagediv">
+            <img src="https://images.bewakoof.com/t320/black-aura-printed-premium-glass-cover-for-vivo-z1-pro-483401-1648451340-1.jpg" alt="">
+          </div>
+          <div class="reldetaildiv">
+            <h3>Qrioh</h3>
+            
+            <div calss="relpricediv">₹<span>529</span></div>
+          </div>
+        </div>
+        <div >
+          <div class="relimagediv">
+            <img src="https://images.bewakoof.com/t640/royal-bike-typography-premium-glass-cover-for-oneplus-7-pro-impact-resistant-matte-finish-525831-1659101732-1.jpg" alt="">
+          </div>
+          <div class="reldetaildiv">
+            <h3>Qrioh</h3>
+            
+            <div calss="relpricediv">₹<span>529</span></div>
+          </div>
+        </div>
+`
+}
+else if(localStorage.getItem("page")==="men"){
+  document.getElementById("relatedDivs").innerHTML=`
+  <div class="relmaindiv">
+          <div class="relimagediv">
+            <img src="https://images.bewakoof.com/t640/gohan-half-sleeve-t-shirt-512884-1655993277-1.jpg" alt="">
+          </div>
+          <div class="reldetaildiv">
+            <h3>Bewakoof</h3>
+            
+            <div calss="relpricediv">₹<span>589</span></div>
+          </div>
+        </div>
+        <div >
+          <div class="relimagediv">
+            <img src="https://images.bewakoof.com/t640/men-s-blue-san-francisco-typography-oversized-t-shirt-539817-1662118761-1.jpg" alt="">
+          </div>
+          <div class="reldetaildiv">
+            <h3>Bewakoof</h3>
+           
+            <div calss="relpricediv">₹<span>699</span></div>
+          </div>
+        </div>
+        <div >
+          <div class="relimagediv">
+            <img src="https://images.bewakoof.com/t640/men-s-maroon-empire-typography-oversized-t-shirt-539820-1662119209-1.jpg" alt="">
+          </div>
+          <div class="reldetaildiv">
+            <h3>Bewakoof</h3>
+            
+            <div calss="relpricediv">₹<span>849</span></div>
+          </div>
+        </div>
+        <div >
+          <div class="relimagediv">
+            <img src="https://images.bewakoof.com/t1080/dope-bear-oversized-fit-t-shirt-547532-1665403983-1.jpg" alt="">
+          </div>
+          <div class="reldetaildiv">
+            <h3>Bewakoof</h3>
+            
+            <div calss="relpricediv">₹<span>739</span></div>
+          </div>
+        </div>
+  `
+}
+else{
+  document.getElementById("relatedDivs").innerHTML=`
+  <div class="relmaindiv">
+          <div class="relimagediv">
+            <img src="https://images.bewakoof.com/t640/get-going-snoopy-boyfriend-t-shirt-516609-1657202693-1.jpg" alt="">
+          </div>
+          <div class="reldetaildiv">
+            <h3>Bewakoof</h3>
+            
+            <div calss="relpricediv">₹<span>367</span></div>
+          </div>
+        </div>
+        <div >
+          <div class="relimagediv">
+            <img src="https://images.bewakoof.com/t640/women-s-white-black-striped-t-shirt-539548-1662017564-1.jpg" alt="">
+          </div>
+          <div class="reldetaildiv">
+            <h3>Clovia</h3>
+           
+            <div calss="relpricediv">₹<span>472</span></div>
+          </div>
+        </div>
+        <div >
+          <div class="relimagediv">
+            <img src="https://images.bewakoof.com/t640/women-s-purple-new-typography-oversized-t-shirt-535883-1660216469-1.jpg" alt="">
+          </div>
+          <div class="reldetaildiv">
+            <h3>Dillinger</h3>
+            
+            <div calss="relpricediv">₹<span>480</span></div>
+          </div>
+        </div>
+        <div >
+          <div class="relimagediv">
+            <img src="https://images.bewakoof.com/t640/women-s-multicolor-abstract-printed-dress-536774-1660734515-1.jpg" alt="">
+          </div>
+          <div class="reldetaildiv">
+            <h3>The Dry State</h3>
+            
+            <div calss="relpricediv">₹<span>791</span></div>
+          </div>
+        </div>
+  `
+}
+// let small1=document.getElementById("small_img1").src;
+// console.log(small1);
 const displaywish=()=>{
   let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
   if(wishArr.length>0){
@@ -73,6 +208,11 @@ function display(el){
   console.log(el);
   const image=document.getElementById("large-img");
   image.src=el.image;
+  const small1 = document.getElementsByClassName("small-img");
+  small1[0].src =el.image;
+  small1[1].src =el.image;
+  small1[2].src =el.image;
+  small1[3].src =el.image;
   document.getElementById("brand").innerText=el.types;
   document.getElementById("title").innerText=el.name;
   document.getElementById("price1").innerHTML=`₹<span>${el.price}</span>`;

@@ -198,8 +198,11 @@ function display(data){
         rating.innerHTML=`${el.rating}<i class="fa-solid fa-star"></i>`
         rating.setAttribute("id","ratediv");
         card.append(imgDiv,contentMainDiv,tribeDiv,cart,rating);
-        card.addEventListener('click',()=>{
-            localStorage.setItem("details",JSON.stringify(el));
+        card.addEventListener('click',()=>{     
+                localStorage.setItem("details",JSON.stringify(el));
+                localStorage.setItem("hidden","false");
+                localStorage.setItem("page","women");
+                location.href="../descriptionPage/description.html";
         })
         document.getElementById("container").append(card);
     })
