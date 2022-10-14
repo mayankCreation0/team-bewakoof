@@ -1,4 +1,8 @@
-
+localStorage.setItem('category',"")
+localStorage.setItem('type',"")
+ localStorage.setItem('color',"");
+localStorage.setItem('size',"");
+ localStorage.setItem('rating',"");
 const displaywish=()=>{
     let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
     if(wishArr.length>0){
@@ -115,13 +119,173 @@ async function get(url){
     
    const res= await fetch(url);
    const data=await res.json();
-   console.log(data);
-   display(data);
+   return data;
+   
 }
+const Firstdisplay =async()=>{
+    let data = await get('http://localhost:3000/mens');
+    display(data);
+}
+Firstdisplay();
 
-get(url);
-
-
+ const Applyfilter =async ()=>{
+    console.log("filter")
+   let category = localStorage.getItem('category')||"";
+   let type = localStorage.getItem('types')||"";
+   let color = localStorage.getItem('color')||"";
+   let size = localStorage.getItem('size')||"";
+   let rating = localStorage.getItem('rating')||"";
+   if(category!=""){
+    const url=`http://localhost:3000/mens?category=${category}`
+    let data = await get(url);
+    if(type!=""){
+        data = data.filter((el)=>{
+            return el.types===type;
+        })
+    }
+     if(color!=""){
+        data = data.filter((el)=>{
+            return el.color===color;
+        })
+     }
+     if(size!=""){
+        data = data.filter((el)=>{
+            return +(el.rating)>4.5;
+        })
+     }
+     if(rating!=""){
+        // const ratingurl= await get(`http://localhost:3000/mens`);
+       if(rating==="highRating"){
+        data = data.filter((el)=>{
+            return el.rating>=4.5;
+        })
+       }
+       else if(rating==="midRating"){
+        data = data.filter((el)=>{
+            return el.rating>=3
+        })
+       }
+       else{
+        data = data.filter((el)=>{
+            return el.rating>=2
+        })
+       }
+     }
+    display(data);
+     return ;
+   }
+   else if(type!==""){
+    const url=`http://localhost:3000/mens?types=${type}`
+    let data = await get(url);
+    if(color!=""){
+        data = data.filter((el)=>{
+            return el.color===color;
+        })
+     }
+     if(size!=""){
+        data = data.filter((el)=>{
+            return +(el.rating)>4.5;
+        })
+     }
+     if(rating!=""){
+        // const ratingurl= await get(`http://localhost:3000/mens`);
+       if(rating==="highRating"){
+        data = data.filter((el)=>{
+            return el.rating>=4.5;
+        })
+       }
+       else if(rating==="midRating"){
+        data = data.filter((el)=>{
+            return el.rating>=3
+        })
+       }
+       else{
+        data = data.filter((el)=>{
+            return el.rating>=2
+        })
+       }
+     }
+    display(data);
+    return;
+   }
+   else if(color!==""){
+    const url=`http://localhost:3000/mens?color=${type}`
+    let data = await get(url)
+     if(size!=""){
+        data = data.filter((el)=>{
+            return +(el.rating)>4.5;
+        })
+     }
+     if(rating!=""){
+        // const ratingurl= await get(`http://localhost:3000/mens`);
+       if(rating==="highRating"){
+        data = data.filter((el)=>{
+            return el.rating>=4.5;
+        })
+       }
+       else if(rating==="midRating"){
+        data = data.filter((el)=>{
+            return el.rating>=3
+        })
+       }
+       else{
+        data = data.filter((el)=>{
+            return el.rating>=2
+        })
+       }
+     }
+    display(data);
+    return;
+   }
+   else if(size!==""){
+    const url=`http://localhost:3000/mens?size=${size}`
+    let data = await get(url);
+     if(rating!=""){
+        // const ratingurl= await get(`http://localhost:3000/mens`);
+       if(rating==="highRating"){
+        data = data.filter((el)=>{
+            return el.rating>=4.5;
+        })
+       }
+       else if(rating==="midRating"){
+        data = data.filter((el)=>{
+            return el.rating>=3
+        })
+       }
+       else{
+        data = data.filter((el)=>{
+            return el.rating>=2
+        })
+       }
+     }
+    display(data);
+    return;
+   }
+  else if(rating!=""){
+    let data = await get('http://localhost:3000/mens');
+ 
+        // const ratingurl= await get(`http://localhost:3000/mens`);
+       if(rating==="highRating"){
+        data = data.filter((el)=>{
+            return el.rating>=4.5;
+        })
+       }
+       else if(rating==="midRating"){
+        data = data.filter((el)=>{
+            return el.rating>=3
+        })
+       }
+       else{
+        data = data.filter((el)=>{
+            return el.rating>=2
+        })
+       }
+    display(data);
+  }
+  else{
+    Firstdisplay();
+  }
+ }
 function display(data){
     document.getElementById("container").innerHTML="";
     data.map((el)=>{
@@ -208,111 +372,158 @@ function display(data){
     })
 }
 document.getElementById("tshirt").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?category=Tshirt"
-    get(url);   
+    // let category = localStorage.getItem('category')||""
+    localStorage.setItem("category",'Tshirt');
+   
+    Applyfilter();
     })
 
     document.getElementById("shirt").addEventListener("click",()=>{
-        const url="http://localhost:3000/mens?category=Shirt"
-        get(url);   
+       
+        let category = localStorage.getItem('category')||""
+        localStorage.setItem("category",'Shirt');
+        Applyfilter();
+        
         }) 
  document.getElementById("hoodies").addEventListener("click",()=>{
-            const url="http://localhost:3000/mens?category=Hoodies"
-            get(url);   
+            // const url="http://localhost:3000/mens?category=Hoodies"
+            localStorage.setItem("category",'Hoodies');
+            Applyfilter();   
             })
    document.getElementById("jacket").addEventListener("click",()=>{
-                const url="http://localhost:3000/mens?category=Jacket"
-                get(url);   
+                // const url="http://localhost:3000/mens?category=Jacket"
+                localStorage.setItem("category",'Jacket');
+            Applyfilter();   
                 })
 
 document.getElementById("kurta").addEventListener("click",()=>{
-const url="http://localhost:3000/mens?category=Kurta"
-get(url);   
+// const url="http://localhost:3000/mens?category=Kurta"
+localStorage.setItem("category",'Kurta');
+Applyfilter();   
 })
 
 document.getElementById("vest").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?category=Vest"
-    get(url);   
+    // const url="http://localhost:3000/mens?category=Vest"
+    localStorage.setItem("category",'Vest');
+Applyfilter();   
     })
 
  document.getElementById("pants").addEventListener("click",()=>{
-        const url="http://localhost:3000/mens?category=Pants"
-        get(url);   
+        // const url="http://localhost:3000/mens?category=Pants"
+        localStorage.setItem("category",'Vest');
+Applyfilter();   
         })    
 
-document.getElementById("bewakoof").addEventListener("click",()=>{
-const url="http://localhost:3000/mens?types=Bewakoof"
-get(url);   
+document.getElementById("bewakoof").addEventListener("click",(e)=>{
+// const url="http://localhost:3000/mens?types=Bewakoof"
+let elid = localStorage.getItem('types')||""
+if(elid!=""){
+    if(elid==='Campus sutra'){
+        document.getElementById("campus").style.color = 'black'
+    }else{
+        localStorage.setItem('types',"");
+        e.target.style.color = 'black';
+        Applyfilter();
+        return
+    }
+   
+}
+e.target.style.color = 'red'
+localStorage.setItem("types",'Bewakoof');
+Applyfilter();      
 })
 
-document.getElementById("campus").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?types=Campus sutra"
-    get(url);  
-    })
+document.getElementById("campus").addEventListener("click",(e)=>{
+    let elid = localStorage.getItem('types')||""
+    if(elid!=""){
+        if(elid==='Bewakoof'){
+            document.getElementById("bewakoof").style.color = 'black'
+        }else{
+            localStorage.setItem('types',"");
+            e.target.style.color = 'black';
+            Applyfilter();
+            return
+        }
+       
+    }
 
+    e.target.style.color = 'red';
+    localStorage.setItem("types",'Campus sutra');
+Applyfilter();
+    })
+///////color filter
     document.getElementById("colorRed").addEventListener("click",()=>{
-        const url="http://localhost:3000/mens?color=red"
-        get(url);  
+        // const url="http://localhost:3000/mens?color=red"
+        localStorage.setItem("color",'red');
+        Applyfilter();
         })
 
  document.getElementById("colorBlack").addEventListener("click",()=>{
-        const url="http://localhost:3000/mens?color=black"
-        get(url);  
+        // const url="http://localhost:3000/mens?color=black"
+        localStorage.setItem("color",'black');
+        Applyfilter();  
         })
    document.getElementById("colorWhite").addEventListener("click",()=>{
-            const url="http://localhost:3000/mens?color=white"
-            get(url);  
+            // const url="http://localhost:3000/mens?color=white"
+            localStorage.setItem("color",'white');
+        Applyfilter();   
    }) 
    document.getElementById("colorgrey").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?color=grey"
-    get(url);  
+    // const url="http://localhost:3000/mens?color=grey"
+    localStorage.setItem("color",'grey');
+    Applyfilter();    
 })      
-
+//// size filter
 document.getElementById("sixe_x").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?size=X"
-    get(url);  
+    // const url="http://localhost:3000/mens?size=X"
+    localStorage.setItem("size",'X');
+    Applyfilter();     
 })   
 document.getElementById("sixe_xl").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?size=XL"
-    get(url);  
-})   
+    // const url="http://localhost:3000/mens?size=XL"
+    localStorage.setItem("size",'XL');
+    Applyfilter();       
+})     
 document.getElementById("sixe_xxl").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?size=XXL"
-    get(url);  
-})   
-document.getElementById("sixe_xxl").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?size=XXL"
-    get(url);  
+    // const url="http://localhost:3000/mens?size=XXL"
+    localStorage.setItem("size",'XXL');
+    Applyfilter();   
 })  
-
+/////////////////////       srating filter
 document.getElementById("highrating").addEventListener("click",async ()=>{
-    const res= await fetch("http://localhost:3000/mens");
-    const data=await res.json();
-   let filterArr=data.filter((el)=>{
-    return +(el.rating)>4.5;
-   })
-   display(filterArr);
+//     const res= await fetch("http://localhost:3000/mens");
+//     const data=await res.json();
+//    let filterArr=data.filter((el)=>{
+//     return +(el.rating)>4.5;
+//    })
+//    display(filterArr);
+localStorage.setItem("rating",'highRating');
+    Applyfilter();   
 })  
-
+/////////////////////
 document.getElementById("midrating").addEventListener("click",async ()=>{
-    const res= await fetch("http://localhost:3000/mens");
-    const data=await res.json();
-   let filterArr=data.filter((el)=>{
-    if(+(el.rating)>3 && +(el.rating)<4.5) {
-        return el.rating;
-    }
-   })
-   display(filterArr);
+//     const res= await fetch("http://localhost:3000/mens");
+//     const data=await res.json();
+//    let filterArr=data.filter((el)=>{
+//     if(+(el.rating)>3 && +(el.rating)<4.5) {
+//         return el.rating;
+//     }
+//    })
+//    display(filterArr);
+localStorage.setItem("rating",'midRating');
+    Applyfilter();   
 })  
 document.getElementById("lowrating").addEventListener("click",async ()=>{
-    const res= await fetch("http://localhost:3000/mens");
-    const data=await res.json();
-   let filterArr=data.filter((el)=>{
-    if(+(el.rating)>2 && +(el.rating)<3) {
-        return el.rating;
-    }
-   })
-   display(filterArr);
+//     const res= await fetch("http://localhost:3000/mens");
+//     const data=await res.json();
+//    let filterArr=data.filter((el)=>{
+//     if(+(el.rating)>2 && +(el.rating)<3) {
+//         return el.rating;
+//     }
+//    })
+//    display(filterArr);
+localStorage.setItem("rating",'lowRating');
+    Applyfilter();   
 })  
 ////sort
 document.getElementById("sort_price").addEventListener("change",()=>{
