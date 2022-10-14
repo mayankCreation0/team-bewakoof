@@ -221,7 +221,7 @@ text-transform: uppercase;
     margin-bottom: 15px;
 }
 
-.relatedDivs{
+#relatedDivs{
     width: 90%;
     margin: auto;
     display: grid;
@@ -270,13 +270,13 @@ text-transform: uppercase;
     #container{
         grid-template-columns: repeat(1,1fr);
     }
-    .relatedDivs{
+    #relatedDivs{
        
         grid-template-columns: repeat(2,1fr);
     }
 }
 @media screen and (max-width: 400px){
-    .relatedDivs{
+    #relatedDivs{
        
         grid-template-columns: repeat(1,1fr);
     }
