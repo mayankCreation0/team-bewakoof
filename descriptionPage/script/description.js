@@ -210,16 +210,17 @@ function display(el){
   image.src=el.image;
   const small1 = document.getElementsByClassName("small-img");
   small1[0].src =el.image;
-  small1[1].src =el.image;
-  small1[2].src =el.image;
-  small1[3].src =el.image;
+  small1[1].src =el.image1;
+  small1[2].src =el.image2;
+  small1[3].src =el.image3;
   document.getElementById("brand").innerText=el.types;
   document.getElementById("title").innerText=el.name;
   document.getElementById("price1").innerHTML=`₹<span>${el.price}</span>`;
   document.getElementById("price2").innerText=`₹${el.strikeOffPrice}`
   const discount=getDiscount(+(el.price),+(el.strikeOffPrice));
  document.getElementById("price3").innerText=`${discount}%`;
-
+const detail=document.getElementById("product_details");
+detail.innerText=el.details;
 
  const cart=document.createElement("div");
  let btn1 = document.createElement("button");

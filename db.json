@@ -1,22 +1,20 @@
 {
   "mens":[{
-
     "id": "ts1",
-    "image": "https://images.bewakoof.com/t1080/men-s-purple-nothing-to-worry-half-sleeve-t-shirt-547586-1665572661-1.jpg",
-    "name": "Men's Purple Nothing to Worry Graphic Printed T-shirt",
-    "image1":"https://images.bewakoof.com/t1080/men-s-purple-nothing-to-worry-half-sleeve-t-shirt-547586-1665572666-2.jpg",
-    "image2":"https://images.bewakoof.com/t1080/men-s-purple-nothing-to-worry-half-sleeve-t-shirt-547586-1665572671-3.jpg",
-    "image3":"https://images.bewakoof.com/t1080/men-s-purple-nothing-to-worry-half-sleeve-t-shirt-547586-1665572677-4.jpg",
-    "category": "T-shirt",
-    "size": "X",
-    "color": "Purple",
-    "types": "Bewakoof",
-    "rating": 4.2,
-    "price": "329",
-    "strikeOffPrice": "999",
-
-    "Qty": 1,
-    "details": "Worrying is so outdated, keep moving forward stylishly while wearing this Nothing to Worry Men's Purple Half Sleeve T-Shirt. This purple t-shirt will look charming when paired with chinos and loafers. Country of Origin - India"
+"image": "https://images.bewakoof.com/t1080/men-s-purple-nothing-to-worry-half-sleeve-t-shirt-547586-1665572661-1.jpg",
+"name": "Men's Purple Nothing to Worry Graphic Printed T-shirt",
+"image1":"https://images.bewakoof.com/t1080/men-s-purple-nothing-to-worry-half-sleeve-t-shirt-547586-1665572666-2.jpg",
+"image2":"https://images.bewakoof.com/t1080/men-s-purple-nothing-to-worry-half-sleeve-t-shirt-547586-1665572671-3.jpg",
+"image3":"https://images.bewakoof.com/t1080/men-s-purple-nothing-to-worry-half-sleeve-t-shirt-547586-1665572677-4.jpg",
+"category": "T-shirt",
+"size": "X",
+"color": "Purple",
+"types": "Bewakoof",
+"rating": 4.2,
+"price": "329",
+"strikeOffPrice": "999",
+"Qty": 1,
+"details": "Worrying is so outdated, keep moving forward stylishly while wearing this Nothing to Worry Men's Purple Half Sleeve T-Shirt. This purple t-shirt will look charming when paired with chinos and loafers. Country of Origin - India"
   },
   {
     "id": "ts2",
@@ -1845,12 +1843,10 @@
       "image": "https://images.bewakoof.com/t320/i-m-perfect-xiaomi-redmi-note-9-pro-mobile-cover-xiaomi-redmi-note-9-pro-mobile-covers-283354-1620671108.jpg",
       "name": "I'm Perfect Xiaomi Redmi Note 9 Pro Mobile Cover",
       "color": "black",
-      "types": "Campus sutra",
+      "types": "Oliva",
       "rating": 2.6,
       "price": "2499",
       "strikeOffPrice": "3126"
     }
   ] 
-    
-  
 }
