@@ -186,10 +186,13 @@ document.getElementById("ratingmenu").addEventListener("click", ()=>{
 // http://localhost:3000/mens
 
 const url="http://localhost:3000/mens";
+
 async function get(url){
-    
+    document.getElementById("loadingdiv").style.display="block";
+
    const res= await fetch(url);
    const data=await res.json();
+   document.getElementById("loadingdiv").style.display="none";
    return data;
    
 }
@@ -354,93 +357,113 @@ Firstdisplay();
     display(data);
   }
   else{
+    console.log("printDisplay");
     Firstdisplay();
   }
  }
 function display(data){
     document.getElementById("container").innerHTML="";
-    data.map((el)=>{
-        const card=document.createElement("div");
-        const imgDiv=document.createElement("div");
-        const img=document.createElement("img");
-        img.src=el.image;
-        imgDiv.append(img);
-        const contentMainDiv = document.createElement("div");
-        const contentdiv=document.createElement("div");
-        const type=document.createElement("div");
-        type.innerText=el.types;
-        const name=document.createElement("div");
-        name.innerText=el.name;
-        const priceDiv=document.createElement("div");
-        const price=document.createElement("div");
-        price.innerText=`₹${el.price}`;
-       
-        const strikeOffPrice=document.createElement("div");
-        strikeOffPrice.innerText=`₹${el.strikeOffPrice}`;
-        priceDiv.append(price,strikeOffPrice);
-        const tribeDiv=document.createElement("div");
-        const tribePrice= +(el.price)-Math.floor((+(el.price)*15)/100);
-        tribeDiv.innerText=`₹${tribePrice} For Tribe Members`
-        const cart=document.createElement("div");
-        cart.innerHTML=`<button><i class="fa-solid fa-bag-shopping"> Add to bag</i><button>`
-        let check=false;
-        for(let j=0;j<cartArr.length;j++){
-            if(cartArr[j].id==el.id){
-                check=true;
-                console.log(cartArr[j].id,el.id);
-                break;
+    if(data.length===0){
+        document.getElementById("container")
+       const div=document.createElement("div");
+       div.setAttribute("id","sorry");
+       const div1=document.createElement("div");
+       div1.innerText="Sorry, We couldn't Find any matches!";
+       const srybtn=document.createElement("div");
+       srybtn.setAttribute("id","sorrybtn");
+       srybtn.innerText="Clear Filters";
+       srybtn.addEventListener("click",()=>{
+        clearAllFilter();
+       })
+       div.append(div1,srybtn);
+       document.getElementById("container").append(div);
+        document.getElementById("container").style.display="block";
+    }
+    else{
+        document.getElementById("container").style.display="grid";
+        data.map((el)=>{
+            const card=document.createElement("div");
+            const imgDiv=document.createElement("div");
+            const img=document.createElement("img");
+            img.src=el.image;
+            imgDiv.append(img);
+            const contentMainDiv = document.createElement("div");
+            const contentdiv=document.createElement("div");
+            const type=document.createElement("div");
+            type.innerText=el.types;
+            const name=document.createElement("div");
+            name.innerText=el.name;
+            const priceDiv=document.createElement("div");
+            const price=document.createElement("div");
+            price.innerText=`₹${el.price}`;
+           
+            const strikeOffPrice=document.createElement("div");
+            strikeOffPrice.innerText=`₹${el.strikeOffPrice}`;
+            priceDiv.append(price,strikeOffPrice);
+            const tribeDiv=document.createElement("div");
+            const tribePrice= +(el.price)-Math.floor((+(el.price)*15)/100);
+            tribeDiv.innerText=`₹${tribePrice} For Tribe Members`
+            const cart=document.createElement("div");
+            cart.innerHTML=`<button><i class="fa-solid fa-bag-shopping"> Add to bag</i><button>`
+            let check=false;
+            for(let j=0;j<cartArr.length;j++){
+                if(cartArr[j].id==el.id){
+                    check=true;
+                    console.log(cartArr[j].id,el.id);
+                    break;
+                }
             }
-        }
-        if(check){
-            cart.innerHTML=`<button><i class="fa-solid fa-bag-shopping"> Added to bag</i><button>` 
-        }
-        else{
-            cart.innerHTML=`<button><i class="fa-solid fa-bag-shopping"> Add to bag</i><button>` 
-        }
-        cart.addEventListener("click",()=>{
-            sendCartdata(el,cart);
-        })
-        contentdiv.append(type,name,priceDiv);
-        const wish=document.createElement("div"); 
-        wish.innerHTML=`<i class="fa-regular fa-heart"></i>`
-       
-        let checkw=false;
-    for(let j=0;j<wishArr.length;j++){
-     if(wishArr[j].id==el.id){
-         checkw=true;
-         console.log(wishArr[j].id,el.id);
-         break;
+            if(check){
+                cart.innerHTML=`<button><i class="fa-solid fa-bag-shopping"> Added to bag</i><button>` 
+            }
+            else{
+                cart.innerHTML=`<button><i class="fa-solid fa-bag-shopping"> Add to bag</i><button>` 
+            }
+            cart.addEventListener("click",()=>{
+                sendCartdata(el,cart);
+            })
+            contentdiv.append(type,name,priceDiv);
+            const wish=document.createElement("div"); 
+            wish.innerHTML=`<i class="fa-regular fa-heart"></i>`
+           
+            let checkw=false;
+        for(let j=0;j<wishArr.length;j++){
+         if(wishArr[j].id==el.id){
+             checkw=true;
+             console.log(wishArr[j].id,el.id);
+             break;
+         }
      }
- }
- if(checkw){
-    wish.innerHTML=`<i class="fa-solid fa-heart"></i>`
- }
- else{
-    wish.innerHTML=`<i class="fa-regular fa-heart"></i>`
- }
-        wish.addEventListener("click",()=>{          
-          showWishes(el,wish);
-          if(wishArr.length>0){
-            document.getElementById("showwishimage").innerHTML=`<i class="fa-solid fa-heart"></i>`;
-        }
-        else{
-            document.getElementById("showwishimage").innerHTML=`<i class="fa-regular fa-heart"></i>`;
-        }
+     if(checkw){
+        wish.innerHTML=`<i class="fa-solid fa-heart"></i>`
+     }
+     else{
+        wish.innerHTML=`<i class="fa-regular fa-heart"></i>`
+     }
+            wish.addEventListener("click",()=>{          
+              showWishes(el,wish);
+              if(wishArr.length>0){
+                document.getElementById("showwishimage").innerHTML=`<i class="fa-solid fa-heart"></i>`;
+            }
+            else{
+                document.getElementById("showwishimage").innerHTML=`<i class="fa-regular fa-heart"></i>`;
+            }
+            })
+            
+            contentMainDiv.append(contentdiv,wish)
+            const rating=document.createElement("div");
+            rating.innerHTML=`${el.rating}<i class="fa-solid fa-star"></i>`
+            rating.setAttribute("id","ratediv");
+            card.append(imgDiv,contentMainDiv,tribeDiv,cart,rating);
+            imgDiv.addEventListener('click',()=>{
+                localStorage.setItem("details",JSON.stringify(el));
+                localStorage.setItem("hidden","false");
+                localStorage.setItem("page","men");
+                location.href="../descriptionPage/description.html";
+            })
+            document.getElementById("container").append(card);
         })
-        
-        contentMainDiv.append(contentdiv,wish)
-        const rating=document.createElement("div");
-        rating.innerHTML=`${el.rating}<i class="fa-solid fa-star"></i>`
-        rating.setAttribute("id","ratediv");
-        card.append(imgDiv,contentMainDiv,tribeDiv,cart,rating);
-        imgDiv.addEventListener('click',()=>{
-            localStorage.setItem("details",JSON.stringify(el));
-            localStorage.setItem("hidden","false");
-            localStorage.setItem("page","men");
-            location.href="../descriptionPage/description.html";
-        })
-        document.getElementById("container").append(card);
-    })
+    }
 }
 document.getElementById("tshirt").addEventListener("click",(e)=>{
     // let category = localStorage.getItem('category')||""
@@ -935,26 +958,49 @@ show();
 
 document.getElementById("clear").addEventListener("click",()=>{
     localStorage.setItem('category',"")
-localStorage.setItem('types',"")
- localStorage.setItem('color',"");
-localStorage.setItem('size',"");
- localStorage.setItem('rating',"");
- document.getElementById("shirt").style.color = 'rgb(158 158 160)'
- document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
- document.getElementById("jacket").style.color = 'rgb(158 158 160)'
- document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
- document.getElementById("campus").style.color = 'rgb(158 158 160)'
- document.getElementById("bewakoof").style.color = 'rgb(158 158 160)'
- document.getElementById("colorBlack").style.color = 'rgb(158 158 160)'
- document.getElementById("colorWhite").style.color = 'rgb(158 158 160)'
- document.getElementById("colorgrey").style.color = 'rgb(158 158 160)'
- document.getElementById("colorRed").style.color = 'rgb(158 158 160)'
- document.getElementById("sixe_xl").style.color = 'rgb(158 158 160)'
- document.getElementById("sixe_xxl").style.color = 'rgb(158 158 160)'
- document.getElementById("sixe_x").style.color = 'rgb(158 158 160)'
- document.getElementById("highrating").style.color = 'rgb(158 158 160)'
- document.getElementById("midrating").style.color = 'rgb(158 158 160)'
- document.getElementById("lowrating").style.color = 'rgb(158 158 160)'
- Applyfilter();
+    localStorage.setItem('types',"")
+     localStorage.setItem('color',"");
+    localStorage.setItem('size',"");
+     localStorage.setItem('rating',"");
+     document.getElementById("shirt").style.color = 'rgb(158 158 160)'
+     document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
+     document.getElementById("jacket").style.color = 'rgb(158 158 160)'
+     document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
+     document.getElementById("campus").style.color = 'rgb(158 158 160)'
+     document.getElementById("bewakoof").style.color = 'rgb(158 158 160)'
+     document.getElementById("colorBlack").style.color = 'rgb(158 158 160)'
+     document.getElementById("colorWhite").style.color = 'rgb(158 158 160)'
+     document.getElementById("colorgrey").style.color = 'rgb(158 158 160)'
+     document.getElementById("colorRed").style.color = 'rgb(158 158 160)'
+     document.getElementById("sixe_xl").style.color = 'rgb(158 158 160)'
+     document.getElementById("sixe_xxl").style.color = 'rgb(158 158 160)'
+     document.getElementById("sixe_x").style.color = 'rgb(158 158 160)'
+     document.getElementById("highrating").style.color = 'rgb(158 158 160)'
+     document.getElementById("midrating").style.color = 'rgb(158 158 160)'
+     document.getElementById("lowrating").style.color = 'rgb(158 158 160)'
+     Applyfilter();
 })
-
+function clearAllFilter(){
+    localStorage.setItem('category',"")
+    localStorage.setItem('types',"")
+     localStorage.setItem('color',"");
+    localStorage.setItem('size',"");
+     localStorage.setItem('rating',"");
+     document.getElementById("shirt").style.color = 'rgb(158 158 160)'
+     document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
+     document.getElementById("jacket").style.color = 'rgb(158 158 160)'
+     document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
+     document.getElementById("campus").style.color = 'rgb(158 158 160)'
+     document.getElementById("bewakoof").style.color = 'rgb(158 158 160)'
+     document.getElementById("colorBlack").style.color = 'rgb(158 158 160)'
+     document.getElementById("colorWhite").style.color = 'rgb(158 158 160)'
+     document.getElementById("colorgrey").style.color = 'rgb(158 158 160)'
+     document.getElementById("colorRed").style.color = 'rgb(158 158 160)'
+     document.getElementById("sixe_xl").style.color = 'rgb(158 158 160)'
+     document.getElementById("sixe_xxl").style.color = 'rgb(158 158 160)'
+     document.getElementById("sixe_x").style.color = 'rgb(158 158 160)'
+     document.getElementById("highrating").style.color = 'rgb(158 158 160)'
+     document.getElementById("midrating").style.color = 'rgb(158 158 160)'
+     document.getElementById("lowrating").style.color = 'rgb(158 158 160)'
+     Applyfilter();
+}

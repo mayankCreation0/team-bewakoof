@@ -321,6 +321,56 @@ color:rgb(168,168,171) ;
   color: rgb(250,208,59);
   margin-left: 3px;
 }
+
+.changeContainer{
+border: 1px solid teal;
+}
+
+#sorry{
+  
+width: 80%;
+  margin:auto;
+  text-align: center;
+ display: block;
+ margin-top: 70px;
+}
+#sorry:nth-child(1){
+  font-family: "Montserrat",sans-serif;
+  font-size: 24px;
+ 
+}
+#sorrybtn{
+  width: 30%;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px !important;
+  font-family: "Montserrat",sans-serif;
+  font-size: 16px;
+  color: #51cccc;
+  border-radius: 2px;
+  border: 1px solid #51cccc;
+  padding: 7px 14px;
+  line-height: 20px;
+  background-color: white;
+  margin-top: 20px;
+  padding-left:100px !important;
+  cursor: pointer;
+}
+#sorrybtn:hover{
+  color:white;
+  background-color:#51cccc ;
+}
+#loadingdiv{
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  /* display: none; */
+  }
+  #loadingdiv img{
+    width: 350px ;
+    height: 120px;
+  }
 @media screen and (max-width:980px) {
   
   #container{
