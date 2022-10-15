@@ -1,14 +1,13 @@
-*{
-    line-height: 12px;
-}
+
 body{
     background-color: rgb(21, 20, 20);
     font-family: "montserrat", sans-serif;
 }
 
-#container {
-    width: 75%;
+#container-footer {
+    width: 100%;
     margin: auto;
+    line-height: 12px;
 
 
 }
@@ -17,7 +16,7 @@ body{
     color: white;
     text-decoration: none;
 }
-#container>h1{
+#container-footer>h1{
    color: #fdd835;
     
 
@@ -161,7 +160,7 @@ p{
 h4{
     line-height: 20px;
 }
-#container hr{
+#container-footer hr{
     /* border: 1px solid red;
     background-color: blue; */
     margin: 4% 0;
