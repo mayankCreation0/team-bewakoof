@@ -128,6 +128,16 @@ body{
     /* margin-bottom: 30px; */
     padding: 15px 0;
   }
+  #filters>div:first-child{
+    display: flex;
+    justify-content: space-between;
+  }
+  #filters p{
+    text-transform: uppercase;
+  }
+  #filters p:nth-child(2){
+    cursor: pointer;
+  }
   .filtermain{
     display: flex;
     justify-content: space-between;
