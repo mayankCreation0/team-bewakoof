@@ -1,3 +1,78 @@
+localStorage.setItem('category',"")
+localStorage.setItem('types',"")
+ localStorage.setItem('color',"");
+localStorage.setItem('size',"");
+ localStorage.setItem('rating',"");
+
+
+function checkforcolor(){
+let a=0;    
+
+   function checkcategory(){
+    const category = localStorage.getItem('category');
+    if(category!=""){
+        a++;
+        document.getElementById('categoryname').style.color='#42a2a2';
+    }
+   else{
+        document.getElementById('categoryname').style.color="black";
+    }
+   }
+
+   function checksize(){
+   
+    const size = localStorage.getItem('size');
+    if(size!=""){
+        a++;
+        document.getElementById('sizename').style.color='#42a2a2';
+    }
+    else if(size===""){
+        document.getElementById('sizename').style.color="black";
+    }
+   }
+   function checkcolor(){
+    const color = localStorage.getItem('color');
+    if(color!=""){
+        a++;
+        document.getElementById('colorname').style.color='#42a2a2';
+    }
+    else{
+        document.getElementById('colorname').style.color="black";
+    }
+   }
+   function checktype(){
+    const type = localStorage.getItem('types');
+    if(type!=""){
+        a++;
+        document.getElementById('typename').style.color='#42a2a2';
+    }
+    else {
+        document.getElementById('typename').style.color="black";
+    }
+
+   }
+   function checkrating(){
+    const rating = localStorage.getItem('rating');
+    if(rating!=""){
+        a++;
+        document.getElementById('ratingname').style.color='#42a2a2';
+    }
+    else {
+        document.getElementById('ratingname').style.color="black";
+    }
+   }
+   checkcategory();
+   checksize();
+   checktype();
+   checkrating();
+   checkcolor();
+   if(a>0){
+    document.getElementById("clear").style.color="#42a2a2";
+   }
+   else{
+    document.getElementById("clear").style.color='rgb(158 158 160)';
+   }
+}
 
 const displaywish=()=>{
     let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
@@ -115,13 +190,173 @@ async function get(url){
     
    const res= await fetch(url);
    const data=await res.json();
-   console.log(data);
-   display(data);
+   return data;
+   
 }
+const Firstdisplay =async()=>{
+    let data = await get('http://localhost:3000/mens');
+    display(data);
+}
+Firstdisplay();
 
-get(url);
-
-
+ const Applyfilter =async ()=>{
+  checkforcolor();
+   let category = localStorage.getItem('category')||"";
+   let type = localStorage.getItem('types')||"";
+   let color = localStorage.getItem('color')||"";
+   let size = localStorage.getItem('size')||"";
+   let rating = localStorage.getItem('rating')||"";
+   if(category!=""){
+    const url=`http://localhost:3000/mens?category=${category}`
+    let data = await get(url);
+    if(type!=""){
+        data = data.filter((el)=>{
+            return el.types===type;
+        })
+    }
+     if(color!=""){
+        data = data.filter((el)=>{
+            return el.color===color;
+        })
+     }
+     if(size!=""){
+        data = data.filter((el)=>{
+            return +(el.rating)>4.5;
+        })
+     }
+     if(rating!=""){
+        // const ratingurl= await get(`http://localhost:3000/mens`);
+       if(rating==="highRating"){
+        data = data.filter((el)=>{
+            return el.rating>=4.5;
+        })
+       }
+       else if(rating==="midRating"){
+        data = data.filter((el)=>{
+            return el.rating>=3
+        })
+       }
+       else{
+        data = data.filter((el)=>{
+            return el.rating>=2
+        })
+       }
+     }
+    display(data);
+     return ;
+   }
+   else if(type!==""){
+    const url=`http://localhost:3000/mens?types=${type}`
+    let data = await get(url);
+    if(color!=""){
+        data = data.filter((el)=>{
+            return el.color===color;
+        })
+     }
+     if(size!=""){
+        data = data.filter((el)=>{
+            return +(el.rating)>4.5;
+        })
+     }
+     if(rating!=""){
+        // const ratingurl= await get(`http://localhost:3000/mens`);
+       if(rating==="highRating"){
+        data = data.filter((el)=>{
+            return el.rating>=4.5;
+        })
+       }
+       else if(rating==="midRating"){
+        data = data.filter((el)=>{
+            return el.rating>=3
+        })
+       }
+       else{
+        data = data.filter((el)=>{
+            return el.rating>=2
+        })
+       }
+     }
+    display(data);
+    return;
+   }
+   else if(color!==""){
+    const url=`http://localhost:3000/mens?color=${type}`
+    let data = await get(url)
+     if(size!=""){
+        data = data.filter((el)=>{
+            return +(el.rating)>4.5;
+        })
+     }
+     if(rating!=""){
+        // const ratingurl= await get(`http://localhost:3000/mens`);
+       if(rating==="highRating"){
+        data = data.filter((el)=>{
+            return el.rating>=4.5;
+        })
+       }
+       else if(rating==="midRating"){
+        data = data.filter((el)=>{
+            return el.rating>=3
+        })
+       }
+       else{
+        data = data.filter((el)=>{
+            return el.rating>=2
+        })
+       }
+     }
+    display(data);
+    return;
+   }
+   else if(size!==""){
+    const url=`http://localhost:3000/mens?size=${size}`
+    let data = await get(url);
+     if(rating!=""){
+        // const ratingurl= await get(`http://localhost:3000/mens`);
+       if(rating==="highRating"){
+        data = data.filter((el)=>{
+            return el.rating>=4.5;
+        })
+       }
+       else if(rating==="midRating"){
+        data = data.filter((el)=>{
+            return el.rating>=3
+        })
+       }
+       else{
+        data = data.filter((el)=>{
+            return el.rating>=2
+        })
+       }
+     }
+    display(data);
+    return;
+   }
+  else if(rating!=""){
+    let data = await get('http://localhost:3000/mens');
+ 
+        // const ratingurl= await get(`http://localhost:3000/mens`);
+       if(rating==="highRating"){
+        data = data.filter((el)=>{
+            return el.rating>=4.5;
+        })
+       }
+       else if(rating==="midRating"){
+        data = data.filter((el)=>{
+            return el.rating>=3
+        })
+       }
+       else{
+        data = data.filter((el)=>{
+            return el.rating>=2
+        })
+       }
+    display(data);
+  }
+  else{
+    Firstdisplay();
+  }
+ }
 function display(data){
     document.getElementById("container").innerHTML="";
     data.map((el)=>{
@@ -198,7 +433,7 @@ function display(data){
         rating.innerHTML=`${el.rating}<i class="fa-solid fa-star"></i>`
         rating.setAttribute("id","ratediv");
         card.append(imgDiv,contentMainDiv,tribeDiv,cart,rating);
-        card.addEventListener('click',()=>{
+        imgDiv.addEventListener('click',()=>{
             localStorage.setItem("details",JSON.stringify(el));
             localStorage.setItem("hidden","false");
             localStorage.setItem("page","men");
@@ -207,112 +442,371 @@ function display(data){
         document.getElementById("container").append(card);
     })
 }
-document.getElementById("tshirt").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?category=Tshirt"
-    get(url);   
+document.getElementById("tshirt").addEventListener("click",(e)=>{
+    // let category = localStorage.getItem('category')||""
+    let elid = localStorage.getItem('category')||""
+    if(elid!=""){
+        if(elid==='Shirt'){
+            document.getElementById("shirt").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Hoodies'){
+            document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Jacket'){
+            document.getElementById("jacket").style.color = 'rgb(158 158 160)'
+        }
+        else{
+            localStorage.setItem('category',"");
+            e.target.style.color = 'rgb(158 158 160)';
+            Applyfilter();
+            return
+        }
+    }
+e.target.style.color = '#42a2a2'
+    localStorage.setItem("category",'Tshirt');
+   
+    Applyfilter();
     })
 
-    document.getElementById("shirt").addEventListener("click",()=>{
-        const url="http://localhost:3000/mens?category=Shirt"
-        get(url);   
+    document.getElementById("shirt").addEventListener("click",(e)=>{
+       
+        let elid = localStorage.getItem('category')||""
+        if(elid!=""){
+            if(elid==='Tshirt'){
+                document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
+            }
+            else if(elid==='Hoodies'){
+                document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
+            }
+            else if(elid==='Jacket'){
+                document.getElementById("jacket").style.color = 'rgb(158 158 160)'
+            }
+            else{
+                localStorage.setItem('category',"");
+                e.target.style.color = 'rgb(158 158 160)';
+                Applyfilter();
+                return
+            }
+        }
+        e.target.style.color = '#42a2a2'
+        localStorage.setItem("category",'Shirt');
+        Applyfilter();
+        
         }) 
- document.getElementById("hoodies").addEventListener("click",()=>{
-            const url="http://localhost:3000/mens?category=Hoodies"
-            get(url);   
+ document.getElementById("hoodies").addEventListener("click",(e)=>{
+            // const url="http://localhost:3000/mens?category=Hoodies"
+            let elid = localStorage.getItem('category')||""
+            if(elid!=""){
+                if(elid==='Tshirt'){
+                    document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
+                }
+                else if(elid==='Shirt'){
+                    document.getElementById("shirt").style.color = 'rgb(158 158 160)'
+                }
+                else if(elid==='Jacket'){
+                    document.getElementById("jacket").style.color = 'rgb(158 158 160)'
+                }
+                else{
+                    localStorage.setItem('category',"");
+                    e.target.style.color = 'rgb(158 158 160)';
+                    Applyfilter();
+                    return
+                }
+            }
+            e.target.style.color = '#42a2a2'
+            localStorage.setItem("category",'Hoodies');
+            Applyfilter();   
             })
-   document.getElementById("jacket").addEventListener("click",()=>{
-                const url="http://localhost:3000/mens?category=Jacket"
-                get(url);   
+   document.getElementById("jacket").addEventListener("click",(e)=>{
+                // const url="http://localhost:3000/mens?category=Jacket"
+
+                let elid = localStorage.getItem('category')||""
+            if(elid!=""){
+                if(elid==='Tshirt'){
+                    document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
+                }
+                else if(elid==='Shirt'){
+                    document.getElementById("shirt").style.color = 'rgb(158 158 160)'
+                }
+                else if(elid==='Hoodies'){
+                    document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
+                }
+                else{
+                    localStorage.setItem('category',"");
+                    e.target.style.color = 'rgb(158 158 160)';
+                    Applyfilter();
+                    return
+                }
+            }
+            e.target.style.color = '#42a2a2'
+                localStorage.setItem("category",'Jacket');
+            Applyfilter();   
                 })
 
-document.getElementById("kurta").addEventListener("click",()=>{
-const url="http://localhost:3000/mens?category=Kurta"
-get(url);   
+  
+
+document.getElementById("bewakoof").addEventListener("click",(e)=>{
+// const url="http://localhost:3000/mens?types=Bewakoof"
+let elid = localStorage.getItem('types')||""
+if(elid!=""){
+    if(elid==='Campus Sutra'){
+        document.getElementById("campus").style.color = 'rgb(158 158 160)'
+    }else {
+        localStorage.setItem('types',"");
+        e.target.style.color = 'rgb(158 158 160)';
+        Applyfilter();
+        return
+    }
+}
+e.target.style.color = '#42a2a2'
+localStorage.setItem("types",'Bewakoof');
+Applyfilter();      
 })
 
-document.getElementById("vest").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?category=Vest"
-    get(url);   
+document.getElementById("campus").addEventListener("click",(e)=>{
+    let elid = localStorage.getItem('types')||""
+    if(elid!=""){
+        if(elid==='Bewakoof'){
+            document.getElementById("bewakoof").style.color = 'rgb(158 158 160)'
+        }else{
+            localStorage.setItem('types',"");
+            e.target.style.color = 'rgb(158 158 160)';
+            Applyfilter();
+            return
+        }
+    }
+
+    e.target.style.color = '#42a2a2';
+    localStorage.setItem("types",'Campus Sutra');
+Applyfilter();
     })
-
- document.getElementById("pants").addEventListener("click",()=>{
-        const url="http://localhost:3000/mens?category=Pants"
-        get(url);   
-        })    
-
-document.getElementById("bewakoof").addEventListener("click",()=>{
-const url="http://localhost:3000/mens?types=Bewakoof"
-get(url);   
-})
-
-document.getElementById("campus").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?types=Campus sutra"
-    get(url);  
-    })
-
-    document.getElementById("colorRed").addEventListener("click",()=>{
-        const url="http://localhost:3000/mens?color=red"
-        get(url);  
+///////color filter
+    document.getElementById("colorRed").addEventListener("click",(e)=>{
+        // const url="http://localhost:3000/mens?color=red"
+        let elid = localStorage.getItem('color')||""
+        if(elid!=""){
+            if(elid==='black'){
+                document.getElementById("colorBlack").style.color = 'rgb(158 158 160)'
+            }
+            else if(elid==='white'){
+                document.getElementById("colorWhite").style.color = 'rgb(158 158 160)'
+            }
+            else if(elid==='grey'){
+                document.getElementById("colorgrey").style.color = 'rgb(158 158 160)'
+            }
+            else{
+                localStorage.setItem('color',"");
+                e.target.style.color = 'rgb(158 158 160)';
+                Applyfilter();
+                return
+            }
+        }
+e.target.style.color = '#42a2a2'
+        localStorage.setItem("color",'red');
+        Applyfilter();
         })
 
- document.getElementById("colorBlack").addEventListener("click",()=>{
-        const url="http://localhost:3000/mens?color=black"
-        get(url);  
+ document.getElementById("colorBlack").addEventListener("click",(e)=>{
+        // const url="http://localhost:3000/mens?color=black"
+        let elid = localStorage.getItem('color')||""
+        if(elid!=""){
+            if(elid==='red'){
+                document.getElementById("colorRed").style.color = 'rgb(158 158 160)'
+            }
+            else if(elid==='white'){
+                document.getElementById("colorWhite").style.color = 'rgb(158 158 160)'
+            }
+            else if(elid==='grey'){
+                document.getElementById("colorgrey").style.color = 'rgb(158 158 160)'
+            }
+            else{
+                localStorage.setItem('color',"");
+                e.target.style.color = 'rgb(158 158 160)';
+                Applyfilter();
+                return
+            }
+        }
+e.target.style.color = '#42a2a2'
+        localStorage.setItem("color",'black');
+        Applyfilter();  
         })
-   document.getElementById("colorWhite").addEventListener("click",()=>{
-            const url="http://localhost:3000/mens?color=white"
-            get(url);  
+   document.getElementById("colorWhite").addEventListener("click",(e)=>{
+            // const url="http://localhost:3000/mens?color=white"
+            let elid = localStorage.getItem('color')||""
+        if(elid!=""){
+            if(elid==='red'){
+                document.getElementById("colorRed").style.color = 'rgb(158 158 160)'
+            }
+            else if(elid==='black'){
+                document.getElementById("colorBlack").style.color = 'rgb(158 158 160)'
+            }
+            else if(elid==='grey'){
+                document.getElementById("colorgrey").style.color = 'rgb(158 158 160)'
+            }
+            else{
+                localStorage.setItem('color',"");
+                e.target.style.color = 'rgb(158 158 160)';
+                Applyfilter();
+                return
+            }
+        }
+e.target.style.color = '#42a2a2'
+            localStorage.setItem("color",'white');
+        Applyfilter();   
    }) 
-   document.getElementById("colorgrey").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?color=grey"
-    get(url);  
+   document.getElementById("colorgrey").addEventListener("click",(e)=>{
+    // const url="http://localhost:3000/mens?color=grey"
+    let elid = localStorage.getItem('color')||""
+    if(elid!=""){
+        if(elid==='red'){
+            document.getElementById("colorRed").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='black'){
+            document.getElementById("colorBlack").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='white'){
+            document.getElementById("colorWhite").style.color = 'rgb(158 158 160)'
+        }
+        else{
+            localStorage.setItem('color',"");
+            e.target.style.color = 'rgb(158 158 160)';
+            Applyfilter();
+            return
+        }
+    }
+e.target.style.color = '#42a2a2'
+
+    localStorage.setItem("color",'grey');
+    Applyfilter();    
 })      
-
-document.getElementById("sixe_x").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?size=X"
-    get(url);  
-})   
-document.getElementById("sixe_xl").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?size=XL"
-    get(url);  
-})   
-document.getElementById("sixe_xxl").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?size=XXL"
-    get(url);  
-})   
-document.getElementById("sixe_xxl").addEventListener("click",()=>{
-    const url="http://localhost:3000/mens?size=XXL"
-    get(url);  
-})  
-
-document.getElementById("highrating").addEventListener("click",async ()=>{
-    const res= await fetch("http://localhost:3000/mens");
-    const data=await res.json();
-   let filterArr=data.filter((el)=>{
-    return +(el.rating)>4.5;
-   })
-   display(filterArr);
-})  
-
-document.getElementById("midrating").addEventListener("click",async ()=>{
-    const res= await fetch("http://localhost:3000/mens");
-    const data=await res.json();
-   let filterArr=data.filter((el)=>{
-    if(+(el.rating)>3 && +(el.rating)<4.5) {
-        return el.rating;
+//// size filter
+document.getElementById("sixe_x").addEventListener("click",(e)=>{
+    // const url="http://localhost:3000/mens?size=X"
+    let elid = localStorage.getItem('size')||""
+    if(elid!=""){
+        if(elid==='XL'){
+            document.getElementById("sixe_xl").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='XXL'){
+            document.getElementById("sixe_xxl").style.color = 'rgb(158 158 160)'
+        }
+        else{
+            localStorage.setItem('size',"");
+            e.target.style.color = 'rgb(158 158 160)';
+            Applyfilter();
+            return
+        }
     }
-   })
-   display(filterArr);
-})  
-document.getElementById("lowrating").addEventListener("click",async ()=>{
-    const res= await fetch("http://localhost:3000/mens");
-    const data=await res.json();
-   let filterArr=data.filter((el)=>{
-    if(+(el.rating)>2 && +(el.rating)<3) {
-        return el.rating;
+    e.target.style.color = '#42a2a2'
+    localStorage.setItem("size",'X');
+    Applyfilter();     
+})   
+document.getElementById("sixe_xl").addEventListener("click",(e)=>{
+    // const url="http://localhost:3000/mens?size=XL"
+    let elid = localStorage.getItem('size')||""
+    if(elid!=""){
+        if(elid==='X'){
+            document.getElementById("sixe_x").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='XXL'){
+            document.getElementById("sixe_xxl").style.color = 'rgb(158 158 160)'
+        }
+        else{
+            localStorage.setItem('size',"");
+            e.target.style.color = 'rgb(158 158 160)';
+            Applyfilter();
+            return
+        }
     }
-   })
-   display(filterArr);
+    e.target.style.color = '#42a2a2'
+    localStorage.setItem("size",'XL');
+    Applyfilter();       
+})     
+document.getElementById("sixe_xxl").addEventListener("click",(e)=>{
+    // const url="http://localhost:3000/mens?size=XXL"
+
+    let elid = localStorage.getItem('size')||""
+    if(elid!=""){
+        if(elid==='X'){
+            document.getElementById("sixe_x").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='XL'){
+            document.getElementById("sixe_xl").style.color = 'rgb(158 158 160)'
+        }
+        else{
+            localStorage.setItem('size',"");
+            e.target.style.color = 'rgb(158 158 160)';
+            Applyfilter();
+            return
+        }
+    }
+    e.target.style.color = '#42a2a2'
+    localStorage.setItem("size",'XXL');
+    Applyfilter();   
+})  
+/////////////////////       srating filter
+document.getElementById("highrating").addEventListener("click", (e)=>{
+    let elid = localStorage.getItem('rating')||""
+    if(elid!=""){
+        if(elid==='midRating'){
+            document.getElementById("midrating").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='lowRating'){
+            document.getElementById("lowrating").style.color = 'rgb(158 158 160)'
+        }
+        else{
+            localStorage.setItem('rating',"");
+            e.target.style.color = 'rgb(158 158 160)';
+            Applyfilter();
+            return
+        }
+    }
+    e.target.style.color = '#42a2a2'
+localStorage.setItem("rating",'highRating');
+    Applyfilter();   
+})  
+/////////////////////
+document.getElementById("midrating").addEventListener("click", (e)=>{
+
+    let elid = localStorage.getItem('rating')||""
+    if(elid!=""){
+        if(elid==='highRating'){
+            document.getElementById("highrating").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='lowRating'){
+            document.getElementById("lowrating").style.color = 'rgb(158 158 160)'
+        }
+        else{
+            localStorage.setItem('rating',"");
+            e.target.style.color = 'rgb(158 158 160)';
+            Applyfilter();
+            return
+        }
+    }
+    e.target.style.color = '#42a2a2'
+localStorage.setItem("rating",'midRating');
+    Applyfilter();   
+})  
+document.getElementById("lowrating").addEventListener("click", (e)=>{
+    let elid = localStorage.getItem('rating')||""
+    if(elid!=""){
+        if(elid==='highRating'){
+            document.getElementById("highrating").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='midRating'){
+            document.getElementById("midrating").style.color = 'rgb(158 158 160)'
+        }
+        else{
+            localStorage.setItem('rating',"");
+            e.target.style.color = 'rgb(158 158 160)';
+            Applyfilter();
+            return
+        }
+    }
+    e.target.style.color = '#42a2a2'
+
+localStorage.setItem("rating",'lowRating');
+    Applyfilter();   
 })  
 ////sort
 document.getElementById("sort_price").addEventListener("change",()=>{
@@ -439,4 +933,28 @@ function showWishes(el,wish){
 
 show();
 
+document.getElementById("clear").addEventListener("click",()=>{
+    localStorage.setItem('category',"")
+localStorage.setItem('types',"")
+ localStorage.setItem('color',"");
+localStorage.setItem('size',"");
+ localStorage.setItem('rating',"");
+ document.getElementById("shirt").style.color = 'rgb(158 158 160)'
+ document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
+ document.getElementById("jacket").style.color = 'rgb(158 158 160)'
+ document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
+ document.getElementById("campus").style.color = 'rgb(158 158 160)'
+ document.getElementById("bewakoof").style.color = 'rgb(158 158 160)'
+ document.getElementById("colorBlack").style.color = 'rgb(158 158 160)'
+ document.getElementById("colorWhite").style.color = 'rgb(158 158 160)'
+ document.getElementById("colorgrey").style.color = 'rgb(158 158 160)'
+ document.getElementById("colorRed").style.color = 'rgb(158 158 160)'
+ document.getElementById("sixe_xl").style.color = 'rgb(158 158 160)'
+ document.getElementById("sixe_xxl").style.color = 'rgb(158 158 160)'
+ document.getElementById("sixe_x").style.color = 'rgb(158 158 160)'
+ document.getElementById("highrating").style.color = 'rgb(158 158 160)'
+ document.getElementById("midrating").style.color = 'rgb(158 158 160)'
+ document.getElementById("lowrating").style.color = 'rgb(158 158 160)'
+ Applyfilter();
+})
 
