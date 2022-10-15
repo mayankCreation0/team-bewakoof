@@ -77,7 +77,7 @@ body {
 
 }
 #navbar_top_headings>li>a{
-    width: 50px;
+    width: 100px;
 }
 #navbar_top_headings>div,
 #navbar_top_headings1>div {
@@ -99,7 +99,7 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-around;
-
+    z-index: 5;
 }
 
 #logohome {
@@ -167,11 +167,14 @@ body {
     border: none;
 }
 
-#nav_search_bar>li>input:hover {
+/* #nav_search_bar>li>input:hover {
     background-color: transparent;
     border: .5px solid #333;
+} */
+#nav_search_bar>li>input:focus{
+    background-color: transparent;
+    outline: 1px solid rgb(118, 118, 118);
 }
-
 #navbar_menu {
     width: 100%;
     display: flex;
@@ -190,7 +193,7 @@ body {
 }
 
 #nav_search_bar>li>a>img {
-    width: 23%;
+    width: 50%;
     border-radius: 50%;
 }
 
@@ -220,6 +223,10 @@ hr {
 
     padding-bottom: 18px;
     visibility: visible;
+    z-index: 4;
+}
+#logohome>li>a>img:hover{
+    border: none;
 }
 
 #sub_menu_item {
