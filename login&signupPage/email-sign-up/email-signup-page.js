@@ -19,7 +19,7 @@ const togglePassword = document.querySelector("#togglePassword");
   
   function collectdata() 
   {
-    console.log("afsgasg");
+    // console.log("afsgasg");
     event.preventDefault();
     let name = document.getElementById("fname").value || "";
     let lname = document.getElementById("lname").value || "";
@@ -28,8 +28,8 @@ const togglePassword = document.querySelector("#togglePassword");
     let newInstructor = new DataCreateforStudent(name, lname ,email, password);
     let AllInstructor =
       JSON.parse(localStorage.getItem("peopleRecord")) || [];
-    AllInstructor.push(newInstructor);
-    localStorage.setItem(
+      AllInstructor.push(newInstructor);
+      localStorage.setItem(
       "peopleRecord",
       JSON.stringify(AllInstructor)
     );
