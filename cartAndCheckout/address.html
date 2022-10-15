@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3126724da1.js"></script>
+    <title>Your Address</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://images.bewakoof.com/web/favicon-1635856217.png" hreflang="en-in">
+    <link rel="stylesheet" href="address.css">
+</head>
+<body>
+ <form action="" id="form">
+<div id="address">
+    <div>
+        <h2>Add New Address</h2>
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div id="nameAndPhone">
+  <input type="text" placeholder="Enter Name" id="name">
+  <input type="text" placeholder="Enter Mobile" > <br>
+  <hr>
+    </div>
+    <div id="pinCode">
+        <input type="text" placeholder=" Pin Code " id="pincode" > <br>
+    </div>
+    <div id="StateAndCity">
+     <input type="text" placeholder="State" id="state">
+     <input type="text" placeholder="City" id="city">
+    </div>
+    <div id="flate">
+        <input type="text" placeholder="Flat no/Building, Street name" id="flateNO" >
+    </div>
+    <div id="Area">
+        <input type="text" placeholder="Area/Locality" >
+    </div>
+    <div id="LandMark">
+        <input type="text" placeholder="Land mark (Optional)">
+    </div>
+    <div id="SaveParagraph">
+   <p>Save Address As</p>
+    </div>
+    <div id="addressSave">
+       <p>Home</p>
+       <P>Office</P>
+       <p>Other</p>
+    </div>
+    <div id="butt">
+        <button>Save Address</button>
+        <button>Cancel</button>
+    </div>
+</div>
+</form>
+</body>
+</html>
+<script>
+ document.querySelector("#form").addEventListener("submit", myFunction);
+ 
+ 
+ function myFunction() {
+   event.preventDefault();
+   let Obj = JSON.parse(localStorage.getItem("address")) || {};
+   Obj = {
+     name: document.querySelector("#name").value,
+     pincode: document.querySelector("#pincode").value,
+     flat: document.querySelector("#flateNO").value,
+     city: document.querySelector("#city").value,
+     state: document.querySelector("#state").value,
+   };
+   console.log(Obj);
+//    ArrayOfObj.push(address);
+   localStorage.setItem("address", JSON.stringify(Obj));
+   alert("Address saved successfully")
+//    window.location.href='payment.html';
+   
+ }
+
+
+//  document.querySelector("form").addEventListener("submit", myFunction);
+// let obj1 = JSON.parse(localStorage.getItem("address")) || [];
+//      function myFunction() {
+//          event.preventDefault();
+//          const name = document.getElementById("name").value;
+//          const pincode = document.getElementById("#pincode").value;
+//          const flat = document.getElementById("#flateNO").value;
+//          const city = document.getElementById("#city").value;
+//          const state = document.getElementById("#state").value;
+
+//          function Object(n, p, f,  c, s) {
+//          this.name = n,
+//          this.pincode = p,
+//          this.flat = f;
+//          this.city = c;
+//          this.state = s;
+//         }
+
+//          let obj = new Object(name, pincode, flat, city, state)
+//          localStorage.setItem("addresses", JSON.stringify(obj));
+//          alert("Address saved successfully")
+//          window.location.href = 'payment.html';
+//      }
+</script>
