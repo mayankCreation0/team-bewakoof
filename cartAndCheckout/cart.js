@@ -44,6 +44,11 @@ var cartData = JSON.parse(localStorage.getItem("cart"))||[];
      // }
 
 //Here we implement the tribee function
+function popuptribe(){
+     document.getElementById("tribepopup").style.display="block";
+     console.log("hello");
+     
+}
 document.querySelector("#dBtn").addEventListener("click",triBeFun);
 function triBeFun()
 {
@@ -52,7 +57,18 @@ function triBeFun()
 }
 
 
-     
+     document.getElementById("dis1").addEventListener("click",()=>{
+          localStorage.setItem("discount","first");
+          document.getElementById("tribepopup").style.display="none";
+     })
+     document.getElementById("dis2").addEventListener("click",()=>{
+          localStorage.setItem("discount","second");
+          document.getElementById("tribepopup").style.display="none";
+     })
+     document.getElementById("bag").addEventListener("click",()=>{
+          localStorage.setItem("discount","none");
+          document.getElementById("tribepopup").style.display="none";
+     })
      var length=cartData.length;
      // console.log("Total length "+length);
      // `My Bag ${length} Item(s)`;
