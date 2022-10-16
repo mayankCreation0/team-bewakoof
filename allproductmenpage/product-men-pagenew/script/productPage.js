@@ -96,7 +96,7 @@ const displycar = ()=>{
  if(cartArr.length>0){
     document.getElementById("showcartnumber").style.display="block";
     // showcartimage
-    document.getElementById("showcartimage").style.color="rgb(255,212,59)";
+    // document.getElementById("showcartimage").style.color="rgb(255,212,59)";
     console.log(cartArr.length)
     document.getElementById("showcartnumber").innerText=cartArr.length;
 }

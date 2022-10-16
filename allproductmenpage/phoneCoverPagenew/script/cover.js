@@ -1,4 +1,11 @@
+import navbar from "../../pcomponents/nav.js"
+import footer from "../../pcomponents/foot.js"
+document.getElementById("onlynav").innerHTML=navbar();
+document.getElementById("container-footer").innerHTML=footer();
 
+let modelName=localStorage.getItem("search_cover");
+        document.getElementById("phonemodelname").innerText=modelName;
+document.getElementById("nav2").innerHTML=`Home / Mobile Cover / ${modelName}`;
 const displaywish=()=>{
     let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
     if(wishArr.length>0){

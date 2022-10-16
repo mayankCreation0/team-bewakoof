@@ -1,4 +1,7 @@
-
+import navbar from "../../pcomponents/nav.js"
+import footer from "../../pcomponents/foot.js"
+document.getElementById("onlynav").innerHTML=navbar();
+document.getElementById("container-footer").innerHTML=footer();
 
 let image = document.getElementById("large-img");
 let small = document.getElementsByClassName("small-img");
@@ -120,7 +123,7 @@ else if(localStorage.getItem("page")==="men"){
         </div>
   `
 }
-else{
+else if(localStorage.getItem("page")==="women"){
   document.getElementById("relatedDivs").innerHTML=`
   <div class="relmaindiv">
           <div class="relimagediv">

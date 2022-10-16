@@ -364,8 +364,8 @@ width: 80%;
  
 }
 #sorrybtn{
-  width: 30%;
-  text-align: center;
+  width: 35%;
+  /* text-align: center; */
   margin: auto;
   margin-top: 15px !important;
   font-family: "Montserrat",sans-serif;
@@ -374,10 +374,10 @@ width: 80%;
   border-radius: 2px;
   border: 1px solid #51cccc;
   padding: 7px 14px;
-  line-height: 20px;
+  line-height: 30px;
   background-color: white;
   margin-top: 20px;
-  padding-left:100px !important;
+  padding-left:80px !important;
   cursor: pointer;
 }
 #sorrybtn:hover{

@@ -216,13 +216,13 @@ hr {
 
 }
 
-#logohome>li>a:hover {
+/* #logohome>li>a:hover {
     border-bottom: 4px solid rgb(253, 216, 53);
 
     padding-bottom: 18px;
     visibility: visible;
     z-index: 4;
-}
+} */
 #logohome>li>a>img:hover{
     border: none;
 }

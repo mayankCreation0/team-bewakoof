@@ -1,6 +1,16 @@
 
 /* nav */
-#nav {
+body{
+    font-family: "montserrat";
+}
+#onlynav{
+    position:sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+  }
+ 
+/* #nav {
     width: 100%;
     border-bottom: 1px solid black;
     position: sticky;
@@ -18,7 +28,7 @@
   }
   #nav>div i{
     padding-top: 10px;
-  }
+  } */
   #search{
     position: relative;
     width: 20%;
@@ -31,18 +41,27 @@ width: 100%;
 height: 30px;
   }
  
-#showcart{
+  #showwishimage{
+    color:rgb(255,216,77);
+  }
+  #showcart{
+    position: relative;
     display: flex;
+    margin-left: 15px;
   }
   #showcartnumber{
-    height: 30%;
-    width: 70%;
+    position: absolute;
+    top: -11px;
+    left: 7px;
+    /* height: 30%;
+    width: 70%; */
     font-size: 11px;
     text-align: center;
-    color: white;
+    color: black;
     border-radius:50% ;
-    background-color:black ;
+    background-color:rgb(255,216,77) ;
     padding: 1px 3px;
+    font-weight: bold;
   }
 
 /* nav */
@@ -114,6 +133,7 @@ border-bottom:1px solid rgb(195,195,195);
     cursor: pointer;
 }
 #main{
+    margin-top: 15px;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap: 20px;
@@ -163,7 +183,7 @@ color:rgb(195,195,195);
     color:rgb(115,216,117);
 }
 #main>div>div>div:nth-child(3){
-    font-size: 12px;
+    font-size: 9px;
     font-weight: bold;
     background-color: grey;
     width: 55%;
