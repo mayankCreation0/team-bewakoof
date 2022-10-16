@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     <script src="https://kit.fontawesome.com/3011bd48b7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
 
         </div>
         <div id="navbar_top_headings1">
-            <li><a href="#">Cantact Us</a></li>
+            <li><a href="#">Contact Us</a></li>
             <li><a href="#">Track Order</a></li>
         </div>
     </div>
@@ -306,6 +307,7 @@
             <li><input type="text" id="search_product" placeholder="search by product,category or collection">
                 <!-- <div id="nav_search_bar_fetchData"></div> -->
             </li>
+            <div id="suggestions"></div>
             <!-- <li class="vl"></li>  -->
             <li id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></li>
             <li id="loginBtn"><a style="font-size: 15px;" href="" id="showDetails">Login</a>
@@ -321,8 +323,11 @@
                 </div>
             </li>
             <li id="wishList"><a href=""><span><i class="far fa-heart"></i></span></a></li>
+            <div id="showwishnumber"></div>
             <li id="cartBtn"><a href=""><span><i class="fa-sharp fa-solid fa-bag-shopping"></i><sup
-                            id="items"></sup></span></a></li>
+                            id="items"></sup></span></a>
+                            <div id="showcartNumber"></div></li>
+                            
             <li class="flag"><a href=""><img src="https://cdn.countryflags.com/thumbs/india/flag-400.png"
                         alt="flaglogo"></a></li>
         </div>

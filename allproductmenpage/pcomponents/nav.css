@@ -2,11 +2,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+   
 }
 
 body {
-    font-family: "montserrat", sans-serif;
+    font-family: "montserrat";
 }
+
 #userDetails{
     display: flex;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -49,23 +51,14 @@ body {
 #navbar_top {
     width: 100%;
     display: flex;
-    margin: auto;
-    align-items: center;
+   
     background-color: rgb(238, 238, 238);
-    justify-content: space-between;
+    justify-content: space-around;
     /* border: 1px solid red; */
 
 }
 
-#navbar_top_headings {
-    width: 40%;
-    margin-left: 150px;
-}
 
-#navbar_top_headings1 {
-    width: 40%;
-    margin-left: 45%;
-}
 
 #navbar_top_headings>li,
 #navbar_top_headings1>li {
@@ -166,11 +159,16 @@ body {
 
     border: none;
 }
+li.flag{
+    margin:0;
+    text-align: center;
+    width: 25%;
+}
 
-/* #nav_search_bar>li>input:hover {
+#nav_search_bar>li>input:hover {
     background-color: transparent;
     border: .5px solid #333;
-} */
+}
 #nav_search_bar>li>input:focus{
     background-color: transparent;
     outline: 1px solid rgb(118, 118, 118);
@@ -193,7 +191,7 @@ body {
 }
 
 #nav_search_bar>li>a>img {
-    width: 50%;
+    width: 30%;
     border-radius: 50%;
 }
 
@@ -218,13 +216,13 @@ hr {
 
 }
 
-#logohome>li>a:hover {
+/* #logohome>li>a:hover {
     border-bottom: 4px solid rgb(253, 216, 53);
 
     padding-bottom: 18px;
     visibility: visible;
     z-index: 4;
-}
+} */
 #logohome>li>a>img:hover{
     border: none;
 }
@@ -269,7 +267,19 @@ hr {
 #logo_sub_menu2 {
     margin-right: 30%;
 }
-
+#nav_search_bar input{
+ position: relative!important;
+}
+#suggestions{
+    position: absolute !important;
+    z-index: 3;
+    width: 320px;
+    height: 30px;
+    /* border: 2px solid teal; */
+    margin-top: 90px;
+    margin-left: 12px;
+   
+}
 #search_product_by_name {
     height: 40px;
     border-radius: 10px;
@@ -342,7 +352,7 @@ hr {
     #navbar_top_headings,
     #navbar_top_headings1,
     #logohome,
-    #search_product,
+    #rch_product,
     #loginBtn,
     .flag {
         display: none;
@@ -491,6 +501,23 @@ hr {
         padding-left: 15px;
     }
 }
+#cartBtn{
+    position: relative;
+}
+/* #showcartNumber{
+    position: absolute;
+    top: -5px;
+    left: 8px;
+    height: 55%;
+    width: 75%;
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    border-radius:50% ;
+     background-color:black ; 
+    padding: 1px 3px;
+    background-color: rgb(255,216,77);
+} */
 @media screen and (min-width:100px) and (max-width:649px){
         #navbar_top_headings,
         #navbar_top_headings1,

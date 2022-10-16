@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
-    <script src="https://kit.fontawesome.com/3011bd48b7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./navbar.css">
-</head>
-
-<body>
+function navbar(){
+    return `
     <div style="font-size: 9px;" id="navbar_top">
         <div id="navbar_top_headings">
             <li><a href="#">Offers</a></li>
@@ -20,7 +9,7 @@
 
         </div>
         <div id="navbar_top_headings1">
-            <li><a href="#">Cantact Us</a></li>
+            <li><a href="#">Contact Us</a></li>
             <li><a href="#">Track Order</a></li>
         </div>
     </div>
@@ -306,6 +295,7 @@
             <li><input type="text" id="search_product" placeholder="search by product,category or collection">
                 <!-- <div id="nav_search_bar_fetchData"></div> -->
             </li>
+            <div id="suggestions"></div>
             <!-- <li class="vl"></li>  -->
             <li id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></li>
             <li id="loginBtn"><a style="font-size: 15px;" href="" id="showDetails">Login</a>
@@ -320,9 +310,14 @@
                     </ul>
                 </div>
             </li>
-            <li id="wishList"><a href=""><span><i class="far fa-heart"></i></span></a></li>
-            <li id="cartBtn"><a href=""><span><i class="fa-sharp fa-solid fa-bag-shopping"></i><sup
-                            id="items"></sup></span></a></li>
+            <div id="showwishimage"><i class="fa-regular fa-heart"></i></div>
+            <div id="showwishnumber"></div>
+            <div id="showcart">
+            <div id="showcartimage"><i class="fa-solid fa-bag-shopping"></i></div>
+            <div id="showcartnumber"></div>
+          </div>
+          
+                            
             <li class="flag"><a href=""><img src="https://cdn.countryflags.com/thumbs/india/flag-400.png"
                         alt="flaglogo"></a></li>
         </div>
@@ -332,55 +327,8 @@
 
     </div>
     <hr>
-    <!-- <div id="navbar_menu">
-        <li><a href="">
-                <P>DIWALI SALE</P>
-            </a></li>
-        <li><a href="">
-                <P>MEN</P>
-            </a></li>
-        <li><a href="">
-                <P>WOMEN</P>
-            </a></li>
-        <li><a href="">
-                <P>ACCESSORIES</P>
-            </a></li>
-        <li><a href="">
-                <P>WINTERWEAR</P>
-            </a></li>
-    </div> -->
-</body>
+    `
+}
 
-</html>
-<script>
-    let isLogined = localStorage.getItem("isLogined") || true;
-    if (isLogined) {
-        document.getElementById("showDetails").innerHTML = `<i class="fa-solid fa-user"></i>`;
-        document.getElementById("userDetails").style.display = "block";
-    } else {
-        document.getElementById("showDetails").innerHTML = "Login";
-        document.getElementById("userDetails").style.display = "none";
-    }
-    let userName = localStorage.getItem("userName");
-    document.getElementById("userName").innerHTML = `Hi, ${userName}`;
-    document.getElementById("toggleBtn").addEventListener("click", showNavbar);
-    let flag = true;
-    function showNavbar() {
-        if (flag) {
-            document.getElementById("sideNavbar").style.display = "none";
-            flag = false;
-        } else {
-            document.getElementById("sideNavbar").style.display = "block";
-            document.getElementById("spectsPic").style.display = "none";
-            document.getElementById("toggleBtn").style.display = "none";
-            flag = true;
-        }
-    }
-    document.getElementById("closeSideNavbar").addEventListener("click", closeSideNavbar);
-    function closeSideNavbar() {
-        document.getElementById("sideNavbar").style.display = "none";
-        document.getElementById("spectsPic").style.display = "block";
-        document.getElementById("toggleBtn").style.display = "block";
-    }
+export default navbar;
 
-</script>
