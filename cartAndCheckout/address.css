@@ -21,6 +21,15 @@
   display: flex;
   /* border: 1px solid black; */
 }
+::-webkit-scrollbar{
+  width: 6px;
+  color: #000;
+  /* border: 1px solid red; */
+}
+::-webkit-scrollbar-thumb{
+  background-color: #fdd835;
+  border-radius: 5px;
+}
 #address>div:first-child>h2 {
   display: flex;
   width: 30%;

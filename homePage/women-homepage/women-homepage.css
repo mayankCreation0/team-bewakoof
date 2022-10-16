@@ -23,7 +23,15 @@ body{
     width: 100%;
     background-color: white;
 }
-
+::-webkit-scrollbar{
+    width: 6px;
+    color: #000;
+    /* border: 1px solid red; */
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fdd835;
+    border-radius: 5px;
+}
 #navbar_top {
     width: 100%;
     display: flex;

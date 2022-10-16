@@ -3,6 +3,12 @@ import footer from "../../pcomponents/foot.js"
 document.getElementById("onlynav").innerHTML=navbar();
 document.getElementById("container-footer").innerHTML=footer();
 
+document.getElementById("showwishimage").addEventListener("click" , () => {
+    location.href ="../wishlistPagenew/wishlist.html";
+})
+document.getElementById("showcartimage").addEventListener("click" , () =>{
+    location.href= "../../cartAndCheckout/cart.html";
+})
 localStorage.setItem('category',"")
 localStorage.setItem('types',"")
  localStorage.setItem('color',"");
