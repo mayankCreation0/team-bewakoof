@@ -11,7 +11,11 @@
 <style>
     #container{
         width: 30%;
-        margin: auto;
+        /* margin: auto; */
+        top: 50%;
+        left: 50%;
+        position: fixed;
+        transform: translate(-50%, -50%);
         /* border: 1px solid red; */
         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     }
@@ -89,20 +93,23 @@
     #btn2{
         display: flex;
         padding: 14px;
+        justify-content: space-evenly;
     }
     #btn2 > button{
         border: 1px solid rgba(0,0,0,.5);
         background-color: #fff;
         border-radius: 4px;
         text-align: center;
-        width: calc(50% - 10px);
-        margin: 0 20px 0 0;
-        height: 100px;
-        padding: 14px 10px;
-        transition: all .1s ease-in 0s;
+        width: 30%;
+        /* margin: 0 20px 0 0; */
+        /* display: flex; */
+        height: 70px;
+        /* padding: 14px 10px; */
+        /* transition: all .1s ease-in 0s; */
     }
     #btn2 > button:hover{
         background: #fdd835;
+        border: #fdd835;
     }
     #top3:nth-child(3){
         text-align: center;
@@ -123,10 +130,20 @@
         text-align: center;
         font-family: "montserrat",sans-serif;
         font-size: 16px;
-        clear: both;
-        
+        clear: both;  
     }
-
+    #btn2 p{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    #btn2 > button > p:nth-child(1){
+        /* border: 1px solid red; */
+        margin-bottom: -9px;
+    }
+    #btn2 > button > p:nth-child(2){
+        font-size: 16px;
+        font-weight: 900;
+    }
 </style>
 <body>
     <div id="container">
@@ -143,8 +160,8 @@
         <div id="top3">
             <p>Become a TriBe Member now!</p>
             <div id="btn2">
-                <button><p>3 months</p><h1>₹ 99</h1></button>
-                <button><p>12 months</p><h1>₹ 199</h1></button>
+                <button><p>3 months</p><p>₹ 99</p></button>
+                <button><p>12 months</p><p>₹ 199</p></button>
             </div>
             <button id="bag">Add to Bag</button>
         </div>
