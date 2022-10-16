@@ -2,6 +2,15 @@
     margin:0%;
     padding: 0%; 
 } */
+::-webkit-scrollbar{
+    width: 6px;
+    color: #000;
+    /* border: 1px solid red; */
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fdd835;
+    border-radius: 5px;
+}
 body{
     margin:0%;
     padding: 0%;
@@ -11,6 +20,15 @@ body{
     /* width: 100vh; */
     /* border: 1px solid red; */
     /* background-color: #ffffff; */
+}
+::-webkit-scrollbar{
+    width: 6px;
+    color: #000;
+    /* border: 1px solid red; */
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fdd835;
+    border-radius: 5px;
 }
 #userDetails{
     display: flex;

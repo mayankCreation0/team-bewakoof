@@ -22,6 +22,15 @@ body {
     border-bottom: 1px solid gray;
 
 }
+::-webkit-scrollbar{
+    width: 6px;
+    color: #000;
+    /* border: 1px solid red; */
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fdd835;
+    border-radius: 5px;
+}
 
 #t1img {
     height: 27px;

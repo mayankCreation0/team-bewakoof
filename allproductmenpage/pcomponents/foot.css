@@ -19,6 +19,15 @@ body{
     background-color: rgb(21, 20, 20);
 
 }
+::-webkit-scrollbar{
+    width: 6px;
+    color: #000;
+    /* border: 1px solid red; */
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fdd835;
+    border-radius: 5px;
+}
 
 .container-grid a{
     color: white;
