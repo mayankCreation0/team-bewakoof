@@ -1,4 +1,7 @@
-
+import navbar from "../../pcomponents/nav.js"
+// import footer from "../../pcomponents/foot.js"
+document.getElementById("onlynav").innerHTML=navbar();
+// document.getElementById("container-footer").innerHTML=footer();
 const displaywish=()=>{
     let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
     if(wishArr.length>0){
@@ -59,6 +62,7 @@ function display(arr){
         const cross=document.createElement("div");
         cross.addEventListener("click",()=>{
             remove(el,index);
+            check();
         })
         cross.innerHTML=`<i class="fa-regular fa-circle-xmark"></i>`
         cross.setAttribute("class","del");

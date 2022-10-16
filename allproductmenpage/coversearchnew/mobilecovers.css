@@ -1,6 +1,22 @@
 body{
-    font-family: montserrat,sans-serif;
+    font-family: "montserrat";
 }
+#onlynav{
+    position:sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+  }
+  #nav2 {
+    width: 100%;
+    height: 30px;
+    font-family: "montserrat";
+    font-size: 12px;
+    margin-top: 15px;
+    color: #2d2d2d;
+    word-spacing: 5px;
+    padding-left: 130px;
+  }
 #container{
     width:80%;   
     margin: auto;
@@ -16,7 +32,7 @@ body{
 #heading{
     width:100%;
     margin: auto;
-    margin-top: 10%;
+     margin-top: 2%; 
     display: flex;
     flex-direction:column;
     justify-content: space-evenly;
@@ -49,12 +65,14 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 15px;
+    margin-top: 10px;
 }
 #popular1{
     display: block;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 15px;
+    margin-top: 10px;
 }
 #input{
     display: block;
@@ -91,3 +109,25 @@ button{
 p{
     color: rgb(130, 127, 127);
 }
+#showwishimage{
+    color:rgb(255,216,77);
+  }
+  #showcart{
+    position: relative;
+    display: flex;
+    margin-left: 15px;
+  }
+  #showcartnumber{
+    position: absolute;
+    top: -11px;
+    left: 7px;
+    /* height: 30%;
+    width: 70%; */
+    font-size: 11px;
+    text-align: center;
+    color: black;
+    border-radius:50% ;
+    background-color:rgb(255,216,77) ;
+    padding: 1px 3px;
+    font-weight: bold;
+  }

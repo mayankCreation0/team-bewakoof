@@ -1,3 +1,36 @@
+import navbar from "../pcomponents/nav.js"
+import footer from "../pcomponents/foot.js"
+document.getElementById("onlynav").innerHTML=navbar();
+document.getElementById("container-footer").innerHTML=footer();
+
+
+const displaywish=()=>{
+    let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
+    if(wishArr.length>0){
+      document.getElementById("showwishimage").innerHTML=`<i class="fa-solid fa-heart"></i>`;
+  }
+  else{
+      document.getElementById("showwishimage").innerHTML=`<i class="fa-regular fa-heart"></i>`;
+  }
+  }
+  let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
+  displaywish();
+  const displycar = ()=>{
+      let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];  
+      console.log(cartArr.length)
+   if(cartArr.length>0){
+      document.getElementById("showcartnumber").style.display="block";
+      console.log(cartArr.length)
+      document.getElementById("showcartnumber").innerText=cartArr.length;
+  }
+  else{
+      console.log(cartArr.length)
+      document.getElementById("showcartnumber").style.display="none";
+  }
+  }
+  let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
+  displycar()
+
 document.getElementById("selectB").addEventListener("change", ()=>{
     let searchModel =document.getElementById("selectB").value;
     if(searchModel==="Apple"){
