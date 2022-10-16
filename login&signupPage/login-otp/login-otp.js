@@ -27,9 +27,9 @@ function checkotp(){
   }
   else
   {
-    alert("wrong");
+    swal("Oops!", "Wrong credintials!", "error");
   }
 }
 function redirect(){
-  window.open("../../homePage/diwali-homepage/diwali-homepage.html","_self");
+  window.open("../../homePage/diwali-homepage/index.html","_self");
 }

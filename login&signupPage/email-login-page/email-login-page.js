@@ -60,6 +60,6 @@ function checkdata() {
   }
 }
 function redirect(){
-  window.open("../../homePage/diwali-homepage/diwali-homepage.html","_self");
+  window.open("../../homePage/diwali-homepage/index.html","_self");
   // console.log("hey");
 }
