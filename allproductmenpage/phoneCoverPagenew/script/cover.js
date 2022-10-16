@@ -34,22 +34,44 @@ let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
 displycar()
 
 // http://localhost:3000/mens
-
-const url="http://localhost:3000/mobile";
+let brandModel=localStorage.getItem("search_coverM");
+// const url=`http://localhost:3000/mobile?q=${modelName}`;
 async function get(url){
     document.getElementById("loadingdiv").style.display="block";
    const res= await fetch(url);
    const data=await res.json();
    console.log(data);
-   display(data);
    document.getElementById("loadingdiv").style.display="none";
+   return data;
+   
 }
 
-get(url);
-
+async function fetchData(){
+const data=await get(`http://localhost:3000/mobile?q=${modelName}`)
+display(data);
+}
+fetchData();
 
 function display(data){
     document.getElementById("container").innerHTML="";
+    
+        if(data.length===0){
+            document.getElementById("container")
+           const div=document.createElement("div");
+           div.setAttribute("id","sorry");
+           const div1=document.createElement("div");
+           div1.innerText="Sorry, We couldn't Find any matches!";
+           const srybtn=document.createElement("div");
+           srybtn.setAttribute("id","sorrybtn");
+           srybtn.innerText="Go Back";
+           srybtn.addEventListener("click",()=>{
+            clearAllFilter();
+           })
+           div.append(div1,srybtn);
+           document.getElementById("container").append(div);
+            document.getElementById("container").style.display="block";
+        }
+    else{
     data.map((el)=>{
         const card=document.createElement("div");
         const imgDiv=document.createElement("div");
@@ -130,8 +152,10 @@ function display(data){
             localStorage.setItem("page","mobile");
             location.href="../descriptionPage/description.html";
         })
+
         document.getElementById("container").append(card);
     })
+}
 }
 
 
