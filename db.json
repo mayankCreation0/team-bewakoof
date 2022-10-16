@@ -1621,232 +1621,2865 @@
       "details":"Manufactured By - Bewakoof Brands Pvt Ltd, Sairaj Logistic Hub #A5, Bmc Pipeline Road, Opposite All Saints High School, Amane, Bhiwandi, Thane, Maharashtra - 421302"
     }
   ],
-  "mobile":[
+  "mobile":
+  [
+  
     {
-      "id": 201,
-      "image": "https://images.bewakoof.com/t320/spider-stick-designer-hard-cover-for-xiaomi-redmi-note-9-pro-484843-1649397074-1.jpeg",
-      "name": "Spider Stick Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "white",
-      "types": "Bewakoof",
+      "id": 500,
+      "image": "https://images.bewakoof.com/t540/qrioh-purple-pink-space-doodles-printed-premium-glass-cover-for-apple-iphone-7-482272-1648190573-1.jpg",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.6,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+  
+    {
+      "id": 501,
+      "image": "https://images.bewakoof.com/t1080/abstract-printed-designer-hard-cover-for-iphone-7-impact-resistant-matte-finish-524453-1658836702-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For iPhone 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
       "rating": 5,
-      "price": "4999",
-      "strikeOffPrice": "5563"
-    }, {
-      "id": 202,
-      "image": "https://images.bewakoof.com/t640/sukuna-designer-hard-cover-for-xiaomi-redmi-note-9-pro-537504-1661439218-1.jpg",
-      "name": "Sukuna Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 502,
+      "image": "https://images.bewakoof.com/t640/gambling-problem-printed-designer-hard-cover-for-iphone-7-impact-resistant-matte-finish-524454-1658836471-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For iPhone 7 (Impact Resistant, Matte Finish)",
       "color": "black",
-      "types": "Campus sutra",
-      "rating": 4,
-      "price": "8756",
-      "strikeOffPrice": "10613"
-    }, {
-      "id": 203,
-      "image": "https://images.bewakoof.com/t320/skrlx-xiaomi-redmi-note-9-pro-mobile-cover-xiaomi-redmi-note-9-pro-mobile-covers-278257-1620671129.jpg",
-      "name": "Skrlx Xiaomi Redmi Note 9 Pro Mobile Cover",
-      "color": "white",
-      "types": "Bewakoof",
-      "rating": 3.8,
-      "price": "2550",
-      "strikeOffPrice": "3184"
-    }, {
-      "id": 204,
-      "image": "https://images.bewakoof.com/t640/yuji-designer-hard-cover-for-xiaomi-redmi-note-9-pro-535256-1660205991-1.jpg",
-      "name": "Yuji Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "Red",
-      "types": "Bewakoof",
-      "rating": 2.8,
-      "price": "1449",
-      "strikeOffPrice": "1669"
-    }, {
-      "id": 205,
-      "image": "https://images.bewakoof.com/t640/luffy-gear-5-designer-hard-cover-for-xiaomi-redmi-note-9-pro-521920-1658389557-1.jpg",
-      "name": "Luffy Gear 5 Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "red",
-      "types": "Campus sutra",
-      "rating": 3.2,
-      "price": "2049",
-      "strikeOffPrice": "2298"
-    }, {
-      "id": 206,
-      "image": "https://images.bewakoof.com/t640/cuteness-spell-designer-hard-cover-for-xiaomi-redmi-note-9-pro-521518-1658391861-1.jpg",
-      "name": "Cuteness Spell Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 503,
+      "image": "https://images.bewakoof.com/t640/gambling-problem-printed-designer-hard-cover-for-iphone-7-impact-resistant-matte-finish-524454-1658836471-1.jpg",
+      "name": "Gambling Problem Printed Premium Glass Cover For iPhone 7 (Impact Resistant, Matte Finish)",
       "color": "black",
-      "types": "Bewakoof",
-      "rating": 5,
-      "price": "1799",
-      "strikeOffPrice": "1903"
-    }, {
-      "id": 207,
-      "image": "https://images.bewakoof.com/t640/green-granite-designer-hard-cover-for-xiaomi-redmi-note-9-pro-513448-1656334981-1.jpg",
-      "name": "Green Granite Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "white",
-      "types": "Campus sutra",
-      "rating": 4.3,
-      "price": "2299",
-      "strikeOffPrice": "2742"
-    }, {
-      "id": 208,
-      "image": "https://images.bewakoof.com/t640/fly-to-moon-designer-hard-cover-for-xiaomi-redmi-note-9-pro-513817-1656336444-1.jpg",
-      "name": "Fly to Moon Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "red",
-      "types": "Bewakoof",
-      "rating": 5,
-      "price": "3549",
-      "strikeOffPrice": "4237"
-    }, {
-      "id": 209,
-      "image": "https://images.bewakoof.com/t640/panda-needs-vacation-designer-hard-cover-for-xiaomi-redmi-note-9-pro-547028-1665044191-1.jpg",
-      "name": "Panda Needs Vacation Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "black",
-      "types": "Campus sutra",
-      "rating": 5,
-      "price": "1032",
-      "strikeOffPrice": "3519"
-    }, {
-      "id": 210,
-      "image": "https://images.bewakoof.com/t640/itachi-manga-designer-hard-cover-for-xiaomi-redmi-note-9-pro-546904-1665046007-1.jpg",
-      "name": "Itachi Manga Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "white",
-      "types": "Bewakoof",
-      "rating": 2.2,
-      "price": "8052",
-      "strikeOffPrice": "9778"
-    }, {
-      "id": 211,
-      "image": "https://images.bewakoof.com/t640/bad-man-designer-hard-cover-for-xiaomi-redmi-note-9-pro-527824-1659623126-1.jpg",
-      "name": "Bad Man Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "grey",
-      "types": "Campus sutra",
-      "rating": 3.6,
-      "price": "1499",
-      "strikeOffPrice": "2985"
-    }, {
-      "id": 212,
-      "image": "https://images.bewakoof.com/t640/ceo-of-procrastination-designer-hard-cover-for-xiaomi-redmi-note-9-pro-545149-1664458338-1.jpg",
-      "name": "CEO Of Procrastination Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "red",
-      "types": "Bewakoof",
-      "rating": 3,
-      "price": "4099",
-      "strikeOffPrice": "4467"
-    }, {
-      "id": 213,
-      "image": "https://images.bewakoof.com/t640/mars-trip-designer-hard-cover-for-xiaomi-redmi-note-9-pro-527946-1659623711-1.jpg",
-      "name": "Mars Trip Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "black",
-      "types": "Campus sutra",
-      "rating": 3,
-      "price": "1987",
-      "strikeOffPrice": "2707"
-    }, {
-      "id": 214,
-      "image": "https://images.bewakoof.com/t640/gyaan-na-de-designer-hard-cover-for-xiaomi-redmi-note-9-pro-545533-1664459411-1.jpg",
-      "name": "Gyaan Na De Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "white",
-      "types": "Bewakoof",
-      "rating": 3,
-      "price": "2840",
-      "strikeOffPrice": "3598"
-    }, {
-      "id": 215,
-      "image": "https://images.bewakoof.com/t640/work-for-travel-designer-hard-cover-for-xiaomi-redmi-note-9-pro-545274-1664460524-1.jpg",
-      "name": "Work For Travel Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "grey",
-      "types": "Campus sutra",
-      "rating": 5,
-      "price": "2974",
-      "strikeOffPrice": "3754"
-    }, {
-      "id": 216,
-      "image": "https://images.bewakoof.com/t640/the-akatsuki-designer-hard-cover-for-xiaomi-redmi-note-9-pro-515855-1657110890-1.jpg",
-      "name": "The Akatsuki Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "red",
-      "types": "Bewakoof",
-      "rating": 2,
-      "price": "3699",
-      "strikeOffPrice": "4301"
-    }, {
-      "id": 217,
-      "image": "https://images.bewakoof.com/t320/house-of-hogwarts-designer-hard-cover-for-xiaomi-redmi-note-9-pro-510371-1655360779-1.jpg",
-      "name": "House of Hogwarts Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "black",
-      "types": "Campus sutra",
-      "rating": 2,
-      "price": "2605",
-      "strikeOffPrice": "2911"
-    }, {
-      "id": 218,
-      "image": "https://images.bewakoof.com/t320/spiderman-3d-designer-cover-for-xiaomi-redmi-note-9-pro-488111-1649849960-1.jpeg",
-      "name": "Spiderman 3D Designer Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "white",
-      "types": "Bewakoof",
-      "rating": 4,
-      "price": "1529",
-      "strikeOffPrice": "3718"
-    }, {
-      "id": 219,
-      "image": "https://images.bewakoof.com/t320/gemini-zodiac-designer-hard-cover-for-xiaomi-redmi-note-9-pro-504637-1654088712-1.jpg",
-      "name": "Gemini Zodiac Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "grey",
-      "types": "Campus sutra",
-      "rating": 2.4,
-      "price": "2569",
-      "strikeOffPrice": "2771"
-    }, {
-      "id": 220,
-      "image": "https://images.bewakoof.com/t320/batman-logo-3d-designer-cover-for-xiaomi-redmi-note-9-pro-487504-1649847556-1.jpeg",
-      "name": "Batman Logo 3D Designer Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "red",
-      "types": "Bewakoof",
-      "rating": 3,
-      "price": "799",
-      "strikeOffPrice": "1057"
-    }, {
-      "id": 221,
-      "image": "https://images.bewakoof.com/t320/aquarius-zodiac-designer-hard-cover-for-xiaomi-redmi-note-9-pro-504516-1654076534-1.jpg",
-      "name": "Aquarius Zodiac Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "black",
-      "types": "Campus sutra",
-      "rating": 4.9,
-      "price": "1469",
-      "strikeOffPrice": "2357"
-    }, {
-      "id": 222,
-      "image": "https://images.bewakoof.com/t320/the-cat-designer-hard-cover-for-xiaomi-redmi-note-9-pro-499864-1652970517-1.jpeg",
-      "name": "The Cat Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "white",
-      "types": "Bewakoof",
-      "rating": 3,
-      "price": "1749",
-      "strikeOffPrice": "2482"
-    }, {
-      "id": 223,
-      "image": "https://images.bewakoof.com/t320/virgo-zodiac-designer-hard-cover-for-xiaomi-redmi-note-9-pro-504873-1654088774-1.jpg",
-      "name": "Virgo Zodiac Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "grey",
-      "types": "Campus sutra",
-      "rating": 4,
-      "price": "2389",
-      "strikeOffPrice": "2917"
-    }, {
-      "id": 224,
-      "image": "https://images.bewakoof.com/t320/being-sarcastic-designer-hard-cover-for-xiaomi-redmi-note-9-pro-500605-1653911603-1.jpg",
-      "name": "Being Sarcastic Designer Hard Cover for Xiaomi Redmi Note 9 Pro",
-      "color": "red",
-      "types": "Bewakoof",
-      "rating": 2.9,
-      "price": "2049",
-      "strikeOffPrice": "2252"
-    }, {
-      "id": 225,
-      "image": "https://images.bewakoof.com/t320/i-m-perfect-xiaomi-redmi-note-9-pro-mobile-cover-xiaomi-redmi-note-9-pro-mobile-covers-283354-1620671108.jpg",
-      "name": "I'm Perfect Xiaomi Redmi Note 9 Pro Mobile Cover",
-      "color": "black",
-      "types": "Oliva",
+      "types": "Qrioh",
       "rating": 2.6,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 504,
+      "image": "https://images.bewakoof.com/t640/lion-the-king-printed-designer-hard-cover-for-iphone-7-impact-resistant-matte-finish-524457-1658837662-1.jpg",
+      "name": "Lion The King Printed Premium Glass Cover For iPhone 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 505,
+      "image": "https://images.bewakoof.com/t640/abstract-printed-designer-hard-cover-for-iphone-7-impact-resistant-matte-finish-524438-1658837579-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For iPhone 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.9,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 506,
+      "image": "https://images.bewakoof.com/t640/red-angry-lion-printed-designer-hard-cover-for-iphone-7-impact-resistant-matte-finish-524440-1658836113-1.jpg",
+      "name": "Red Angry Lion Printed Premium Glass Cover For iPhone 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.2,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 507,
+      "image": "https://images.bewakoof.com/t640/funny-pug-face-printed-designer-hard-cover-for-iphone-7-impact-resistant-matte-finish-524441-1658837349-1.jpg",
+      "name": "Funny Pug Face Printed Premium Glass Cover For iPhone 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "529",
+      "strikeOffPrice": "3126"
+    },
+    {
+      "id": 508,
+      "image": "https://images.bewakoof.com/t640/japanese-art-printed-designer-hard-cover-for-iphone-7-impact-resistant-matte-finish-524456-1658837620-1.jpg",
+      "name": "Japanese Art Printed Premium Glass Cover For iPhone 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.8,
+      "price": "529",
+      "strikeOffPrice": "3126"
+    },
+    {
+      "id": 509,
+      "image": "https://images.bewakoof.com/t640/butterfly-printed-designer-hard-cover-for-iphone-7-impact-resistant-matte-finish-524425-1658837725-1.jpg",
+      "name": "Butterfly Printed Premium Glass Cover For iPhone 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.1,
       "price": "2499",
       "strikeOffPrice": "3126"
+    },
+    {
+      "id": 510,
+      "image": "https://images.bewakoof.com/t640/abstract-faces-printed-designer-hard-cover-for-iphone-7-impact-resistant-matte-finish-524428-1658836931-1.jpg",
+      "name": "Abstract Faces Printed Premium Glass Cover For iPhone 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "2499",
+      "strikeOffPrice": "3126"
+    },
+  
+  
+  
+  
+    {
+      "id": 511,
+      "image": "https://images.bewakoof.com/t1080/lion-the-king-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524674-1658836745-1.jpg",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.6,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+  
+    {
+      "id": 512,
+      "image": "https://images.bewakoof.com/t1080/struggling-panda-typography-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-525311-1658837623-1.jpg",
+      "name": "Struggling Panda Typography Premium Glass Cover For iPhone XR (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 513,
+      "image": "https://images.bewakoof.com/t540/wrapcart-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-500121-1652882436-1.jpg",
+      "name": "Printed Designer Hard Cover For Iphone Xr (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "WRAPCART",
+      "rating": 3.9,
+      "price": "529",
+      "strikeOffPrice": "399"
+    },
+    {
+      "id": 514,
+      "image": "https://images.bewakoof.com/t1080/butterfly-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524636-1658837894-1.jpg",
+      "name": "Butterfly Printed Premium Glass Cover For iPhone XR (Impact Resistant, Matte Finish))",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 515,
+      "image": "https://images.bewakoof.com/t1080/abstract-faces-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524637-1658838270-1.jpg",
+      "name": "Abstract Faces Printed Premium Glass Cover For iPhone XR (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 516,
+      "image": "https://images.bewakoof.com/t1080/zig-zag-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524638-1658838124-1.jpg",
+      "name": "Zig-Zag Printed Premium Glass Cover For iPhone XR (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.9,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 517,
+      "image": "https://images.bewakoof.com/t1080/floral-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524640-1658837268-1.jpg",
+      "name": "Floral Printed Premium Glass Cover For iPhone XR (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.2,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+    "id": 518,
+      "image": "https://images.bewakoof.com/t1080/leopard-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524641-1658837310-1.jpg",
+      "name": "Leopard Printed Premium Glass Cover For iPhone XR (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 519,
+      "image": "https://images.bewakoof.com/t1080/planet-play-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524645-1658836787-1.jpg",
+      "name": "Planet Play Printed Premium Glass Cover For iPhone XR (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.8,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 520,
+      "image": "https://images.bewakoof.com/t1080/floral-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524648-1658836997-1.jpg",
+      "name": "Floral Printed Premium Glass Cover For iPhone XR (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.1,
+      "price": "599",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 521,
+      "image": "https://images.bewakoof.com/t1080/funny-pug-face-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524652-1658837289-1.jpg",
+      "name": "Funny Pug Face Printed Premium Glass Cover For iPhone XR (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "599",
+      "strikeOffPrice": "1499"
+    },
+  
+  
+  
+  
+  
+    {
+      "id": 522,
+      "image": "https://images.bewakoof.com/t540/black-brave-lion-glass-cover-for-apple-iphone-xs-482351-1648190474-1.jpg",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.6,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+  
+    {
+      "id": 523,
+      "image": "https://images.bewakoof.com/t540/maroon-solo-glass-cover-for-apple-iphone-xs-482352-1648190836-1.jpg",
+      "name": "Premium Glass Cover for iPhone XS(Shock Proof, Lightweight)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 524,
+      "image": "https://images.bewakoof.com/t540/black-aura-glass-cover-for-apple-iphone-xs-482350-1648190543-1.jpg",
+      "name": "Aura Printed Premium Glass Cover for iPhone XS(Shock Proof, Lightweight)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "219",
+      "strikeOffPrice": "399"
+    },
+    {
+      "id": 525,
+      "image": "https://images.bewakoof.com/t540/jet-black-glass-cover-for-apple-iphone-xs-482360-1648190390-1.jpg",
+      "name": "Premium Glass Cover for iPhone XS(Shock Proof, Lightweight)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 526,
+      "image": "https://images.bewakoof.com/t540/powerful-places-iphone-xs-mobile-cover-iphone-xs-mobile-covers-321960-1610542318.jpg",
+      "name": "Powerful Places iPhone XS Mobile Cover",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 527,
+      "image": "https://images.bewakoof.com/t1080/zig-zag-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524638-1658838124-1.jpg",
+      "name": "Zig-Zag Printed Premium Glass Cover For iPhone XR (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.9,
+      "price": "199",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 528,
+      "image": "https://images.bewakoof.com/t1080/planet-play-printed-designer-hard-cover-for-iphone-xs-impact-resistant-matte-finish-524688-1658838581-1.jpg",
+      "name": "Planet Play Printed Premium Glass Cover For iPhone XS (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.2,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+    "id": 529,
+      "image": "https://images.bewakoof.com/t1080/sailor-blue-designer-hard-cover-for-iphone-xs-impact-resistant-matte-finish-524669-1658837581-1.jpg",
+      "name": "Sailor Blue Premium Glass Cover For iPhone XS (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 530,
+      "image": "https://images.bewakoof.com/t1080/travel-map-printed-designer-hard-cover-for-iphone-xs-impact-resistant-matte-finish-522892-1658491396-1.jpg",
+      "name": "Travel Map Printed Designer Hard Cover For iPhone XS (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "WRAPCART",
+      "rating": 4.8,
+      "price": "219",
+      "strikeOffPrice": "399"
+    },
+    {
+      "id": 531,
+      "image": "https://images.bewakoof.com/t1080/world-map-printed-designer-hard-cover-for-iphone-xs-impact-resistant-matte-finish-522896-1658491500-1.jpg",
+      "name": "World Map Printed Designer Hard Cover For iPhone XS (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "WRAPCART",
+      "rating": 4.1,
+      "price": "219",
+      "strikeOffPrice": "399"
+    },
+    {
+      "id": 532,
+      "image": "https://images.bewakoof.com/t1080/gta-multi-abstract-printed-designer-hard-cover-for-iphone-xs-impact-resistant-matte-finish-522887-1658496374-1.jpg",
+      "name": "GTA Multi Abstract Printed Designer Hard Cover For iPhone XS (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "WRAPCART",
+      "rating": 5,
+      "price": "219",
+      "strikeOffPrice": "399"
+    },
+  
+  
+  
+  
+    {
+      "id": 533,
+      "image": "https://images.bewakoof.com/t640/kakashi-sensei-designer-hard-cover-for-apple-iphone-11-545401-1664461123-1.jpg",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "449",
+      "strikeOffPrice": "1299"
+    },
+  
+    {
+      "id": 534,
+      "image": "https://images.bewakoof.com/t1080/green-granite-premium-glass-cover-for-iphone-11-509047-1655905812-1.jpg",
+      "name": "Green Granite Premium Glass Cover for iPhone 11",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "449",
+      "strikeOffPrice": "1399"
+    },
+    {
+      "id": 535,
+      "image": "https://images.bewakoof.com/t540/naruto-kakashi-premium-glass-cover-for-iphone-11-497145-1652273629-1.jpg",
+      "name": "Naruto Kakashi Premium Glass Cover for iPhone 11",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 3.9,
+      "price": "449",
+      "strikeOffPrice": "1399"
+    },
+    {
+      "id": 536,
+      "image": "https://images.bewakoof.com/t540/moon-knight-premium-glass-cover-for-iphone-11-497110-1652273808-1.jpg",
+      "name": "Moon Knight Premium Glass Cover for iPhone 11",
+      "color": "black",
+      "types": "OFFICIAL MARVEL MERCHANDISE",
+      "rating": 2.6,
+      "price": "499",
+      "strikeOffPrice": "1399"
+    },
+    {
+      "id": 537,
+      "image": "https://images.bewakoof.com/t540/rasta-premium-glass-cover-for-iphone-11-497236-1652273941-1.jpg",
+      "name": "Rasta Premium Glass Cover for iPhone 11)",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.5,
+      "price": "499",
+      "strikeOffPrice": "1399"
+    },
+    {
+      "id": 538,
+      "image": "https://images.bewakoof.com/t540/venom-premium-glass-cover-for-iphone-11-497217-1652273719-1.jpg",
+      "name": "Venom Premium Glass Cover for iPhone 11",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "449",
+      "strikeOffPrice": "1399"
+    },
+    {
+      "id": 539,
+      "image": "https://images.bewakoof.com/t1080/doodle-space-designer-hard-cover-for-apple-iphone-11-539239-1662013691-1.jpg",
+      "name": "Doodle Space Designer Hard Cover for Apple iPhone 11",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 540,
+      "image": "https://images.bewakoof.com/t1080/zenistsu-designer-hard-cover-for-apple-iphone-11-538033-1661437060-1.jpg",
+      "name": "Zenistsu Designer Hard Cover for Apple iPhone 11",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 541,
+      "image": "https://images.bewakoof.com/t1080/gyaan-na-de-designer-hard-cover-for-apple-iphone-11-545540-1664460835-1.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for Apple iPhone 11",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 542,
+      "image": "https://images.bewakoof.com/t1080/tropical-lineart-designer-hard-cover-for-apple-iphone-11-545029-1664458548-1.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for Apple iPhone 11",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 543,
+      "image": "https://images.bewakoof.com/t1080/work-for-travel-designer-hard-cover-for-apple-iphone-11-545272-1664460814-1.jpg",
+      "name": "Work For Travel Designer Hard Cover for Apple iPhone 11",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+  
+  
+    {
+      "id": 544,
+      "image": "https://images.bewakoof.com/t640/doodle-space-designer-hard-cover-for-apple-iphone-11-pro-max-539149-1662014194-1.jpg",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "449",
+      "strikeOffPrice": "1299"
+    },
+  
+    {
+      "id": 545,
+      "image": "https://images.bewakoof.com/t640/pisces-zodiac-premium-glass-cover-for-iphone-11-pro-max-508934-1655906253-1.jpg",
+      "name": "Green Granite Premium Glass Cover for iphone-11-pro-max",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "449",
+      "strikeOffPrice": "1399"
+    },
+    {
+      "id": 546,
+      "image": "https://images.bewakoof.com/t640/green-granite-premium-glass-cover-for-iphone-11-pro-max-508956-1655905791-1.jpg",
+      "name": "Naruto Kakashi Premium Glass Cover for iphone-11-pro-max",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 3.9,
+      "price": "449",
+      "strikeOffPrice": "1399"
+    },
+    {
+      "id": 547,
+      "image": "https://images.bewakoof.com/t640/space-jam-premium-glass-cover-for-iphone-11-pro-max-508896-1655906280-1.jpg",
+      "name": "Moon Knight Premium Glass Cover for iphone-11-pro-max",
+      "color": "black",
+      "types": "OFFICIAL MARVEL MERCHANDISE",
+      "rating": 2.6,
+      "price": "499",
+      "strikeOffPrice": "1399"
+    },
+    {
+      "id": 548,
+      "image": "https://images.bewakoof.com/t640/mickey-face-premium-glass-cover-for-iphone-11-pro-max-505485-1655905823-1.jpg",
+      "name": "Rasta Premium Glass Cover for iphone-11-pro-max",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.5,
+      "price": "499",
+      "strikeOffPrice": "1399"
+    },
+    {
+      "id": 549,
+      "image": "https://images.bewakoof.com/t320/rasta-premium-glass-cover-for-iphone-11-pro-max-497197-1652273758-1.jpg",
+      "name": "Venom Premium Glass Cover for iphone-11-pro-max",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "449",
+      "strikeOffPrice": "1399"
+    },
+    {
+      "id": 550,
+      "image": "https://images.bewakoof.com/t320/lost-in-music-green-premium-glass-cover-for-iphone-11-pro-max-497097-1652273898-1.jpg",
+      "name": "Doodle Space Designer Hard Cover for Apple iphone-11-pro-max",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 551,
+      "image": "https://images.bewakoof.com/t320/blue-geo-ombre-premium-glass-cover-for-iphone-11-pro-max-497074-1652273554-1.jpg",
+      "name": "Zenistsu Designer Hard Cover for Apple iphone-11-pro-max",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 552,
+      "image": "https://images.bewakoof.com/t320/snoopy-bird-premium-glass-cover-for-iphone-11-pro-max-497185-1652273876-1.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for Apple iphone-11-pro-max",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 553,
+      "image": "https://images.bewakoof.com/t320/superman-logo-3d-designer-cover-for-iphone-11-pro-max-486812-1649846098-1.jpeg",
+      "name": "Tropical Lineart Designer Hard Cover for Apple iphone-11-pro-max",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 554,
+      "image": "https://images.bewakoof.com/t640/sukuna-designer-hard-cover-for-apple-iphone-11-pro-max-537398-1661437307-1.jpg",
+      "name": "Work For Travel Designer Hard Cover for Apple iphone-11-pro-max",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+  
+    {
+      "id": 555,
+      "image": "https://images.bewakoof.com/t640/modern-geometry-designer-hard-cover-for-apple-iphone-11-pro-543194-1663763112-1.jpg",
+      "color": "black",
+      "types": "bewakoof",
+      "rating": 4.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 556,
+      "image": "https://images.bewakoof.com/t640/mickey-face-premium-glass-cover-for-iphone-11-pro-505535-1655906108-1.jpgg",
+      "name": "Abstract Printed Premium Glass Cover For iphone-11-pro (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "bewakoof",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 557,
+      "image": "https://images.bewakoof.com/t640/space-jam-premium-glass-cover-for-iphone-11-pro-509018-1655906215-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For iphone-11-pro (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "bewakoof",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 558,
+      "image": "https://images.bewakoof.com/t640/green-granite-premium-glass-cover-for-iphone-11-pro-508887-1655905630-1.jpg",
+      "name": "Gambling Problem Printed Premium Glass Cover For iphone-11-pro (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "bewakoof",
+      "rating": 2.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 559,
+      "image": "https://images.bewakoof.com/t640/virgo-zodiac-premium-glass-cover-for-iphone-11-pro-508680-1655905510-1.jpg",
+      "name": "Lion The King Printed Premium Glass Cover For iphone-11-pro (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "bewakoof",
+      "rating": 4.5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 560,
+      "image": "https://images.bewakoof.com/t640/skater-moo-designer-hard-cover-for-apple-iphone-11-pro-540420-1662462103-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For iphone-11-pro (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "bewakoof",
+      "rating": 4.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 561,
+      "image": "https://images.bewakoof.com/t640/lord-4th-designer-hard-cover-for-apple-iphone-11-pro-537640-1661437842-1.jpg",
+      "name": "Red Angry Lion Printed Premium Glass Cover For iphone-11-pro (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "bewakoof",
+      "rating": 4.2,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 562,
+      "image": "https://images.bewakoof.com/t640/batman-rogue-premium-glass-cover-for-iphone-11-pro-508477-1655906351-1.jpg",
+      "name": "Funny Pug Face Printed Premium Glass Cover For iphone-11-pro (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "bewakoof",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 563,
+      "image": "https://images.bewakoof.com/t640/bts-army-premium-glass-cover-for-iphone-11-pro-508904-1655906329-1.jpg",
+      "name": "Japanese Art Printed Premium Glass Cover For iphone-11-pro (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "bewakoof",
+      "rating": 4.8,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 564,
+      "image": "https://images.bewakoof.com/t320/blue-geo-ombre-premium-glass-cover-for-iphone-11-pro-497073-1652273819-1.jpg",
+      "name": "Butterfly Printed Premium Glass Cover For iphone-11-pro (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "bewakoof",
+      "rating": 4.1,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 565,
+      "image": "https://images.bewakoof.com/t320/rasta-premium-glass-cover-for-iphone-11-pro-497218-1652273668-1.jpg",
+      "name": "Abstract Faces Printed Premium Glass Cover For iphone-11-pro (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "bewakoof",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+  
+  
+    {
+      "id": 600,
+      "image": "https://images.bewakoof.com/t640/kakashi-sensei-designer-hard-cover-for-samsung-galaxy-a50-545413-1664459251-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "219",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 601,
+      "image": "https://images.bewakoof.com/t540/avengers-chibi-samsung-galaxy-a50-mobile-cover-avl-samsung-galaxy-a50-mobile-covers-280103-1598451700.jpg",
+      "name": "Avengers Chibi (AVL) Samsung Galaxy A50 Mobile Covers",
+      "color": "black",
+      "types": "OFFICIAL MARVEL MERCHANDISE",
+      "rating": 5,
+      "price": "199",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 602,
+      "image": "https://images.bewakoof.com/t1080/itachi-manga-designer-hard-cover-for-samsung-galaxy-a50-546908-1665047111-1.jpg",
+      "name": "Itachi Manga Designer Hard Cover for Samsung Galaxy A50",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 3.9,
+      "price": "219",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 603,
+      "image": "https://images.bewakoof.com/t1080/mars-trip-designer-hard-cover-for-samsung-galaxy-a50-527968-1659623362-1.jpg",
+      "name": "Mars Trip Designer Hard Cover for Samsung Galaxy A50",
+      "color": "black",
+      "types": "OFFICIAL NASA MERCHANDISE",
+      "rating": 2.6,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 604,
+      "image": "https://images.bewakoof.com/t1080/hangin-astronaut-designer-hard-cover-for-samsung-galaxy-a50-518733-1657788401-1.jpg",
+      "name": "Hangin Astronaut Designer Hard Cover for Samsung Galaxy A50",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.5,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 605,
+      "image": "https://images.bewakoof.com/t1080/inner-minion-designer-hard-cover-for-samsung-galaxy-a50-518862-1657788159-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for Samsung Galaxy A50",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 606,
+      "image": "https://images.bewakoof.com/t1080/king-t-challa-designer-hard-cover-for-samsung-galaxy-a50-524149-1658993243-1.jpg",
+      "name": "King T'Challa Designer Hard Cover for Samsung Galaxy A50",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 607,
+      "image": "https://images.bewakoof.com/t640/purple-marble-designer-hard-cover-for-samsung-galaxy-a50-524275-1658995154-1.jpg",
+      "name": "Zenistsu Designer Hard Cover for  samsung-galaxy-a50",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 608,
+      "image": "https://images.bewakoof.com/t320/discover-new-places-samsung-galaxy-a50-mobile-cover-samsung-galaxy-a50-mobile-covers-269684-1580132787.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  samsung-galaxy-a50",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 609,
+      "image": "https://images.bewakoof.com/t320/camo-honey-comb-samsung-galaxy-a50-mobile-cover-samsung-galaxy-a50-mobile-covers-280115-1598451759.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  samsung-galaxy-a50",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 610,
+      "image": "https://images.bewakoof.com/t320/ps4-buttons-samsung-galaxy-a50-mobile-cover-samsung-galaxy-a50-mobile-covers-280121-1598451787.jpg",
+      "name": "Work For Travel Designer Hard Cover for samsung-galaxy-a50",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+  
+    {
+      "id": 611,
+      "image": "https://images.bewakoof.com/t320/qrioh-black-aura-glass-case-for-samsung-galaxy-m30s-qrioh-unisex-samsung-galaxy-m30s-mobile-cover-372914-1624513028.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+  
+    {
+      "id": 612,
+      "image": "https://images.bewakoof.com/t540/qrioh-jet-black-glass-case-for-samsung-galaxy-m30s-qrioh-unisex-samsung-galaxy-m30s-mobile-cover-372921-1624513484.jpg",
+      "name": "Samsung Galaxy M30s Jet Black Glass Case",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 613,
+      "image": "https://images.bewakoof.com/t1080/palm-green-premium-glass-cover-for-samsung-galaxy-m30s-impact-resistant-matte-finish-531706-1659535451-1.jpg",
+      "name": "Palm Green Premium Glass Cover For Samsung Galaxy M30s(Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 614,
+      "image": "https://images.bewakoof.com/t1080/abstract-printed-premium-glass-cover-for-samsung-galaxy-m30s-impact-resistant-534050-1659540173-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For Samsung Galaxy M30s (Impact Resistant)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 615,
+      "image": "https://images.bewakoof.com/t1080/moon-wolf-printed-premium-glass-cover-for-samsung-galaxy-m30s-impact-resistant-matte-finish-531712-1659535812-1.jpg",
+      "name": "Moon Wolf Printed Premium Glass Cover For Samsung Galaxy M30s(Impact Resistant, Matte Finish",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 616,
+      "image": "https://images.bewakoof.com/t640/blue-rough-pastel-premium-glass-cover-for-samsung-galaxy-m30s-impact-resistant-matte-finish-531716-1659538148-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for samsung-galaxy-m30s",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "429",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 617,
+      "image": "https://images.bewakoof.com/t640/abstract-faces-printed-premium-glass-cover-for-samsung-galaxy-m30s-impact-resistant-matte-finish-531719-1659539434-1.jpg",
+      "name": "King T'Challa Designer Hard Cover for samsung-galaxy-m30s",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+    "id": 618,
+      "image": "https://images.bewakoof.com/t640/butterfly-printed-premium-glass-cover-for-samsung-galaxy-m30s-impact-resistant-matte-finish-531703-1659530054-1.jpg",
+      "name": "Zenistsu Designer Hard Cover for  samsung-galaxy-m30s",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 619,
+      "image": "https://images.bewakoof.com/t640/floral-printed-premium-glass-cover-for-samsung-galaxy-m30s-impact-resistant-matte-finish-532424-1659528685-1.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  samsung-galaxy-m30s",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 620,
+      "image": "https://images.bewakoof.com/t640/dazzling-ocean-printed-premium-glass-cover-for-samsung-galaxy-m30s-impact-resistant-matte-finish-531728-1659533476-1.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  samsung-galaxy-m30s",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 621,
+      "image": "https://images.bewakoof.com/t640/moon-night-printed-premium-glass-cover-for-samsung-galaxy-m30s-impact-resistant-matte-finish-531721-1659525142-1.jpg",
+      "name": "Work For Travel Designer Hard Cover for samsung-galaxy-m30s",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+  
+  
+  
+  
+  
+    {
+      "id": 622,
+      "image": "https://images.bewakoof.com/t640/escape-reality-designer-hard-cover-for-samsung-galaxy-a30-523948-1658993488-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 623,
+      "image": "https://images.bewakoof.com/t640/smokey-leaf-designer-hard-cover-for-samsung-galaxy-a30-535334-1660205281-1.jpg",
+      "name": "samsung-galaxy-a30 Jet Black Glass Case",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 624,
+      "image": "https://images.bewakoof.com/t640/mars-trip-designer-hard-cover-for-samsung-galaxy-a30-527899-1659624349-1.jpg",
+      "name": "Palm Green Premium Glass Cover For samsung-galaxy-a30(Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 625,
+      "image": "https://images.bewakoof.com/t640/hangin-astronaut-designer-hard-cover-for-samsung-galaxy-a30-518658-1657789062-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For samsung-galaxy-a30 (Impact Resistant)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 626,
+      "image": "https://images.bewakoof.com/t640/purple-marble-designer-hard-cover-for-samsung-galaxy-a30-524217-1658994241-1.jpg",
+      "name": "Moon Wolf Printed Premium Glass Cover For samsung-galaxy-a30(Impact Resistant, Matte Finish",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 627,
+      "image": "https://images.bewakoof.com/t320/skrlx-samsung-galaxy-a30-mobile-cover-samsung-galaxy-a30-mobile-covers-278251-1598872938.jpg",
+      "name": "Inner Minion Designer Hard Cover for samsung-galaxy-a30",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "429",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 628,
+      "image": "https://images.bewakoof.com/t320/colors-of-peace-samsung-galaxy-a30-mobile-cover-samsung-galaxy-a30-mobile-covers-282828-1598872885.jpg",
+      "name": "King T'Challa Designer Hard Cover for samsung-galaxy-a30",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 629,
+      "image": "https://images.bewakoof.com/t320/interstellar-samsung-galaxy-a30-mobile-cover-samsung-galaxy-a30-mobile-covers-282832-1598872895.jpg",
+      "name": "Zenistsu Designer Hard Cover for  samsung-galaxy-a30",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 630,
+      "image": "https://images.bewakoof.com/t320/dark-florals-samsung-galaxy-a30-mobile-cover-samsung-galaxy-a30-mobile-covers-282831-1598872893.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  samsung-galaxy-a30",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 631,
+      "image": "https://images.bewakoof.com/t320/coolio-samsung-galaxy-a30-mobile-cover-samsung-galaxy-a30-mobile-covers-282863-1598872982.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  samsung-galaxy-a30",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 632,
+      "image": "https://images.bewakoof.com/t320/superman-logo-line-samsung-galaxy-a30-mobile-cover-samsung-galaxy-a30-mobile-covers-282866-1598872990.jpg",
+      "name": "Work For Travel Designer Hard Cover for samsung-galaxy-a30",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+  
+    {
+      "id": 633,
+      "image": "https://images.bewakoof.com/t640/koalified-astronaut-designer-hard-cover-for-samsung-galaxy-a51-542870-1663763044-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 634,
+      "image": "https://images.bewakoof.com/t640/trip-to-mars-designer-hard-cover-for-samsung-galaxy-a51-542273-1663250113-1.jpg",
+      "name": "samsung-galaxy-a51 Jet Black Glass Case",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 635,
+      "image": "https://images.bewakoof.com/t640/abstract-lineart-designer-hard-cover-for-samsung-galaxy-a51-542145-1663251300-1.jpg",
+      "name": "Palm Green Premium Glass Cover For samsung-galaxy-a51(Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 636,
+      "image": "https://images.bewakoof.com/t640/skater-moo-designer-hard-cover-for-samsung-galaxy-a51-540349-1662465132-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For samsung-galaxy-a51 (Impact Resistant)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 637,
+      "image": "https://images.bewakoof.com/t640/doodle-space-designer-hard-cover-for-samsung-galaxy-a51-539198-1662013490-1.jpg",
+      "name": "Moon Wolf Printed Premium Glass Cover For samsung-galaxy-a51(Impact Resistant, Matte Finish",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 638,
+      "image": "https://images.bewakoof.com/t640/lord-4th-designer-hard-cover-for-samsung-galaxy-a51-537585-1661437574-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for samsung-galaxy-a51",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "429",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 639,
+      "image": "https://images.bewakoof.com/t640/escape-reality-designer-hard-cover-for-samsung-galaxy-a51-523952-1658992441-1.jpg",
+      "name": "King T'Challa Designer Hard Cover for samsung-galaxy-a51",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 640,
+      "image": "https://images.bewakoof.com/t320/batman-rogue-samsung-galaxy-a51-mobile-cover-samsung-galaxy-a51-mobile-covers-281882-1602847301.jpg",
+      "name": "Zenistsu Designer Hard Cover for  samsung-galaxy-a51",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "199",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 641,
+      "image": "https://images.bewakoof.com/t320/peace-dispersion-samsung-galaxy-a51-mobile-cover-samsung-galaxy-a51-mobile-covers-294361-1602846698.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  samsung-galaxy-a51",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 642,
+      "image": "https://images.bewakoof.com/t320/wander-heart-samsung-galaxy-a51-mobile-cover-477118-1648202418-1.jpeg",
+      "name": "Tropical Lineart Designer Hard Cover for  samsung-galaxy-a51",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 643,
+      "image": "https://images.bewakoof.com/t320/boss-black-samsung-galaxy-a51-mobile-covers-473739-1644595205-1.jpg",
+      "name": "Work For Travel Designer Hard Cover for samsung-galaxy-a51",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+    {
+      "id": 644,
+      "image": "https://images.bewakoof.com/t640/modern-geometry-designer-hard-cover-for-samsung-galaxy-m31-543138-1663761281-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 645,
+      "image": "https://images.bewakoof.com/t640/itachi-manga-designer-hard-cover-for-samsung-galaxy-m31-546862-1665044741-1.jpg",
+      "name": "samsung-galaxy-m31 Jet Black Glass Case",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 646,
+      "image": "https://images.bewakoof.com/t640/abstract-lineart-designer-hard-cover-for-samsung-galaxy-a51-542145-1663251300-1.jpg",
+      "name": "Palm Green Premium Glass Cover For samsung-galaxy-m31(Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 647,
+      "image": "https://images.bewakoof.com/t640/skater-moo-designer-hard-cover-for-samsung-galaxy-a51-540349-1662465132-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For samsung-galaxy-m31 (Impact Resistant)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 648,
+      "image": "https://images.bewakoof.com/t640/doodle-space-designer-hard-cover-for-samsung-galaxy-a51-539198-1662013490-1.jpg",
+      "name": "Moon Wolf Printed Premium Glass Cover For samsung-galaxy-m311(Impact Resistant, Matte Finish",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 649,
+      "image": "https://images.bewakoof.com/t640/lord-4th-designer-hard-cover-for-samsung-galaxy-a51-537585-1661437574-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for samsung-galaxy-m31",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "429",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 650,
+      "image": "https://images.bewakoof.com/t640/escape-reality-designer-hard-cover-for-samsung-galaxy-a51-523952-1658992441-1.jpg",
+      "name": "King T'Challa Designer Hard Cover for samsung-galaxy-m31",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 651,
+      "image": "https://images.bewakoof.com/t320/batman-rogue-samsung-galaxy-a51-mobile-cover-samsung-galaxy-a51-mobile-covers-281882-1602847301.jpg",
+      "name": "Zenistsu Designer Hard Cover for  samsung-galaxy-m31",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "199",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 652,
+      "image": "https://images.bewakoof.com/t320/peace-dispersion-samsung-galaxy-a51-mobile-cover-samsung-galaxy-a51-mobile-covers-294361-1602846698.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  samsung-galaxy-m31",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 653,
+      "image": "https://images.bewakoof.com/t320/wander-heart-samsung-galaxy-a51-mobile-cover-477118-1648202418-1.jpeg",
+      "name": "Tropical Lineart Designer Hard Cover for  samsung-galaxy-m31",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 654,
+      "image": "https://images.bewakoof.com/t320/boss-black-samsung-galaxy-a51-mobile-covers-473739-1644595205-1.jpg",
+      "name": "Work For Travel Designer Hard Cover for samsung-galaxy-m31",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+  
+    {
+      "id": 655,
+      "image": "https://images.bewakoof.com/t640/doodle-space-designer-hard-cover-for-samsung-galaxy-note-10-lite-539211-1662013750-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 656,
+      "image": "https://images.bewakoof.com/t640/gojo-designer-hard-cover-for-samsung-galaxy-note-10-lite-534924-1660205858-1.jpg",
+      "name": "samsung-galaxy-note-10-lite Jet Black Glass Case",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 657,
+      "image": "https://images.bewakoof.com/t640/peeking-army-designer-hard-cover-for-samsung-galaxy-note-10-lite-535502-1660204985-1.jpg",
+      "name": "Palm Green Premium Glass Cover For samsung-galaxy-note-10-lite(Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 658,
+      "image": "https://images.bewakoof.com/t640/yuji-designer-hard-cover-for-samsung-galaxy-note-10-lite-535214-1660204002-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For samsung-galaxy-note-10-lite (Impact Resistant)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 659,
+      "image": "https://images.bewakoof.com/t640/kakashi-designer-hard-cover-for-samsung-galaxy-note-10-lite-537865-1661438348-1.jpg",
+      "name": "Moon Wolf Printed Premium Glass Cover For samsung-galaxy-note-10-lite0(Impact Resistant, Matte Finish",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 660,
+      "image": "https://images.bewakoof.com/t640/hangin-astronaut-designer-hard-cover-for-samsung-galaxy-note-10-lite-518681-1657786829-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for samsung-galaxy-note-10-lite",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "429",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 661,
+      "image": "https://images.bewakoof.com/t640/purple-marble-designer-hard-cover-for-samsung-galaxy-note-10-lite-524224-1658993999-1.jpg",
+      "name": "King T'Challa Designer Hard Cover for samsung-galaxy-note-10-lite",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 662,
+      "image": "https://images.bewakoof.com/t640/escape-reality-designer-hard-cover-for-samsung-galaxy-note-10-lite-523961-1658993799-1.jpg",
+      "name": "Zenistsu Designer Hard Cover for  samsung-galaxy-note-10-lite",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 663,
+      "image": "https://images.bewakoof.com/t320/camo-samsung-galaxy-note-10-lite-mobile-cover-samsung-galaxy-note-10-lite-mobile-covers-302323-1620675124.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  samsung-galaxy-note-10-lite",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 664,
+      "image": "https://images.bewakoof.com/t320/superman-logo-line-samsung-galaxy-note-10-lite-mobile-cover-samsung-galaxy-note-10-lite-mobile-covers-302316-1620675107.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  samsung-galaxy-note-10-lite",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 665,
+      "image": "https://images.bewakoof.com/t320/rave-dementor-samsung-galaxy-note-10-lite-mobile-cover-hp-samsung-galaxy-note-10-lite-mobile-covers-311960-1620675223.jpg",
+      "name": "Work For Travel Designer Hard Cover for samsung-galaxy-note-10-lite",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+  
+    {
+      "id": 700,
+      "image": "https://images.bewakoof.com/t320/pyaar-ek-dhoka-hai-huawei-p30-lite-mobile-cover-huawei-p30-lite-mobile-covers-245191-1571467562.jpg",
+      "name": "Pyar ek dhoka hai  huawei-p30-lite",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "199",
+      "strikeOffPrice": "299"
+    },
+    {
+      "id": 701,
+      "image": "https://images.bewakoof.com/t320/tere-baap-ka-phone-hai-kya-huawei-p30-lite-mobile-cover-huawei-p30-lite-mobile-covers-245252-1571467738.jpg",
+      "name": "Tere bap ka phone hai ky huawei-p30-lite",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "199",
+      "strikeOffPrice": "299"
+    },
+  
+  
+  
+    {
+      "id": 702,
+      "image": "https://images.bewakoof.com/t320/cloudburst-printed-premium-glass-cover-for-huawei-p40-pro-shockproof-light-weight-505964-1654500516-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 703,
+      "image": "https://images.bewakoof.com/t320/ultramarine-printed-premium-glass-cover-for-huawei-p40-pro-shockproof-light-weight-505959-1654500498-1.jpg",
+      "name": "huawei-p40-pro Jet Black Glass Case",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 704,
+      "image": "https://images.bewakoof.com/t320/tropical-leaves-flowers-printed-premium-glass-cover-for-huawei-p40-pro-shockproof-light-weight-505962-1654500131-1.jpg",
+      "name": "Palm Green Premium Glass Cover For huawei-p40-pro(Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 708,
+      "image": "https://images.bewakoof.com/t320/space-doodles-printed-premium-glass-cover-for-huawei-p40-pro-shockproof-light-weight-505973-1654500551-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For huawei-p40-pro (Impact Resistant)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 709,
+      "image": "https://images.bewakoof.com/t640/zig-zag-printed-premium-glass-cover-for-huawei-p40-pro-impact-resistant-matte-finish-534534-1660055397-1.jpg",
+      "name": "Moon Wolf Printed Premium Glass Cover For huawei-p40-pro(Impact Resistant, Matte Finish",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 710,
+      "image": "https://images.bewakoof.com/t640/life-typography-premium-glass-cover-for-huawei-p40-pro-impact-resistant-matte-finish-534535-1660055182-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for huawei-p40-pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "429",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 711,
+      "image": "https://images.bewakoof.com/t640/purple-marble-designer-hard-cover-for-samsung-galaxy-note-10-lite-524224-1658993999-1.jpg",
+      "name": "King T'Challa Designer Hard Cover for huawei-p40-pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 712,
+      "image": "https://images.bewakoof.com/t640/moon-night-printed-premium-glass-cover-for-huawei-p40-pro-impact-resistant-matte-finish-534541-1660054528-1.jpg",
+      "name": "Zenistsu Designer Hard Cover for  huawei-p40-pro",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 713,
+      "image": "https://images.bewakoof.com/t640/moon-wolf-printed-premium-glass-cover-for-huawei-p40-pro-impact-resistant-matte-finish-534544-1660054967-1.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  huawei-p40-pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 714,
+      "image": "https://images.bewakoof.com/t640/striped-premium-glass-cover-for-huawei-p40-pro-impact-resistant-matte-finish-534551-1660055439-1.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  huawei-p40-pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 715,
+      "image": "https://images.bewakoof.com/t640/owl-art-printed-premium-glass-cover-for-huawei-p40-pro-impact-resistant-matte-finish-534553-1660055324-1.jpg",
+      "name": "Work For Travel Designer Hard Cover for huawei-p40-pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+    {
+      "id": 801,
+      "image": "https://images.bewakoof.com/t640/bad-boy-designer-hard-cover-for-oneplus-6-542951-1663760360-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 802,
+      "image": "https://images.bewakoof.com/t640/itachi-manga-designer-hard-cover-for-oneplus-6-546855-1665047073-1.jpg",
+      "name": "oneplus-6 Jet Black Glass Case",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 803,
+      "image": "https://images.bewakoof.com/t640/sukuna-designer-hard-cover-for-oneplus-6-537410-1661436573-1.jpg",
+      "name": "Palm Green Premium Glass Cover For oneplus-6(Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 804,
+      "image": "https://images.bewakoof.com/t640/hangin-astronaut-designer-hard-cover-for-oneplus-6-518633-1657787153-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For oneplus-6 (Impact Resistant)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 805,
+      "image": "https://images.bewakoof.com/t640/escape-reality-designer-hard-cover-for-oneplus-6-523903-1658993424-1.jpg",
+      "name": "Moon Wolf Printed Premium Glass Cover For oneplus-6(Impact Resistant, Matte Finish",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 806,
+      "image": "https://images.bewakoof.com/t640/purple-marble-designer-hard-cover-for-oneplus-6-524179-1658992677-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for oneplus-6",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "429",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 807,
+      "image": "https://images.bewakoof.com/t640/king-t-challa-designer-hard-cover-for-oneplus-6-524039-1658992623-1.jpg",
+      "name": "King T'Challa Designer Hard Cover for oneplus-6",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 808,
+      "image": "https://images.bewakoof.com/t320/floyd-oneplus-6-mobile-cover-oneplus-6-mobile-covers-192450-1560581168.jpg",
+      "name": "Zenistsu Designer Hard Cover for  oneplus-6",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "199",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 809,
+      "image": "https://images.bewakoof.com/t320/sequins-oneplus-6-mobile-cover-oneplus-6-mobile-covers-192454-1560581178.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  oneplus-6",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 810,
+      "image": "https://images.bewakoof.com/t320/puff-puff-pass-oneplus-6-mobile-cover-oneplus-6-mobile-covers-222364-1562047131.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  oneplus-6",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 811,
+      "image": "https://images.bewakoof.com/t320/hp-glasses-oneplus-6-mobile-cover-oneplus-6-mobile-covers-227344-1565250732.jpg",
+      "name": "Work For Travel Designer Hard Cover for oneplus-6",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+  
+    {
+      "id": 812,
+      "image": "https://images.bewakoof.com/t640/kakashi-sensei-designer-hard-cover-for-oneplus-6t-545313-1664459879-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 813,
+      "image": "https://images.bewakoof.com/t320/batman-logo-3d-designer-cover-for-oneplus-6t-487397-1649848391-1.jpeg",
+      "name": "oneplus-6T Jet Black Glass Case",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 814,
+      "image": "https://images.bewakoof.com/t640/the-view-designer-hard-cover-for-oneplus-6t-539023-1662013561-1.jpg",
+      "name": "Palm Green Premium Glass Cover For oneplus-6T(Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 815,
+      "image": "https://images.bewakoof.com/t640/gojo-designer-hard-cover-for-oneplus-6t-535100-1660206216-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For oneplus-6T (Impact Resistant)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 816,
+      "image": "https://images.bewakoof.com/t640/lord-4th-designer-hard-cover-for-oneplus-6t-537539-1661436926-1.jpg",
+      "name": "Moon Wolf Printed Premium Glass Cover For oneplus-6T(Impact Resistant, Matte Finish",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 817,
+      "image": "https://images.bewakoof.com/t640/bad-man-designer-hard-cover-for-oneplus-6t-527714-1659624833-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for oneplus-6T",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "429",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 818,
+      "image": "https://images.bewakoof.com/t640/mars-trip-designer-hard-cover-for-oneplus-6t-527855-1659623928-1.jpg",
+      "name": "King T'Challa Designer Hard Cover for oneplus-6T",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 819,
+      "image": "https://images.bewakoof.com/t640/inner-minion-designer-hard-cover-for-oneplus-6t-518756-1657786922-1.jpg",
+      "name": "Zenistsu Designer Hard Cover for  oneplus-6T",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "199",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 820,
+      "image": "https://images.bewakoof.com/t640/spider-blend-designer-hard-cover-for-oneplus-6t-518884-1657787261-1.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  oneplus-6T",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 821,
+      "image": "https://images.bewakoof.com/t640/hangin-astronaut-designer-hard-cover-for-oneplus-6t-518634-1657788054-1.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  oneplus-6T",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 822,
+      "image": "https://images.bewakoof.com/t640/purple-marble-designer-hard-cover-for-oneplus-6t-524166-1658994181-1.jpg",
+      "name": "Work For Travel Designer Hard Cover for oneplus-6T",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+    {
+      "id": 823,
+      "image": "https://images.bewakoof.com/t1080/lion-the-king-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524674-1658836745-1.jpg",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.6,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+  
+    {
+      "id": 824,
+      "image": "https://images.bewakoof.com/t1080/struggling-panda-typography-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-525311-1658837623-1.jpg",
+      "name": "Struggling Panda Typography Premium Glass Cover For OnePlus 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 825,
+      "image": "https://images.bewakoof.com/t540/wrapcart-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-500121-1652882436-1.jpg",
+      "name": "Printed Designer Hard Cover For OnePlus 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "WRAPCART",
+      "rating": 3.9,
+      "price": "529",
+      "strikeOffPrice": "399"
+    },
+    {
+      "id": 826,
+      "image": "https://images.bewakoof.com/t1080/butterfly-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524636-1658837894-1.jpg",
+      "name": "Butterfly Printed Premium Glass Cover For OnePlus 7 (Impact Resistant, Matte Finish))",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 827,
+      "image": "https://images.bewakoof.com/t1080/abstract-faces-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524637-1658838270-1.jpg",
+      "name": "Abstract Faces Printed Premium Glass Cover For OnePlus 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 828,
+      "image": "https://images.bewakoof.com/t1080/zig-zag-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524638-1658838124-1.jpg",
+      "name": "Zig-Zag Printed Premium Glass Cover For OnePlus 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.9,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 829,
+      "image": "https://images.bewakoof.com/t1080/floral-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524640-1658837268-1.jpg",
+      "name": "Floral Printed Premium Glass Cover For OnePlus 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.2,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+    "id": 830,
+      "image": "https://images.bewakoof.com/t1080/leopard-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524641-1658837310-1.jpg",
+      "name": "Leopard Printed Premium Glass Cover For OnePlus 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 831,
+      "image": "https://images.bewakoof.com/t1080/planet-play-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524645-1658836787-1.jpg",
+      "name": "Planet Play Printed Premium Glass Cover For OnePlus 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.8,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 832,
+      "image": "https://images.bewakoof.com/t1080/floral-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524648-1658836997-1.jpg",
+      "name": "Floral Printed Premium Glass Cover For OnePlus 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.1,
+      "price": "599",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 833,
+      "image": "https://images.bewakoof.com/t1080/funny-pug-face-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524652-1658837289-1.jpg",
+      "name": "Funny Pug Face Printed Premium Glass Cover For OnePlus 7 (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "599",
+      "strikeOffPrice": "1499"
+    },
+  
+  
+  
+  
+    {
+      "id": 834,
+      "image": "https://images.bewakoof.com/t640/the-view-designer-hard-cover-for-oneplus-7-pro-539024-1662016496-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 835,
+      "image": "https://images.bewakoof.com/t640/mars-trip-designer-hard-cover-for-oneplus-7-pro-527856-1659625895-1.jpg",
+      "name": "oneplus-7-pro Jet Black Glass Case",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 836,
+      "image": "https://images.bewakoof.com/t640/rebel-panda-designer-hard-cover-for-oneplus-7-pro-524307-1658994430-1.jpg",
+      "name": "Palm Green Premium Glass Cover For oneplus-7-pro(Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 837,
+      "image": "https://images.bewakoof.com/t640/escape-reality-designer-hard-cover-for-oneplus-7-pro-523914-1658993977-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For oneplus-7-pro (Impact Resistant)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 838,
+      "image": "https://images.bewakoof.com/t640/uchiha-itachi-designer-hard-cover-for-oneplus-7-pro-516008-1657110741-1.jpg",
+      "name": "Moon Wolf Printed Premium Glass Cover For oneplus-7-pro(Impact Resistant, Matte Finish",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 839,
+      "image": "https://images.bewakoof.com/t640/spider-blend-designer-hard-cover-for-oneplus-7-pro-518879-1657789171-1.jpg",
+      "name": "Inner Minion Designer Hard Cover foroneplus-7-pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "429",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 840,
+      "image": "https://images.bewakoof.com/t320/cool-sporty-oneplus-7-pro-mobile-cover-oneplus-7-pro-mobile-covers-280290-1620666390.jpg",
+      "name": "King T'Challa Designer Hard Cover for oneplus-7-pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 841,
+      "image": "https://images.bewakoof.com/t320/rave-dementor-oneplus-7-pro-mobile-cover-hp-oneplus-7-pro-mobile-covers-311575-1620666493.jpg",
+      "name": "Zenistsu Designer Hard Cover for  oneplus-7-pro",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "199",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 842,
+      "image": "https://images.bewakoof.com/t320/colors-of-peace-oneplus-7-pro-mobile-cover-oneplus-7-pro-mobile-covers-221824-1561449617.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  oneplus-7-pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 843,
+      "image": "https://images.bewakoof.com/t320/black-marble-oneplus-7-pro-mobile-cover-oneplus-7-pro-mobile-covers-221804-1561449535.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  oneplus-7-pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 844,
+      "image": "https://images.bewakoof.com/t320/drinking-astronaut-oneplus-7-pro-mobile-cover-oneplus-7-pro-mobile-covers-221773-1561449407.jpg",
+      "name": "Work For Travel Designer Hard Cover for oneplus-7-pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+    {
+      "id": 823,
+      "image": "https://images.bewakoof.com/t1080/lion-the-king-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524674-1658836745-1.jpg",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.6,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+  
+    {
+      "id": 824,
+      "image": "https://images.bewakoof.com/t1080/struggling-panda-typography-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-525311-1658837623-1.jpg",
+      "name": "Struggling Panda Typography Premium Glass Cover For OnePlus Nord (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 825,
+      "image": "https://images.bewakoof.com/t540/wrapcart-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-500121-1652882436-1.jpg",
+      "name": "Printed Designer Hard Cover For OnePlus Nord (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "WRAPCART",
+      "rating": 3.9,
+      "price": "529",
+      "strikeOffPrice": "399"
+    },
+    {
+      "id": 826,
+      "image": "https://images.bewakoof.com/t1080/butterfly-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524636-1658837894-1.jpg",
+      "name": "Butterfly Printed Premium Glass Cover For OnePlus Nord (Impact Resistant, Matte Finish))",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 827,
+      "image": "https://images.bewakoof.com/t1080/abstract-faces-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524637-1658838270-1.jpg",
+      "name": "Abstract Faces Printed Premium Glass Cover For OnePlus Nord (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 828,
+      "image": "https://images.bewakoof.com/t1080/zig-zag-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524638-1658838124-1.jpg",
+      "name": "Zig-Zag Printed Premium Glass Cover For OnePlus Nord (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.9,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 829,
+      "image": "https://images.bewakoof.com/t1080/floral-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524640-1658837268-1.jpg",
+      "name": "Floral Printed Premium Glass Cover For OnePlus Nord (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.2,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+    "id": 830,
+      "image": "https://images.bewakoof.com/t1080/leopard-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524641-1658837310-1.jpg",
+      "name": "Leopard Printed Premium Glass Cover For OnePlus Nord (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 831,
+      "image": "https://images.bewakoof.com/t1080/planet-play-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524645-1658836787-1.jpg",
+      "name": "Planet Play Printed Premium Glass Cover For OnePlus Nord (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.8,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 832,
+      "image": "https://images.bewakoof.com/t1080/floral-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524648-1658836997-1.jpg",
+      "name": "Floral Printed Premium Glass Cover ForOnePlus Nord (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.1,
+      "price": "599",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 833,
+      "image": "https://images.bewakoof.com/t1080/funny-pug-face-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524652-1658837289-1.jpg",
+      "name": "Funny Pug Face Printed Premium Glass Cover For OnePlus Nord (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "599",
+      "strikeOffPrice": "1499"
+    },
+  
+  
+  
+  
+    {
+      "id": 834,
+      "image": "https://images.bewakoof.com/t640/the-view-designer-hard-cover-for-oneplus-7-pro-539024-1662016496-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 835,
+      "image": "https://images.bewakoof.com/t640/mars-trip-designer-hard-cover-for-oneplus-7-pro-527856-1659625895-1.jpg",
+      "name": "OnePlus 8 Pro Jet Black Glass Case",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 836,
+      "image": "https://images.bewakoof.com/t640/rebel-panda-designer-hard-cover-for-oneplus-7-pro-524307-1658994430-1.jpg",
+      "name": "Palm Green Premium Glass Cover For OnePlus 8 Pro(Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 837,
+      "image": "https://images.bewakoof.com/t640/escape-reality-designer-hard-cover-for-oneplus-7-pro-523914-1658993977-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For OnePlus 8 Pro (Impact Resistant)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 838,
+      "image": "https://images.bewakoof.com/t640/uchiha-itachi-designer-hard-cover-for-oneplus-7-pro-516008-1657110741-1.jpg",
+      "name": "Moon Wolf Printed Premium Glass Cover For OnePlus 8 Pro(Impact Resistant, Matte Finish",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 839,
+      "image": "https://images.bewakoof.com/t640/spider-blend-designer-hard-cover-for-oneplus-7-pro-518879-1657789171-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for OnePlus 8 Pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "429",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 840,
+      "image": "https://images.bewakoof.com/t320/cool-sporty-oneplus-7-pro-mobile-cover-oneplus-7-pro-mobile-covers-280290-1620666390.jpg",
+      "name": "King T'Challa Designer Hard Cover for OnePlus 8 Pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 841,
+      "image": "https://images.bewakoof.com/t320/rave-dementor-oneplus-7-pro-mobile-cover-hp-oneplus-7-pro-mobile-covers-311575-1620666493.jpg",
+      "name": "Zenistsu Designer Hard Cover for  OnePlus 8 Pro",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "199",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 842,
+      "image": "https://images.bewakoof.com/t320/colors-of-peace-oneplus-7-pro-mobile-cover-oneplus-7-pro-mobile-covers-221824-1561449617.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  OnePlus 8 Pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 843,
+      "image": "https://images.bewakoof.com/t320/black-marble-oneplus-7-pro-mobile-cover-oneplus-7-pro-mobile-covers-221804-1561449535.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for OnePlus 8 Pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 844,
+      "image": "https://images.bewakoof.com/t320/drinking-astronaut-oneplus-7-pro-mobile-cover-oneplus-7-pro-mobile-covers-221773-1561449407.jpg",
+      "name": "Work For Travel Designer Hard Cover for OnePlus 8 Pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+  
+  
+    {
+      "id": 901,
+      "image": "https://images.bewakoof.com/t320/aura-printed-premium-glass-cover-for-realme-8-pro-shock-proof-lightweight-485484-1648810703-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 902,
+      "image": "https://images.bewakoof.com/t320/premium-glass-cover-for-realme-8-pro-shock-proof-lightweight-485480-1648810398-1.jpg",
+      "name": "realme-8-pro Jet Black Glass Case",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 903,
+      "image": "https://images.bewakoof.com/t320/premium-glass-cover-for-realme-8-pro-shock-proof-lightweight-485491-1648810598-1.jpg",
+      "name": "Palm Green Premium Glass Cover For realme-8-pro(Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 904,
+      "image": "https://images.bewakoof.com/t320/razor-printed-premium-glass-cover-for-realme-8-pro-shock-proof-lightweight-485509-1648810682-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For realme-8-pro (Impact Resistant)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 905,
+      "image": "https://images.bewakoof.com/t320/abstract-printed-premium-glass-cover-for-realme-8-pro-shock-proof-lightweight-485402-1648810577-1.jpg",
+      "name": "Moon Wolf Printed Premium Glass Cover For realme-8-pro Pro(Impact Resistant, Matte Finish",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 906,
+      "image": "https://images.bewakoof.com/t320/abstract-tiles-printed-premium-glass-cover-for-realme-8-pro-shock-proof-lightweight-485437-1648810765-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for realme-8-pro Pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "429",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 907,
+      "image": "https://images.bewakoof.com/t320/brave-lion-printed-premium-glass-cover-for-realme-8-pro-shock-proof-lightweight-485438-1648810525-1.jpg",
+      "name": "King T'Challa Designer Hard Cover for realme-8-pro Pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 908,
+      "image": "https://images.bewakoof.com/t320/fluid-printed-premium-glass-cover-for-realme-8-pro-shock-proof-lightweight-485507-1648810650-1.jpg",
+      "name": "Zenistsu Designer Hard Cover for  realme-8-pro",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "199",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 909,
+      "image": "https://images.bewakoof.com/t320/mystic-aurora-printed-premium-glass-cover-for-realme-8-pro-shock-proof-lightweight-485401-1648810451-1.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  realme-8-pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 910,
+      "image": "https://images.bewakoof.com/t320/fluid-printed-premium-glass-cover-for-realme-8-pro-shock-proof-lightweight-485507-1648810650-1.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for realme-8-pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 911,
+      "image": "https://images.bewakoof.com/t320/retro-art-printed-premium-glass-cover-for-realme-8-pro-shock-proof-lightweight-485486-1648810430-1.jpg",
+      "name": "Work For Travel Designer Hard Cover for realme-8-pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+    {
+      "id": 912,
+      "image": "https://images.bewakoof.com/t640/kakashi-sensei-designer-hard-cover-for-samsung-galaxy-a50-545413-1664459251-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "219",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 913,
+      "image": "https://images.bewakoof.com/t540/avengers-chibi-samsung-galaxy-a50-mobile-cover-avl-samsung-galaxy-a50-mobile-covers-280103-1598451700.jpg",
+      "name": "Avengers Chibi (AVL) Realme GT Neo 3 Mobile Covers",
+      "color": "black",
+      "types": "OFFICIAL MARVEL MERCHANDISE",
+      "rating": 5,
+      "price": "199",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 914,
+      "image": "https://images.bewakoof.com/t1080/itachi-manga-designer-hard-cover-for-samsung-galaxy-a50-546908-1665047111-1.jpg",
+      "name": "Itachi Manga Designer Hard Cover for Realme GT Neo 3",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 3.9,
+      "price": "219",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 915,
+      "image": "https://images.bewakoof.com/t1080/mars-trip-designer-hard-cover-for-samsung-galaxy-a50-527968-1659623362-1.jpg",
+      "name": "Mars Trip Designer Hard Cover for Realme GT Neo 3",
+      "color": "black",
+      "types": "OFFICIAL NASA MERCHANDISE",
+      "rating": 2.6,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 916,
+      "image": "https://images.bewakoof.com/t1080/hangin-astronaut-designer-hard-cover-for-samsung-galaxy-a50-518733-1657788401-1.jpg",
+      "name": "Hangin Astronaut Designer Hard Cover for Realme GT Neo 3",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.5,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 6917,
+      "image": "https://images.bewakoof.com/t1080/inner-minion-designer-hard-cover-for-samsung-galaxy-a50-518862-1657788159-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for Realme GT Neo 3",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 918,
+      "image": "https://images.bewakoof.com/t1080/king-t-challa-designer-hard-cover-for-samsung-galaxy-a50-524149-1658993243-1.jpg",
+      "name": "King T'Challa Designer Hard Cover for Realme GT Neo 3",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 919,
+      "image": "https://images.bewakoof.com/t640/purple-marble-designer-hard-cover-for-samsung-galaxy-a50-524275-1658995154-1.jpg",
+      "name": "Zenistsu Designer Hard Cover for  Realme GT Neo 3",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 920,
+      "image": "https://images.bewakoof.com/t320/discover-new-places-samsung-galaxy-a50-mobile-cover-samsung-galaxy-a50-mobile-covers-269684-1580132787.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  Realme GT Neo 3",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 921,
+      "image": "https://images.bewakoof.com/t320/camo-honey-comb-samsung-galaxy-a50-mobile-cover-samsung-galaxy-a50-mobile-covers-280115-1598451759.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  Realme GT Neo 3",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 922,
+      "image": "https://images.bewakoof.com/t320/ps4-buttons-samsung-galaxy-a50-mobile-cover-samsung-galaxy-a50-mobile-covers-280121-1598451787.jpg",
+      "name": "Work For Travel Designer Hard Cover for Realme GT Neo 3",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+  
+    {
+      "id": 923,
+      "image": "https://images.bewakoof.com/t640/bad-boy-designer-hard-cover-for-oneplus-6-542951-1663760360-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 924,
+      "image": "https://images.bewakoof.com/t640/itachi-manga-designer-hard-cover-for-oneplus-6-546855-1665047073-1.jpg",
+      "name": "Realme 9 5G Jet Black Glass Case",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 925,
+      "image": "https://images.bewakoof.com/t640/sukuna-designer-hard-cover-for-oneplus-6-537410-1661436573-1.jpg",
+      "name": "Palm Green Premium Glass Cover For Realme 9 5G(Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 926,
+      "image": "https://images.bewakoof.com/t640/hangin-astronaut-designer-hard-cover-for-oneplus-6-518633-1657787153-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For Realme 9 5G (Impact Resistant)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 927,
+      "image": "https://images.bewakoof.com/t640/escape-reality-designer-hard-cover-for-oneplus-6-523903-1658993424-1.jpg",
+      "name": "Moon Wolf Printed Premium Glass Cover For Realme 9 5G(Impact Resistant, Matte Finish",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 928,
+      "image": "https://images.bewakoof.com/t640/purple-marble-designer-hard-cover-for-oneplus-6-524179-1658992677-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for Realme 9 5G",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "429",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 929,
+      "image": "https://images.bewakoof.com/t640/king-t-challa-designer-hard-cover-for-oneplus-6-524039-1658992623-1.jpg",
+      "name": "King T'Challa Designer Hard Cover for Realme 9 5G",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 930,
+      "image": "https://images.bewakoof.com/t320/floyd-oneplus-6-mobile-cover-oneplus-6-mobile-covers-192450-1560581168.jpg",
+      "name": "Zenistsu Designer Hard Cover for  Realme 9 5G",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "199",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 931,
+      "image": "https://images.bewakoof.com/t320/sequins-oneplus-6-mobile-cover-oneplus-6-mobile-covers-192454-1560581178.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  Realme 9 5G",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 932,
+      "image": "https://images.bewakoof.com/t320/puff-puff-pass-oneplus-6-mobile-cover-oneplus-6-mobile-covers-222364-1562047131.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  Realme 9 5G",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+    {
+      "id": 933,
+      "image": "https://images.bewakoof.com/t1080/lion-the-king-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524674-1658836745-1.jpg",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.6,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+  
+    {
+      "id": 934,
+      "image": "https://images.bewakoof.com/t1080/struggling-panda-typography-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-525311-1658837623-1.jpg",
+      "name": "Struggling Panda Typography Premium Glass Cover For Realme NARZO 50i (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 935,
+      "image": "https://images.bewakoof.com/t540/wrapcart-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-500121-1652882436-1.jpg",
+      "name": "Printed Designer Hard Cover For Realme NARZO 50i (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "WRAPCART",
+      "rating": 3.9,
+      "price": "529",
+      "strikeOffPrice": "399"
+    },
+    {
+      "id": 936,
+      "image": "https://images.bewakoof.com/t1080/butterfly-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524636-1658837894-1.jpg",
+      "name": "Butterfly Printed Premium Glass Cover For Realme NARZO 50i (Impact Resistant, Matte Finish))",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 937,
+      "image": "https://images.bewakoof.com/t1080/abstract-faces-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524637-1658838270-1.jpg",
+      "name": "Abstract Faces Printed Premium Glass Cover For Realme NARZO 50i (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 938,
+      "image": "https://images.bewakoof.com/t1080/zig-zag-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524638-1658838124-1.jpg",
+      "name": "Zig-Zag Printed Premium Glass Cover For Realme NARZO 50i (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.9,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 939,
+      "image": "https://images.bewakoof.com/t1080/floral-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524640-1658837268-1.jpg",
+      "name": "Floral Printed Premium Glass Cover For Realme NARZO 50i (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.2,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+    "id": 940,
+      "image": "https://images.bewakoof.com/t1080/leopard-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524641-1658837310-1.jpg",
+      "name": "Leopard Printed Premium Glass Cover For Realme NARZO 50i (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 941,
+      "image": "https://images.bewakoof.com/t1080/planet-play-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524645-1658836787-1.jpg",
+      "name": "Planet Play Printed Premium Glass Cover For Realme NARZO 50i (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.8,
+      "price": "529",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 942,
+      "image": "https://images.bewakoof.com/t1080/floral-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524648-1658836997-1.jpg",
+      "name": "Floral Printed Premium Glass Cover For Realme NARZO 50i (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.1,
+      "price": "599",
+      "strikeOffPrice": "1499"
+    },
+    {
+      "id": 943,
+      "image": "https://images.bewakoof.com/t1080/funny-pug-face-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524652-1658837289-1.jpg",
+      "name": "Funny Pug Face Printed Premium Glass Cover For Realme NARZO 50i (Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "599",
+      "strikeOffPrice": "1499"
+    },
+  
+  
+  
+  
+    {
+      "id": 944,
+      "image": "https://images.bewakoof.com/t640/the-view-designer-hard-cover-for-oneplus-7-pro-539024-1662016496-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 945,
+      "image": "https://images.bewakoof.com/t640/mars-trip-designer-hard-cover-for-oneplus-7-pro-527856-1659625895-1.jpg",
+      "name": "Realme 9 Pro Jet Black Glass Case",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 946,
+      "image": "https://images.bewakoof.com/t640/rebel-panda-designer-hard-cover-for-oneplus-7-pro-524307-1658994430-1.jpg",
+      "name": "Palm Green Premium Glass Cover For Realme 9 Pro(Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 947,
+      "image": "https://images.bewakoof.com/t640/escape-reality-designer-hard-cover-for-oneplus-7-pro-523914-1658993977-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For Realme 9 Pro (Impact Resistant)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 948,
+      "image": "https://images.bewakoof.com/t640/uchiha-itachi-designer-hard-cover-for-oneplus-7-pro-516008-1657110741-1.jpg",
+      "name": "Moon Wolf Printed Premium Glass Cover For Realme 9 Pro(Impact Resistant, Matte Finish",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 949,
+      "image": "https://images.bewakoof.com/t640/spider-blend-designer-hard-cover-for-oneplus-7-pro-518879-1657789171-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for Realme 9 Pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "429",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 950,
+      "image": "https://images.bewakoof.com/t320/cool-sporty-oneplus-7-pro-mobile-cover-oneplus-7-pro-mobile-covers-280290-1620666390.jpg",
+      "name": "King T'Challa Designer Hard Cover for Realme 9 Pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 951,
+      "image": "https://images.bewakoof.com/t320/rave-dementor-oneplus-7-pro-mobile-cover-hp-oneplus-7-pro-mobile-covers-311575-1620666493.jpg",
+      "name": "Zenistsu Designer Hard Cover for  Realme 9 Pro",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "199",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 952,
+      "image": "https://images.bewakoof.com/t320/colors-of-peace-oneplus-7-pro-mobile-cover-oneplus-7-pro-mobile-covers-221824-1561449617.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  Realme 9 Pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 953,
+      "image": "https://images.bewakoof.com/t320/black-marble-oneplus-7-pro-mobile-cover-oneplus-7-pro-mobile-covers-221804-1561449535.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  Realme 9 Pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 954,
+      "image": "https://images.bewakoof.com/t320/drinking-astronaut-oneplus-7-pro-mobile-cover-oneplus-7-pro-mobile-covers-221773-1561449407.jpg",
+      "name": "Work For Travel Designer Hard Cover for Realme 9 Pro",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "299",
+      "strikeOffPrice": "499"
+    },
+  
+  
+  
+  
+    {
+      "id": 955,
+      "image": "https://images.bewakoof.com/t640/doodle-space-designer-hard-cover-for-samsung-galaxy-note-10-lite-539211-1662013750-1.jpg",
+      "types": "Bewakoof",
+      "rating": 4.6,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+  
+    {
+      "id": 956,
+      "image": "https://images.bewakoof.com/t640/gojo-designer-hard-cover-for-samsung-galaxy-note-10-lite-534924-1660205858-1.jpg",
+      "name": "Realme NARZO 50i Jet Black Glass Case",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 5,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 957,
+      "image": "https://images.bewakoof.com/t640/peeking-army-designer-hard-cover-for-samsung-galaxy-note-10-lite-535502-1660204985-1.jpg",
+      "name": "Palm Green Premium Glass Cover For Realme NARZO 50i(Impact Resistant, Matte Finish)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 3.9,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 958,
+      "image": "https://images.bewakoof.com/t640/yuji-designer-hard-cover-for-samsung-galaxy-note-10-lite-535214-1660204002-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For Realme NARZO 50i (Impact Resistant)",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 2.6,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 959,
+      "image": "https://images.bewakoof.com/t640/kakashi-designer-hard-cover-for-samsung-galaxy-note-10-lite-537865-1661438348-1.jpg",
+      "name": "Moon Wolf Printed Premium Glass Cover For Realme NARZO 50i(Impact Resistant, Matte Finish",
+      "color": "black",
+      "types": "Qrioh",
+      "rating": 4.5,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 960,
+      "image": "https://images.bewakoof.com/t640/hangin-astronaut-designer-hard-cover-for-samsung-galaxy-note-10-lite-518681-1657786829-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for Realme NARZO 50i",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.9,
+      "price": "429",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 961,
+      "image": "https://images.bewakoof.com/t640/purple-marble-designer-hard-cover-for-samsung-galaxy-note-10-lite-524224-1658993999-1.jpg",
+      "name": "King T'Challa Designer Hard Cover for Realme NARZO 50i",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.2,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+    "id": 962,
+      "image": "https://images.bewakoof.com/t640/escape-reality-designer-hard-cover-for-samsung-galaxy-note-10-lite-523961-1658993799-1.jpg",
+      "name": "Zenistsu Designer Hard Cover for Realme NARZO 50i",
+      "color": "black",
+      "types": "Bewakoofoh",
+      "rating": 3.9,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 963,
+      "image": "https://images.bewakoof.com/t320/camo-samsung-galaxy-note-10-lite-mobile-cover-samsung-galaxy-note-10-lite-mobile-covers-302323-1620675124.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  Realme NARZO 50i",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.8,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 964,
+      "image": "https://images.bewakoof.com/t320/superman-logo-line-samsung-galaxy-note-10-lite-mobile-cover-samsung-galaxy-note-10-lite-mobile-covers-302316-1620675107.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  Realme NARZO 50ie",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 4.1,
+      "price": "249",
+      "strikeOffPrice": "499"
+    },
+    {
+      "id": 965,
+      "image": "https://images.bewakoof.com/t320/rave-dementor-samsung-galaxy-note-10-lite-mobile-cover-hp-samsung-galaxy-note-10-lite-mobile-covers-311960-1620675223.jpg",
+      "name": "Work For Travel Designer Hard Cover for Realme NARZO 50i",
+      "color": "black",
+      "types": "Bewakoof",
+      "rating": 5,
+      "price": "249",
+      "strikeOffPrice": "499"
     }
-  ] 
+  ]
+  
 }
