@@ -2,6 +2,12 @@ import navbar from "../../pcomponents/nav.js"
 // import footer from "../../pcomponents/foot.js"
 document.getElementById("onlynav").innerHTML=navbar();
 // document.getElementById("container-footer").innerHTML=footer();
+document.getElementById("showwishimage").addEventListener("click" , () => {
+    location.href ="../wishlistPagenew/wishlist.html";
+})
+document.getElementById("showcartimage").addEventListener("click" , () =>{
+    location.href= "../../cartAndCheckout/cart.html";
+})
 const displaywish=()=>{
     let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
     if(wishArr.length>0){
