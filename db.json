@@ -1621,12 +1621,13 @@
       "details":"Manufactured By - Bewakoof Brands Pvt Ltd, Sairaj Logistic Hub #A5, Bmc Pipeline Road, Opposite All Saints High School, Amane, Bhiwandi, Thane, Maharashtra - 421302"
     }
   ],
-  "mobile":
+  "mobileCovers":
   [
   
     {
       "id": 500,
       "image": "https://images.bewakoof.com/t540/qrioh-purple-pink-space-doodles-printed-premium-glass-cover-for-apple-iphone-7-482272-1648190573-1.jpg",
+      "name": "Japanese Art Printed Premium Glass Cover For iPhone 7 (Impact Resistant, Matte Finish)",
       "color": "black",
       "types": "Qrioh",
       "rating": 4.6,
@@ -1741,6 +1742,7 @@
     {
       "id": 511,
       "image": "https://images.bewakoof.com/t1080/lion-the-king-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524674-1658836745-1.jpg",
+      "name": "Planet Play Printed Premium Glass Cover For iPhone XR (Impact Resistant, Matte Finish)",
       "color": "black",
       "types": "Qrioh",
       "rating": 4.6,
@@ -1856,6 +1858,7 @@
     {
       "id": 522,
       "image": "https://images.bewakoof.com/t540/black-brave-lion-glass-cover-for-apple-iphone-xs-482351-1648190474-1.jpg",
+      "name": "Premium Glass Cover for iPhone XS(Shock Proof, Lightweight)",
       "color": "black",
       "types": "Qrioh",
       "rating": 4.6,
@@ -1970,6 +1973,7 @@
     {
       "id": 533,
       "image": "https://images.bewakoof.com/t640/kakashi-sensei-designer-hard-cover-for-apple-iphone-11-545401-1664461123-1.jpg",
+      "name": "Doodle Space Designer Hard Cover for Apple iPhone 11",
       "color": "black",
       "types": "Bewakoof",
       "rating": 4.6,
@@ -2086,6 +2090,7 @@
     {
       "id": 544,
       "image": "https://images.bewakoof.com/t640/doodle-space-designer-hard-cover-for-apple-iphone-11-pro-max-539149-1662014194-1.jpg",
+      "name": "Doodle Space Designer Hard Cover for Apple iphone-11-pro-max",
       "color": "black",
       "types": "Bewakoof",
       "rating": 4.6,
@@ -2201,6 +2206,7 @@
     {
       "id": 555,
       "image": "https://images.bewakoof.com/t640/modern-geometry-designer-hard-cover-for-apple-iphone-11-pro-543194-1663763112-1.jpg",
+      "name": "Japanese Art Printed Premium Glass Cover For iphone-11-pro (Impact Resistant, Matte Finish)",
       "color": "black",
       "types": "bewakoof",
       "rating": 4.6,
@@ -2317,6 +2323,7 @@
     {
       "id": 600,
       "image": "https://images.bewakoof.com/t640/kakashi-sensei-designer-hard-cover-for-samsung-galaxy-a50-545413-1664459251-1.jpg",
+      "name": "Zenistsu Designer Hard Cover for  samsung-galaxy-a50",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "219",
@@ -2431,6 +2438,7 @@
     {
       "id": 611,
       "image": "https://images.bewakoof.com/t320/qrioh-black-aura-glass-case-for-samsung-galaxy-m30s-qrioh-unisex-samsung-galaxy-m30s-mobile-cover-372914-1624513028.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  samsung-galaxy-m30s",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "529",
@@ -2545,6 +2553,7 @@
     {
       "id": 622,
       "image": "https://images.bewakoof.com/t640/escape-reality-designer-hard-cover-for-samsung-galaxy-a30-523948-1658993488-1.jpg",
+      "name": "Zenistsu Designer Hard Cover for  samsung-galaxy-a30",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "249",
@@ -2659,6 +2668,7 @@
     {
       "id": 633,
       "image": "https://images.bewakoof.com/t640/koalified-astronaut-designer-hard-cover-for-samsung-galaxy-a51-542870-1663763044-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For samsung-galaxy-a51 (Impact Resistant)",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "299",
@@ -2772,6 +2782,7 @@
     {
       "id": 644,
       "image": "https://images.bewakoof.com/t640/modern-geometry-designer-hard-cover-for-samsung-galaxy-m31-543138-1663761281-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For samsung-galaxy-m31 (Impact Resistant)",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "299",
@@ -2886,6 +2897,7 @@
     {
       "id": 655,
       "image": "https://images.bewakoof.com/t640/doodle-space-designer-hard-cover-for-samsung-galaxy-note-10-lite-539211-1662013750-1.jpg",
+      "name": "samsung-galaxy-note-10-lite Jet Black Glass Case",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "249",
@@ -3023,6 +3035,7 @@
     {
       "id": 702,
       "image": "https://images.bewakoof.com/t320/cloudburst-printed-premium-glass-cover-for-huawei-p40-pro-shockproof-light-weight-505964-1654500516-1.jpg",
+      "name": "Inner Minion Designer Hard Cover for huawei-p40-pro",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "249",
@@ -3136,6 +3149,7 @@
     {
       "id": 801,
       "image": "https://images.bewakoof.com/t640/bad-boy-designer-hard-cover-for-oneplus-6-542951-1663760360-1.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  oneplus-6",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "299",
@@ -3250,6 +3264,7 @@
     {
       "id": 812,
       "image": "https://images.bewakoof.com/t640/kakashi-sensei-designer-hard-cover-for-oneplus-6t-545313-1664459879-1.jpg",
+      "name": "Work For Travel Designer Hard Cover for oneplus-6T",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "299",
@@ -3362,6 +3377,7 @@
     {
       "id": 823,
       "image": "https://images.bewakoof.com/t1080/lion-the-king-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524674-1658836745-1.jpg",
+      "name": "Abstract Faces Printed Premium Glass Cover For OnePlus 7 (Impact Resistant, Matte Finish)",
       "color": "black",
       "types": "Qrioh",
       "rating": 4.6,
@@ -3476,6 +3492,7 @@
     {
       "id": 834,
       "image": "https://images.bewakoof.com/t640/the-view-designer-hard-cover-for-oneplus-7-pro-539024-1662016496-1.jpg",
+      "name": "Zenistsu Designer Hard Cover for  oneplus-7-pro",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "299",
@@ -3589,6 +3606,7 @@
     {
       "id": 823,
       "image": "https://images.bewakoof.com/t1080/lion-the-king-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524674-1658836745-1.jpg",
+      "name": "Floral Printed Premium Glass Cover For OnePlus Nord (Impact Resistant, Matte Finish)",
       "color": "black",
       "types": "Qrioh",
       "rating": 4.6,
@@ -3703,6 +3721,7 @@
     {
       "id": 834,
       "image": "https://images.bewakoof.com/t640/the-view-designer-hard-cover-for-oneplus-7-pro-539024-1662016496-1.jpg",
+      "name": "King T'Challa Designer Hard Cover for OnePlus 8 Pro",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "299",
@@ -3818,6 +3837,7 @@
     {
       "id": 901,
       "image": "https://images.bewakoof.com/t320/aura-printed-premium-glass-cover-for-realme-8-pro-shock-proof-lightweight-485484-1648810703-1.jpg",
+      "name": "Zenistsu Designer Hard Cover for  realme-8-pro",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "299",
@@ -3930,6 +3950,7 @@
     {
       "id": 912,
       "image": "https://images.bewakoof.com/t640/kakashi-sensei-designer-hard-cover-for-samsung-galaxy-a50-545413-1664459251-1.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  Realme GT Neo 3",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "219",
@@ -4044,6 +4065,7 @@
     {
       "id": 923,
       "image": "https://images.bewakoof.com/t640/bad-boy-designer-hard-cover-for-oneplus-6-542951-1663760360-1.jpg",
+      "name": "Gyaan Na De Designer Hard Cover for  Realme 9 5G",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "299",
@@ -4146,6 +4168,7 @@
   
     {
       "id": 933,
+      "name": "Butterfly Printed Premium Glass Cover For Realme NARZO 50i (Impact Resistant, Matte Finish))",
       "image": "https://images.bewakoof.com/t1080/lion-the-king-printed-designer-hard-cover-for-iphone-xr-impact-resistant-matte-finish-524674-1658836745-1.jpg",
       "color": "black",
       "types": "Qrioh",
@@ -4261,6 +4284,7 @@
     {
       "id": 944,
       "image": "https://images.bewakoof.com/t640/the-view-designer-hard-cover-for-oneplus-7-pro-539024-1662016496-1.jpg",
+      "name": "Tropical Lineart Designer Hard Cover for  Realme 9 Pro",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "299",
@@ -4374,6 +4398,7 @@
     {
       "id": 955,
       "image": "https://images.bewakoof.com/t640/doodle-space-designer-hard-cover-for-samsung-galaxy-note-10-lite-539211-1662013750-1.jpg",
+      "name": "Abstract Printed Premium Glass Cover For Realme NARZO 50i (Impact Resistant)",
       "types": "Bewakoof",
       "rating": 4.6,
       "price": "249",
