@@ -9,11 +9,10 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
-    <link rel="stylesheet" href="../login-otp/login-otp.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <style>
-    *{
+    <style>
+      *{
     margin: 0%;
     padding: 0%;
 }
@@ -88,7 +87,8 @@ body{
 }
 
 
-  </style>
+    </style>
+
     
 </head>
 <body>
@@ -120,7 +120,7 @@ body{
                             </template>
                         </div>
                         <input type="hidden" name="otp" x-model="value">
-                        <button type="submit" class="btn-primary mx-auto block bg-gray-500 w-full p-2 mt-2 text-white"id="submiticon" onclick="checkotp()" >
+                        <button type="submit" class="btn-primary mx-auto block bg-gray-500 w-full p-2 mt-2 text-white"id="submiticon"  >
                             LOGIN
                         </button>
                     </form>
@@ -133,6 +133,11 @@ body{
 <!-- <script src="../login-otp/login-otp.js"></script> -->
 
 <script>
+
+
+
+
+
     function otpForm() {
         return {
             length: 6,
@@ -170,40 +175,17 @@ body{
     }
 </script>
 <script>
-   
-
-
-
-
-function checkotp(){
-  let otpin=document.getElementById("otpinputnum").value;
-  if(otpin == 5)
-  {
-    // const Toast = Swal.mixin({
-    //   toast: true,
-    //   position: 'top-end',
-    //   showConfirmButton: false,
-    //   timer: 2000,
-    //   timerProgressBar: true,
-    //   didOpen: (toast) => {
-    //     toast.addEventListener('mouseenter', Swal.stopTimer)
-    //     toast.addEventListener('mouseleave', Swal.resumeTimer)
-    //   }
-    // })
-    
-    // Toast.fire({
-    //   icon: 'success',
-    //   title: 'Signed Up successfully'
-    // });
-    // setTimeout(redirect, 2500);
-    window.open("../cartAndCheckout/success.html","_self");
-  }
-  else
-  {
-    swal("Oops!", "Wrong credintials!", "error");
-  }
-}
-function redirect(){
-  window.open("../cartAndCheckout/success.html","_self");
-}
+    document.getElementById("submiticon").addEventListener("click", () =>{
+    let otpin=document.getElementById("otpinputnum").value;
+    if(otpin == 5)
+    {
+      window.open("../cartAndCheckout/payment.html","_self");
+      location.href = "../cartAndCheckout/success.html"
+    }
+    else
+    {
+      swal("Oops!", "Wrong credintials!", "error");
+    }
+  })
 </script>
+
