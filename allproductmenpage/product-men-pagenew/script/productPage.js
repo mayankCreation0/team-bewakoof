@@ -1,3 +1,8 @@
+import navbar from "../../pcomponents/nav.js"
+import footer from "../../pcomponents/foot.js"
+document.getElementById("onlynav").innerHTML=navbar();
+document.getElementById("container-footer").innerHTML=footer();
+
 localStorage.setItem('category',"")
 localStorage.setItem('types',"")
  localStorage.setItem('color',"");
@@ -90,6 +95,8 @@ const displycar = ()=>{
     console.log(cartArr.length)
  if(cartArr.length>0){
     document.getElementById("showcartnumber").style.display="block";
+    // showcartimage
+    document.getElementById("showcartimage").style.color="rgb(255,212,59)";
     console.log(cartArr.length)
     document.getElementById("showcartnumber").innerText=cartArr.length;
 }
@@ -878,7 +885,7 @@ function debounce(fn,delay){
 
 }
  async function show(){
-    const search=document.getElementById("searchBox").value;
+    const search=document.getElementById("search_product").value;
     // console.log(search);""
     if(search==""){
         console.log(search);
@@ -892,7 +899,7 @@ function debounce(fn,delay){
    }
    
 }
-document.getElementById("searchBox").addEventListener("input",()=>{
+document.getElementById("search_product").addEventListener("input",()=>{
     debounce(show,300);
 })
 
