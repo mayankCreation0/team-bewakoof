@@ -319,7 +319,19 @@
                 </li>
                 <!-- <li class="vl"></li>  -->
                 <li id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></li>
-                <li id="loginBtn"><a style="font-size: 15px;" href="../../login&signupPage/login/login-page.html">Login</a></li>
+                <!-- <li id="loginBtn"><a style="font-size: 15px;" href="../../login&signupPage/login/login-page.html">Login</a></li> -->
+                <li id="loginBtn"><a style="font-size: 15px;" href="" id="showDetails">Login</a>
+                    <div id="userDetails">
+                        <ul>
+                            <li><a href="#" id="userName">Hi, Akhil</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">My Wishlist</a></li>
+                            <li><a href="#">My Orders</a></li>
+                            <li><a href="#">My Wallet</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li id="wishList"><a href=""><span><i class="far fa-heart"></i></span></a></li>
                 <li id="cartBtn"><a href=""><span><i class="fa-sharp fa-solid fa-bag-shopping"></i><sup id="items"></sup></span></a></li>
                 <li class="flag"><a  href=""><img src="https://images.bewakoof.com/web/india-flag-round-1639566913.png" alt="flaglogo"></a></li>
@@ -953,3 +965,35 @@
 </html>
 
 <script  src="../men-homepage/men-homepage.js"></script>
+<script>
+    let isLogined = localStorage.getItem("isLogined") || true;
+    if (isLogined) {
+        document.getElementById("showDetails").innerHTML = `<i class="fa-solid fa-user"></i>`;
+        document.getElementById("userDetails").style.display = "block";
+    } else {
+        document.getElementById("showDetails").innerHTML = "Login";
+        document.getElementById("userDetails").style.display = "none";
+    }
+    let userName = localStorage.getItem("userName");
+    document.getElementById("userName").innerHTML = `Hi, ${userName}`;
+    document.getElementById("toggleBtn").addEventListener("click", showNavbar);
+    let flag = true;
+    function showNavbar() {
+        if (flag) {
+            document.getElementById("sideNavbar").style.display = "none";
+            flag = false;
+        } else {
+            document.getElementById("sideNavbar").style.display = "block";
+            document.getElementById("spectsPic").style.display = "none";
+            document.getElementById("toggleBtn").style.display = "none";
+            flag = true;
+        }
+    }
+    document.getElementById("closeSideNavbar").addEventListener("click", closeSideNavbar);
+    function closeSideNavbar() {
+        document.getElementById("sideNavbar").style.display = "none";
+        document.getElementById("spectsPic").style.display = "block";
+        document.getElementById("toggleBtn").style.display = "block";
+    }
+
+</script>
