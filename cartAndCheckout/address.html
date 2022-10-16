@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3126724da1.js"></script>
-    <title>Your Address</title>
+    <title>Online Shopping for Men, Women Clothing & Accesories at bewakoof.com</title>
+    <link rel="icon" href="https://images.bewakoof.com/web/favicon-1635856217.png">
     <link rel="shortcut icon" type="image/x-icon" href="https://images.bewakoof.com/web/favicon-1635856217.png" hreflang="en-in">
     <link rel="stylesheet" href="address.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
  <form action="" id="form">
 <div id="address">
-    <div>
+    <div id="crossit">
         <h2>Add New Address</h2>
         <i class="fa-solid fa-xmark"></i>
     </div>
@@ -46,8 +48,8 @@
        <p>Other</p>
     </div>
     <div id="butt">
-        <button>Save Address</button>
-        <button>Cancel</button>
+        <button id="butt1">Save Address</button>
+        <button id="butt2">Cancel</button>
     </div>
 </div>
 </form>
@@ -70,7 +72,7 @@
    console.log(Obj);
 //    ArrayOfObj.push(address);
    localStorage.setItem("address", JSON.stringify(Obj));
-   alert("Address saved successfully")
+//    alert("Address saved successfully")
 //    window.location.href='payment.html';
    
  }
@@ -99,4 +101,18 @@
 //          alert("Address saved successfully")
 //          window.location.href = 'payment.html';
 //      }
+document.getElementById("crossit").addEventListener("click" , () => {
+    location.href = "../cartAndCheckout/cart.html";
+})
+document.getElementById("butt2").addEventListener("click" , () => {
+    location.href = "../cartAndCheckout/cart.html";
+})
+document.getElementById("butt1").addEventListener("click" , () => {
+    swal("Address saved!");
+    setTimeout(redirect, 2500);
+})
+
+function redirect(){
+  window.open("../cartAndCheckout/payment.html", "_self");
+  }
 </script>

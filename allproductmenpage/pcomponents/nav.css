@@ -18,6 +18,7 @@ body {
     top: 86px;
     visibility: hidden;
     transition: 0.3s;
+    z-index: 999;
 }
 #userDetails ul li{
     font-size: 16px;

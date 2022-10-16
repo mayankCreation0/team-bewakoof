@@ -3,6 +3,13 @@ import footer from "../../pcomponents/foot.js"
 document.getElementById("onlynav").innerHTML=navbar();
 document.getElementById("container-footer").innerHTML=footer();
 
+document.getElementById("showwishimage").addEventListener("click" , () => {
+    location.href ="../wishlistPagenew/wishlist.html";
+})
+document.getElementById("showcartimage").addEventListener("click" , () =>{
+    location.href= "../../cartAndCheckout/cart.html";
+})
+
 let modelName=localStorage.getItem("search_cover");
         document.getElementById("phonemodelname").innerText=modelName;
 document.getElementById("nav2").innerHTML=`Home / Mobile Cover / ${modelName}`;
