@@ -1,8 +1,4 @@
 
-/* *{
-    margin:0%;
-    padding: 0%; 
-} */
 body{
     margin:0%;
     padding: 0%;
@@ -13,6 +9,39 @@ body{
     /* border: 1px solid red; */
     /* background-color: #ffffff; */
 }
+#userDetails{
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 15%;
+    position: absolute;
+    left: 78%;
+    top: 86px;
+    visibility: hidden;
+    transition: 0.3s;
+    border: 1px solid red;
+    z-index: 6;
+}
+#userDetails ul li{
+    font-size: 16px;
+    list-style: none;
+    padding: 9px;
+    padding-right: 140px;
+    z-index: 6;
+}
+#userDetails li a{
+    text-decoration: none;
+    color: black;
+}
+#userDetails li:hover{
+    background-color: rgb(224, 216, 216);
+}
+#userDetails li:nth-child(1){
+    background-color: rgb(224, 216, 216);
+}
+#loginBtn:hover #userDetails {
+    visibility: visible;
+}
+
 /* #topmost{
     position: sticky;
     top: 0;
@@ -87,8 +116,6 @@ body{
     margin-left: 8%;
     display: flex;
     align-items: center;
-
-
 }
 
 #logohome>div {
@@ -150,6 +177,9 @@ body{
     /* border-color: rgb(118, 118, 118), rgb(133, 133, 133); */
 }
 
+#nav_search_bar>li>input:hover {
+    /* border: .5px solid #333; */
+}
 #nav_search_bar>li>input:focus{
     background-color: transparent;
     outline: 1px solid rgb(118, 118, 118);
@@ -197,17 +227,24 @@ hr {
     border-bottom: 4px solid rgb(253, 216, 53);
 
 }
-
-#logohome>li>a:hover {
+/* #logohome>li>a:nth-child(1):hover{
+    border:red;
+} */
+/* #logohome>li>a:hover {
     border-bottom: 4px solid rgb(253, 216, 53);
 
     padding-bottom: 18px;
     visibility: visible;
     z-index: 4;
-}
+} */
 
-#logohome>li>a>img:hover{
-    border: none;
+/* #logohome>li>a>img:hover{
+    border-bottom: 4px solid white !important;
+    background: black !important;
+} */
+#ajibimg:hover{
+    border-bottom: transparent !important;
+    background: #000;
 }
 
 #sub_menu_item {
@@ -385,6 +422,8 @@ hr {
         animation-name: comeFromSide;
         animation-duration: 0.2s;
         overflow-y: scroll;
+        z-index: 55;
+        position: fixed;
     }
     #sideNavbar::-webkit-scrollbar{
         display: none;
@@ -645,6 +684,7 @@ hr {
         }
    
 }
+/* ================================= */
 .bottomHeaderWrapper{
     /* border: 1px solid red; */
     /* position: sticky; */
