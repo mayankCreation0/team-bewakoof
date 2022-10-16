@@ -124,20 +124,37 @@ h1 {
 }
 
 #itemData {
-    height: 30px;
-    width: 80%;
+    /* height: 30px; */
+    width: 100%;
     border-radius: 5px;
     margin: auto;
+    /* border: 1px solid teal; */
+    height: 200px;
+    /* overflow-y: scroll; */
 }
 
 .itmData1 {
+    
     display: flex;
+    width: 100%;
     justify-content: space-around;
     margin-bottom: 10px;
 }
 
-
-
+#showcart{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#showcart>div{
+    
+    width:92%;
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 3px;
+}
 
 
 .crtImg {
