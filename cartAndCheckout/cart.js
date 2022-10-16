@@ -1,6 +1,8 @@
 const cartData = JSON.parse(localStorage.getItem("cart_products")) || [];
 
+const emailData = (localStorage.getItem("useremail")) || "";
 
+document.getElementById("showemail").innerText = emailData;
 
 var wishListData = JSON.parse(localStorage.getItem("wishList")) || [];
 
@@ -201,8 +203,19 @@ p1.innerText = "Total MRP (Incl. of taxes) ";
 var totalP = document.createElement("p");
 totalP.innerText = "₹ " + totalS;
 totalPrice.append(p1, totalP);
-
-
+let tribeDiscount=0;
+let localDiscount=localStorage.getItem("discount");
+if(localDiscount=="first"){
+     tribeDiscount=cartData.length*30;
+     localStorage.setItem("discount","none");
+}
+else if(localDiscount=="second"){
+     tribeDiscount=cartData.length*60;
+     localStorage.setItem("discount","none");
+}
+else{
+     tribeDiscount=0;
+}
 var dF = document.createElement("div");
 var p2 = document.createElement("p");
 p2.innerText = "Delivery Fee ";
@@ -226,7 +239,7 @@ var discountP = document.createElement("div");
 var dP1 = document.createElement("p");
 dP1.innerText = "Bag Discount ";
 var dP2 = document.createElement("p");
-dP2.innerText = "- ₹" + (totalS - total);
+dP2.innerText = "- ₹" + (totalS - total + tribeDiscount);
 //  console.log(dP2);
 discountP.append(dP1, dP2);
 discountP.style.display = "flex";
@@ -239,7 +252,7 @@ var subT = document.createElement("div");
 var sT1 = document.createElement("p");
 sT1.innerText = "Subtotal ";
 var sT2 = document.createElement("p");
-sT2.innerText = "₹ " + total;
+sT2.innerText = "₹ " + total-tribeDiscount;
 
 subT.append(sT1, sT2);
 
