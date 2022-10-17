@@ -387,7 +387,7 @@ wishListData.map(function (el, i, arr) {
 function addToCart(el, i) {
      // console.log(el);
      cartData.push(el);
-     localStorage.setItem("cart", JSON.stringify(cartData));
+     localStorage.setItem("cart_products", JSON.stringify(cartData));
      alert("item added to cart");
 
      //Here we basically remove item from wishlist
@@ -492,7 +492,7 @@ likeData.map(function (el, i, arr) {
 function futureBuying(el, i) {
      // logic for add item in cart
      cartData.push(el);
-     localStorage.setItem("cart", JSON.stringify(cartData));
+     localStorage.setItem("cart_products", JSON.stringify(cartData));
      alert("item added to cart");
 
 
@@ -511,7 +511,7 @@ function removeItem(el, i) {
      //     console.log(el,i);
      var x = cartData.splice(i, 1);
      //     console.log(x);
-     localStorage.setItem("cart", JSON.stringify(cartData));
+     localStorage.setItem("cart_products", JSON.stringify(cartData));
      window.location.reload(); //iss sa remove karna k baad page refresh ho jaata hai aur content update ho jaata hai
 }
 
@@ -527,7 +527,7 @@ function addWishList(el, i) {
      //     console.log(el,i);
      var x = cartData.splice(i, 1);
      //     console.log(x);
-     localStorage.setItem("cart", JSON.stringify(cartData));
+     localStorage.setItem("cart_products", JSON.stringify(cartData));
      window.location.reload(); //iss sa remove karna k baad page refresh ho jaata hai aur content update ho jaata hai
 
 

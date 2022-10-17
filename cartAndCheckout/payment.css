@@ -177,9 +177,12 @@ h4 {
     padding-left: 30px;
 
 }
-
+#rightContainer{
+    /* border: 1px solid blue; */
+    height: 50px;
+    margin: auto;
+}
 #rightContainer1 {
-    padding-left: 30px;
     line-height: 0%;
     margin: 10px;
     /* border: 5px solid greenyellow; */
@@ -206,7 +209,7 @@ h4 {
     /* background-color: blue; */
     width: 250px;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: y;
     text-overflow: ellipsis;
 }
 /* #paymentContainer */

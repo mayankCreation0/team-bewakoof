@@ -21,7 +21,8 @@ body {
     font-size: 16px;
     list-style: none;
     padding: 9px;
-    padding-right: 140px;
+    margin-left: -40px;
+    /* padding-right: 140px; */
 }
 #userDetails li a{
     text-decoration: none;
