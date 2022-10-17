@@ -7,25 +7,25 @@ function hoverfun(){
     // font-weight: 700;
 }
 
-document.getElementById("toggleBtn").addEventListener("click", showNavbar);
-let flag = true;
-function showNavbar(){
-    if(flag){
-        document.getElementById("sideNavbar").style.display = "none";
-        flag = false;
-    }else{
-        document.getElementById("sideNavbar").style.display = "block";
-        document.getElementById("spectsPic").style.display = "none";
-        document.getElementById("toggleBtn").style.display = "none";
-        flag = true;
-    }
-}
-document.getElementById("closeSideNavbar").addEventListener("click", closeSideNavbar);
-function closeSideNavbar(){
-    document.getElementById("sideNavbar").style.display = "none";   
-    document.getElementById("spectsPic").style.display = "block";
-    document.getElementById("toggleBtn").style.display = "block";
-}
+// document.getElementById("toggleBtn").addEventListener("click", showNavbar);
+// let flag = true;
+// function showNavbar(){
+//     if(flag){
+//         document.getElementById("sideNavbar").style.display = "none";
+//         flag = false;
+//     }else{
+//         document.getElementById("sideNavbar").style.display = "block";
+//         document.getElementById("spectsPic").style.display = "none";
+//         document.getElementById("toggleBtn").style.display = "none";
+//         flag = true;
+//     }
+// }
+// document.getElementById("closeSideNavbar").addEventListener("click", closeSideNavbar);
+// function closeSideNavbar(){
+//     document.getElementById("sideNavbar").style.display = "none";   
+//     document.getElementById("spectsPic").style.display = "block";
+//     document.getElementById("toggleBtn").style.display = "block";
+// }
 
 // let slideIndex = 1;
 // showSlides(slideIndex);

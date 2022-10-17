@@ -9,16 +9,27 @@ body{
     /* border: 1px solid red; */
     /* background-color: #ffffff; */
 }
+::-webkit-scrollbar{
+    width: 6px;
+    color: #000;
+    /* border: 1px solid red; */
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fdd835;
+    border-radius: 5px;
+}
 #userDetails{
     display: flex;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    width: 15%;
+    width: 10%;
     position: absolute;
+    text-align: center;
     left: 78%;
     top: 86px;
     visibility: hidden;
     transition: 0.3s;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    background-color: #fff;
     z-index: 6;
 }
 #userDetails ul li{
@@ -31,12 +42,15 @@ body{
 #userDetails li a{
     text-decoration: none;
     color: black;
+    border: 1px ;
 }
-#userDetails li:hover{
-    background-color: rgb(224, 216, 216);
+#userDetails li:hover a{
+    /* background-color: rgb(224, 216, 216); */
+    color: #fdd835;
 }
 #userDetails li:nth-child(1){
-    background-color: rgb(224, 216, 216);
+    /* background-color: rgb(224, 216, 216); */
+    color: black;
 }
 #loginBtn:hover #userDetails {
     visibility: visible;

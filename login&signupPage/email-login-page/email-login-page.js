@@ -27,6 +27,8 @@ function checkdata() {
       } else if (element.flag == "false") {
         flag = "false";
       }
+      localStorage.setItem("isLogined","true");  
+      localStorage.setItem("userName",element.name);
     }
   });
   if (flag == "true") {
@@ -53,6 +55,9 @@ function checkdata() {
       icon: 'success',
       title: 'Signed in successfully'
     });
+
+
+
     setTimeout(redirect, 2500);
     // location.href="../../homePage/diwali-homepage/diwali-homepage.html";
   } else if (!loginflag) {
