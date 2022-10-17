@@ -311,7 +311,7 @@
             <li id="loginBtn"><a style="font-size: 15px;" href="" id="showDetails">Login</a>
                 <div id="userDetails">
                     <ul>
-                        <li><a href="#" id="userName">Hi, Akhil</a></li>
+                        <li><a href="#" id="userName">Hi,</a></li>
                         <li><a href="#">My Account</a></li>
                         <li><a href="#">My Wishlist</a></li>
                         <li><a href="#">My Orders</a></li>
@@ -353,7 +353,7 @@
 
 </html>
 <script>
-    let isLogined = localStorage.getItem("isLogined") || true;
+    let isLogined = localStorage.getItem("isLogined") || false;
     if (isLogined) {
         document.getElementById("showDetails").innerHTML = `<i class="fa-solid fa-user"></i>`;
         document.getElementById("userDetails").style.display = "block";
@@ -364,16 +364,16 @@
     let userName = localStorage.getItem("userName");
     document.getElementById("userName").innerHTML = `Hi, ${userName}`;
     document.getElementById("toggleBtn").addEventListener("click", showNavbar);
-    let flag = true;
+    let flagForNavbar = true;
     function showNavbar() {
-        if (flag) {
+        if (flagForNavbar) {
             document.getElementById("sideNavbar").style.display = "none";
-            flag = false;
+            flagForNavbar = false;
         } else {
             document.getElementById("sideNavbar").style.display = "block";
             document.getElementById("spectsPic").style.display = "none";
             document.getElementById("toggleBtn").style.display = "none";
-            flag = true;
+            flagForNavbar = true;
         }
     }
     document.getElementById("closeSideNavbar").addEventListener("click", closeSideNavbar);

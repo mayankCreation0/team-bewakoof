@@ -55,6 +55,7 @@
 </html>
 <script src="./email-signup-page.js"></script>
 <script > 
+
     const togglePassword = document.querySelector("#togglePassword");
   const password = document.querySelector("#id_password");
   togglePassword.addEventListener("click", function (e) {
@@ -82,6 +83,8 @@
     let email = document.getElementById("email").value || "";
     let password = document.getElementById("id_password").value || "";
       let newInstructor = new DataCreateforStudent(name, lname ,email, password);
+      console.log(name);
+      localStorage.setItem("userName", name);
       let AllInstructor =
         JSON.parse(localStorage.getItem("peopleRecord")) || [];
       AllInstructor.push(newInstructor);
