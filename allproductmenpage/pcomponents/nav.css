@@ -18,12 +18,22 @@ body {
     top: 86px;
     visibility: hidden;
     transition: 0.3s;
+    z-index: 999;
 }
 #userDetails ul li{
     font-size: 16px;
     list-style: none;
     padding: 9px;
     padding-right: 140px;
+}
+::-webkit-scrollbar{
+    width: 6px;
+    color: #000;
+    /* border: 1px solid red; */
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fdd835;
+    border-radius: 5px;
 }
 #userDetails li a{
     text-decoration: none;

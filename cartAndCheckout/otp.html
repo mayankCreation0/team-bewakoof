@@ -1,86 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payment</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping for Men, Women Clothing & Accesories at bewakoof.com</title>
+    <link rel="icon" href="https://images.bewakoof.com/web/favicon-1635856217.png">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <style>
-      h1 {
-        text-align: center;
-      }
-      #paymentParent {
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        width: 30%;
-        margin: auto;
-        padding-left: 25px;
-        margin-top: 120px;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        border-radius: 20px;
-      }
+      *{
+    margin: 0%;
+    padding: 0%;
+}
+#container{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    background-color: #fff;
+    box-shadow: 0 2px 31px 0 hsl(0deg 0% 73% / 7%);
+    /* border:1px transparent solid; */
+    margin-top: -100px;
+    /* display: flex; */
+    height: 550px;
+   
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    letter-spacing: .5px;
+    font-size: 27px;
+    font-weight: bolder;
+}
+#sentInput{
+    /* border: 1px solid red; */
+    height: 100px;
+    margin-top: 50px;
+}
+#phead{
+    color:#85898b;
+}
+#email{
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #bcbcbc;
+    width: 40%;
+    font-size: 16px;
+    text-align: center;
+    color: #757575;
+    font-weight: bolder;
+    font-size: 22px;
+    /* border: 1px solid #bcbcbc; */
+}
+#otpinput{
+    margin-bottom: 60px;
+}
+#otpinput > p{
+    color: #85898b;
+}
+#submiticon{
+    border-radius: 5px;
+    outline: none;
+    letter-spacing: .5px;
+    background-color: #989898;
+    border: none;
+    color: #fff;
+    letter-spacing:1px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 20px 200px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+body{
+    background-image: linear-gradient(0deg,#fff4c4,#fff);
+    height: 715px;
+    /* border: 1px solid red; */
+}
 
-      form {
-        font-size: 18px;
-        align-items: center;
-      }
 
-      input {
-        padding: 10px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        width: 87%;
-        border-radius: 7px;
-      }
-
-      input[type="month"] {
-        width: 87%;
-      }
-
-      input[type="submit"] {
-        width: 97%;
-        background-color: green;
-        color: white;
-        border-radius: 10px;
-        border: none;
-      }
-      #Pay:hover {
-        transform: scale(1.055);
-      }
     </style>
-  </head>
 
-  <body>
-    <h1>Payment Page</h1>
-    <div id="paymentParent">
-      <form action="">
-        <label for="number">Enter your Otp:</label> <br />
-        <input
-          type="text"
-          name=""
-          id="otp"
-          placeholder="Enter Your 4 digit Otp"
-        /><br />
-
-        <input type="submit" id="Pay" value="Submit" />
-      </form>
+    
+</head>
+<body>
+    <div id="container">
+        <h2>Verify with OTP</h2>
+        <!-- <form  id="form"> -->
+            <div id="sentInput">
+                <p id="phead">Sent To</p>
+                <input type="text" id="email" value="7050768216" ><br>
+            </div>
+            <div>
+                <div class="py-6 px-6 w-80 border mx-auto text-center my-6"style="border: none; width: 40%;">
+                    <div id="otpinput">
+                        <p>Enter OTP</p>
+                    </div>
+                    <form action="#" x-data="otpForm()">
+                        <div class="flex justify-between">
+                            <template x-for="(input, index) in length" :key="index">
+                                <input
+                                    id="otpinputnum"
+                                    type="tel"
+                                    maxlength="1"
+                                    class="border border-gray-500 w-10 h-10 text-center"
+                                    :x-ref="index"
+                                    x-on:input="handleInput($event)"
+                                    x-on:paste="handlePaste($event)"
+                                    x-on:keydown.backspace="$event.target.value || handleBackspace($event.target.getAttribute('x-ref'))"
+                                />
+                            </template>
+                        </div>
+                        <input type="hidden" name="otp" x-model="value">
+                        <button type="submit" class="btn-primary mx-auto block bg-gray-500 w-full p-2 mt-2 text-white"id="submiticon"  >
+                            LOGIN
+                        </button>
+                    </form>
+                </div>
+            </div>
+        <!-- </form> -->
     </div>
-  </body>
+</body>
 </html>
+<!-- <script src="../login-otp/login-otp.js"></script> -->
+
 <script>
-  document.querySelector("form").addEventListener("submit", done);
-  function done() {
-    event.preventDefault();
-    var number = document.getElementById("otp").value;
-    if (number.length == 4) {
-      alert("Payment Done");
-      var arr = [];
-      localStorage.setItem("items", JSON.stringify(arr));
-      localStorage.setItem("totalvalue", 0);
-      window.location.href = "success.html";
-    } else {
-      alert("Wrong Otp");
+
+
+
+
+
+    function otpForm() {
+        return {
+            length: 6,
+            value: "",
+
+            handleInput(e) {
+                const input = e.target;
+
+                this.value = Array.from(Array(this.length), (element, i) => {
+                return this.$refs[i].value || "";
+                }).join("");
+
+                if (input.nextElementSibling && input.value) {
+                    input.nextElementSibling.focus();
+                    input.nextElementSibling.select();
+                }
+            },
+
+            handlePaste(e) {
+                const paste = e.clipboardData.getData('text');
+                this.value = paste;
+
+                const inputs = Array.from(Array(this.length));
+
+                inputs.forEach((element, i) => {
+                    this.$refs[i].value = paste[i] || '';
+                });
+            },
+
+            handleBackspace(e) {
+                const previous = parseInt(e, 10) - 1;
+                this.$refs[previous] && this.$refs[previous].focus();
+            },
+      };
     }
-  }
 </script>
+<script>
+    document.getElementById("submiticon").addEventListener("click", () =>{
+    let otpin=document.getElementById("otpinputnum").value;
+    if(otpin == 5)
+    {
+      window.open("../cartAndCheckout/payment.html","_self");
+      location.href = "../cartAndCheckout/success.html"
+    }
+    else
+    {
+      swal("Oops!", "Wrong credintials!", "error");
+    }
+  })
+</script>
+

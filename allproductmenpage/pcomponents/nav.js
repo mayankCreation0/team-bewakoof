@@ -18,78 +18,78 @@ function navbar(){
 
             <li><a href=""><img id="ajibimg" src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg" alt="logo"></a>
             </li>
-            <li><a style="font-size: 13px;" href="#">MEN</a>
+            <li><a style="font-size: 13px;" href="../product-men-pagenew/mens.html">MEN</a>
                 <div id="logo_sub_menu1">
                     <div id="sub_menu_item">
                         <ul>
-                            <li><a href="#">
+                            <li><a href="../product-men-pagenew/mens.html">
                                     <h4>TopWear</h4>
                                 </a></li>
-                            <li><a href="#">Printed T-Shirts</a></li>
-                            <li><a href="#">Oversized T-Shirts</a></li>
-                            <li><a href="#">Plain T-Shirts</a></li>
-                            <li><a href="#">Fashion T-Shirts</a></li>
-                            <li><a href="#">Activewear T-Shirts</a></li>
-                            <li><a href="#">Full Sleeve T_Shirts</a></li>
-                            <li><a href="#">Half Sleeve T-Shirts</a></li>
-                            <li><a href="#">Shirts</a></li>
-                            <li><a href="#">Vests</a></li>
-                            <li><a href="#">Jackets</a></li>
-                            <li><a href="#">Polo T-Shirts</a></li>
-                            <li><a href="#">Kurtas</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Printed T-Shirts</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Oversized T-Shirts</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Plain T-Shirts</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Fashion T-Shirts</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Activewear T-Shirts</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Full Sleeve T_Shirts</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Half Sleeve T-Shirts</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Shirts</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Vests</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Jackets</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Polo T-Shirts</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Kurtas</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#">
+                            <li><a href="../product-men-pagenew/mens.html">
                                     <h4>Bottomwear</h4>
                                 </a></li>
-                            <li><a href="#">Joggers</a></li>
-                            <li><a href="#">Pyjamas</a></li>
-                            <li><a href="#">Shorts</a></li>
-                            <li><a href="#">Jeans & Denims </a></li>
-                            <li><a href="#">Boxers</a></li>
-                            <li><a href="#">Trunks</a></li>
-                            <li><a href="#">Briefs</a></li>
-                            <li><a href="#">Trosures & Pants</a></li>
-                            <li><a href="#">All Bottomwear</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Joggers</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Pyjamas</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Shorts</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Jeans & Denims </a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Boxers</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Trunks</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Briefs</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Trosures & Pants</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">All Bottomwear</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#">
+                            <li><a href="../product-men-pagenew/mens.html">
                                     <h4>Winterwear</h4>
                                 </a></li>
-                            <li><a href="#">Sweatshirt & Hoodie</a></li>
-                            <li><a href="#">Jackets</a></li>
-                            <li><a href="#">Sweaters</a></li>
-                            <li><a href="#">Joggers</a></li>
-                            <li><a href="#">Full Sleeve T-Shirts</a></li> <br>
-                            <li><a href="#">
+                            <li><a href="../product-men-pagenew/mens.html">Sweatshirt & Hoodie</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Jackets</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Sweaters</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Joggers</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Full Sleeve T-Shirts</a></li> <br>
+                            <li><a href="../product-men-pagenew/mens.html">
                                     <h4>Footwear</h4>
                                 </a></li>
-                            <li><a href="#">Sliders</a></li>
-                            <li><a href="#">Flip-Flops & Slippers</a></li>
-                            <li><a href="#">Clogs</a></li>
-                            <li><a href="#">Casual shoes</a></li>
-                            <li><a href="#">Socks</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Sliders</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Flip-Flops & Slippers</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Clogs</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Casual shoes</a></li>
+                            <li><a href="../product-men-pagenew/mens.html">Socks</a></li>
                         </ul>
                         <hr>
                         <ul class="special_collection">
 
                             <li>SPECIALS</li> <br>
-                            <li><a href="#"><img
+                            <li><a href="../product-men-pagenew/mens.html"><img
                                         src="https://images.bewakoof.com/nav_menu/Anime-Bewakoof-Homepage-NavigationCircleIcon-final-1632292125.jpg"
                                         alt=""><span>Amine Collection</span></a></li>
-                            <li><a href="#">
+                            <li><a href="../product-men-pagenew/mens.html">
                                     <img src="https:images.bewakoof.com/nav_menu/WinterWear-Bewakoof-Homepage-NavigationCircleIcon-1630653435.png"
                                         alt=""><span>Winter Collection</span>
                                 </a></li>
-                            <li><a href="#"><img
+                            <li><a href="../product-men-pagenew/mens.html"><img
                                         src="https://images.bewakoof.com/nav_menu/navi-collab-icon-1579514101.gif"
                                         alt=""><span>Collebration</span></a></li>
-                            <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/nav-icon-1617643368.png"
+                            <li><a href="../product-men-pagenew/mens.html"><img src="https://images.bewakoof.com/nav_menu/nav-icon-1617643368.png"
                                         alt=""><span>Shop Unique Brands</span></a></li>
-                            <li><a href="#"><img
+                            <li><a href="../product-men-pagenew/mens.html"><img
                                         src="https://images.bewakoof.com/nav_menu/new-arrival-icon-1625237098.png"
                                         alt=""><span>Upcomming Collection</span></a></li>
-                            <li><a href="#"><img
+                            <li><a href="../product-men-pagenew/mens.html"><img
                                         src="https://images.bewakoof.com/nav_menu/bewakoof-men-logo-last-size-1592822253.png"
                                         alt=""><span>Last Size Left</span></a></li>
 
@@ -99,77 +99,77 @@ function navbar(){
 
                 </div>
             </li>
-            <li><a style="font-size: 13px;" href="#">WOMEN</a>
+            <li><a style="font-size: 13px;" href="../womenProductPagenew/women.html">WOMEN</a>
                 <div id="logo_sub_menu2">
                     <div id="sub_menu_item">
                         <ul>
-                            <li><a href="#">
+                            <li><a href="../womenProductPagenew/women.html">
                                     <h4>TopWear</h4>
                                 </a></li>
-                            <li><a href="#">Printed T-Shirts</a></li>
-                            <li><a href="#">Oversized T-Shirts</a></li>
-                            <li><a href="#">Plain T-Shirts</a></li>
-                            <li><a href="#">Fashion T-Shirts</a></li>
-                            <li><a href="#">Activewear T-Shirts</a></li>
-                            <li><a href="#">Full Sleeve T_Shirts</a></li>
-                            <li><a href="#">Half Sleeve T-Shirts</a></li>
-                            <li><a href="#">Shirts</a></li>
-                            <li><a href="#">Vests</a></li>
-                            <li><a href="#">Jackets</a></li>
-                            <li><a href="#">Polo T-Shirts</a></li>
-                            <li><a href="#">Kurtas</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Printed T-Shirts</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Oversized T-Shirts</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Plain T-Shirts</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Fashion T-Shirts</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Activewear T-Shirts</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Full Sleeve T_Shirts</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Half Sleeve T-Shirts</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Shirts</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Vests</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Jackets</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Polo T-Shirts</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Kurtas</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#">
+                            <li><a href="../womenProductPagenew/women.html">
                                     <h4>Bottomwear</h4>
                                 </a></li>
-                            <li><a href="#">Joggers</a></li>
-                            <li><a href="#">Pyjamas</a></li>
-                            <li><a href="#">Shorts</a></li>
-                            <li><a href="#">Jeans & Denims </a></li>
-                            <li><a href="#">Boxers</a></li>
-                            <li><a href="#">Trunks</a></li>
-                            <li><a href="#">Briefs</a></li>
-                            <li><a href="#">Trosures & Pants</a></li>
-                            <li><a href="#">All Bottomwear</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Joggers</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Pyjamas</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Shorts</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Jeans & Denims </a></li>
+                            <li><a href="../womenProductPagenew/women.html">Boxers</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Trunks</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Briefs</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Trosures & Pants</a></li>
+                            <li><a href="../womenProductPagenew/women.html">All Bottomwear</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#">
+                            <li><a href="../womenProductPagenew/women.html">
                                     <h4>Winterwear</h4>
                                 </a></li>
-                            <li><a href="#">Sweatshirt & Hoodie</a></li>
-                            <li><a href="#">Jackets</a></li>
-                            <li><a href="#">Sweaters</a></li>
-                            <li><a href="#">Joggers</a></li>
-                            <li><a href="#">Full Sleeve T-Shirts</a></li> <br>
-                            <li><a href="#">
+                            <li><a href="../womenProductPagenew/women.html">Sweatshirt & Hoodie</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Jackets</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Sweaters</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Joggers</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Full Sleeve T-Shirts</a></li> <br>
+                            <li><a href="../womenProductPagenew/women.html">
                                     <h4>Footwear</h4>
                                 </a></li>
-                            <li><a href="#">Sliders</a></li>
-                            <li><a href="#">Flip-Flops & Slippers</a></li>
-                            <li><a href="#">Clogs</a></li>
-                            <li><a href="#">Casual shoes</a></li>
-                            <li><a href="#">Socks</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Sliders</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Flip-Flops & Slippers</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Clogs</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Casual shoes</a></li>
+                            <li><a href="../womenProductPagenew/women.html">Socks</a></li>
                         </ul>
                         <hr>
                         <ul class="special_collection">
 
                             <li>SPECIALS</li> <br>
-                            <li><a href="#"><img
+                            <li><a href="../womenProductPagenew/women.html"><img
                                         src="https://images.bewakoof.com/nav_menu/Anime-Bewakoof-Homepage-NavigationCircleIcon-final-1632292125.jpg"
                                         alt=""><span>Amine Collection</span></a></li>
-                            <li><a href="#"><img
+                            <li><a href="../womenProductPagenew/women.html"><img
                                         src="https://images.bewakoof.com/nav_menu/WinterWear-Bewakoof-Homepage-NavigationCircleIcon-1630653435.png"
                                         alt=""><span>Winter Collection</span></a></li>
-                            <li><a href="#"><img
+                            <li><a href="../womenProductPagenew/women.html"><img
                                         src="https://images.bewakoof.com/nav_menu/navi-collab-icon-1579514101.gif"
                                         alt=""><span>Collebration</span></a></li>
-                            <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/nav-icon-1617643368.png"
+                            <li><a href="../womenProductPagenew/women.html"><img src="https://images.bewakoof.com/nav_menu/nav-icon-1617643368.png"
                                         alt=""><span>Shop Unique Brands</span></a></li>
-                            <li><a href="#"><img
+                            <li><a href="../womenProductPagenew/women.html"><img
                                         src="https://images.bewakoof.com/nav_menu/new-arrival-icon-1625237098.png"
                                         alt=""><span>Upcomming Collection</span></a></li>
-                            <li><a href="#"><img
+                            <li><a href="../womenProductPagenew/women.html"><img
                                         src="https://images.bewakoof.com/nav_menu/bewakoof-men-logo-last-size-1592822253.png"
                                         alt=""><span>Last Size Left</span></a></li>
 
@@ -179,54 +179,54 @@ function navbar(){
 
                 </div>
             </li>
-            <li><a style="font-size: 13px;" href="#">MOBILE COVERS</a>
+            <li><a style="font-size: 13px;" href="../coversearchnew/mobilecovers.html">MOBILE COVERS</a>
                 <div id="logo_sub_menu3">
                     <div id="sub_menu_item">
                         <ul> <br>
                             <li>POPULAR</li> <br>
-                            <li><a href="#">
+                            <li><a href="../coversearchnew/mobilecovers.html">
                                     <h4>Xiaomi</h4>
                                 </a></li>
-                            <li><a href="#">Mi 12 Pro 5G</a></li>
-                            <li><a href="#">Redmi 9 Power</a></li>
-                            <li><a href="#">Redmi 10A</a></li> <br>
-                            <li><a href="#">
+                            <li><a href="../coversearchnew/mobilecovers.html">Mi 12 Pro 5G</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html">Redmi 9 Power</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html">Redmi 10A</a></li> <br>
+                            <li><a href="../coversearchnew/mobilecovers.html">
                                     <h3>Sumsung</h3>
                                 </a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#">Sumsung Galaxy Note 10 lite</a></li>
-                            <li><a href="#">Sumsumg Galaxy Note 10 Plus</a></li>
-                            <li><a href="#">Sumsumg Galaxy Note 10</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html"></a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html">Sumsung Galaxy Note 10 lite</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html">Sumsumg Galaxy Note 10 Plus</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html">Sumsumg Galaxy Note 10</a></li>
 
                         </ul>
                         <ul> <br> <br> <br>
-                            <li><a href="#">
+                            <li><a href="../coversearchnew/mobilecovers.html">
                                     <h4>Oneplus</h4>
                                 </a></li>
-                            <li><a href="#">Oneplus 9R</a></li>
-                            <li><a href="#">Oneplus 9RT</a></li>
-                            <li><a href="#">Oneplus 9</a></li> <br>
-                            <li><a href="#">
+                            <li><a href="../coversearchnew/mobilecovers.html">Oneplus 9R</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html">Oneplus 9RT</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html">Oneplus 9</a></li> <br>
+                            <li><a href="../coversearchnew/mobilecovers.html">
                                     <h4>Realme</h4>
                                 </a></li>
-                            <li><a href="#">Realme 5 Pro</a></li>
-                            <li><a href="#">Realme 5</a></li>
-                            <li><a href="#">Realme 9 Pro 5G</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html">Realme 5 Pro</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html">Realme 5</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html">Realme 9 Pro 5G</a></li>
 
                         </ul>
                         <ul> <br> <br> <br>
-                            <li><a href="#">
+                            <li><a href="../coversearchnew/mobilecovers.html">
                                     <h4>Apple</h4>
                                 </a></li>
-                            <li><a href="#">iphone 14 Pro Max</a></li>
-                            <li><a href="#">iphone 14 Pro</a></li>
-                            <li><a href="#">iphone 14 Plus</a></li> <br>
-                            <li><a href="#">
+                            <li><a href="../coversearchnew/mobilecovers.html">iphone 14 Pro Max</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html">iphone 14 Pro</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html">iphone 14 Plus</a></li> <br>
+                            <li><a href="../coversearchnew/mobilecovers.html">
                                     <h4>Vivo</h4>
                                 </a></li>
-                            <li><a href="#">Vivo S1</a></li>
-                            <li><a href="#">Vivo Y51 2020</a></li>
-                            <li><a href="#"> Vivo Y73</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html">Vivo S1</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html">Vivo Y51 2020</a></li>
+                            <li><a href="../coversearchnew/mobilecovers.html"> Vivo Y73</a></li>
 
 
                         </ul>
@@ -235,7 +235,7 @@ function navbar(){
                         </ul>
 
                         <ul>
-                            <li><a href="#"><span></span><img
+                            <li><a href="../coversearchnew/mobilecovers.html"><span></span><img
                                         src="https://images.bewakoof.com/nav_menu/bewakoof-online-fashion-COTM-mobile-cover-navigation-box-desktop-1612275399.jpg"
                                         alt=""></a></li>
 
@@ -298,15 +298,15 @@ function navbar(){
             <div id="suggestions"></div>
             <!-- <li class="vl"></li>  -->
             <li id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></li>
-            <li id="loginBtn"><a style="font-size: 15px;" href="" id="showDetails">Login</a>
+            <li id="loginBtn"><a style="font-size: 15px;" href="../../login&signupPage/login/login-page.html" id="showDetails">Login</a>
                 <div id="userDetails">
                     <ul>
-                        <li><a href="#" id="userName">Hi, Akhil</a></li>
+                        <li><a href="../coversearchnew/mobilecovers.html" id="userName">Hi, Mayank</a></li>
                         <li><a href="#">My Account</a></li>
-                        <li><a href="#">My Wishlist</a></li>
-                        <li><a href="#">My Orders</a></li>
+                        <li><a href="../wishlistPagenew/wishlist.html">My Wishlist</a></li>
+                        <li><a href="../../cartAndCheckout/cart.html">My Orders</a></li>
                         <li><a href="#">My Wallet</a></li>
-                        <li><a href="#">Logout</a></li>
+                        <li><a href="../../homePage/men-homepage/men-homepage.html">Logout</a></li>
                     </ul>
                 </div>
             </li>
@@ -330,5 +330,8 @@ function navbar(){
     `
 }
 
+
+
 export default navbar;
+
 

@@ -26,6 +26,15 @@ h3 {
     padding-left: 70px;
     color: #333333;
 }
+::-webkit-scrollbar{
+    width: 6px;
+    color: #000;
+    /* border: 1px solid red; */
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fdd835;
+    border-radius: 5px;
+}
 
 /* here is the css of form style */
 form {
@@ -200,4 +209,4 @@ h4 {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-#paymentContainer
+/* #paymentContainer */

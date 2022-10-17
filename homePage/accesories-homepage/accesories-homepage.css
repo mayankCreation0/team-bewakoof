@@ -227,6 +227,15 @@ hr {
     border-bottom: 4px solid rgb(253, 216, 53);
 
 }
+::-webkit-scrollbar{
+    width: 6px;
+    color: #000;
+    /* border: 1px solid red; */
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fdd835;
+    border-radius: 5px;
+}
 /* #logohome>li>a:nth-child(1):hover{
     border:red;
 } */
