@@ -167,11 +167,11 @@ function displayCart(arr) {
           var mainBtn = document.createElement("div");
           var btnR = document.createElement("button");
           btnR.innerText = "Remove";
-          var btnW = document.createElement("button");
-          btnW.innerText = "Move to Wishlist";
-          mainBtn.append(btnR, btnW);
+          // var btnW = document.createElement("button");
+          // btnW.innerText = "Move to Wishlist";
+          mainBtn.append(btnR);
           btnR.setAttribute("id", "btnR");
-          btnW.setAttribute("id", "btnW")
+          // btnW.setAttribute("id", "btnW")
           mainBtn.setAttribute("id", "mainBtn")
 
           box2.append(name1, box3, dis, SQ, mainBtn)
@@ -207,9 +207,9 @@ function displayCart(arr) {
 
           //Here we are implementing add to wishList Section
 
-          btnW.addEventListener("click", function () {
-               addWishList(el, i);
-          });
+          // btnW.addEventListener("click", function () {
+          //      addWishList(el, i);
+          // });
 
      });
 }
@@ -329,75 +329,75 @@ document.querySelector("#payBtn").append(lBox);
 
 //  Implementattion of  wishListData Selection      
 
-var mainWishList = document.createElement("h4");
-mainWishList.innerText = "My Wishlist"
-mainWishList.style.marginBottom = "10px";
-mainWishList.style.marginLeft = "-37px";
-document.querySelector("#itemData").append(mainWishList);
+// var mainWishList = document.createElement("h4");
+// mainWishList.innerText = "My Wishlist"
+// mainWishList.style.marginBottom = "10px";
+// mainWishList.style.marginLeft = "-37px";
+// document.querySelector("#itemData").append(mainWishList);
 
-//boxW is the parent div of wishList Data Section
-var boxW = document.createElement("div");
-wishListData.map(function (el, i, arr) {
-     // console.log(el);
-
-
-     var box1 = document.createElement("div");
-
-     var imgW = document.createElement("img");
-     imgW.src = el.image;
-     imgW.setAttribute("id", "imgWishList");
-
-     var nameW = document.createElement("h4");
-     nameW.innerText = el.name;
-     nameW.setAttribute("class", "nameW");
-
-     var pW = document.createElement("div");
-     pW.setAttribute("class", "priceW");
-     pW.style.display = "flex";
-     var p1 = document.createElement("p");
-     p1.innerText = "₹" + el.price;
-     var p2 = document.createElement("p");
-     p2.innerText = "₹" + el.strikeOffPrice;
-     p2.setAttribute("class", "strikeP");
-     pW.append(p1, p2);
-     p2.style.textDecoration = "line-through";
-     p2.style.marginLeft = "5px";
-
-     var triB = document.createElement("p");
-     triB.innerText = `₹${(el.price - 40)} For TriBe members`;
-     triB.setAttribute("class", "triBPrice");
-
-     var btnW = document.createElement("button");
-     btnW.innerText = "MOVE TO BAG";
-     btnW.setAttribute("class", "btnMoveToCart");
-     btnW.setAttribute("id", "moveToBag");
+// //boxW is the parent div of wishList Data Section
+// var boxW = document.createElement("div");
+// wishListData.map(function (el, i, arr) {
+//      // console.log(el);
 
 
-     box1.append(imgW, nameW, pW, triB, btnW);
-     boxW.append(box1);
-     boxW.setAttribute("id", "myWishList");
-     document.querySelector("#itemData").append(boxW);
+//      var box1 = document.createElement("div");
 
-     btnW.addEventListener("click", function () {
-          addToCart(el, i);
-     });
+//      var imgW = document.createElement("img");
+//      imgW.src = el.image;
+//      imgW.setAttribute("id", "imgWishList");
 
-});
+//      var nameW = document.createElement("h4");
+//      nameW.innerText = el.name;
+//      nameW.setAttribute("class", "nameW");
 
-function addToCart(el, i) {
-     // console.log(el);
-     cartData.push(el);
-     localStorage.setItem("cart_products", JSON.stringify(cartData));
-     alert("item added to cart");
+//      var pW = document.createElement("div");
+//      pW.setAttribute("class", "priceW");
+//      pW.style.display = "flex";
+//      var p1 = document.createElement("p");
+//      p1.innerText = "₹" + el.price;
+//      var p2 = document.createElement("p");
+//      p2.innerText = "₹" + el.strikeOffPrice;
+//      p2.setAttribute("class", "strikeP");
+//      pW.append(p1, p2);
+//      p2.style.textDecoration = "line-through";
+//      p2.style.marginLeft = "5px";
 
-     //Here we basically remove item from wishlist
-     // console.log(el,i);
-     var x = wishListData.splice(i, 1);
-     //     console.log(x);
-     localStorage.setItem("wishList", JSON.stringify(wishListData));
-     window.location.reload(); //iss sa remove karna k baad page refresh ho jaata hai aur content update ho jaata hai
+//      var triB = document.createElement("p");
+//      triB.innerText = `₹${(el.price - 40)} For TriBe members`;
+//      triB.setAttribute("class", "triBPrice");
 
-}
+//      var btnW = document.createElement("button");
+//      btnW.innerText = "MOVE TO BAG";
+//      btnW.setAttribute("class", "btnMoveToCart");
+//      btnW.setAttribute("id", "moveToBag");
+
+
+//      box1.append(imgW, nameW, pW, triB, btnW);
+//      boxW.append(box1);
+//      boxW.setAttribute("id", "myWishList");
+//      document.querySelector("#itemData").append(boxW);
+
+//      btnW.addEventListener("click", function () {
+//           addToCart(el, i);
+//      });
+
+// });
+
+// function addToCart(el, i) {
+//      // console.log(el);
+//      cartData.push(el);
+//      localStorage.setItem("cart_products", JSON.stringify(cartData));
+//      alert("item added to cart");
+
+//      //Here we basically remove item from wishlist
+//      // console.log(el,i);
+//      var x = wishListData.splice(i, 1);
+//      //     console.log(x);
+//      localStorage.setItem("wishList", JSON.stringify(wishListData));
+//      window.location.reload(); //iss sa remove karna k baad page refresh ho jaata hai aur content update ho jaata hai
+
+// }
 
 
 
@@ -469,23 +469,23 @@ likeData.map(function (el, i, arr) {
      priceL2.style.textDecoration = "line-through";
      priceL2.style.marginLeft = "10px";
 
-     var btnL = document.createElement("button");
-     btnL.innerText = "ADD TO BAG";
-     btnL.setAttribute("class", "btnMoveToCart");
+     // var btnL = document.createElement("button");
+     // btnL.innerText = "ADD TO BAG";
+     // btnL.setAttribute("class", "btnMoveToCart");
 
 
 
 
-     boxL1.append(imgL, nameL, priceLike, btnL);
+     boxL1.append(imgL, nameL, priceLike);
      boxL.setAttribute("id", "youMayLike");
      boxL.append(boxL1);
      document.querySelector("#itemData").append(boxL);
 
-     btnL.addEventListener("click", function () {
-          // youMayLike(el,i);
-          futureBuying(el, i);
+     // btnL.addEventListener("click", function () {
+     //      // youMayLike(el,i);
+     //      futureBuying(el, i);
 
-     });
+     // });
 
 
 });
@@ -516,23 +516,23 @@ function removeItem(el, i) {
 }
 
 //implementation of move to wishList functionality
-function addWishList(el, i) {
-     //logic for moving the data in wishList Section
-     //console.log(el);
-     wishListData.push(el);
-     localStorage.setItem("wishList", JSON.stringify(wishListData))
-     alert("Item Moved in WishList");
-     //removing the data from cart section
+// function addWishList(el, i) {
+//      //logic for moving the data in wishList Section
+//      //console.log(el);
+//      wishListData.push(el);
+//      localStorage.setItem("wishList", JSON.stringify(wishListData))
+//      alert("Item Moved in WishList");
+//      //removing the data from cart section
 
-     //     console.log(el,i);
-     var x = cartData.splice(i, 1);
-     //     console.log(x);
-     localStorage.setItem("cart_products", JSON.stringify(cartData));
-     window.location.reload(); //iss sa remove karna k baad page refresh ho jaata hai aur content update ho jaata hai
+//      //     console.log(el,i);
+//      var x = cartData.splice(i, 1);
+//      //     console.log(x);
+//      localStorage.setItem("cart_products", JSON.stringify(cartData));
+//      window.location.reload(); //iss sa remove karna k baad page refresh ho jaata hai aur content update ho jaata hai
 
 
 
-}
+// }
 
 
 

@@ -1,3 +1,14 @@
+
+let dayArr = [
+     "Sun", "Mon", "Tue", "Wed", 
+     "Thus","Fri", "Sat"
+]
+
+let monthArr = [
+     "Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"
+]
+
+
 document.querySelector("form").addEventListener("submit", payFun);
 function payFun() {
      event.preventDefault();
@@ -38,7 +49,7 @@ function payFun() {
 
 
 // implementation of Payment Details Section
-let payData = JSON.parse(localStorage.getItem("cart")) || [];
+let payData = JSON.parse(localStorage.getItem("cart_products")) || [];
 
 let frstB = document.createElement("div");
 
@@ -80,7 +91,7 @@ function displayTable(el) {
      h2.style.paddingBottom = "10px"
 
      let p = document.createElement("p");
-     p.innerText = "Delivering order to " + el.name;
+     p.innerText = "Delivering order to this address - " + el.name;
      p.style.marginLeft = "-30px";
      p.style.marginBottom = "-15px"
 
@@ -107,24 +118,24 @@ function displayTable(el) {
      state.style.color = "black"
 
      let PIN = document.createElement("p");
-     PIN.innerText = el.pincode;
+     PIN.innerText =", " + el.pincode;
      PIN.style.color = "black"
 
 
      div.append(h2, p, h4);
      div1.append(flat, city, state, PIN)
 
-     document.querySelector("#paymentContainer").append(div, div1);
+     document.querySelector("#addressshow").append(div, div1);
 }
 
 displayTable(Obj);
 
 
 // frstD1.style.borderBottom="1px solid gray";
-let payH = document.createElement("h3");
-payH.innerText = "You are paying for these items"
-payH.style.marginLeft = "-75px";
-frstB.append(frstD1, payH)
+// let payH = document.createElement("h3");
+// payH.innerText = "You are paying for these items"
+// payH.style.marginLeft = "-75px";
+// frstB.append(frstD1, payH)
 document.querySelector("#paymentContainer").append(frstB);
 
 
@@ -143,17 +154,23 @@ let totalS = payData.reduce(function (sum, el, i, arr) {
 }, 0);
 
 
-
+let today = new Date()
+console.log(today.getDate(), today.getMonth(), today.getDay())
 payData.map(function (el) {
      //  console.log(el);
      let box = document.createElement("div");
 
      let box1 = document.createElement("div");
-     box1.setAttribute("id", "cartData")
+     //box1.setAttribute("id", "cartData")
+
+     // let p = document.createElement("p");
+     // p.innerText = "You are paying for these items ";
+     // p.style.marginLeft = "-30px";
+     // p.style.marginBottom = "-15px"
 
      let img = document.createElement("img");
      img.src = el.image;
-     img.style.height = "50px";
+     img.style.height = "30px";
      img.style.width = "40px";
 
 
@@ -173,20 +190,28 @@ payData.map(function (el) {
 
 
 
+     
 
      let deliveryDate = document.createElement("div");
      let date = document.createElement("p");
-     date.innerText = "Estimated delivery by ";
+     if((today.getDay()+3)>6 ){
+          date.innerText = "Estimated delivery by " + `${dayArr[(today.getDay()+3)-7]} ${today.getDate()+3} ${monthArr[today.getMonth()]}`;
+     }
+     else{
+          date.innerText = "Estimated delivery by " + `${dayArr[(today.getDay()+3)]} ${today.getDate()+3} ${monthArr[today.getMonth()]}`;
+     }
+     
      let dateE = document.createElement("p");
-     dateE.innerText = "14 April 2022";
+     dateE.innerText = "";
+     console.log(today.getDate(), today.getMonth(), today.getDay(), monthArr, dayArr)
      dateE.style.fontSize = "15px";
-     dateE.style.marginTop = "-15px";
+     // dateE.style.marginTop = "-15px";
      deliveryDate.append(date, dateE);
      deliveryDate.style.display = "flex";
      dateE.style.color = "green";
      date.style.color = "gray";
-     date.style.fontSize = "15px";
-     date.style.marginTop = "-15px";
+     // date.style.fontSize = "15px";
+     // date.style.marginTop = "-15px";
      box2.style.marginLeft = "20px";
      box2.style.marginTop = "-15px";
      name.setAttribute("class", "name");
@@ -203,12 +228,12 @@ payData.map(function (el) {
 
      box.append(box1)
 
-     document.querySelector("#paymentContainer").append(box);
+     document.querySelector("#showcartdata").append(box);
 
 });
 
 let priceSummary = document.createElement("h3");
-priceSummary.innerText = "Price Summary";
+priceSummary.innerText = "";
 
 document.querySelector("#paymentContainer").append(priceSummary);
 
@@ -271,7 +296,7 @@ subT.style.display = "flex";
 subT.style.justifyContent = "space-between";
 subT.style.marginTop = "-15px"
 
-document.querySelector("#paymentContainer").append(totalPrice, dF, discountP, hrD2, subT);
+document.querySelector("#pricesum").append(totalPrice, dF, discountP, hrD2, subT);
 
 
 
