@@ -41,23 +41,22 @@ let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
 displycar()
 
 // http://localhost:3000/mens
-let brandModel=localStorage.getItem("search_coverM");
+
 // const url=`http://localhost:3000/mobile?q=${modelName}`;
-async function get(url){
+// const url=`http://localhost:3000/mobileCovers?brand=${brandname}&q=${brandModel} `
+async function get(){
+    let brandname=localStorage.getItem("search_cover");
+let brandModel=localStorage.getItem("search_covermodel");
     document.getElementById("loadingdiv").style.display="block";
-   const res= await fetch(url);
+   const res= await fetch(`http://localhost:3000/mobileCovers?brand=${brandname}&q=${brandModel} `);
    const data=await res.json();
    console.log(data);
    document.getElementById("loadingdiv").style.display="none";
-   return data;
+   display(data);
    
 }
 
-async function fetchData(){
-const data=await get(`http://localhost:3000/mobile?q=${modelName}`)
-display(data);
-}
-fetchData();
+get();
 
 function display(data){
     document.getElementById("container").innerHTML="";
@@ -214,7 +213,7 @@ function debounce(fn,delay){
 
 }
  async function show(){
-    const search=document.getElementById("searchBox").value;
+    const search=document.getElementById("search_product").value;
     // console.log(search);""
     if(search==""){
         console.log(search);
@@ -228,7 +227,7 @@ function debounce(fn,delay){
    }
    
 }
-document.getElementById("searchBox").addEventListener("input",()=>{
+document.getElementById("search_product").addEventListener("input",()=>{
     debounce(show,300);
 })
 
