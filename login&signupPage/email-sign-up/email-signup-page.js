@@ -26,6 +26,9 @@ const togglePassword = document.querySelector("#togglePassword");
     let email = document.getElementById("email").value || "";
     let password = document.getElementById("id_password").value || "";
     let newInstructor = new DataCreateforStudent(name, lname ,email, password);
+    // console.log(name);
+    localStorage.setItem("isLogined", true);
+      localStorage.setItem("userName", name);
     let AllInstructor =
       JSON.parse(localStorage.getItem("peopleRecord")) || [];
       AllInstructor.push(newInstructor);
