@@ -199,9 +199,9 @@ body{
     /* border-color: rgb(118, 118, 118), rgb(133, 133, 133); */
 }
 
-#nav_search_bar>li>input:hover {
-    /* border: .5px solid #333; */
-}
+/* #nav_search_bar>li>input:hover {
+    border: .5px solid #333;
+} */
 #nav_search_bar>li>input:focus{
     background-color: transparent;
     outline: 1px solid rgb(118, 118, 118);
@@ -250,7 +250,14 @@ hr {
 
 }
 
-#logohome>li>a:hover {
+/* #logohome>li>a:hover {
+    border-bottom: 4px solid rgb(253, 216, 53);
+
+    padding-bottom: 18px;
+    visibility: visible;
+    z-index: 4;
+} */
+.hoverline:hover{
     border-bottom: 4px solid rgb(253, 216, 53);
 
     padding-bottom: 18px;
@@ -753,7 +760,7 @@ hr {
     background-color:#e8f3e5;
     overflow: hidden;
     padding: 1px;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none; */
     height: 2.5rem;
     font-weight: 700;
     font-size: .875rem;
@@ -766,7 +773,7 @@ hr {
     /* position: relative; */
     top: 1%;
     -webkit-font-smoothing: antialiased;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none; */
     cursor: pointer;
     box-shadow:none !important;
     width: 100%;
@@ -780,8 +787,8 @@ marquee{
     font: 'montserrat', Helvetica, Arial, sans-serif;
     text-rendering: optimizeLegibility;
 }
-#margin-top-slider1{
-}
+/* #margin-top-slider1{
+} */
 #slider{
     display:grid;
     grid-template-columns: repeat(3,1fr);
