@@ -1,11 +1,11 @@
-function hoverfun(){
-    event.preventDefault();
-    console.log("hej");
-    var img =document.querySelector(".tabNav:nth-child(4)");
-    img.setAttribute("style","font-weight: 700 ; border-bottom:  4px solid rgb(253, 216, 53) ");
-    // border-bottom:  4px solid rgb(253, 216, 53);
-    // font-weight: 700;
-}
+// function hoverfun(){
+//     event.preventDefault();
+//     console.log("hej");
+//     var img =document.querySelector(".tabNav:nth-child(4)");
+//     img.setAttribute("style","font-weight: 700 ; border-bottom:  4px solid rgb(253, 216, 53) ");
+//     // border-bottom:  4px solid rgb(253, 216, 53);
+//     // font-weight: 700;
+// }
 document.getElementById("toggleBtn").addEventListener("click", showNavbar);
     let flag = true;
     function showNavbar(){
@@ -26,7 +26,7 @@ document.getElementById("toggleBtn").addEventListener("click", showNavbar);
         document.getElementById("toggleBtn").style.display = "block";
     }
 
-    let slideIndex = 0;
+let slideIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -41,7 +41,7 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
-let slideIndex1 = 0;
+let index1 = 0;
 showSlides1();
 
 function showSlides1() {
@@ -50,8 +50,8 @@ function showSlides1() {
   for (i1 = 0; i1 < slides1.length; i1++) {
     slides1[i1].style.display = "none";
   }
-  slideIndex1++;
-  if (slideIndex1 > slides1.length) {slideIndex1 = 1}
-  slides1[slideIndex1-1].style.display = "block";
+  index1++;
+  if (index1 > slides1.length) {index1 = 1}
+  slides1[index1-1].style.display = "block";
   setTimeout(showSlides1, 2000); // Change image every 2 seconds
 }
