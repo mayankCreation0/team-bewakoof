@@ -296,7 +296,7 @@ Firstdisplay();
     return;
    }
    else if(color!==""){
-    const url=`https://bewakoof-clone-api.herokuapp.com/womens?color=${type}`
+    const url=`https://bewakoof-clone-api.herokuapp.com/womens?color=${color}`
     let data = await get(url)
      if(size!=""){
         data = data.filter((el)=>{
@@ -388,6 +388,7 @@ function display(data){
        srybtn.addEventListener("click",()=>{
         clearAllFilter();
        })
+
        div.append(div1,srybtn);
        document.getElementById("container").append(div);
         document.getElementById("container").style.display="block";
@@ -483,14 +484,26 @@ document.getElementById("tshirt").addEventListener("click",(e)=>{
     // let category = localStorage.getItem('category')||""
     let elid = localStorage.getItem('category')||""
     if(elid!=""){
-        if(elid==='Shirt'){
-            document.getElementById("shirt").style.color = 'rgb(158 158 160)'
+        if(elid==='Kurta'){
+            document.getElementById("kurta").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Top'){
+            document.getElementById("top").style.color = 'rgb(158 158 160)'
         }
         else if(elid==='Hoodies'){
             document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
         }
-        else if(elid==='Jacket'){
-            document.getElementById("jacket").style.color = 'rgb(158 158 160)'
+        if(elid==='Sweatshirt'){
+            document.getElementById("sweatshirt").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Nightdress'){
+            document.getElementById("nightdress").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Pyjama'){
+            document.getElementById("pyjama").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Shorts'){
+            document.getElementById("shorts").style.color = 'rgb(158 158 160)'
         }
         else{
             localStorage.setItem('category',"");
@@ -505,18 +518,145 @@ e.target.style.color = '#42a2a2'
     Applyfilter();
     })
 
-    document.getElementById("shirt").addEventListener("click",(e)=>{
+    document.getElementById("shorts").addEventListener("click",(e)=>{
        
         let elid = localStorage.getItem('category')||""
+    if(elid!=""){
+        if(elid==='Kurta'){
+            document.getElementById("kurta").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Top'){
+            document.getElementById("top").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Hoodies'){
+            document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
+        }
+        if(elid==='Sweatshirt'){
+            document.getElementById("sweatshirt").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Nightdress'){
+            document.getElementById("nightdress").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Pyjama'){
+            document.getElementById("pyjama").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Tshirt'){
+            document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
+        }
+        else{
+            localStorage.setItem('category',"");
+            e.target.style.color = 'rgb(158 158 160)';
+            Applyfilter();
+            return
+        }
+    }
+e.target.style.color = '#42a2a2'
+    localStorage.setItem("category",'Shorts');
+   
+    Applyfilter();
+        
+        }) 
+ document.getElementById("hoodies").addEventListener("click",(e)=>{
+            // const url="https://bewakoof-clone-api.herokuapp.com/mens?category=Hoodies"
+            let elid = localStorage.getItem('category')||""
+            if(elid!=""){
+                if(elid==='Kurta'){
+                    document.getElementById("kurta").style.color = 'rgb(158 158 160)'
+                }
+                else if(elid==='Top'){
+                    document.getElementById("top").style.color = 'rgb(158 158 160)'
+                }
+                else if(elid==='Tshirt'){
+                    document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
+                }
+                if(elid==='Sweatshirt'){
+                    document.getElementById("sweatshirt").style.color = 'rgb(158 158 160)'
+                }
+                else if(elid==='Nightdress'){
+                    document.getElementById("nightdress").style.color = 'rgb(158 158 160)'
+                }
+                else if(elid==='Pyjama'){
+                    document.getElementById("pyjama").style.color = 'rgb(158 158 160)'
+                }
+                else if(elid==='Shorts'){
+                    document.getElementById("shorts").style.color = 'rgb(158 158 160)'
+                }
+                else{
+                    localStorage.setItem('category',"");
+                    e.target.style.color = 'rgb(158 158 160)';
+                    Applyfilter();
+                    return
+                }
+            }
+        e.target.style.color = '#42a2a2'
+            localStorage.setItem("category",'Hoodies');
+           
+            Applyfilter();
+            })
+   document.getElementById("top").addEventListener("click",(e)=>{
+                // const url="https://bewakoof-clone-api.herokuapp.com/mens?category=Jacket"
+
+                let elid = localStorage.getItem('category')||""
+    if(elid!=""){
+        if(elid==='Kurta'){
+            document.getElementById("kurta").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Tshirt'){
+            document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Hoodies'){
+            document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
+        }
+        if(elid==='Sweatshirt'){
+            document.getElementById("sweatshirt").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Nightdress'){
+            document.getElementById("nightdress").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Pyjama'){
+            document.getElementById("pyjama").style.color = 'rgb(158 158 160)'
+        }
+        else if(elid==='Shorts'){
+            document.getElementById("shorts").style.color = 'rgb(158 158 160)'
+        }
+        else{
+            localStorage.setItem('category',"");
+            e.target.style.color = 'rgb(158 158 160)';
+            Applyfilter();
+            return
+        }
+    }
+e.target.style.color = '#42a2a2'
+    localStorage.setItem("category",'Top');
+   
+    Applyfilter();
+                })
+
+                document.getElementById("sweatshirt").addEventListener("click",(e)=>{
+                    // const url="https://bewakoof-clone-api.herokuapp.com/mens?category=Jacket"
+    
+                    let elid = localStorage.getItem('category')||""
         if(elid!=""){
-            if(elid==='Tshirt'){
-                document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
+            if(elid==='Kurta'){
+                document.getElementById("kurta").style.color = 'rgb(158 158 160)'
+            }
+            else if(elid==='Top'){
+                document.getElementById("top").style.color = 'rgb(158 158 160)'
             }
             else if(elid==='Hoodies'){
                 document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
             }
-            else if(elid==='Jacket'){
-                document.getElementById("jacket").style.color = 'rgb(158 158 160)'
+            if(elid==='Tshirt'){
+                document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
+            }
+            else if(elid==='Nightdress'){
+                document.getElementById("nightdress").style.color = 'rgb(158 158 160)'
+            }
+            else if(elid==='Pyjama'){
+                document.getElementById("pyjama").style.color = 'rgb(158 158 160)'
+            }
+            else if(elid==='Shorts'){
+                document.getElementById("shorts").style.color = 'rgb(158 158 160)'
             }
             else{
                 localStorage.setItem('category',"");
@@ -525,49 +665,37 @@ e.target.style.color = '#42a2a2'
                 return
             }
         }
-        e.target.style.color = '#42a2a2'
-        localStorage.setItem("category",'Shirt');
+    e.target.style.color = '#42a2a2'
+        localStorage.setItem("category",'Sweatshirt');
+       
         Applyfilter();
+                    })
+    document.getElementById("kurta").addEventListener("click",(e)=>{
+                        // const url="https://bewakoof-clone-api.herokuapp.com/mens?category=Jacket"
         
-        }) 
- document.getElementById("hoodies").addEventListener("click",(e)=>{
-            // const url="https://bewakoof-clone-api.herokuapp.com/mens?category=Hoodies"
-            let elid = localStorage.getItem('category')||""
+                        let elid = localStorage.getItem('category')||""
             if(elid!=""){
-                if(elid==='Tshirt'){
+                if(elid==='Top'){
+                    document.getElementById("top").style.color = 'rgb(158 158 160)'
+                }
+                else if(elid==='Tshirt'){
                     document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
-                }
-                else if(elid==='Shirt'){
-                    document.getElementById("shirt").style.color = 'rgb(158 158 160)'
-                }
-                else if(elid==='Jacket'){
-                    document.getElementById("jacket").style.color = 'rgb(158 158 160)'
-                }
-                else{
-                    localStorage.setItem('category',"");
-                    e.target.style.color = 'rgb(158 158 160)';
-                    Applyfilter();
-                    return
-                }
-            }
-            e.target.style.color = '#42a2a2'
-            localStorage.setItem("category",'Hoodies');
-            Applyfilter();   
-            })
-   document.getElementById("jacket").addEventListener("click",(e)=>{
-                // const url="https://bewakoof-clone-api.herokuapp.com/mens?category=Jacket"
-
-                let elid = localStorage.getItem('category')||""
-            if(elid!=""){
-                if(elid==='Tshirt'){
-                    document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
-                }
-                else if(elid==='Shirt'){
-                    document.getElementById("shirt").style.color = 'rgb(158 158 160)'
                 }
                 else if(elid==='Hoodies'){
                     document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
                 }
+                if(elid==='Sweatshirt'){
+                    document.getElementById("sweatshirt").style.color = 'rgb(158 158 160)'
+                }
+                else if(elid==='Nightdress'){
+                    document.getElementById("nightdress").style.color = 'rgb(158 158 160)'
+                }
+                else if(elid==='Pyjama'){
+                    document.getElementById("pyjama").style.color = 'rgb(158 158 160)'
+                }
+                else if(elid==='Shorts'){
+                    document.getElementById("shorts").style.color = 'rgb(158 158 160)'
+                }
                 else{
                     localStorage.setItem('category',"");
                     e.target.style.color = 'rgb(158 158 160)';
@@ -575,13 +703,87 @@ e.target.style.color = '#42a2a2'
                     return
                 }
             }
+        e.target.style.color = '#42a2a2'
+            localStorage.setItem("category",'Kurta');
+           
+            Applyfilter();
+                        })                    
+            document.getElementById("nightdress").addEventListener("click",(e)=>{
+                            // const url="https://bewakoof-clone-api.herokuapp.com/mens?category=Jacket"
+            
+                            let elid = localStorage.getItem('category')||""
+                if(elid!=""){
+                    if(elid==='Kurta'){
+                        document.getElementById("kurta").style.color = 'rgb(158 158 160)'
+                    }
+                    else if(elid==='Tshirt'){
+                        document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
+                    }
+                    else if(elid==='Hoodies'){
+                        document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
+                    }
+                    if(elid==='Sweatshirt'){
+                        document.getElementById("sweatshirt").style.color = 'rgb(158 158 160)'
+                    }
+                    else if(elid==='Top'){
+                        document.getElementById("top").style.color = 'rgb(158 158 160)'
+                    }
+                    else if(elid==='Pyjama'){
+                        document.getElementById("pyjama").style.color = 'rgb(158 158 160)'
+                    }
+                    else if(elid==='Shorts'){
+                        document.getElementById("shorts").style.color = 'rgb(158 158 160)'
+                    }
+                    else{
+                        localStorage.setItem('category',"");
+                        e.target.style.color = 'rgb(158 158 160)';
+                        Applyfilter();
+                        return
+                    }
+                }
             e.target.style.color = '#42a2a2'
-                localStorage.setItem("category",'Jacket');
-            Applyfilter();   
-                })
-
-  
-
+                localStorage.setItem("category",'Nightdress');
+               
+                Applyfilter();
+                            })
+                            document.getElementById("pyjama").addEventListener("click",(e)=>{
+                                // const url="https://bewakoof-clone-api.herokuapp.com/mens?category=Jacket"
+                
+                                let elid = localStorage.getItem('category')||""
+                    if(elid!=""){
+                        if(elid==='Kurta'){
+                            document.getElementById("shirt").style.color = 'rgb(158 158 160)'
+                        }
+                        else if(elid==='Tshirt'){
+                            document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
+                        }
+                        else if(elid==='Hoodies'){
+                            document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
+                        }
+                        if(elid==='Sweatshirt'){
+                            document.getElementById("sweatshirt").style.color = 'rgb(158 158 160)'
+                        }
+                        else if(elid==='Nightdress'){
+                            document.getElementById("nightdress").style.color = 'rgb(158 158 160)'
+                        }
+                        else if(elid==='Top'){
+                            document.getElementById("top").style.color = 'rgb(158 158 160)'
+                        }
+                        else if(elid==='Shorts'){
+                            document.getElementById("shorts").style.color = 'rgb(158 158 160)'
+                        }
+                        else{
+                            localStorage.setItem('category',"");
+                            e.target.style.color = 'rgb(158 158 160)';
+                            Applyfilter();
+                            return
+                        }
+                    }
+                e.target.style.color = '#42a2a2'
+                    localStorage.setItem("category",'Pyjama');
+                   
+                    Applyfilter();
+                                })  
 document.getElementById("bewakoof").addEventListener("click",(e)=>{
 // const url="https://bewakoof-clone-api.herokuapp.com/mens?types=Bewakoof"
 let elid = localStorage.getItem('types')||""
@@ -623,17 +825,17 @@ Applyfilter();
         let elid = localStorage.getItem('color')||""
         if(elid!=""){
             if(elid==='Black'){
-                document.getElementById("colorblack").style.border = ' 2px solid white;'
+                document.getElementById("colorblack").style.border ='2px solid white'
             }
             else if(elid==='Blue'){
-                document.getElementById("colorblue").style.border = ' 2px solid white;'
+                document.getElementById("colorblue").style.border = ' 2px solid white'
             }
             else if(elid==='Green'){
-                document.getElementById("colorgreen").style.border = ' 2px solid white;'
+                document.getElementById("colorgreen").style.border = ' 2px solid white'
             }
             else{
                 localStorage.setItem('color',"");
-                e.target.style.border = '2px solid white;';
+                e.target.style.border = '2px solid white';
                 Applyfilter();
                 return
             }
@@ -648,17 +850,17 @@ e.target.style.border = '2px solid  #42a2a2'
         let elid = localStorage.getItem('color')||""
         if(elid!=""){
             if(elid==='Red'){
-                document.getElementById("colorred").style.border = ' 2px solid white;'
+                document.getElementById("colorred").style.border = ' 2px solid white'
             }
             else if(elid==='Blue'){
-                document.getElementById("colorblue").style.border = ' 2px solid white;'
+                document.getElementById("colorblue").style.border = ' 2px solid white'
             }
             else if(elid==='Green'){
-                document.getElementById("colorgreen").style.border = ' 2px solid white;'
+                document.getElementById("colorgreen").style.border = ' 2px solid white'
             }
             else{
                 localStorage.setItem('color',"");
-                e.target.style.border = '2px solid white;';
+                e.target.style.border = '2px solid white';
                 Applyfilter();
                 return
             }
@@ -672,17 +874,17 @@ e.target.style.border = '2px solid  #42a2a2'
             let elid = localStorage.getItem('color')||""
             if(elid!=""){
                 if(elid==='Black'){
-                    document.getElementById("colorblack").style.border = ' 2px solid white;'
+                    document.getElementById("colorblack").style.border = '2px solid white'
                 }
                 else if(elid==='Red'){
-                    document.getElementById("colorred").style.border = ' 2px solid white;'
+                    document.getElementById("colorred").style.border = '2px solid white'
                 }
                 else if(elid==='Green'){
-                    document.getElementById("colorgreen").style.border = ' 2px solid white;'
+                    document.getElementById("colorgreen").style.border = '2px solid white'
                 }
                 else{
                     localStorage.setItem('color',"");
-                    e.target.style.border = '2px solid white;';
+                    e.target.style.border = '2px solid white';
                     Applyfilter();
                     return
                 }
@@ -696,23 +898,23 @@ e.target.style.border = '2px solid  #42a2a2'
     let elid = localStorage.getItem('color')||""
     if(elid!=""){
         if(elid==='Black'){
-            document.getElementById("colorblack").style.border = ' 2px solid white;'
+            document.getElementById("colorblack").style.border = ' 2px solid white'
         }
         else if(elid==='Blue'){
-            document.getElementById("colorblue").style.border = ' 2px solid white;'
+            document.getElementById("colorblue").style.border = ' 2px solid white'
         }
         else if(elid==='Red'){
-            document.getElementById("colorred").style.border = ' 2px solid white;'
+            document.getElementById("colorred").style.border = ' 2px solid white'
         }
         else{
             localStorage.setItem('color',"");
-            e.target.style.border = '2px solid white;';
+            e.target.style.border = '2px solid white';
             Applyfilter();
             return
         }
     }
 e.target.style.border = '2px solid  #42a2a2'
-    localStorage.setItem("color",'Red');
+    localStorage.setItem("color",'Green');
     Applyfilter();
     })
 //// size filter
@@ -824,7 +1026,7 @@ localStorage.setItem("rating",'midRating');
     Applyfilter();   
 })  
 document.getElementById("lowrating").addEventListener("click", (e)=>{
-    let elid = localStorage.getItem('rating')||""
+    let elid = localStorage.getItem('rating')||"";
     if(elid!=""){
         if(elid==='highRating'){
             document.getElementById("highrating").style.color = 'rgb(158 158 160)'
@@ -849,17 +1051,27 @@ document.getElementById("sort_price").addEventListener("change",async()=>{
     console.log(event.target.value);
     let curr=event.target.value;
    
-   let url;
-   if(curr==="highToLow"){
-    url="https://bewakoof-clone-api.herokuapp.com/womens?_sort=price&_order=desc";
-   }
-   else if(curr==="lowToHigh"){
-    url="https://bewakoof-clone-api.herokuapp.com/womens?_sort=price&_order=asc";
-   }
-   else{
-    url="https://bewakoof-clone-api.herokuapp.com/womens";
-   }
-   let data = await get(url);
+
+let url="https://bewakoof-clone-api.herokuapp.com/womens"
+let data = await get(url);
+if(curr==="highToLow"){
+ // url="https://bewakoof-clone-api.herokuapp.com/mens?_sort=price&_order=desc";
+ data.sort((a,b)=>{
+     return +(b.price)-(+(a.price))
+ })
+}
+else if(curr==="lowToHigh"){
+ // url="https://bewakoof-clone-api.herokuapp.com/mens?_sort=price&_order=asc";
+ data.sort((a,b)=>{
+     return +(a.price)-(+(b.price))
+ })
+}
+else{
+ // url="https://bewakoof-clone-api.herokuapp.com/mens";
+ data.sort((a,b)=>{
+     return 1;
+ })
+}
    display(data);
 })
 function boxShow(data){
@@ -976,16 +1188,20 @@ document.getElementById("clear").addEventListener("click",()=>{
      localStorage.setItem('color',"");
     localStorage.setItem('size',"");
      localStorage.setItem('rating',"");
-     document.getElementById("shirt").style.color = 'rgb(158 158 160)'
-     document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
-     document.getElementById("jacket").style.color = 'rgb(158 158 160)'
      document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
-     document.getElementById("campus").style.color = 'rgb(158 158 160)'
+     document.getElementById("top").style.color = 'rgb(158 158 160)'
+     document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
+     document.getElementById("sweatshirt").style.color = 'rgb(158 158 160)'
+     document.getElementById("kurta").style.color = 'rgb(158 158 160)'
+     document.getElementById("nightdress").style.color = 'rgb(158 158 160)'
+     document.getElementById("pyjama").style.color = 'rgb(158 158 160)'
+     document.getElementById("shorts").style.color = 'rgb(158 158 160)'
      document.getElementById("bewakoof").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorBlack").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorWhite").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorgrey").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorRed").style.color = 'rgb(158 158 160)'
+     document.getElementById("clovia").style.color = 'rgb(158 158 160)'
+     document.getElementById("colorblack").style.border = '2px solid white'
+     document.getElementById("colorblue").style.border = '2px solid white'
+     document.getElementById("colorgreen").style.border = '2px solid white'
+     document.getElementById("colorred").style.border = '2px solid white'
      document.getElementById("sixe_xl").style.color = 'rgb(158 158 160)'
      document.getElementById("sixe_xxl").style.color = 'rgb(158 158 160)'
      document.getElementById("sixe_x").style.color = 'rgb(158 158 160)'
@@ -1000,16 +1216,20 @@ function clearAllFilter(){
      localStorage.setItem('color',"");
     localStorage.setItem('size',"");
      localStorage.setItem('rating',"");
-     document.getElementById("shirt").style.color = 'rgb(158 158 160)'
+   document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
+     document.getElementById("top").style.color = 'rgb(158 158 160)'
      document.getElementById("hoodies").style.color = 'rgb(158 158 160)'
-     document.getElementById("jacket").style.color = 'rgb(158 158 160)'
-     document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
-     document.getElementById("campus").style.color = 'rgb(158 158 160)'
+     document.getElementById("sweatshirt").style.color = 'rgb(158 158 160)'
+     document.getElementById("kurta").style.color = 'rgb(158 158 160)'
+     document.getElementById("nightdress").style.color = 'rgb(158 158 160)'
+     document.getElementById("pyjama").style.color = 'rgb(158 158 160)'
+     document.getElementById("shorts").style.color = 'rgb(158 158 160)'
      document.getElementById("bewakoof").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorBlack").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorWhite").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorgrey").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorRed").style.color = 'rgb(158 158 160)'
+     document.getElementById("clovia").style.color = 'rgb(158 158 160)'
+     document.getElementById("colorblack").style.border = '2px solid white'
+     document.getElementById("colorblue").style.border = '2px solid white'
+     document.getElementById("colorgreen").style.border = '2px solid white'
+     document.getElementById("colorred").style.border = '2px solid white'
      document.getElementById("sixe_xl").style.color = 'rgb(158 158 160)'
      document.getElementById("sixe_xxl").style.color = 'rgb(158 158 160)'
      document.getElementById("sixe_x").style.color = 'rgb(158 158 160)'

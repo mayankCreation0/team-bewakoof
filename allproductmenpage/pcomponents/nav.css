@@ -312,10 +312,17 @@ hr {
 }
 
 #search_product_by_name {
+    position: relative;
     height: 40px;
     border-radius: 10px;
 }
-
+#suggestions{
+    position: absolute;
+   width: 100%;
+   
+   font-size: 12px;
+   background-color: white;
+  } 
 #nav_search_bar_fetchData {
     width: 340px;
     position: fixed;
