@@ -196,9 +196,9 @@ document.getElementById("ratingmenu").addEventListener("click", ()=>{
 
 
 
-// http://localhost:3000/mens
+// https://bewakoof-clone-api.herokuapp.com/mens
 
-const url="http://localhost:3000/womens";
+const url="https://bewakoof-clone-api.herokuapp.com/womens";
 
 async function get(url){
     document.getElementById("loadingdiv").style.display="block";
@@ -210,7 +210,7 @@ async function get(url){
    
 }
 const Firstdisplay =async()=>{
-    let data = await get('http://localhost:3000/womens');
+    let data = await get('https://bewakoof-clone-api.herokuapp.com/womens');
     display(data);
 }
 Firstdisplay();
@@ -223,7 +223,7 @@ Firstdisplay();
    let size = localStorage.getItem('size')||"";
    let rating = localStorage.getItem('rating')||"";
    if(category!=""){
-    const url=`http://localhost:3000/womens?category=${category}`
+    const url=`https://bewakoof-clone-api.herokuapp.com/womens?category=${category}`
     let data = await get(url);
     if(type!=""){
         data = data.filter((el)=>{
@@ -241,7 +241,7 @@ Firstdisplay();
         })
      }
      if(rating!=""){
-        // const ratingurl= await get(`http://localhost:3000/mens`);
+        // const ratingurl= await get(`https://bewakoof-clone-api.herokuapp.com/mens`);
        if(rating==="highRating"){
         data = data.filter((el)=>{
             return el.rating>=4.5;
@@ -262,7 +262,7 @@ Firstdisplay();
      return ;
    }
    else if(type!==""){
-    const url=`http://localhost:3000/womens?types=${type}`
+    const url=`https://bewakoof-clone-api.herokuapp.com/womens?types=${type}`
     let data = await get(url);
     if(color!=""){
         data = data.filter((el)=>{
@@ -275,7 +275,7 @@ Firstdisplay();
         })
      }
      if(rating!=""){
-        // const ratingurl= await get(`http://localhost:3000/mens`);
+        // const ratingurl= await get(`https://bewakoof-clone-api.herokuapp.com/mens`);
        if(rating==="highRating"){
         data = data.filter((el)=>{
             return el.rating>=4.5;
@@ -296,7 +296,7 @@ Firstdisplay();
     return;
    }
    else if(color!==""){
-    const url=`http://localhost:3000/womens?color=${type}`
+    const url=`https://bewakoof-clone-api.herokuapp.com/womens?color=${type}`
     let data = await get(url)
      if(size!=""){
         data = data.filter((el)=>{
@@ -304,7 +304,7 @@ Firstdisplay();
         })
      }
      if(rating!=""){
-        // const ratingurl= await get(`http://localhost:3000/mens`);
+        // const ratingurl= await get(`https://bewakoof-clone-api.herokuapp.com/mens`);
        if(rating==="highRating"){
         data = data.filter((el)=>{
             return el.rating>=4.5;
@@ -325,10 +325,10 @@ Firstdisplay();
     return;
    }
    else if(size!==""){
-    const url=`http://localhost:3000/womens?size=${size}`
+    const url=`https://bewakoof-clone-api.herokuapp.com/womens?size=${size}`
     let data = await get(url);
      if(rating!=""){
-        // const ratingurl= await get(`http://localhost:3000/mens`);
+        // const ratingurl= await get(`https://bewakoof-clone-api.herokuapp.com/mens`);
        if(rating==="highRating"){
         data = data.filter((el)=>{
             return el.rating>=4.5;
@@ -349,9 +349,9 @@ Firstdisplay();
     return;
    }
   else if(rating!=""){
-    let data = await get('http://localhost:3000/womens');
+    let data = await get('https://bewakoof-clone-api.herokuapp.com/womens');
  
-        // const ratingurl= await get(`http://localhost:3000/mens`);
+        // const ratingurl= await get(`https://bewakoof-clone-api.herokuapp.com/mens`);
        if(rating==="highRating"){
         data = data.filter((el)=>{
             return el.rating>=4.5;
@@ -531,7 +531,7 @@ e.target.style.color = '#42a2a2'
         
         }) 
  document.getElementById("hoodies").addEventListener("click",(e)=>{
-            // const url="http://localhost:3000/mens?category=Hoodies"
+            // const url="https://bewakoof-clone-api.herokuapp.com/mens?category=Hoodies"
             let elid = localStorage.getItem('category')||""
             if(elid!=""){
                 if(elid==='Tshirt'){
@@ -555,7 +555,7 @@ e.target.style.color = '#42a2a2'
             Applyfilter();   
             })
    document.getElementById("jacket").addEventListener("click",(e)=>{
-                // const url="http://localhost:3000/mens?category=Jacket"
+                // const url="https://bewakoof-clone-api.herokuapp.com/mens?category=Jacket"
 
                 let elid = localStorage.getItem('category')||""
             if(elid!=""){
@@ -583,11 +583,11 @@ e.target.style.color = '#42a2a2'
   
 
 document.getElementById("bewakoof").addEventListener("click",(e)=>{
-// const url="http://localhost:3000/mens?types=Bewakoof"
+// const url="https://bewakoof-clone-api.herokuapp.com/mens?types=Bewakoof"
 let elid = localStorage.getItem('types')||""
 if(elid!=""){
-    if(elid==='Campus Sutra'){
-        document.getElementById("campus").style.color = 'rgb(158 158 160)'
+    if(elid==='Clovia'){
+        document.getElementById("clovia").style.color = 'rgb(158 158 160)'
     }else {
         localStorage.setItem('types',"");
         e.target.style.color = 'rgb(158 158 160)';
@@ -600,7 +600,7 @@ localStorage.setItem("types",'Bewakoof');
 Applyfilter();      
 })
 
-document.getElementById("campus").addEventListener("click",(e)=>{
+document.getElementById("clovia").addEventListener("click",(e)=>{
     let elid = localStorage.getItem('types')||""
     if(elid!=""){
         if(elid==='Bewakoof'){
@@ -614,111 +614,110 @@ document.getElementById("campus").addEventListener("click",(e)=>{
     }
 
     e.target.style.color = '#42a2a2';
-    localStorage.setItem("types",'Campus Sutra');
+    localStorage.setItem("types",'Clovia');
 Applyfilter();
     })
 ///////color filter
-    document.getElementById("colorRed").addEventListener("click",(e)=>{
-        // const url="http://localhost:3000/mens?color=red"
+    document.getElementById("colorred").addEventListener("click",(e)=>{
+        // const url="https://bewakoof-clone-api.herokuapp.com/mens?color=red"
         let elid = localStorage.getItem('color')||""
         if(elid!=""){
-            if(elid==='black'){
-                document.getElementById("colorBlack").style.color = 'rgb(158 158 160)'
+            if(elid==='Black'){
+                document.getElementById("colorblack").style.border = ' 2px solid white;'
             }
-            else if(elid==='white'){
-                document.getElementById("colorWhite").style.color = 'rgb(158 158 160)'
+            else if(elid==='Blue'){
+                document.getElementById("colorblue").style.border = ' 2px solid white;'
             }
-            else if(elid==='grey'){
-                document.getElementById("colorgrey").style.color = 'rgb(158 158 160)'
+            else if(elid==='Green'){
+                document.getElementById("colorgreen").style.border = ' 2px solid white;'
             }
             else{
                 localStorage.setItem('color',"");
-                e.target.style.color = 'rgb(158 158 160)';
+                e.target.style.border = '2px solid white;';
                 Applyfilter();
                 return
             }
         }
-e.target.style.color = '#42a2a2'
-        localStorage.setItem("color",'red');
+e.target.style.border = '2px solid  #42a2a2'
+        localStorage.setItem("color",'Red');
         Applyfilter();
         })
 
- document.getElementById("colorBlack").addEventListener("click",(e)=>{
-        // const url="http://localhost:3000/mens?color=black"
+ document.getElementById("colorblack").addEventListener("click",(e)=>{
+        // const url="https://bewakoof-clone-api.herokuapp.com/mens?color=black"
         let elid = localStorage.getItem('color')||""
         if(elid!=""){
-            if(elid==='red'){
-                document.getElementById("colorRed").style.color = 'rgb(158 158 160)'
+            if(elid==='Red'){
+                document.getElementById("colorred").style.border = ' 2px solid white;'
             }
-            else if(elid==='white'){
-                document.getElementById("colorWhite").style.color = 'rgb(158 158 160)'
+            else if(elid==='Blue'){
+                document.getElementById("colorblue").style.border = ' 2px solid white;'
             }
-            else if(elid==='grey'){
-                document.getElementById("colorgrey").style.color = 'rgb(158 158 160)'
+            else if(elid==='Green'){
+                document.getElementById("colorgreen").style.border = ' 2px solid white;'
             }
             else{
                 localStorage.setItem('color',"");
-                e.target.style.color = 'rgb(158 158 160)';
+                e.target.style.border = '2px solid white;';
                 Applyfilter();
                 return
             }
         }
-e.target.style.color = '#42a2a2'
-        localStorage.setItem("color",'black');
-        Applyfilter();  
+e.target.style.border = '2px solid  #42a2a2'
+        localStorage.setItem("color",'Black');
+        Applyfilter();
         })
-   document.getElementById("colorWhite").addEventListener("click",(e)=>{
-            // const url="http://localhost:3000/mens?color=white"
+   document.getElementById("colorblue").addEventListener("click",(e)=>{
+            // const url="https://bewakoof-clone-api.herokuapp.com/mens?color=white"
             let elid = localStorage.getItem('color')||""
-        if(elid!=""){
-            if(elid==='red'){
-                document.getElementById("colorRed").style.color = 'rgb(158 158 160)'
+            if(elid!=""){
+                if(elid==='Black'){
+                    document.getElementById("colorblack").style.border = ' 2px solid white;'
+                }
+                else if(elid==='Red'){
+                    document.getElementById("colorred").style.border = ' 2px solid white;'
+                }
+                else if(elid==='Green'){
+                    document.getElementById("colorgreen").style.border = ' 2px solid white;'
+                }
+                else{
+                    localStorage.setItem('color',"");
+                    e.target.style.border = '2px solid white;';
+                    Applyfilter();
+                    return
+                }
             }
-            else if(elid==='black'){
-                document.getElementById("colorBlack").style.color = 'rgb(158 158 160)'
-            }
-            else if(elid==='grey'){
-                document.getElementById("colorgrey").style.color = 'rgb(158 158 160)'
-            }
-            else{
-                localStorage.setItem('color',"");
-                e.target.style.color = 'rgb(158 158 160)';
-                Applyfilter();
-                return
-            }
-        }
-e.target.style.color = '#42a2a2'
-            localStorage.setItem("color",'white');
-        Applyfilter();   
-   }) 
-   document.getElementById("colorgrey").addEventListener("click",(e)=>{
-    // const url="http://localhost:3000/mens?color=grey"
+    e.target.style.border = '2px solid  #42a2a2'
+            localStorage.setItem("color",'Blue');
+            Applyfilter();
+            });   
+   document.getElementById("colorgreen").addEventListener("click",(e)=>{
+    // const url="https://bewakoof-clone-api.herokuapp.com/mens?color=grey"
     let elid = localStorage.getItem('color')||""
     if(elid!=""){
-        if(elid==='red'){
-            document.getElementById("colorRed").style.color = 'rgb(158 158 160)'
+        if(elid==='Black'){
+            document.getElementById("colorblack").style.border = ' 2px solid white;'
         }
-        else if(elid==='black'){
-            document.getElementById("colorBlack").style.color = 'rgb(158 158 160)'
+        else if(elid==='Blue'){
+            document.getElementById("colorblue").style.border = ' 2px solid white;'
         }
-        else if(elid==='white'){
-            document.getElementById("colorWhite").style.color = 'rgb(158 158 160)'
+        else if(elid==='Red'){
+            document.getElementById("colorred").style.border = ' 2px solid white;'
         }
         else{
             localStorage.setItem('color',"");
-            e.target.style.color = 'rgb(158 158 160)';
+            e.target.style.border = '2px solid white;';
             Applyfilter();
             return
         }
     }
-e.target.style.color = '#42a2a2'
-
-    localStorage.setItem("color",'grey');
-    Applyfilter();    
-})      
+e.target.style.border = '2px solid  #42a2a2'
+    localStorage.setItem("color",'Red');
+    Applyfilter();
+    })
 //// size filter
 document.getElementById("sixe_x").addEventListener("click",(e)=>{
-    // const url="http://localhost:3000/mens?size=X"
+    // const url="https://bewakoof-clone-api.herokuapp.com/mens?size=X"
     let elid = localStorage.getItem('size')||""
     if(elid!=""){
         if(elid==='XL'){
@@ -739,7 +738,7 @@ document.getElementById("sixe_x").addEventListener("click",(e)=>{
     Applyfilter();     
 })   
 document.getElementById("sixe_xl").addEventListener("click",(e)=>{
-    // const url="http://localhost:3000/mens?size=XL"
+    // const url="https://bewakoof-clone-api.herokuapp.com/mens?size=XL"
     let elid = localStorage.getItem('size')||""
     if(elid!=""){
         if(elid==='X'){
@@ -760,7 +759,7 @@ document.getElementById("sixe_xl").addEventListener("click",(e)=>{
     Applyfilter();       
 })     
 document.getElementById("sixe_xxl").addEventListener("click",(e)=>{
-    // const url="http://localhost:3000/mens?size=XXL"
+    // const url="https://bewakoof-clone-api.herokuapp.com/mens?size=XXL"
 
     let elid = localStorage.getItem('size')||""
     if(elid!=""){
@@ -846,21 +845,22 @@ localStorage.setItem("rating",'lowRating');
     Applyfilter();   
 })  
 ////sort
-document.getElementById("sort_price").addEventListener("change",()=>{
+document.getElementById("sort_price").addEventListener("change",async()=>{
     console.log(event.target.value);
     let curr=event.target.value;
    
    let url;
    if(curr==="highToLow"){
-    url="http://localhost:3000/womens?_sort=price&_order=desc";
+    url="https://bewakoof-clone-api.herokuapp.com/womens?_sort=price&_order=desc";
    }
    else if(curr==="lowToHigh"){
-    url="http://localhost:3000/womens?_sort=price&_order=asc";
+    url="https://bewakoof-clone-api.herokuapp.com/womens?_sort=price&_order=asc";
    }
    else{
-    url="http://localhost:3000/womens";
+    url="https://bewakoof-clone-api.herokuapp.com/womens";
    }
-   get(url);
+   let data = await get(url);
+   display(data);
 })
 function boxShow(data){
     document.getElementById("suggestions").innerHTML="";
@@ -871,7 +871,7 @@ function boxShow(data){
         div.append(p);
         div.addEventListener("click",()=>{
             const flag=el.category;
-            const urlfl=`http://localhost:3000/womens?q=${flag}`
+            const urlfl=`https://bewakoof-clone-api.herokuapp.com/womens?q=${flag}`
             document.getElementById("suggestions").innerHTML="";
             get(urlfl);
         })
@@ -899,7 +899,7 @@ function debounce(fn,delay){
         document.getElementById("suggestions").innerHTML="";
        }
   else{
-    const url=`http://localhost:3000/womens?q=${search}&_limit=5`;
+    const url=`https://bewakoof-clone-api.herokuapp.com/womens?q=${search}&_limit=5`;
     const res=await fetch(url);
     const data= await res.json();
     boxShow(data);

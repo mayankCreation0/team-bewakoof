@@ -4,8 +4,10 @@ body{
   outline: none;
 }
 * {
+  font-family: "montserrat" ;
     margin: 0;
     padding: 0;
+    outline: none;
   }
   #onlynav{
     position:sticky;
@@ -105,26 +107,29 @@ body{
     grid-template-columns: repeat(6, 1fr);
   }
   #colordiv > div {
-    height: 14px;
-    width: 14px;
+    height: 16px;
+    width: 18px;
+    
+    margin-bottom: 5px;
    
     /* background-color: red; */
   }
-  #colorRed{
-    background-color: red;
-  }
-  #colorRed:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-  #colorBlack{
+  #colorblack{
     background-color: black;
+    border:2px solid white;
+    /* color: rgb(158 158 160); */
   }
-  #colorWhite{
+  #colorred{
     background-color: white;
-    border:1px solid black;
+    border:2px solid grey;
   }
-  #colorgrey{
+  #colorgreen{
     background-color: grey;
+    border:2px solid white;
+  }
+  #colorblue{
+background-color: blue;
+border:2px solid white;
   }
   #sort{
     
