@@ -296,8 +296,10 @@ Firstdisplay();
     return;
    }
    else if(color!==""){
-    const url=`https://bewakoof-clone-api.herokuapp.com/mens?color=${type}`
+     console.log(color);
+    const url=`https://bewakoof-clone-api.herokuapp.com/mens?color=${color}`
     let data = await get(url)
+    console.log(data);
      if(size!=""){
         data = data.filter((el)=>{
             return +(el.rating)>4.5;
@@ -706,7 +708,7 @@ Applyfilter();
             }
         }
 e.target.style.border = '2px solid #42a2a2'
-        localStorage.setItem("color",'Red');
+        localStorage.setItem("color","Red");
         Applyfilter();
         })
 
@@ -731,7 +733,7 @@ e.target.style.border = '2px solid #42a2a2'
             }
             else{
                 localStorage.setItem('color',"");
-                e.target.style.color = '2px solid white';
+                e.target.style.border = '2px solid white';
                 Applyfilter();
                 return
             }
@@ -997,17 +999,27 @@ document.getElementById("sort_price").addEventListener("change",async()=>{
     console.log(event.target.value);
     let curr=event.target.value;
    
-   let url;
+   let url="https://bewakoof-clone-api.herokuapp.com/mens"
+   let data = await get(url);
    if(curr==="highToLow"){
-    url="https://bewakoof-clone-api.herokuapp.com/mens?_sort=price&_order=desc";
+    // url="https://bewakoof-clone-api.herokuapp.com/mens?_sort=price&_order=desc";
+    data.sort((a,b)=>{
+        return +(b.price)-(+(a.price))
+    })
    }
    else if(curr==="lowToHigh"){
-    url="https://bewakoof-clone-api.herokuapp.com/mens?_sort=price&_order=asc";
+    // url="https://bewakoof-clone-api.herokuapp.com/mens?_sort=price&_order=asc";
+    data.sort((a,b)=>{
+        return +(a.price)-(+(b.price))
+    })
    }
    else{
-    url="https://bewakoof-clone-api.herokuapp.com/mens";
+    // url="https://bewakoof-clone-api.herokuapp.com/mens";
+    data.sort((a,b)=>{
+        return 1;
+    })
    }
-   let data = await get(url);
+  
    display(data);
 })
 function boxShow(data){
@@ -1130,10 +1142,14 @@ document.getElementById("clear").addEventListener("click",()=>{
      document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
      document.getElementById("campus").style.color = 'rgb(158 158 160)'
      document.getElementById("bewakoof").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorBlack").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorWhite").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorgrey").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorRed").style.color = 'rgb(158 158 160)'
+     document.getElementById("adro").style.color = 'rgb(158 158 160)'
+     document.getElementById("madOver").style.color = 'rgb(158 158 160)'
+     document.getElementById("colorBlack").style.border = '2px solid white'
+     document.getElementById("colorWhite").style.border = '2px solid grey'
+     document.getElementById("colorgrey").style.border = '2px solid white'
+     document.getElementById("colorRed").style.border = '2px solid white'
+     document.getElementById("colorblue").style.border = '2px solid white'
+     document.getElementById("coloryellow").style.border = '2px solid white'
      document.getElementById("sixe_xl").style.color = 'rgb(158 158 160)'
      document.getElementById("sixe_xxl").style.color = 'rgb(158 158 160)'
      document.getElementById("sixe_x").style.color = 'rgb(158 158 160)'
@@ -1154,10 +1170,14 @@ function clearAllFilter(){
      document.getElementById("tshirt").style.color = 'rgb(158 158 160)'
      document.getElementById("campus").style.color = 'rgb(158 158 160)'
      document.getElementById("bewakoof").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorBlack").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorWhite").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorgrey").style.color = 'rgb(158 158 160)'
-     document.getElementById("colorRed").style.color = 'rgb(158 158 160)'
+     document.getElementById("adro").style.color = 'rgb(158 158 160)'
+     document.getElementById("madOver").style.color = 'rgb(158 158 160)'
+     document.getElementById("colorBlack").style.border = '2px solid white'
+     document.getElementById("colorWhite").style.border = '2px solid grey'
+     document.getElementById("colorgrey").style.border = '2px solid white'
+     document.getElementById("colorRed").style.border = '2px solid white'
+     document.getElementById("colorblue").style.border = '2px solid white'
+     document.getElementById("coloryellow").style.border = '2px solid white'
      document.getElementById("sixe_xl").style.color = 'rgb(158 158 160)'
      document.getElementById("sixe_xxl").style.color = 'rgb(158 158 160)'
      document.getElementById("sixe_x").style.color = 'rgb(158 158 160)'
