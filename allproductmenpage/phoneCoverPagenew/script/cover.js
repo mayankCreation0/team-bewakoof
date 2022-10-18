@@ -11,7 +11,9 @@ document.getElementById("showcartimage").addEventListener("click" , () =>{
 })
 
 let modelName=localStorage.getItem("search_cover");
+document.getElementById("phonemodelname").style.textTransform="capitalize";
         document.getElementById("phonemodelname").innerText=modelName;
+        
 document.getElementById("nav2").innerHTML=`Home / Mobile Cover / ${modelName}`;
 const displaywish=()=>{
     let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
@@ -44,20 +46,35 @@ displycar()
 
 // const url=`https://bewakoof-clone-api.herokuapp.com/mobile?q=${modelName}`;
 // const url=`https://bewakoof-clone-api.herokuapp.com/mobileCovers?brand=${brandname}&q=${brandModel} `
-async function get(){
-    let brandname=localStorage.getItem("search_cover");
-let brandModel=localStorage.getItem("search_covermodel");
+async function get(url){
     document.getElementById("loadingdiv").style.display="block";
-   const res= await fetch(`https://bewakoof-clone-api.herokuapp.com/mobileCovers?brand=${brandname}&q=${brandModel} `);
+   const res= await fetch(url);
    const data=await res.json();
    console.log(data);
    document.getElementById("loadingdiv").style.display="none";
-   display(data);
+   return data;
    
 }
 
-get();
 
+
+let check=async ()=>{
+    let brandname=localStorage.getItem("search_cover");
+let brandModel=localStorage.getItem("search_covermodel");
+    if(brandModel!=""){
+       return await get(`https://bewakoof-clone-api.herokuapp.com/mobileCovers?brand=${brandname}&q=${brandModel} `);
+    }
+    else{
+        return await get(`https://bewakoof-clone-api.herokuapp.com/mobileCovers?brand=${brandname}`);
+    }
+
+} 
+async  function firstDisplay(){
+    
+    let data= await check();
+   display(data);
+}
+firstDisplay();
 function display(data){
     document.getElementById("container").innerHTML="";
     
@@ -71,7 +88,7 @@ function display(data){
            srybtn.setAttribute("id","sorrybtn");
            srybtn.innerText="Go Back";
            srybtn.addEventListener("click",()=>{
-            clearAllFilter();
+            location.href="../coversearchnew/mobilecovers.html"
            })
            div.append(div1,srybtn);
            document.getElementById("container").append(div);
@@ -152,7 +169,7 @@ function display(data){
         rating.innerHTML=`${el.rating}<i class="fa-solid fa-star"></i>`
         rating.setAttribute("id","ratediv");
         card.append(imgDiv,contentMainDiv,tribeDiv,cart,rating);
-        card.addEventListener('click',()=>{
+        imgDiv.addEventListener('click',()=>{
             localStorage.setItem("details",JSON.stringify(el));
             localStorage.setItem("hidden","true");
             localStorage.setItem("page","mobile");
@@ -167,21 +184,27 @@ function display(data){
 
 
 ////sort
-document.getElementById("sort_price").addEventListener("change",()=>{
-    console.log(event.target.value);
-    let curr=event.target.value;
-   
-   let url;
+document.getElementById("sort_price").addEventListener("change", async ()=>{
+     console.log(event.target.value);
+     let curr=event.target.value;
+    
+     let data =await check();
    if(curr==="highToLow"){
-    url="https://bewakoof-clone-api.herokuapp.com/mobile?_sort=price&_order=desc";
+  
+   data.sort((a,b)=>{
+    return +(b.price)-(+(a.price))
+})
    }
    else if(curr==="lowToHigh"){
-    url="https://bewakoof-clone-api.herokuapp.com/mobile?_sort=price&_order=asc";
+    data.sort((a,b)=>{
+        return +(a.price)-(+(b.price))
+    })
    }
    else{
-    url="https://bewakoof-clone-api.herokuapp.com/mobile";
+    return 1;
+    
    }
-   get(url);
+   display(data);
 })
 function boxShow(data){
     document.getElementById("suggestions").innerHTML="";
