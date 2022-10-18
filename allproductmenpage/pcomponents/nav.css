@@ -1,30 +1,21 @@
-* {
-    margin: 0px;
-    padding: 0px;
+::-webkit-scrollbar{
+    width: 6px;
+    color: #000;
+    /* border: 1px solid red; */
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fdd835;
+    border-radius: 5px;
+}
+body{
+    margin:0%;
+    padding: 0%;
+    font-family: "montserrat", sans-serif;
     box-sizing: border-box;
-   
-}
-
-body {
-    font-family: "montserrat";
-}
-
-#userDetails{
-    display: flex;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    width: 15%;
-    position: absolute;
-    left: 78%;
-    top: 86px;
-    visibility: hidden;
-    transition: 0.3s;
-    z-index: 999;
-}
-#userDetails ul li{
-    font-size: 16px;
-    list-style: none;
-    padding: 9px;
-    padding-right: 140px;
+    overflow-x: hidden;
+    /* width: 100vh; */
+    /* border: 1px solid red; */
+    /* background-color: #ffffff; */
 }
 ::-webkit-scrollbar{
     width: 6px;
@@ -35,25 +26,52 @@ body {
     background-color: #fdd835;
     border-radius: 5px;
 }
+#userDetails{
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 10%;
+    position: absolute;
+    text-align: center;
+    left: 78%;
+    top: 86px;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 6;
+    background-color: white;
+}
+#userDetails ul li{
+    font-size: 16px;
+    list-style: none;
+    padding: 9px;
+    margin-left: -40px;
+    /* padding-right: 140px; */
+}
 #userDetails li a{
     text-decoration: none;
     color: black;
+    border: 1px ;
 }
-#userDetails li:hover{
-    background-color: rgb(224, 216, 216);
+#userDetails li:hover a{
+    /* background-color: rgb(224, 216, 216); */
+    color: #fdd835;
 }
 #userDetails li:nth-child(1){
-    background-color: rgb(224, 216, 216);
+    /* background-color: rgb(224, 216, 216); */
+    color: black;
 }
 #loginBtn:hover #userDetails {
     visibility: visible;
 }
 
 
-
-
+/* #topmost{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+} */
 #navbar {
     position: fixed;
+
     width: 100%;
     background-color: white;
 }
@@ -61,14 +79,26 @@ body {
 #navbar_top {
     width: 100%;
     display: flex;
-   
+    margin: auto;
+    align-items: center;
     background-color: rgb(238, 238, 238);
     justify-content: space-around;
     /* border: 1px solid red; */
 
 }
 
+#navbar_top_headings {
+    width: 40%;
+    margin-left: 150px;
+}
 
+
+#navbar_top_headings1 {
+    width: 40%;
+    margin-left: 40%;
+    display: flex;
+    /* justify-content: space-around; */
+}
 
 #navbar_top_headings>li,
 #navbar_top_headings1>li {
@@ -110,8 +140,6 @@ body {
     margin-left: 8%;
     display: flex;
     align-items: center;
-
-
 }
 
 #logohome>div {
@@ -166,23 +194,21 @@ body {
     border-radius: 2px;
     font-size: 14px;
     padding: 10px;
-
+    /* background: red; */
+    /* outline: 1px solid rgb(118, 118, 118); */
     border: none;
-}
-li.flag{
-    margin:0;
-    text-align: center;
-    width: 25%;
+    /* border: 1px solid rgb(118, 118, 118); */
+    /* border-color: rgb(118, 118, 118), rgb(133, 133, 133); */
 }
 
-#nav_search_bar>li>input:hover {
-    background-color: transparent;
-    border: .5px solid #333;
-}
+/* #nav_search_bar>li>input:hover {
+    /* border: .5px solid #333; */
+/* } */
 #nav_search_bar>li>input:focus{
     background-color: transparent;
     outline: 1px solid rgb(118, 118, 118);
 }
+
 #navbar_menu {
     width: 100%;
     display: flex;
@@ -201,7 +227,7 @@ li.flag{
 }
 
 #nav_search_bar>li>a>img {
-    width: 30%;
+    width: 50%;
     border-radius: 50%;
 }
 
@@ -226,15 +252,21 @@ hr {
 
 }
 
-/* #logohome>li>a:hover {
+#logohome>li>a:hover {
     border-bottom: 4px solid rgb(253, 216, 53);
 
     padding-bottom: 18px;
     visibility: visible;
     z-index: 4;
+}
+
+/* #logohome>li>a>img:hover{
+    border-bottom: none !important;
+    background: black !important;
 } */
-#logohome>li>a>img:hover{
-    border: none;
+#ajibimg:hover{
+    border-bottom: transparent !important;
+    background: #000;
 }
 
 #sub_menu_item {
@@ -250,6 +282,7 @@ hr {
     margin-right: 30%;
     visibility: hidden;
     color: grey;
+    z-index: 999;
 }
 
 #sub_menu_item>ul {
@@ -277,19 +310,7 @@ hr {
 #logo_sub_menu2 {
     margin-right: 30%;
 }
-#nav_search_bar input{
- position: relative!important;
-}
-#suggestions{
-    position: absolute !important;
-    z-index: 3;
-    width: 320px;
-    height: 30px;
-    /* border: 2px solid teal; */
-    margin-top: 90px;
-    margin-left: 12px;
-   
-}
+
 #search_product_by_name {
     height: 40px;
     border-radius: 10px;
@@ -299,6 +320,8 @@ hr {
     width: 340px;
     position: fixed;
     background-color: white;
+    /* background: #000; */
+    /* border: 1px solid red; */
 }
 
 .vl {
@@ -358,11 +381,11 @@ hr {
     display: none;
 }
 
-@media screen and (min-width:650px) and (max-width:992px) {
+@media screen and (min-width:650px) and (max-width:1200px) {
     #navbar_top_headings,
     #navbar_top_headings1,
     #logohome,
-    #rch_product,
+    #search_product,
     #loginBtn,
     .flag {
         display: none;
@@ -421,6 +444,8 @@ hr {
         animation-name: comeFromSide;
         animation-duration: 0.2s;
         overflow-y: scroll;
+        z-index: 55;
+        position: fixed;
     }
     #sideNavbar::-webkit-scrollbar{
         display: none;
@@ -509,26 +534,10 @@ hr {
         font-size: 14px;
         font-weight: bold;
         padding-left: 15px;
+        /* background: #000; */
     }
 }
-#cartBtn{
-    position: relative;
-}
-/* #showcartNumber{
-    position: absolute;
-    top: -5px;
-    left: 8px;
-    height: 55%;
-    width: 75%;
-    font-size: 11px;
-    text-align: center;
-    color: white;
-    border-radius:50% ;
-     background-color:black ; 
-    padding: 1px 3px;
-    background-color: rgb(255,216,77);
-} */
-@media screen and (min-width:100px) and (max-width:649px){
+@media screen and (min-width:0px) and (max-width:649px){
         #navbar_top_headings,
         #navbar_top_headings1,
         #logohome,
@@ -560,7 +569,7 @@ hr {
             margin-left: 20px;
         }
         #toggleBtn {
-            display: block;
+            display: none;
             margin-top: 6px;
             margin-left: auto;
             border: none;

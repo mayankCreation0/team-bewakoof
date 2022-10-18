@@ -40,15 +40,15 @@ else{
 let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
 displycar()
 
-// http://localhost:3000/mens
+// https://bewakoof-clone-api.herokuapp.com/mens
 
-// const url=`http://localhost:3000/mobile?q=${modelName}`;
-// const url=`http://localhost:3000/mobileCovers?brand=${brandname}&q=${brandModel} `
+// const url=`https://bewakoof-clone-api.herokuapp.com/mobile?q=${modelName}`;
+// const url=`https://bewakoof-clone-api.herokuapp.com/mobileCovers?brand=${brandname}&q=${brandModel} `
 async function get(){
     let brandname=localStorage.getItem("search_cover");
 let brandModel=localStorage.getItem("search_covermodel");
     document.getElementById("loadingdiv").style.display="block";
-   const res= await fetch(`http://localhost:3000/mobileCovers?brand=${brandname}&q=${brandModel} `);
+   const res= await fetch(`https://bewakoof-clone-api.herokuapp.com/mobileCovers?brand=${brandname}&q=${brandModel} `);
    const data=await res.json();
    console.log(data);
    document.getElementById("loadingdiv").style.display="none";
@@ -173,13 +173,13 @@ document.getElementById("sort_price").addEventListener("change",()=>{
    
    let url;
    if(curr==="highToLow"){
-    url="http://localhost:3000/mobile?_sort=price&_order=desc";
+    url="https://bewakoof-clone-api.herokuapp.com/mobile?_sort=price&_order=desc";
    }
    else if(curr==="lowToHigh"){
-    url="http://localhost:3000/mobile?_sort=price&_order=asc";
+    url="https://bewakoof-clone-api.herokuapp.com/mobile?_sort=price&_order=asc";
    }
    else{
-    url="http://localhost:3000/mobile";
+    url="https://bewakoof-clone-api.herokuapp.com/mobile";
    }
    get(url);
 })
@@ -192,7 +192,7 @@ function boxShow(data){
         div.append(p);
         div.addEventListener("click",()=>{
             const flag=el.category;
-            const urlfl=`http://localhost:3000/mobile?q=${flag}`
+            const urlfl=`https://bewakoof-clone-api.herokuapp.com/mobile?q=${flag}`
             document.getElementById("suggestions").innerHTML="";
             get(urlfl);
         })
@@ -220,7 +220,7 @@ function debounce(fn,delay){
         document.getElementById("suggestions").innerHTML="";
        }
   else{
-    const url=`http://localhost:3000/mobile?q=${search}&_limit=5`;
+    const url=`https://bewakoof-clone-api.herokuapp.com/mobile?q=${search}&_limit=5`;
     const res=await fetch(url);
     const data= await res.json();
     boxShow(data);
