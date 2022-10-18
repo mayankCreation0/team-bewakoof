@@ -75,7 +75,7 @@ height: 30px;
 
 /* nav */
 #container{
-   
+
     text-align: center;
 }
 #card{
@@ -142,6 +142,8 @@ border-bottom:1px solid rgb(195,195,195);
     cursor: pointer;
 }
 #main{
+    width: 95%;
+    margin: auto;
     margin-top: 15px;
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -170,7 +172,13 @@ border-bottom:1px solid rgb(195,195,195);
 padding: 2px;
 }
 #main>div>div>div:nth-child(1){
-    color: rgb(148, 142, 142);;
+    display: inline-block;
+    color: rgb(148, 142, 142);
+    /* border: 1px solid green; */
+    height: 20px;
+    overflow: hidden;
+    font-size: 14px;
+    text-overflow: ellipsis;
 }
 #main>div>div>div:nth-child(2){
     display: flex;

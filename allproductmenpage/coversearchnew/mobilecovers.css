@@ -50,7 +50,7 @@ body{
 
 #container1{
     width:60%;
-    height:500px; 
+    height:350px; 
     /* margin:100px 0px 50px 0px; */
     /* margin-left: 40px; */
     /* height: 150%; */
@@ -62,6 +62,7 @@ body{
     padding-left: 20px;
 
 }
+
 #container1>div{
     margin-top: 10px;
 }
@@ -70,18 +71,19 @@ body{
 
 }
 #brands1{
-    display: block;
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 #popular1{
-    display: block;
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 15px;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 #input{
     display: block;
@@ -104,12 +106,18 @@ body{
 #selectB, #selectM{
     width:95%;
     height:35px;
+    outline: none;
+    height: 35x;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    color: rgb(130, 127, 127);
 }
 button{
     width:80%;
     height:35px;
     border: none;
     background-color: grey;
+    cursor: pointer;
 }
 #paras{
     padding-left: 43px;

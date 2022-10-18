@@ -3,8 +3,10 @@ body{
     text-size-adjust: 100%;
   }
   * {
+    font-family: "montserrat" ;
       margin: 0;
       padding: 0;
+    
     }
     
     #main {
@@ -222,15 +224,19 @@ body{
     margin-left: 3px;
   }
   #loadingdiv{
+    width: 22%;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: fixed;
-    top: 50%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     /* display: none; */
     }
     #loadingdiv img{
-      width: 350px ;
-      height: 120px;
+      border-radius: 8px;
+      width: 100% ;
+      height: 110px;
     }
     #sorry{
   
@@ -247,20 +253,22 @@ body{
        
       }
       #sorrybtn{
-        width: 35%;
+        width: 8%;
         /* text-align: center; */
         margin: auto;
         margin-top: 15px !important;
         font-family: "Montserrat",sans-serif;
         font-size: 16px;
         color: #51cccc;
-        border-radius: 2px;
+        border-radius: 8px;
         border: 1px solid #51cccc;
-        padding: 7px 14px;
+        /* padding: 7px 14px; */
         line-height: 30px;
         background-color: white;
         margin-top: 20px;
-        padding-left:120px !important;
+        /* text-align: center; */
+        /* padding-left:100px !important; */
+      
         cursor: pointer;
       }
       #sorrybtn:hover{
