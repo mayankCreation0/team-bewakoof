@@ -65,6 +65,6 @@ function checkdata() {
   }
 }
 function redirect(){
-  window.open("../../homePage/diwali-homepage/index.html","_self");
+  window.open("./../../index.html","_self");
   // console.log("hey");
 }
