@@ -198,7 +198,7 @@ function display(data){
             localStorage.setItem("details",JSON.stringify(el));
             localStorage.setItem("hidden","true");
             localStorage.setItem("page","mobile");
-            location.href="../descriptionPage/description.html";
+            location.href="../descriptionPagenew/description.html";
         })
 
         document.getElementById("container").append(card);
