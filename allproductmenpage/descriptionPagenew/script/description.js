@@ -3,6 +3,39 @@ import footer from "../../pcomponents/foot.js"
 document.getElementById("onlynav").innerHTML=navbar();
 document.getElementById("container-footer").innerHTML=footer();
 
+let isLogined = localStorage.getItem("isLogined") || false;
+    if (isLogined) {
+        document.getElementById("showDetails").innerHTML = `<i class="fa-solid fa-user"></i>`;
+        document.getElementById("userDetails").style.display = "block";
+        document.getElementById("userName").innerText = `hi, ${localStorage.getItem("userName")}`
+    } else {
+        document.getElementById("showDetails").innerHTML = "Login";
+        document.getElementById("userDetails").style.display = "none";
+    }
+    let userName = localStorage.getItem("userName");
+    document.getElementById("userName").innerHTML = `Hi, ${userName}`;
+    document.getElementById("toggleBtn").addEventListener("click", showNavbar);
+    let flagForNavbar = true;
+    function showNavbar() {
+        if (flagForNavbar) {
+            document.getElementById("sideNavbar").style.display = "none";
+            flagForNavbar = false;
+        } else {
+            document.getElementById("sideNavbar").style.display = "block";
+            document.getElementById("spectsPic").style.display = "none";
+            document.getElementById("toggleBtn").style.display = "none";
+            flagForNavbar = true;
+        }
+    }
+
+    document.getElementById("showwishimage").addEventListener("click", ()=>{
+      location.href="../../allproductmenpage/wishlistPagenew/wishlist.html";
+  })
+  document.getElementById("showcartimage").addEventListener("click", ()=>{
+      location.href="../../cartAndCheckout/cart.html";
+  })
+
+
 let image = document.getElementById("large-img");
 let small = document.getElementsByClassName("small-img");
 
@@ -258,6 +291,7 @@ else{
 }
  cart.addEventListener("click",()=>{
   sendCartdata(el,btn1);
+  location.href="../../cartAndCheckout/cart.html";
  })
  const wish=document.createElement("div"); 
  btn2.innerHTML=`<i class="fa-regular fa-heart"> Wishlist</i>`
@@ -270,6 +304,7 @@ else{
 }
  wish.addEventListener("click",()=>{
   showWishes(el,btn2);
+  // location.href="../../allproductmenpage/wishlistPagenew/wishlist.html"
  })
         document.getElementById("btns").append(cart,wish);
 }

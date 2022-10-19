@@ -4,6 +4,32 @@ document.getElementById("onlynav").innerHTML=navbar();
 document.getElementById("container-footer").innerHTML=footer();
 
 
+let isLogined = localStorage.getItem("isLogined") || false;
+    if (isLogined) {
+        document.getElementById("showDetails").innerHTML = `<i class="fa-solid fa-user"></i>`;
+        document.getElementById("userDetails").style.display = "block";
+        document.getElementById("userName").innerText = `hi, ${localStorage.getItem("userName")}`
+    } else {
+        document.getElementById("showDetails").innerHTML = "Login";
+        document.getElementById("userDetails").style.display = "none";
+    }
+    let userName = localStorage.getItem("userName");
+    document.getElementById("userName").innerHTML = `Hi, ${userName}`;
+    document.getElementById("toggleBtn").addEventListener("click", showNavbar);
+    let flagForNavbar = true;
+    function showNavbar() {
+        if (flagForNavbar) {
+            document.getElementById("sideNavbar").style.display = "none";
+            flagForNavbar = false;
+        } else {
+            document.getElementById("sideNavbar").style.display = "block";
+            document.getElementById("spectsPic").style.display = "none";
+            document.getElementById("toggleBtn").style.display = "none";
+            flagForNavbar = true;
+        }
+    }
+
+
 const displaywish=()=>{
     let wishArr=JSON.parse(localStorage.getItem("wishes"))||[];
     if(wishArr.length>0){

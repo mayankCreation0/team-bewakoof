@@ -117,8 +117,11 @@ text-align: center;
 #small1,#small2,#small3,#small4{
 padding: 2px;
     width: 80%;
-    
+   
 margin: auto;
+}
+#smallimg>div img{
+    border:2px solid white;
 }
 #smallimg>div img:hover,#smallimg>div img:active,#smallimg>div img:focus{
 border: 2px solid cyan;
