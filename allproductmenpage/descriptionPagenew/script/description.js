@@ -255,8 +255,15 @@ function display(el){
   document.getElementById("price2").innerText=`₹${el.strikeOffPrice}`
   const discount=getDiscount(+(el.price),+(el.strikeOffPrice));
  document.getElementById("price3").innerText=`${discount}%`;
+ 
 const detail=document.getElementById("product_details");
-detail.innerText=el.details;
+if(localStorage.getItem("page")=="mobile"){
+  detail.innerText="Manufactured By - Bewakoof Brands Pvt Ltd, Sairaj Logistic Hub #A5, Bmc Pipeline Road, Opposite All Saints High School, Amane, Bhiwandi, Thane, Maharashtra - 421302"
+}
+else{
+  detail.innerText=el.details;
+}
+
 
  const cart=document.createElement("div");
  let btn1 = document.createElement("button");
