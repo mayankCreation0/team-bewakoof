@@ -113,7 +113,9 @@ h4 {
 
 }
 
-
+#cardNum{
+    letter-spacing: 1.5px;
+}
 
 
 
@@ -231,6 +233,12 @@ h4 {
     height: 180px;
     margin-left: 30px;
     margin-bottom: 40px;
+}
+#showcartdata>img{
+    height: 80px !important;
+}
+#shoecartdata>p{
+    padding-bottom: 30px;
 }
 #summaryp{
     margin-right: 80px;

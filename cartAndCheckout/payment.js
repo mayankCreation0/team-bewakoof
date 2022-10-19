@@ -8,6 +8,11 @@ let monthArr = [
      "Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"
 ]
 
+const emailData = (localStorage.getItem("useremail")) || "";
+
+document.getElementById("showemailid").innerText = emailData;
+
+var wishListData = JSON.parse(localStorage.getItem("wishList")) || [];
 
 document.querySelector("form").addEventListener("submit", payFun);
 function payFun() {
@@ -161,7 +166,7 @@ payData.map(function (el) {
      let box = document.createElement("div");
 
      let box1 = document.createElement("div");
-     //box1.setAttribute("id", "cartData")
+     box1.setAttribute("id", "div1")
 
      // let p = document.createElement("p");
      // p.innerText = "You are paying for these items ";
@@ -178,6 +183,7 @@ payData.map(function (el) {
 
 
      let box2 = document.createElement("div");
+     box.setAttribute("id", "box2")
      let name = document.createElement("p");
      name.innerText = el.name;
      name.setAttribute("id", "itemName");
@@ -203,7 +209,7 @@ payData.map(function (el) {
      
      let dateE = document.createElement("p");
      dateE.innerText = "";
-     console.log(today.getDate(), today.getMonth(), today.getDay(), monthArr, dayArr)
+     //console.log(today.getDate(), today.getMonth(), today.getDay(), monthArr, dayArr)
      dateE.style.fontSize = "15px";
      // dateE.style.marginTop = "-15px";
      deliveryDate.append(date, dateE);
