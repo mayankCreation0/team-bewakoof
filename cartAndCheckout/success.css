@@ -3,7 +3,9 @@ body{
     background-color: #fafafa;
     color:rgb(42, 35, 33)
   }
-  
+  *{
+    font-family: "Montserrat";
+  }
   #container2 {
     width: 100%;
     display: grid;
@@ -60,19 +62,31 @@ body{
   .home {
     /* border: 1px solid red; */
     width: 15%;
-    height: 100%;
-    margin-left: 650px;
+    margin: auto;
+    
+    /* height: 100%; */
+    /* margin-left: 650px; */
+
   }
   
   #homebutton {
-    padding: 10px 30px;
+    width: 100%;
+    box-sizing: border-box;
+
+    border-radius: 8px;
+    /* padding: 10px 30px; */
+    padding: 10px 5px;
     margin-top: 10px;
     background-color: rgb(52, 234, 24);
     border: none;
     color: black;
     cursor: pointer;
+    transition: 1s;
   }
-  
+  #homebutton:hover{
+    font-size: 16px;  
+    background-color: #fdd835;
+    }
   #tq {
     text-align: center;
   }
