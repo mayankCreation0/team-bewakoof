@@ -35,7 +35,7 @@
     
                 <li><a href="../men-homepage/men-homepage.html"><img src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg"
                             alt="logo"></a></li>
-                <li><a style="font-size: 13px;" href="../../allproductmenpage/product-men-pagenew/mens.html">MEN</a>
+                <li ><a class="hoverline" style="font-size: 13px;" href="../../allproductmenpage/product-men-pagenew/mens.html">MEN</a>
                     <div id="logo_sub_menu1">
                         <div id="sub_menu_item">
                             <ul>
@@ -116,7 +116,7 @@
     
                     </div>
                 </li>
-                <li><a style="font-size: 13px;" href="../../allproductmenpage/product-men-pagenew/mens.html">WOMEN</a>
+                <li><a class="hoverline" style="font-size: 13px;" href="../../allproductmenpage/product-men-pagenew/mens.html">WOMEN</a>
                     <div id="logo_sub_menu2">
                         <div id="sub_menu_item">
                             <ul>
@@ -196,7 +196,7 @@
     
                     </div>
                 </li>
-                <li><a style="font-size: 13px;" href="../../allproductmenpage/coversearchnew/mobilecovers.html">MOBILE COVERS</a>
+                <li><a class="hoverline" style="font-size: 13px;" href="../../allproductmenpage/coversearchnew/mobilecovers.html">MOBILE COVERS</a>
                     <div id="logo_sub_menu3">
                         <div id="sub_menu_item">
                             <ul> <br>
@@ -308,7 +308,7 @@
            </div>
             <div id="nav_search_bar">
                 <li><input type="text" id="search_product" placeholder="search by product,category or collection">
-                    <div id="nav_search_bar_fetchData"></div>
+                    <div id="suggestions"></div>
                 </li>
                 <!-- <li class="vl"></li>  -->
                 <li id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></li>
@@ -325,9 +325,13 @@
                         </ul>
                     </div>
                 </li>
-                <li id="wishList"><a href="../../allproductmenpage/wishlistPagenew/wishlist.html"><span><i class="far fa-heart"></i></span></a></li>
-                <li id="cartBtn"><a href="../../cartAndCheckout/cart.html"><span><i class="fa-sharp fa-solid fa-bag-shopping"></i><sup id="items"></sup></span></a></li>
-                <li class="flag"><a  href=""><img src="https://images.bewakoof.com/web/india-flag-round-1639566913.png" alt="flaglogo"></a></li>
+                <div id="showwishimage"><i class="fa-regular fa-heart"></i></div>
+            <div id="showwishnumber"></div>
+            <div id="showcart">
+            <div id="showcartimage"><i class="fa-solid fa-bag-shopping"></i></div>
+            <div id="showcartnumber"></div>
+          </div>
+               <li class="flag"><a  href=""><img src="https://images.bewakoof.com/web/india-flag-round-1639566913.png" alt="flaglogo"></a></li>
             </div>
            
     
@@ -338,10 +342,11 @@
 
 </html>
 <script>
-    let isLogined = localStorage.getItem("isLogined") || true;
+    let isLogined = localStorage.getItem("isLogined") || false;
     if (isLogined) {
         document.getElementById("showDetails").innerHTML = `<i class="fa-solid fa-user"></i>`;
         document.getElementById("userDetails").style.display = "block";
+        document.getElementById("userName").innerText = `hi, ${localStorage.getItem("userName")}`
     } else {
         document.getElementById("showDetails").innerHTML = "Login";
         document.getElementById("userDetails").style.display = "none";
@@ -349,16 +354,16 @@
     let userName = localStorage.getItem("userName");
     document.getElementById("userName").innerHTML = `Hi, ${userName}`;
     document.getElementById("toggleBtn").addEventListener("click", showNavbar);
-    let flag = true;
+    let flagForNavbar = true;
     function showNavbar() {
-        if (flag) {
+        if (flagForNavbar) {
             document.getElementById("sideNavbar").style.display = "none";
-            flag = false;
+            flagForNavbar = false;
         } else {
             document.getElementById("sideNavbar").style.display = "block";
             document.getElementById("spectsPic").style.display = "none";
             document.getElementById("toggleBtn").style.display = "none";
-            flag = true;
+            flagForNavbar = true;
         }
     }
     document.getElementById("closeSideNavbar").addEventListener("click", closeSideNavbar);
@@ -367,5 +372,11 @@
         document.getElementById("spectsPic").style.display = "block";
         document.getElementById("toggleBtn").style.display = "block";
     }
+    document.getElementById("logout").addEventListener("click", () =>{
+        event.preventDefault();
+        document.getElementById("showDetails").innerHTML = "Login";
+        document.getElementById("userDetails").style.display = "none";
+        // location.reload();
+    })
 
 </script>

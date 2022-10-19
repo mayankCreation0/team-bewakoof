@@ -205,12 +205,7 @@ border:2px solid white;
   /* height: 700px; */
   }
 
-  #search{
-    position: relative;
-    width: 20%;
-    /* margin: auto; */
-    padding-top: 8px;
-  }
+
   /* #search input{
     padding: 15px;
 width: 100%;
@@ -223,11 +218,7 @@ height: 30px;
    font-size: 12px;
    background-color: white;
   } */
-  #suggestions>div{
-   border: 1px solid grey;
-   background-color: white;
-   padding: 10px;
-  }
+ 
   #container>div{
     display: grid;
     /* border: 1px solid teal; */

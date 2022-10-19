@@ -1,6 +1,33 @@
 import navbar from "../../pcomponents/nav.js"
 // import footer from "../../pcomponents/foot.js"
 document.getElementById("onlynav").innerHTML=navbar();
+
+
+let isLogined = localStorage.getItem("isLogined") || false;
+    if (isLogined) {
+        document.getElementById("showDetails").innerHTML = `<i class="fa-solid fa-user"></i>`;
+        document.getElementById("userDetails").style.display = "block";
+        document.getElementById("userName").innerText = `hi, ${localStorage.getItem("userName")}`
+    } else {
+        document.getElementById("showDetails").innerHTML = "Login";
+        document.getElementById("userDetails").style.display = "none";
+    }
+    let userName = localStorage.getItem("userName");
+    document.getElementById("userName").innerHTML = `Hi, ${userName}`;
+    document.getElementById("toggleBtn").addEventListener("click", showNavbar);
+    let flagForNavbar = true;
+    function showNavbar() {
+        if (flagForNavbar) {
+            document.getElementById("sideNavbar").style.display = "none";
+            flagForNavbar = false;
+        } else {
+            document.getElementById("sideNavbar").style.display = "block";
+            document.getElementById("spectsPic").style.display = "none";
+            document.getElementById("toggleBtn").style.display = "none";
+            flagForNavbar = true;
+        }
+    }
+
 // document.getElementById("container-footer").innerHTML=footer();
 document.getElementById("showwishimage").addEventListener("click" , () => {
     location.href ="../wishlistPagenew/wishlist.html";
@@ -147,7 +174,9 @@ const check=()=>{
          btndiv.setAttribute("id","btndiv");
          
          btndiv.innerText="Continue Shopping";
-        
+         btndiv.addEventListener("click",()=>{
+            location.href="../../allproductmenpage/product-men-pagenew/mens.html"
+         })
         
          const card1=document.createElement("div");
          card1.setAttribute("id","card1");

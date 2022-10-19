@@ -82,7 +82,7 @@ body{
     margin: auto;
     align-items: center;
     background-color: rgb(238, 238, 238);
-    justify-content: space-around;
+    justify-content: space-between;
     /* border: 1px solid red; */
 
 }
@@ -96,8 +96,6 @@ body{
 #navbar_top_headings1 {
     width: 40%;
     margin-left: 40%;
-    display: flex;
-    /* justify-content: space-around; */
 }
 
 #navbar_top_headings>li,
@@ -165,12 +163,27 @@ body{
 }
 
 #nav_search_bar {
+    position: relative;
     width: 50%;
     display: flex;
     margin-left: 2%;
     /* justify-content: center; */
     align-items: center;
+    justify-content: space-around;
 }
+#suggestions{
+    position: absolute;
+   width: 58.5%;
+   
+   
+   background-color: white;
+  } 
+  #suggestions>div{
+font-size: 8px;
+   border: 1px solid grey;
+   background-color: white;
+   padding: 10px;
+  }
 
 #nav_search_bar>li {
     list-style-type: none;
@@ -202,8 +215,8 @@ body{
 }
 
 /* #nav_search_bar>li>input:hover {
-    /* border: .5px solid #333; */
-/* } */
+    border: .5px solid #333;
+} */
 #nav_search_bar>li>input:focus{
     background-color: transparent;
     outline: 1px solid rgb(118, 118, 118);
@@ -252,7 +265,14 @@ hr {
 
 }
 
-#logohome>li>a:hover {
+/* #logohome>li>a:hover {
+    border-bottom: 4px solid rgb(253, 216, 53);
+
+    padding-bottom: 18px;
+    visibility: visible;
+    z-index: 4;
+} */
+.hoverline:hover{
     border-bottom: 4px solid rgb(253, 216, 53);
 
     padding-bottom: 18px;
@@ -312,17 +332,10 @@ hr {
 }
 
 #search_product_by_name {
-    position: relative;
     height: 40px;
     border-radius: 10px;
 }
-#suggestions{
-    position: absolute;
-   width: 100%;
-   
-   font-size: 12px;
-   background-color: white;
-  } 
+
 #nav_search_bar_fetchData {
     width: 340px;
     position: fixed;
@@ -387,7 +400,9 @@ hr {
 #closeSideNavbar{
     display: none;
 }
-
+.flag{
+    padding-left: 10px;
+}
 @media screen and (min-width:650px) and (max-width:1200px) {
     #navbar_top_headings,
     #navbar_top_headings1,
@@ -544,6 +559,7 @@ hr {
         /* background: #000; */
     }
 }
+
 @media screen and (min-width:0px) and (max-width:649px){
         #navbar_top_headings,
         #navbar_top_headings1,
@@ -565,6 +581,7 @@ hr {
             border: none;
         }
         #nav_search_bar {
+           
             width: 15%;
             margin-left: 76%;
             align-items: center;
