@@ -138,7 +138,7 @@ else{
     document.getElementById("showcartnumber").style.display="none";
 }
 }
-let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
+ let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
 displycar()
 let tempc="true";
 document.getElementById("categorymenu").addEventListener("click", ()=>{
