@@ -1,6 +1,9 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
+    font-family: "Montserrat";
+} */
+body{
     font-family: "Montserrat";
 }
 #t1Container {
@@ -228,8 +231,8 @@ h4 {
     margin-right: 80px;
     margin-top: 15px;
     margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: 540;
+    font-size: 16px;
+    font-weight:900;
 }
 #showcartdata{
     /* border: 1px solid rgb(206, 6, 6); */
