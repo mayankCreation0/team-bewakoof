@@ -55,7 +55,7 @@ https://medium.com/@akhilkumar9398/bewakoof-clone-f86e724cff4c
 
 
 # Cart Page
-
+![caartpage](https://user-images.githubusercontent.com/111172417/196955237-3deec92e-2a25-47df-b076-c5f84e06d798.png)
 
 
 Here you can see the project: https://deploy-preview-74--steady-banoffee-5f96bf.netlify.app/
