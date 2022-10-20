@@ -49,7 +49,7 @@ https://medium.com/@akhilkumar9398/bewakoof-clone-f86e724cff4c
 ![Homepage](https://user-images.githubusercontent.com/111172417/196951482-eb7a5149-7b6c-4236-bb0d-241506cb1168.png)
 
 # Login Page
-
+![loginpage1](https://user-images.githubusercontent.com/111172417/196954951-4cc4f1a3-2fce-4392-b35d-4f3e751512cb.png)
 
 # Products Page
 
