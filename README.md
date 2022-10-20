@@ -45,8 +45,16 @@ JavaScript
 ## Related Links
 https://medium.com/@akhilkumar9398/bewakoof-clone-f86e724cff4c
 
-
+# Home page
 ![Homepage](https://user-images.githubusercontent.com/111172417/196951482-eb7a5149-7b6c-4236-bb0d-241506cb1168.png)
+
+# Login Page
+
+
+# Products Page
+
+
+# Cart Page
 
 
 
