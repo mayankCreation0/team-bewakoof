@@ -67,10 +67,10 @@ else{
 let cartArr=JSON.parse(localStorage.getItem("cart_products"))||[];
 displycar()
 
-// https://bewakoof-clone-api.herokuapp.com/mens
+// https://bewakoof-app.onrender.com/mens
 
-// const url=`https://bewakoof-clone-api.herokuapp.com/mobile?q=${modelName}`;
-// const url=`https://bewakoof-clone-api.herokuapp.com/mobileCovers?brand=${brandname}&q=${brandModel} `
+// const url=`https://bewakoof-app.onrender.com/mobile?q=${modelName}`;
+// const url=`https://bewakoof-app.onrender.com/mobileCovers?brand=${brandname}&q=${brandModel} `
 async function get(url){
     document.getElementById("loadingdiv").style.display="block";
    const res= await fetch(url);
@@ -87,10 +87,10 @@ let check=async ()=>{
     let brandname=localStorage.getItem("search_cover");
 let brandModel=localStorage.getItem("search_covermodel");
     if(brandModel!=""){
-       return await get(`https://bewakoof-clone-api.herokuapp.com/mobileCovers?brand=${brandname}&q=${brandModel} `);
+       return await get(`https://bewakoof-app.onrender.com/mobileCovers?brand=${brandname}&q=${brandModel} `);
     }
     else{
-        return await get(`https://bewakoof-clone-api.herokuapp.com/mobileCovers?brand=${brandname}`);
+        return await get(`https://bewakoof-app.onrender.com/mobileCovers?brand=${brandname}`);
     }
 
 } 
@@ -240,7 +240,7 @@ function boxShow(data){
         div.append(p);
         div.addEventListener("click",()=>{
             const flag=el.category;
-            const urlfl=`https://bewakoof-clone-api.herokuapp.com/mobile?q=${flag}`
+            const urlfl=`https://bewakoof-app.onrender.com/mobile?q=${flag}`
             document.getElementById("suggestions").innerHTML="";
             get(urlfl);
         })
@@ -268,7 +268,7 @@ function debounce(fn,delay){
         document.getElementById("suggestions").innerHTML="";
        }
   else{
-    const url=`https://bewakoof-clone-api.herokuapp.com/mobile?q=${search}&_limit=5`;
+    const url=`https://bewakoof-app.onrender.com/mobile?q=${search}&_limit=5`;
     const res=await fetch(url);
     const data= await res.json();
     boxShow(data);
